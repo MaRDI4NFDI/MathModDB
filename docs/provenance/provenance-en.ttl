@@ -1,0 +1,22 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix : <> .
+<https://mardi4nfdi.de/mathmoddb/0.1> a prov:Entity;
+	 dc:title "MathModDB: An ontology for mathematical models";
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo :agent2;
+	 prov:wasAttributedTo :agent3;
+	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo :agent5;
+	 prov:wasAttributedTo :agent6;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)".
+:agent1 a prov:Agent; foaf:name "Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)".
+:agent2 a prov:Agent; foaf:name "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)".
+:agent3 a prov:Agent; foaf:name "Christine Biedinger (https://orcid.org/0009-0002-5082-8386), Fraunhofer Institute for Industrial Mathematics ITWM (https://ror.org/019hjw009)".
+:agent4 a prov:Agent; foaf:name "Jochen Fiedler (https://orcid.org/0000-0002-9176-780X), Fraunhofer Institute for Industrial Mathematics ITWM (https://ror.org/019hjw009)".
+:agent5 a prov:Agent; foaf:name "Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)".
+:agent6 a prov:Agent; foaf:name "Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)".
