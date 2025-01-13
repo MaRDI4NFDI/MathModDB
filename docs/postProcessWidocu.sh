@@ -16,5 +16,5 @@ cp index-en.html index.html
 # Insert the MathJax script
 sed -i '/<head>/a <script id="MathJax-script" async src="https:\/\/cdn.jsdelivr.net\/npm\/mathjax@3\/es5\/tex-mml-chtml.js"><\/script>' index.html
 # Insert config so that also single character delimiter is recognized
-sed -i '/<head>/a <script>window.MathJax = {   tex: { inlineMath: \[\["\$", "\$\"]\] } }; <\/script>' index.html
+sed -i '/<head>/a <script>window.MathJax = {   tex: { inlineMath: \[\["\$", "\$\"], \["\\\\(", "\\\\)"\]\] } }; <\/script>' index.html
 
