@@ -1,6 +1,7 @@
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionIRI> <https://mardi4nfdi.de/mathmoddb/0.1> .
-<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/abstract> "MathModDB is the ontology for mathematical models developed by the Mathematical Research Data Initiative (MaRDI). TODO: a bit more text" .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/abstract> "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph." .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models" .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
@@ -8,15 +9,17 @@
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Jochen Fiedler (https://orcid.org/0000-0002-9176-780X), Fraunhofer Institute for Industrial Mathematics ITWM (https://ror.org/019hjw009)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/issued> "2025-01-20" .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/modified> "" .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/publisher> "MaRDI (https://www.mardi4nfdi.de)" .
-<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/title> "MathModDB: An ontology for mathematical models"@en .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/title> "MathModDB: An Ontology for Mathematical Models"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the MathModDB Ontology for documenting mathematical models."@en .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#label> "MathModDB Ontology"@en .
-<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionInfo> "tbd" .
-<https://mardi4nfdi.de/mathmoddb> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1007/978-3-031-65990-4_14> .
-<https://mardi4nfdi.de/mathmoddb> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.48550/arXiv.2408.10003> .
-<https://mardi4nfdi.de/mathmoddb> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.52825/cordi.v1i.255> .
+<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.1007/978-3-031-65990-4_14> .
+<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.48550/arXiv.2408.10003> .
+<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.52825/cordi.v1i.255> .
+<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionInfo> "0.8.0" .
 # 
 # 
 # #################################################################
@@ -28,6 +31,9 @@
 # 
 # http://purl.org/dc/terms/abstract
 <http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -43,6 +49,9 @@
 # 
 # http://purl.org/dc/terms/isReplacedBy
 <http://purl.org/dc/terms/isReplacedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
@@ -2095,7 +2104,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#AmplitudeOfElectronWave> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain> .
 <https://mardi4nfdi.de/mathmoddb#AmplitudeOfElectronWave> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> .
 <https://mardi4nfdi.de/mathmoddb#AmplitudeOfElectronWave> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#InitialValueForElectronScattering> .
-<https://mardi4nfdi.de/mathmoddb#AmplitudeOfElectronWave> <http://purl.org/dc/terms/description> "wave height"@en .
+<https://mardi4nfdi.de/mathmoddb#AmplitudeOfElectronWave> <http://purl.org/dc/terms/description> "amplitude of the wave function representing an electron"@en .
 <https://mardi4nfdi.de/mathmoddb#AmplitudeOfElectronWave> <http://www.w3.org/2000/01/rdf-schema#label> "Amplitude Of Electron Wave"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#AngularMomentum
@@ -2269,7 +2278,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel
 <https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel> <http://purl.org/dc/terms/description> "opinion of the Influencers is drawn towards the average opinion of the followers"@en .
+<https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel> <http://purl.org/dc/terms/description> "opinion of the influencers is drawn towards the average opinion of the followers"@en .
 <https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel> <http://www.w3.org/2000/01/rdf-schema#label> "Average Opinion Of Followers Of Influencers In The Partial Mean Field Model"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModelFormulation
@@ -2336,7 +2345,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers
 <https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers> <http://purl.org/dc/terms/description> "opinion of the Influencers is drawn towards the average opinion of the followers"@en .
+<https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers> <http://purl.org/dc/terms/description> "opinion of the influencers is drawn towards the average opinion of the followers"@en .
 <https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers> <http://www.w3.org/2000/01/rdf-schema#label> "Average Opinion Of Followers Of Influencers"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#AverageOpinionOfMediaFollowers
@@ -2438,18 +2447,20 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Energy> .
+<https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand> <http://purl.org/dc/terms/description> "energy of the lower edge of the electronic conduction band"@en .
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand> <http://www.w3.org/2000/01/rdf-schema#label> "Band Edge Energy For Conduction Band"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Energy> .
+<https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand> <http://purl.org/dc/terms/description> "energy of the upper edge of the electronic valence band"@en .
 <https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand> <http://www.w3.org/2000/01/rdf-schema#label> "Band Edge Energy For Valence Band"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient
 <https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient> <http://purl.org/dc/terms/description> "Beavers-Joseph Coefficient"@en .
+<https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient> <http://purl.org/dc/terms/description> "coefficient for the coupling of a Stokes model and a Darcy model"@en .
 <https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient> <http://www.w3.org/2000/01/rdf-schema#label> "Beavers-Joseph Coefficient"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#BeaversJosephSaffmanCondition
@@ -2480,7 +2491,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <https://mardi4nfdi.de/mathmoddb#generalizedBy> <https://mardi4nfdi.de/mathmoddb#Rate> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <http://purl.org/dc/terms/description> "contact rate of one sub-population (represented by subscript i) with all other subpopulations"@en .
+<https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <http://purl.org/dc/terms/description> "contact rate of one sub-population with all other sub-populations"@en .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Used in multi-population models."@en .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> <http://www.w3.org/2000/01/rdf-schema#label> "Between Population Contact Rate"@en .
 # 
@@ -3407,7 +3418,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#BoltzmannConstant
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://purl.org/dc/terms/description> "physical constant relating energy at the individual particle level with temperature"@en .
+<https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://purl.org/dc/terms/description> "physical constant relating the average relative thermal energy with the thermodynamic temperature"@en .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Boltzmann Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Boltzmann_constant> .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <https://mardi4nfdi.de/mathmoddb#qudtID> <http://qudt.org/vocab/constant/BoltzmannConstant> .
@@ -3417,7 +3428,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BooleanRing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#BooleanRing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#BooleanRing> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#BooleanRing> <http://purl.org/dc/terms/description> "mathematical concept"@en .
+<https://mardi4nfdi.de/mathmoddb#BooleanRing> <http://purl.org/dc/terms/description> "In mathematics, a ring that consists of only idempotent elements"@en .
 <https://mardi4nfdi.de/mathmoddb#BooleanRing> <http://www.w3.org/2000/01/rdf-schema#label> "Boolean Ring"@en .
 <https://mardi4nfdi.de/mathmoddb#BooleanRing> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q2634401> .
 # 
@@ -3519,7 +3530,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ChangeInLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ChangeInLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ChangeInLength> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Length> .
-<https://mardi4nfdi.de/mathmoddb#ChangeInLength> <http://purl.org/dc/terms/description> "difference between the current and the original length"@en .
+<https://mardi4nfdi.de/mathmoddb#ChangeInLength> <http://purl.org/dc/terms/description> "difference between the current and the original (equilibrium) length"@en .
 <https://mardi4nfdi.de/mathmoddb#ChangeInLength> <http://www.w3.org/2000/01/rdf-schema#label> "Change In Length"@en .
 <https://mardi4nfdi.de/mathmoddb#ChangeInLength> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q91308394> .
 # 
@@ -3656,7 +3667,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> .
-<https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://purl.org/dc/terms/description> "energy that can be absorbed or released due to a change of the particle number of the given species"@en .
+<https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://purl.org/dc/terms/description> "energy that can be absorbed or released due to a change of the particle number of a given species"@en .
 <https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://www.w3.org/2000/01/rdf-schema#comment> "e.g. in a chemical reaction or phase transition."@en .
 <https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Chemical Potential"@en .
 <https://mardi4nfdi.de/mathmoddb#ChemicalPotential> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Chemical_potential> .
@@ -3684,7 +3695,10 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Acceleration> .
+<https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <http://purl.org/dc/terms/description> "rate at which the magnitude and/or direction of velocity changes with time"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Acceleration"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Acceleration> .
+<https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q11376> .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClassicalApproximation
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3813,6 +3827,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalForce> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Force> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalForce> <http://purl.org/dc/terms/description> "vector quantity that describes the ability of an action to modify the movement and shape of an object"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalForce> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Force"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalForce> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Force> .
+<https://mardi4nfdi.de/mathmoddb#ClassicalForce> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q11402> .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations
 <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3864,8 +3880,10 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Energy> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <http://purl.org/dc/terms/description> "rate of change in time of the condition of a dynamic physical system"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <http://purl.org/dc/terms/description> "function of generalized positions and momenta in Hamiltonian mechanics, specifying the total energy of a system"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Hamilton Function"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hamiltonian_mechanics#Mathematical_formalism> .
+<https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonFunction> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q360356> .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClassicalLangevinEquation
 <https://mardi4nfdi.de/mathmoddb#ClassicalLangevinEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -3949,7 +3967,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Momentum> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <http://purl.org/dc/terms/description> "momentum(a) of point particle(s) in classical mechanics"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <http://purl.org/dc/terms/description> "momentum of a point particle in classical mechanics"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Momentum"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Momentum> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q41273> .
@@ -4021,7 +4039,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalPosition> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalPosition> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalPosition> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Length> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalPosition> <http://purl.org/dc/terms/description> "position(s) of point particle(s) in classical mechanics"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalPosition> <http://purl.org/dc/terms/description> "position of a point particle in classical mechanics"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalPosition> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Position"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClassicalTimeEvolution
@@ -4051,7 +4069,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalVelocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalVelocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalVelocity> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Velocity> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalVelocity> <http://purl.org/dc/terms/description> "velocities of point particle(s) in classical mechanics"@en .
+<https://mardi4nfdi.de/mathmoddb#ClassicalVelocity> <http://purl.org/dc/terms/description> "velocity of a point particle in classical mechanics"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalVelocity> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Velocity"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation
@@ -5090,7 +5108,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#FiniteVolumeMethod> .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#ControlVolumeDefinition> .
-<https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://purl.org/dc/terms/description> "used within  finite volume discretizations"@en .
+<https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://purl.org/dc/terms/description> "mathematical abstraction employed in mathematical models of continuum mechanics and thermodynamics used within finite volume discretizations"@en .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "used for example in  the Scharfetter-Gummel discretization of the van-Roosbroeck system"@en .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Control Volume"@en .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Control_volume> .
@@ -5112,7 +5130,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant
 <https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <http://purl.org/dc/terms/description> "describe the interaction between rotational and vibrational motions in molecules"@en .
+<https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <http://purl.org/dc/terms/description> "description of the interaction between rotational and vibrational motions, e.g., in molecules"@en .
 <https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Coriolis Coupling Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rotational%E2%80%93vibrational_coupling> .
 <https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1103/PhysRev.56.680> .
@@ -5189,7 +5207,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://purl.org/dc/terms/description> "for use in semiconductor physics"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://purl.org/dc/terms/description> "density of current of the electrons, e.g., in a semiconductor device"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Electrons"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
 # 
@@ -5220,7 +5238,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#similarToQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://purl.org/dc/terms/description> "for use in semiconductor physics"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://purl.org/dc/terms/description> "density of current of the holes, e.g., in a semiconductor device"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Holes"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
 # 
@@ -5359,7 +5377,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#DecisionVariable> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> .
 <https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://purl.org/dc/terms/description> "variable deciding if an object is chosen or not"@en .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable deciding if an object is chosen or not. In case of line pool generation, it decides if a line is included or not"@en .
+<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "In case of line pool generation, it decides if a line is included or not"@en .
 <https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Decision Variable"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition
@@ -5403,7 +5421,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient
 <https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient> <http://purl.org/dc/terms/description> "coeffieicnts used in the definition of the density fractions"@en .
+<https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient> <http://purl.org/dc/terms/description> "coefficients used in the definition of the density fractions"@en .
 <https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient> <http://www.w3.org/2000/01/rdf-schema#comment> "Coeffieicnts used in the definition of the density fractions in the SEIR Model"@en .
 <https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient> <http://www.w3.org/2000/01/rdf-schema#label> "Density Fraction Coefficient"@en .
 # 
@@ -5411,7 +5429,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DensityOfAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DensityOfAir> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#DensityOfAir> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Density> .
-<https://mardi4nfdi.de/mathmoddb#DensityOfAir> <http://purl.org/dc/terms/description> "mass per unit volume of earths atmosphere"@en .
+<https://mardi4nfdi.de/mathmoddb#DensityOfAir> <http://purl.org/dc/terms/description> "mass per unit volume of the atmosphere of the planet Earth"@en .
 <https://mardi4nfdi.de/mathmoddb#DensityOfAir> <http://www.w3.org/2000/01/rdf-schema#label> "Density Of Air"@en .
 <https://mardi4nfdi.de/mathmoddb#DensityOfAir> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Density_of_air> .
 <https://mardi4nfdi.de/mathmoddb#DensityOfAir> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q1511415> .
@@ -5430,7 +5448,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ParticleNumberDensity> .
-<https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <http://purl.org/dc/terms/description> "number of holes per surface"@en .
+<https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <http://purl.org/dc/terms/description> "probability density of holes being somewhere"@en .
 <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics"@en .
 <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Density Of Holes"@en .
 # 
@@ -5507,7 +5525,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution> <http://purl.org/dc/terms/description> "generalized function on the real numbers"@en .
-<https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Generalized function on the real numbers, whose value is zero everywhere except at zero, and whose integral over the entire real line is equal to one."@en .
+<https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution> <http://www.w3.org/2000/01/rdf-schema#comment> "Value is zero everywhere except at zero, and whose integral over the entire real line is equal to one."@en .
 <https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Dirac Delta Distribution"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#DirichletBoundaryCondition
@@ -5608,7 +5626,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Displacement> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Length> .
 <https://mardi4nfdi.de/mathmoddb#Displacement> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> .
 <https://mardi4nfdi.de/mathmoddb#Displacement> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#DisplacementOfAtoms> .
-<https://mardi4nfdi.de/mathmoddb#Displacement> <http://purl.org/dc/terms/description> "vector that is the shortest distance from the initial to the final position of a point"@en .
+<https://mardi4nfdi.de/mathmoddb#Displacement> <http://purl.org/dc/terms/description> "vector that is the shortest distance from the initial (equilibrium) to the final (current) position of a point"@en .
 <https://mardi4nfdi.de/mathmoddb#Displacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector that is the shortest distance from the initial to the final position of a point. In elasticity, displacements typically denote the motion of particles/matter from their equilibrium geometry"@en .
 <https://mardi4nfdi.de/mathmoddb#Displacement> <http://www.w3.org/2000/01/rdf-schema#label> "Displacement"@en .
 <https://mardi4nfdi.de/mathmoddb#Displacement> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Displacement_(geometry)> .
@@ -5620,7 +5638,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ChangeInLength> .
 <https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Displacement> .
-<https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <http://purl.org/dc/terms/description> "displacements at the muscle-tendon connection compared to the stress-free position"@en .
+<https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <http://purl.org/dc/terms/description> "displacements of  the muscle-tendon connection compared to the stress-free position"@en .
 <https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <http://www.w3.org/2000/01/rdf-schema#label> "Displacement Muscle Tendon"@en .
 <https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q190291> .
 # 
@@ -5635,7 +5653,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#DissociationConstant
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://purl.org/dc/terms/description> "chemical property"@en .
+<https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://purl.org/dc/terms/description> "measures the propensity of a larger object to separate (dissociate) reversibly into smaller components"@en .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Dissociation Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q898254> .
 # 
@@ -5744,8 +5762,9 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DopingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DopingProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#DopingProfile> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential> .
-<https://mardi4nfdi.de/mathmoddb#DopingProfile> <http://purl.org/dc/terms/description> "For use in semiconductor physics"@en .
+<https://mardi4nfdi.de/mathmoddb#DopingProfile> <http://purl.org/dc/terms/description> "intentional introduction of impurities into an intrinsic (undoped) semiconductor for the purpose of modulating its electrical, optical and structural properties"@en .
 <https://mardi4nfdi.de/mathmoddb#DopingProfile> <http://www.w3.org/2000/01/rdf-schema#label> "Doping Profile"@en .
+<https://mardi4nfdi.de/mathmoddb#DopingProfile> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Doping_(semiconductor)> .
 # 
 # https://mardi4nfdi.de/mathmoddb#DragCoefficient
 <https://mardi4nfdi.de/mathmoddb#DragCoefficient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -6034,7 +6053,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#EffectiveMass> .
-<https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <http://purl.org/dc/terms/description> "mass that needs to be added to a particle mass  to correctly predict the behavior of the system."@en .
+<https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <http://purl.org/dc/terms/description> "mass that needs to be added to a particle mass  to correctly predict the behavior of the system"@en .
 <https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Effective Mass (Spring-Mass System)"@en .
 <https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Effective_mass_(spring%E2%80%93mass_system)> .
 <https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3509437> .
@@ -6178,6 +6197,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectricPotentialFourierCoefficients> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain> .
 <https://mardi4nfdi.de/mathmoddb#ElectricPotentialFourierCoefficients> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> .
 <https://mardi4nfdi.de/mathmoddb#ElectricPotentialFourierCoefficients> <https://mardi4nfdi.de/mathmoddb#similarToQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
+<https://mardi4nfdi.de/mathmoddb#ElectricPotentialFourierCoefficients> <http://purl.org/dc/terms/description> "coefficients in a Fourier expansion of the electric potential" .
 <https://mardi4nfdi.de/mathmoddb#ElectricPotentialFourierCoefficients> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Potential Fourier Coefficients"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ElectricVoltage
@@ -6764,7 +6784,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#EquilibriumConstant
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://purl.org/dc/terms/description> "chemical property"@en .
+<https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://purl.org/dc/terms/description> "equilibrium constant of a chemical reaction is the value of its reaction quotient at chemical equilibrium, a state approached after sufficient time"@en .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Equilibrium Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q857809> .
 # 
@@ -6934,7 +6954,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ExcitationError> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ExcitationError> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain> .
 <https://mardi4nfdi.de/mathmoddb#ExcitationError> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> .
-<https://mardi4nfdi.de/mathmoddb#ExcitationError> <http://www.w3.org/2000/01/rdf-schema#comment> "In dynamical electron scattering, the excitation error shows how well the Laue condition is satisfied."@en .
+<https://mardi4nfdi.de/mathmoddb#ExcitationError> <http://purl.org/dc/terms/description> "in dynamical electron scattering, the excitation error shows how well the Laue condition is satisfied"@en .
 <https://mardi4nfdi.de/mathmoddb#ExcitationError> <http://www.w3.org/2000/01/rdf-schema#label> "Excitation Error"@en .
 <https://mardi4nfdi.de/mathmoddb#ExcitationError> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1007/s11082-020-02356-y> .
 # 
@@ -6999,20 +7019,18 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ExposureOfAnIndividual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ExposureOfAnIndividual> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#ExposureOfAnIndividual> <http://purl.org/dc/terms/description> "exposure (time) of an individual at a certain age"@en .
-<https://mardi4nfdi.de/mathmoddb#ExposureOfAnIndividual> <http://www.w3.org/2000/01/rdf-schema#comment> "Exposure (time) Of An Individual (e.g. Person or Animal), at a certain age"@en .
 <https://mardi4nfdi.de/mathmoddb#ExposureOfAnIndividual> <http://www.w3.org/2000/01/rdf-schema#label> "Exposure Of An Individual"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential
 <https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> <http://purl.org/dc/terms/description> "chemical potential on the boundary of a domain"@en .
-<https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical potential on the boundary of a domain, i.e. an interface."@en .
+<https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> <http://purl.org/dc/terms/description> "chemical potential on the boundary of a domain, i.e., an interface"@en .
 <https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential> <http://www.w3.org/2000/01/rdf-schema#label> "External Chemical Potential"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ExternalForceDensity
 <https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://purl.org/dc/terms/description> "vector field representing the flux density of the hydrostatic force within the bulk of a fluid."@en .
+<https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://purl.org/dc/terms/description> "vector field representing the flux density of the hydrostatic force within the bulk of a fluid"@en .
 <https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://www.w3.org/2000/01/rdf-schema#comment> "In fluid mechanics, the force density is the negative gradient of pressure. It has the physical dimensions of force per unit volume. Force density is a vector field representing the flux density of the hydrostatic force within the bulk of a fluid."@en .
 <https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://www.w3.org/2000/01/rdf-schema#label> "External Force Density"@en .
 <https://mardi4nfdi.de/mathmoddb#ExternalForceDensity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Force_density> .
@@ -7075,7 +7093,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Energy> .
-<https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics; strictly speaking, a quasi Fermi potential"@en .
+<https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <http://purl.org/dc/terms/description> "For use in semiconductor physics; strictly speaking, a quasi Fermi potential"@en .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <http://www.w3.org/2000/01/rdf-schema#label> "Fermi Potential For Electrons"@en .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q13633683> .
 # 
@@ -7084,7 +7102,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Energy> .
-<https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics; strictly speaking, a quasi Fermi potential"@en .
+<https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> <http://purl.org/dc/terms/description> "For use in semiconductor physics; strictly speaking, a quasi Fermi potential"@en .
 <https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Fermi Potential For Holes"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#FibreContractionVelocity
@@ -7098,8 +7116,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FibreStretch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#FibreStretch> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FibreStretch> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#LinearStrain> .
-<https://mardi4nfdi.de/mathmoddb#FibreStretch> <http://purl.org/dc/terms/description> "fibre stretch"@en .
-<https://mardi4nfdi.de/mathmoddb#FibreStretch> <http://www.w3.org/2000/01/rdf-schema#label> "Fiber  Stretch"@en .
+<https://mardi4nfdi.de/mathmoddb#FibreStretch> <http://purl.org/dc/terms/description> "stretch of a fibre, e.g. in a muscle"@en .
+<https://mardi4nfdi.de/mathmoddb#FibreStretch> <http://www.w3.org/2000/01/rdf-schema#label> "Fiber Stretch"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#FickEquation
 <https://mardi4nfdi.de/mathmoddb#FickEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -7136,7 +7154,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FixedCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#FixedCosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FixedCosts> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Costs> .
-<https://mardi4nfdi.de/mathmoddb#FixedCosts> <http://purl.org/dc/terms/description> "Fixed costs for something, independend of e.g. time, length,..."@en .
+<https://mardi4nfdi.de/mathmoddb#FixedCosts> <http://purl.org/dc/terms/description> "fixed costs for something, independend of e.g. time, length,..."@en .
 <https://mardi4nfdi.de/mathmoddb#FixedCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed Costs"@en .
 <https://mardi4nfdi.de/mathmoddb#FixedCosts> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q16897780> .
 # 
@@ -7170,7 +7188,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FluidDynamicViscosityPorousMedium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FluidDynamicViscosityPorousMedium> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Viscosity> .
 <https://mardi4nfdi.de/mathmoddb#FluidDynamicViscosityPorousMedium> <http://purl.org/dc/terms/description> "physical property of a moving fluid in a porous medium"@en .
-<https://mardi4nfdi.de/mathmoddb#FluidDynamicViscosityPorousMedium> <http://www.w3.org/2000/01/rdf-schema#comment> "Die dynamische Viskosität η \\eta und die kinematische Viskosität ν \\nu stehen über die Dichte ρ \\rho in direktem Zusammenhang,  η = ν ⋅ ρ {\\displaystyle \\eta =\\nu \\cdot \\rho }."@de .
 <https://mardi4nfdi.de/mathmoddb#FluidDynamicViscosityPorousMedium> <http://www.w3.org/2000/01/rdf-schema#label> "Fluid Dynamic Viscosity (Porous Medium)"@en .
 <https://mardi4nfdi.de/mathmoddb#FluidDynamicViscosityPorousMedium> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q15152757> .
 # 
@@ -7234,7 +7251,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity> .
-<https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://purl.org/dc/terms/description> "flow of electrons"@en .
+<https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://purl.org/dc/terms/description> "flow of electrons, e.g., in an electric device"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://www.w3.org/2000/01/rdf-schema#label> "Flux Of Electrons"@en .
 # 
@@ -7245,6 +7262,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics"@en .
+<https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "flow of holes, e.g., in an electric device"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Flux Of Holes"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Force
@@ -7271,7 +7289,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#SpringConstant> .
-<https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://purl.org/dc/terms/description> "coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration."@en .
+<https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://purl.org/dc/terms/description> "coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration"@en .
 <https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://www.w3.org/2000/01/rdf-schema#label> "Force Constant (Harmonic)"@en .
 <https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Hooke%27s_law> .
 <https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q170282> .
@@ -7829,7 +7847,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier
 <https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://purl.org/dc/terms/description> "14-character hierarchical classification system"@en .
+<https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://purl.org/dc/terms/description> "14-character hierarchical classification system to identify drugs"@en .
 <https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "The Generic Product Identifier (GPI) is a 14-character hierarchical classification system developed by Wolters Kluwer’s Medi-Span to identify drugs from their primary therapeutic use down to the unique interchangeable product, regardless of manufacturer or package size."@en .
 <https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://www.w3.org/2000/01/rdf-schema#comment> "mediaction code"@en .
 <https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "Generic Product Identifier"@en .
@@ -7919,7 +7937,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#LyapunovEquationControllability> .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#GramianMatrixControllabilityDefinition> .
-<https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <http://purl.org/dc/terms/description> "matrix used in linear control problems to determine if a system is controllable"@en .
+<https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <http://purl.org/dc/terms/description> "matrix used in linear control problems to determine whether a system is controllable"@en .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <http://www.w3.org/2000/01/rdf-schema#label> "Gramian Matrix Controllability"@en .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixControllability> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Controllability_Gramian"@en .
 # 
@@ -7942,7 +7960,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#LyapunovEquationObservability> .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#GramianMatrixObservabilityDefinition> .
-<https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <http://purl.org/dc/terms/description> "matrix used in linear control problems to determine if a system is observable"@en .
+<https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <http://purl.org/dc/terms/description> "matrix used in linear control problems to determine whether a system is observable"@en .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <http://www.w3.org/2000/01/rdf-schema#label> "Gramian Matrix Observability"@en .
 <https://mardi4nfdi.de/mathmoddb#GramianMatrixObservability> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Observability_Gramian> .
 # 
@@ -7964,7 +7982,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#LineCostsComputation> .
-<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://purl.org/dc/terms/description> "variable identifying a graph as directed (value=1) or undirected (value=2)."@en .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://purl.org/dc/terms/description> "variable identifying a graph as directed (value=1) or undirected (value=2)"@en .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "Graph Type Identifier"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationDefinition
@@ -8287,7 +8305,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate
 <https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate> <http://purl.org/dc/terms/description> "shows the different level of susceptibility of dying"@en .
+<https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate> <http://purl.org/dc/terms/description> "shows the different level of susceptibility to dying"@en .
 <https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate> <http://www.w3.org/2000/01/rdf-schema#label> "Heterogeneity of Death Rate"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_Model
@@ -8400,6 +8418,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#HyperstressPotential
 <https://mardi4nfdi.de/mathmoddb#HyperstressPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#HyperstressPotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#HyperstressPotential> <http://purl.org/dc/terms/description> "Hyperstress potential in calculations of elasticity"@en .
 <https://mardi4nfdi.de/mathmoddb#HyperstressPotential> <http://www.w3.org/2000/01/rdf-schema#label> "Hyperstress Potential"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Ideal
@@ -8636,7 +8655,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#DissociationConstant> .
-<https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://purl.org/dc/terms/description> "chemical constant"@en .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Inhibition Constant"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSingleCCSS
@@ -10011,7 +10029,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InteractionForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#InteractionForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InteractionForce> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#InteractionForce> <http://purl.org/dc/terms/description> "interaction force on individual i by media and influencers"@en .
+<https://mardi4nfdi.de/mathmoddb#InteractionForce> <http://purl.org/dc/terms/description> "interaction force on individual by media and influencers"@en .
 <https://mardi4nfdi.de/mathmoddb#InteractionForce> <http://www.w3.org/2000/01/rdf-schema#label> "Interaction Force"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#InteractionForceOnAnIndividual
@@ -10134,7 +10152,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9
 <https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9> <http://purl.org/dc/terms/description> "identifier in the ICD catalogue"@en .
+<https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9> <http://purl.org/dc/terms/description> "identifier of drugs in the ICD catalogue"@en .
 <https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9> <http://www.w3.org/2000/01/rdf-schema#label> "International Classification of Diseases - 9"@en .
 <https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q14067712> .
 # 
@@ -10161,7 +10179,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction
 <https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction> <http://purl.org/dc/terms/description> "gaussian function representing density and density fractions of provinces"@en .
+<https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction> <http://purl.org/dc/terms/description> "Gaussian function representing density and density fractions of provinces"@en .
 <https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Isotropic Gaussian Function located at the center of the respective province used in the PDE SEIR Model for representing density and density fractions"@en .
 <https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction> <http://www.w3.org/2000/01/rdf-schema#label> "Isotropic Gaussian Function"@en .
 # 
@@ -10259,8 +10277,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#LikelihoodValue
 <https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://purl.org/dc/terms/description> "measure used in statistics to quantify how well a given set of model parameters explains observed data"@en .
-<https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The likelihood (function) is the probability density of observed data viewed as a function of the parameters of a statistical model."@en .
+<https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://purl.org/dc/terms/description> "probability density of observed data viewed as a function of the parameters of a statistical model"@en .
+<https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://www.w3.org/2000/01/rdf-schema#comment> "measure used in statistics to quantify how well a given set of model parameters explains observed data"@en .
 <https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://www.w3.org/2000/01/rdf-schema#label> "Likelihood Value"@en .
 <https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Likelihood_function> .
 <https://mardi4nfdi.de/mathmoddb#LikelihoodValue> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q45284> .
@@ -11588,7 +11606,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Displacement> .
 <https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement> <http://purl.org/dc/terms/description> "movement of material points"@en .
-<https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "aterial Point Displacement in the context of the Material Point Method (MPM) refers to the movement of material points, which are used to track physical information like mass and velocity."@en .
+<https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Material Point Displacement in the context of the Material Point Method (MPM) refers to the movement of material points, which are used to track physical information like mass and velocity."@en .
 <https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement> <http://www.w3.org/2000/01/rdf-schema#label> "Material Point Displacement"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MaterialPointVelocity
@@ -11622,13 +11640,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MaximizingPoissonLogLikelihood> <https://mardi4nfdi.de/mathmoddb#generalizedByTask> <https://mardi4nfdi.de/mathmoddb#MaximumLikelihoodEstimation> .
 <https://mardi4nfdi.de/mathmoddb#MaximizingPoissonLogLikelihood> <http://purl.org/dc/terms/description> "maximizing Poisson log-likelihood of mortality models"@en .
 <https://mardi4nfdi.de/mathmoddb#MaximizingPoissonLogLikelihood> <http://www.w3.org/2000/01/rdf-schema#label> "Maximizing Poisson log-Likelihood"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#MaximumFrequency
-<https://mardi4nfdi.de/mathmoddb#MaximumFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#MaximumFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#MaximumFrequency> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Frequency> .
-<https://mardi4nfdi.de/mathmoddb#MaximumFrequency> <http://www.w3.org/2000/01/rdf-schema#label> "Maximum Frequency"@en .
-<https://mardi4nfdi.de/mathmoddb#MaximumFrequency> <https://mardi4nfdi.de/mathmoddb#qudtID> <https://qudt.org/vocab/quantitykind/Frequency> .
 # 
 # https://mardi4nfdi.de/mathmoddb#MaximumIsometricMuscleForce
 <https://mardi4nfdi.de/mathmoddb#MaximumIsometricMuscleForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -11671,6 +11682,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> .
+<https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue> <http://purl.org/dc/terms/description> "mechanical deformation at a domain boundary"@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Deformation (Boundary Value)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MechanicalStrain
@@ -11747,7 +11759,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> .
 <https://mardi4nfdi.de/mathmoddb#MembranePotential> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://purl.org/dc/terms/description> "physical quantity describing the electric potential between the inner and the outer part of a cell"@en .
+<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://purl.org/dc/terms/description> "difference of the electric potential between the inner and the outer part of a biological cell"@en .
 <https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2000/01/rdf-schema#label> "Membrane Potential"@en .
 <https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Membrane_potential> .
 <https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2004/02/skos/core#altLabel> "Membrane Voltage"@en .
@@ -11759,7 +11771,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstant
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://purl.org/dc/terms/description> "chemical constant"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://purl.org/dc/terms/description> "property to characterize the kinetics of Michaelis–Menten reactions"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "Property to characterize the kinetics of Michaelis–Menten reactions"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q61751178> .
@@ -11771,8 +11783,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product 1 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumptionDefinition
@@ -11800,8 +11811,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product 2 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumptionDefinition
@@ -11830,8 +11840,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the product of an Uni Uni Reaction under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the product of an Uni Uni Reaction under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product (Uni Uni Reaction - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumptionDefinition
@@ -11857,8 +11866,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumptionDefinition
@@ -11886,8 +11894,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumptionDefinition
@@ -11913,8 +11920,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate (Uni Uni Reaction - Irreversibility Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumptionDefinition
@@ -11939,8 +11945,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate (Uni Uni Reaction - Rapid Equilibrium Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumptionDefinition
@@ -11965,8 +11970,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate of an Uni Uni Reaction under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <http://purl.org/dc/terms/description> "Michaelis constant for the substrate of an Uni Uni Reaction under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumptionDefinition
@@ -12065,8 +12069,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <http://purl.org/dc/terms/description> "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSSDefinition
@@ -12113,8 +12116,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <http://purl.org/dc/terms/description> "chemical constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption"@en .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <http://purl.org/dc/terms/description> "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition
@@ -12934,13 +12936,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Michaelis_1913_Die_Kinetik_der_Invertinwirkung> <https://mardi4nfdi.de/mathmoddb#invents> <https://mardi4nfdi.de/mathmoddb#UniUniReactionMichaelisMentenModelwithoutProductRapidEquilibriumAssumption> .
 <https://mardi4nfdi.de/mathmoddb#Michaelis_1913_Die_Kinetik_der_Invertinwirkung> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis (1913) Die Kinetik der Invertinwirkung"@en .
 # 
-# https://mardi4nfdi.de/mathmoddb#MinimumFrequency
-<https://mardi4nfdi.de/mathmoddb#MinimumFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#MinimumFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#MinimumFrequency> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Frequency> .
-<https://mardi4nfdi.de/mathmoddb#MinimumFrequency> <http://www.w3.org/2000/01/rdf-schema#label> "Minimum Frequency"@en .
-<https://mardi4nfdi.de/mathmoddb#MinimumFrequency> <https://mardi4nfdi.de/mathmoddb#qudtID> <https://qudt.org/vocab/quantitykind/Frequency> .
-# 
 # https://mardi4nfdi.de/mathmoddb#MixedEnzymeInhibitionCouplingConditionUniUniReaction
 <https://mardi4nfdi.de/mathmoddb#MixedEnzymeInhibitionCouplingConditionUniUniReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MixedEnzymeInhibitionCouplingConditionUniUniReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
@@ -13394,7 +13389,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#NeuralInput> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> .
-<https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://purl.org/dc/terms/description> "neural input"@en .
+<https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://purl.org/dc/terms/description> "neural input in a motor neuron pool model"@en .
 <https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://www.w3.org/2000/01/rdf-schema#label> "Neural Input"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#NoiseStrength
@@ -13402,7 +13397,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#NoiseStrength> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://purl.org/dc/terms/description> "noise modelling unknown external influences"@en .
-<https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://www.w3.org/2000/01/rdf-schema#comment> "noise modelling unknown external influences, uncertainties in the communication between individuals or free will"@en .
+<https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://www.w3.org/2000/01/rdf-schema#comment> "noise caused by influences, uncertainties in the communication between individuals or free will"@en .
 <https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://www.w3.org/2000/01/rdf-schema#label> "Noise Strength"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#NonLocalMeans
@@ -13677,7 +13672,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#NormalModeMomentum
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://purl.org/dc/terms/description> "canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules."@en .
+<https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://purl.org/dc/terms/description> "canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules"@en .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://www.w3.org/2000/01/rdf-schema#label> "Normal Mode Momentum"@en .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Normal_mode> .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Molecular_vibration#Normal_coordinates> .
@@ -13705,7 +13700,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDimensionless> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDefinition> .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDimensionless> <https://mardi4nfdi.de/mathmoddb#nondimensionaliesQuantity> <https://mardi4nfdi.de/mathmoddb#NormalModeMomentum> .
-<https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDimensionless> <http://purl.org/dc/terms/description> "dimensionless canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules."@en .
+<https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDimensionless> <http://purl.org/dc/terms/description> "dimensionless canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules"@en .
 <https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Normal Mode Momentum (Dimensionless)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#NormalModes
@@ -13850,7 +13845,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <http://purl.org/dc/terms/description> "count of how many times a specific event, value, or element appears within a given context or dataset."@en .
+<https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <http://purl.org/dc/terms/description> "count of how many times a specific event, value, or element appears within a given context or dataset"@en .
 <https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <http://www.w3.org/2000/01/rdf-schema#comment> "e.g., number of events occurring in a fixed interval of time"@en .
 <https://mardi4nfdi.de/mathmoddb#NumberOfOccurrences> <http://www.w3.org/2000/01/rdf-schema#label> "Number Of Occurrences"@en .
 # 
@@ -14335,7 +14330,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#OriginDestinationData
 <https://mardi4nfdi.de/mathmoddb#OriginDestinationData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#OriginDestinationData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#OriginDestinationData> <http://purl.org/dc/terms/description> "Data including, amongst others, information from which origin to which destination passengers travel and which mode of transport they use."@en .
+<https://mardi4nfdi.de/mathmoddb#OriginDestinationData> <http://purl.org/dc/terms/description> "data including, amongst others, information from which origin to which destination passengers travel and which mode of transport they use"@en .
 <https://mardi4nfdi.de/mathmoddb#OriginDestinationData> <http://www.w3.org/2000/01/rdf-schema#label> "Origin Destination Data"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#OrthogonalMatrix
@@ -14417,18 +14412,21 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers> <http://purl.org/dc/terms/description> "parameter to scale attractive force from influencers"@en .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter To Scale Attractive Force From Influencers"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia> <http://purl.org/dc/terms/description> "parameter to scale attractive force from media"@en .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter To Scale Attractive Force From Media"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals> <http://purl.org/dc/terms/description> "parameter to scale attractive force from other individuals"@en .
 <https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals> <http://www.w3.org/2000/01/rdf-schema#label> "Parameter To Scale Attractive Force From Other Individuals"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#PartialMeanFieldOpinionModel
@@ -14476,8 +14474,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> .
-<https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <http://purl.org/dc/terms/description> "injury that occurs when muscle fibers cannot cope with the demands placed on them"@en .
-<https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <http://www.w3.org/2000/01/rdf-schema#comment> "Passive muscle strain refers to an injury that occurs when muscle fibers cannot cope with the demands placed on them by exercise overload, leading to tearing of the fibers. This mostly happens due to a powerful eccentric contraction or overstretching of the muscle."@en .
+<https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <http://purl.org/dc/terms/description> "passive muscle strain"@en .
 <https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain> <http://www.w3.org/2000/01/rdf-schema#label> "Passive Muscle Strain"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#PassiveTendonForce
@@ -15106,7 +15103,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ProtonMass> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Mass> .
-<https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://purl.org/dc/terms/description> "fundamental physical constant"@en .
+<https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://purl.org/dc/terms/description> "fundamental physical constant giving the     proton rest mass"@en .
 <https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://www.w3.org/2000/01/rdf-schema#comment> "The mass of a proton is a fundamental physical constant, approximately equal to 1.6726219×10^−27 kilograms"@en .
 <https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://www.w3.org/2000/01/rdf-schema#label> "Proton Mass"@en .
 <https://mardi4nfdi.de/mathmoddb#ProtonMass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Proton> .
@@ -15185,7 +15182,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumStateVector> .
 <https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> <http://purl.org/dc/terms/description> "matrix that describes an ensemble of physical systems as quantum states"@en .
 <https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum Density Operator"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> <http://www.w3.org/2004/02/skos/core#altLabel> "density matrix"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergy
 <https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -15627,14 +15623,16 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumStateVector> .
-<https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract (Dirac) notation as dynamic quantum states $\\psi(t)>$ or wave functions $\\psi(R,t)$ in coordinate representation. Typically obtained as solutions of the time-dependent Schrödinger equation."@en .
+<https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <http://purl.org/dc/terms/description> "solutions of the time-dependent Schrödinger equation, giving the time evolution of a (closed) quantum system"@en .
+<https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract (Dirac) notation as dynamic quantum states $\\psi(t)>$ or wave functions $\\psi(R,t)$ in coordinate representation"@en .
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum State Vector (Dynamic)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumStateVector> .
-<https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract (Dirac) notation as stationary quantum states $\\psi_n>$ or wave functions $\\psi_n(R)$ in coordinate representation. Typically obtained as solutions of the time-independent Schrödinger equation."@en .
+<https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <http://purl.org/dc/terms/description> "solutions of the time-independent Schrödinger equation, giving stationary states of a (closed) quantum system" .
+<https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <http://www.w3.org/2000/01/rdf-schema#comment> "Abstract (Dirac) notation as stationary quantum states $\\psi_n>$ or wave functions $\\psi_n(R)$ in coordinate representation."@en .
 <https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum State Vector (Stationary)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#QuantumStationaryStates
@@ -15724,7 +15722,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Rate> .
-<https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious> <http://purl.org/dc/terms/description> "inverse of Incubation Period"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious> <http://purl.org/dc/terms/description> "inverse of Incubation period"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Becoming Infectious"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE
@@ -15755,7 +15753,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$s$, Fraction Of Population Density Of Susceptibles"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derevitive of Population Density Fraction Of Exposed PDE w.r.t Time"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derivative of Population Density Fraction Of Exposed PDE w.r.t Time"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfExposedPDE> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Change Of Population Density Fraction Of Exposed PDE"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE
@@ -15776,7 +15774,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$i$, Fraction Of Population Density Of Infectious"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derevitive of Population Density Fraction Of Infectious PDE w.r.t Time"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derivative of Population Density Fraction Of Infectious PDE w.r.t Time"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfInfectiousPDE> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Change Of Population Density Fraction Of Infectious PDE"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE
@@ -15799,7 +15797,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$r$, Fraction Of Population Density Of Removed"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derevitive of Population Density Fraction Of Removed PDE w.r.t Time"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derivative of Population Density Fraction Of Removed PDE w.r.t Time"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfRemovedPDE> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Change Of Population Density Fraction Of Removed PDE"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE
@@ -15826,7 +15824,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$s$, Fraction Of Population Density Of Susceptibles"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derevitive of Population Density Fraction Of Susceptibles PDE w.r.t Time"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE> <http://www.w3.org/2000/01/rdf-schema#comment> "Partial derivative of Population Density Fraction Of Susceptibles PDE w.r.t Time"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfPopulationDensityFractionOfSusceptiblesPDE> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Change Of Population Density Fraction Of Susceptibles PDE"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#RateOfChangeOfSusceptibleCities
@@ -15841,7 +15839,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Rate> .
-<https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://purl.org/dc/terms/description> "Rate at which an Individual switches the Influencer they are following at a given time"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://purl.org/dc/terms/description> "Rate at which an individual switches the influencer they are following at a given time"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/2000/01/rdf-schema#comment> "Rate at which an Individual switches the Influencer they are following at a given time. Takes the opinion of the individual and the given time as inputs. Subscript represents the medium followed by the Individual."@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Switching Influencers"@en .
 # 
@@ -16076,7 +16074,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$m$, Mass"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$p$, Relativistic Momemtum"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$v$, Classical Velocity"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "In special relativity, the momentum of a particle is given by this equation"@en .
+<https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <http://purl.org/dc/terms/description> "momentum of a particle in special relativity"@en .
 <https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Relativistic Momentum (Definition)"@en .
 <https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Momentum#Relativistic> .
 # 
@@ -16085,7 +16083,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Removed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#Removed> <https://mardi4nfdi.de/mathmoddb#generalizedBy> <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> .
 <https://mardi4nfdi.de/mathmoddb#Removed> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#Removed> <http://purl.org/dc/terms/description> "general quantity for Removed entities"@en .
+<https://mardi4nfdi.de/mathmoddb#Removed> <http://purl.org/dc/terms/description> "general quantity for removed entities"@en .
 <https://mardi4nfdi.de/mathmoddb#Removed> <http://www.w3.org/2000/01/rdf-schema#label> "Removed"@en .
 <https://mardi4nfdi.de/mathmoddb#Removed> <http://www.w3.org/2004/02/skos/core#altLabel> "Recovered"@en .
 <https://mardi4nfdi.de/mathmoddb#Removed> <http://www.w3.org/2004/02/skos/core#altLabel> "Resistant"@en .
@@ -16149,7 +16147,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <https://mardi4nfdi.de/mathmoddb#generalizedBy> <https://mardi4nfdi.de/mathmoddb#Removed> .
 <https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <http://purl.org/dc/terms/description> "number of removed/recovered Individuals"@en .
+<https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <http://purl.org/dc/terms/description> "number of removed/recovered individuals"@en .
 <https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <http://www.w3.org/2000/01/rdf-schema#comment> "number of Removed/Recovered Individuals\n\nR^i denotes the removed Individuals in the ith subpopulation. if no i is provided, then it is a single-population model."@en .
 <https://mardi4nfdi.de/mathmoddb#RemovedIndividuals> <http://www.w3.org/2000/01/rdf-schema#label> "Number Of Removed Individuals"@en .
 # 
@@ -16213,7 +16211,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#RotationalConstant
 <https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://purl.org/dc/terms/description> "defines the scale of the rotational energies for a diatomic molecule"@en .
+<https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://purl.org/dc/terms/description> "defines the scale of rotational energies in molecular spectroscopy"@en .
 <https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "In rotational spectroscopy, the energy levels of a molecule are often given in terms of its rotational constant"@en .
 <https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Rotational Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#RotationalConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rigid_rotor#Quantum_mechanical_linear_rigid_rotor> .
@@ -16225,7 +16223,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#EulerBackwardMethod> .
 <https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#EulerForwardMethod> .
 <https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{array}{c|cccc} c_1    & a_{11} & a_{12}& \\dots & a_{1s}\\\\c_2    & a_{21} & a_{22}& \\dots & a_{2s}\\\\ \\vdots & \\vdots & \\vdots& \\ddots& \\vdots\\\\c_s    & a_{s1} & a_{s2}& \\dots & a_{ss} \\\\\\hline       & b_1    & b_2   & \\dots & b_s\\\\ \\end{array}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "In numerical analysis, the Runge–Kutta methods are a family of implicit and explicit iterative methods, which include the Euler method, used in temporal discretization for the approximate solutions of differential equations. These methods were developed around 1900 by the German mathematicians Carl Runge and Wilhelm Kutta."@en .
+<https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <http://purl.org/dc/terms/description> "family of implicit and explicit methods used in temporal discretization for the approximate solutions of differential equations"@en .
+<https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "These methods, which include the Euler method,  were developed around 1900 by the German mathematicians Carl Runge and Wilhelm Kutta."@en .
 <https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Runge–Kutta Method"@en .
 <https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q725944> .
@@ -16251,7 +16250,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <http://purl.org/dc/terms/description> "scaling parameter used in the Rate of Switching Influcners"@en .
+<https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <http://purl.org/dc/terms/description> "scaling parameter used in the rate of switching influcners"@en .
 <https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <http://www.w3.org/2000/01/rdf-schema#comment> "scaling parameter used in the Rate of Switching Influcners. Real number greater than 0."@en .
 <https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers> <http://www.w3.org/2000/01/rdf-schema#label> "Scaling Parameter For Switching Influencers"@en .
 # 
@@ -16284,7 +16283,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the fundamental postulates of Quantum Mechanics on the time evolution of quantum states. More specificially, the (time-dependent!) Schrödinger equation is a partial differential equation describing how the quantum state of a non-relativistic physical system changes with time"@en .
+<https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <http://purl.org/dc/terms/description> "partial differential equation describing how the quantum state of a non-relativistic physical system changes with time"@en .
+<https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the fundamental postulates of Quantum Mechanics on the time evolution of quantum states."@en .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Time Dependent)"@en .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q165498> .
 # 
@@ -16296,6 +16296,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchroedingerNewtonEquation> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerNewtonEquation> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerNewtonEquation> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#SchroedingerNewtonEquation> <http://purl.org/dc/terms/description> "Coupled equations describing the time evolution in (hybrid) quantum-classical dynamics"@en .
 <https://mardi4nfdi.de/mathmoddb#SchroedingerNewtonEquation> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger-Newton Equation"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial
@@ -16303,7 +16304,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <https://mardi4nfdi.de/mathmoddb#discretizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <http://www.w3.org/2000/01/rdf-schema#comment> "Chebchev polynomial scheme for numerical integration of the time-dependent Schrödinger equation"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <http://purl.org/dc/terms/description> "Chebchev polynomial scheme for numerical integration of the time-dependent Schrödinger equation"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Chebychev Polynomial)"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1016/0021-9991(91)90137-A> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1063/1.448136> .
@@ -16316,7 +16317,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme> <https://mardi4nfdi.de/mathmoddb#discretizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "Differencing scheme (symmetric combination of Euler forward and backward in time) for numerical integration of the time-dependent Schrödinger equation"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme> <http://purl.org/dc/terms/description> "Differencing scheme (symmetric combination of Euler forward and backward in time) for numerical integration of the time-dependent Schrödinger equation"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Differencing Scheme)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#SchrödingerEquationLieTrotter
@@ -16358,7 +16359,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hbar$, Planck constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi$, Quantum State Vector (Dynamic)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <http://www.w3.org/2000/01/rdf-schema#comment> "Second order differencing scheme for numerical integration of the time-dependent Schrödinger equation: Essentially a symmetric (and symplectic!) combination of Euler forward and backward methods"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <http://purl.org/dc/terms/description> "Second order differencing scheme for numerical integration of the time-dependent Schrödinger equation"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <http://www.w3.org/2000/01/rdf-schema#comment> "Essentially a symmetric (and symplectic!) combination of Euler forward and backward methods"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Second Order Differencing)"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1016/0021-9991(91)90137-A> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1063/1.436072> .
@@ -16368,7 +16370,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator> <https://mardi4nfdi.de/mathmoddb#discretizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator> <http://www.w3.org/2000/01/rdf-schema#comment> "Split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator> <http://purl.org/dc/terms/description> "Split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Split Operator)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk
@@ -16388,7 +16390,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hbar$, Planck constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi(t)$, Quantum State Vector (Dynamic)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <http://www.w3.org/2000/01/rdf-schema#comment> "Second order (Strang-Marchuk) split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <http://purl.org/dc/terms/description> "Second order (Strang-Marchuk) split operator scheme for numerical integration of the time-dependent Schrödinger equation"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Strang-Marchuk)"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1016/0021-9991(82)90091-2> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.1016/0021-9991(91)90137-A> .
@@ -16409,7 +16411,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$H$, Quantum Hamiltonian Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi_n$, Quantum State Vector (Stationary)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$n$, Quantum Number"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <http://www.w3.org/2000/01/rdf-schema#comment> "eigenvalue equation for the quantum-mechanical Hamiltonian operator, yielding stationary states (wave functions), along with their corresponding energies"@en .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <http://purl.org/dc/terms/description> "eigenvalue equation for the quantum-mechanical Hamiltonian operator, yielding stationary states (wave functions), along with their corresponding energies"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <http://www.w3.org/2000/01/rdf-schema#label> "Schrödinger Equation (Time Independent)"@en .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q25829357> .
 # 
@@ -16479,7 +16481,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix
 <https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix> <http://purl.org/dc/terms/description> "second Eigenvalue of Orthogonal Matrix"@en .
+<https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix> <http://purl.org/dc/terms/description> "second eigenvalue of an orthogonal matrix"@en .
 <https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix> <http://www.w3.org/2000/01/rdf-schema#label> "Second Eigenvalue of Orthogonal Matrix"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#SemiconductorChargeNeutrality
@@ -16603,6 +16605,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$a$, Classical Acceleration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$m$, Mass"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$r$, Classical Position"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <http://purl.org/dc/terms/description> "mathematical formulation describing the motion of the planets around the sun"@en .
 <https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <http://www.w3.org/2000/01/rdf-schema#comment> "The acceleration of a celestial body can be calculated from Newton's Law of Gravitation. Each body attracts each other body, the total acceleration being the sum of all these attractions."@en .
 <https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <http://www.w3.org/2000/01/rdf-schema#label> "Solar System Equations Of Motion"@en .
 <https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Numerical_model_of_the_Solar_System> .
@@ -16691,6 +16694,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\epsilon_0$, Permittivity (Vacuum)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mu_0$, Permeability (Vacuum)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c$, Speed Of Light"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition> <http://purl.org/dc/terms/description> "speed of electromagnetic waves in vacuum"@en .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Speed Of Light (Definition)"@en .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Speed_of_light> .
 # 
@@ -16704,7 +16708,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\theta$, Azimuthal Angle"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\theta$, Polar Angle"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$r$, Radius"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D> <http://www.w3.org/2000/01/rdf-schema#comment> "Representing a function in 3D in terms of spherical harmonics with distance(radius)-dependent coefficients."@en .
+<https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D> <http://purl.org/dc/terms/description> "Representing a function in 3D in terms of spherical harmonics with distance(radius)-dependent coefficients"@en .
 <https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D> <http://www.w3.org/2000/01/rdf-schema#label> "Spherical Harmonics Expansion (3D)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#SpinQbitShuttling
@@ -16760,6 +16764,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixA> .
 <https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\Re(eig(A))$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <http://purl.org/dc/terms/description> "asymptotic stability of fixed points of a system of constant coefficient linear differential equations of first order"@en .
 <https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "The asymptotic stability of fixed points of a system of constant coefficient linear differential equations of first order (aka linear autonomious system, time-invariant system, $\\dot{x}=Ax$) can be analyzed using the eigenvalues of the corresponding matrix."@en .
 <https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Stability Autonomous System"@en .
 <https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Stability_theory> .
@@ -16782,7 +16787,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{dc_{EX}}{dt} = 0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{EX}$, Complexed Enzyme Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Rate of bound enzyme formation and breakdown is equal."@en .
+<https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption> <http://purl.org/dc/terms/description> "rate of bound enzyme formation and breakdown is equal"@en .
 <https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Steady State Assumption"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions
@@ -16791,7 +16796,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#BeaversJosephSaffmanCondition> .
 <https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityOfTheNormalMassFlux> .
 <https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityOfTheNormalStresses> .
-<https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions> <http://purl.org/dc/terms/description> "Stokes Darcy Coupling Conditions"@en .
+<https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions> <http://purl.org/dc/terms/description> "Coupling free flow of an incompressible fluid (Stokes) to a flow in/through a permeable media (Darcy)"@en .
 <https://mardi4nfdi.de/mathmoddb#StokesDarcyCouplingConditions> <http://www.w3.org/2000/01/rdf-schema#label> "Stokes Darcy Coupling Conditions"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#StokesDarcyEquationDiscretizedPV
@@ -17440,7 +17445,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$AX+XB=C$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A,B,C$ given matrices"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$X$, Unknown Matrix"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "A matrix equation, typically used in the field of control theory"@en .
+<https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <http://purl.org/dc/terms/description> "matrix equation, typically used in the field of control theory"@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Due to the different sizes of A, B, C, the matrix X will be rectangular in general"@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvester Equation"@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Sylvester_equation> .
@@ -17461,6 +17466,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$X$, Unknown Matrix"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\tilde{A}$, Control System Matrix A (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\tilde{B}$, Control System Matrix B (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability> <http://purl.org/dc/terms/description> "Sylvester equation for the controllability of a linear control system"@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability> <http://www.w3.org/2000/01/rdf-schema#comment> "Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the Lyapunov equations for the calculations of Gramians."@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvester Equation Controllability"@en .
 # 
@@ -17479,6 +17485,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\tilde{A}$, Control System Matrix A (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\tilde{C}$, Control System Matrix C (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$Υ$, Unknown Matrix"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability> <http://purl.org/dc/terms/description> "Sylvester equation for the observability of a linear control system"@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability> <http://www.w3.org/2000/01/rdf-schema#comment> "Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the Lyapunov equations for the calculations of Gramians. However, note the sign change in the CC term."@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvester Equation Observability"@en .
 # 
@@ -17494,6 +17501,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$B$, Control System Matrix B (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N$, Control System Matrix N (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability> <http://purl.org/dc/terms/description> "generalized Sylvester equation for the controllability of a bi-linear control system"@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability> <http://www.w3.org/2000/01/rdf-schema#comment> "Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the generalized Lyapunov equations for the calculations of generalized Gramians."@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvester Generalized Controllability"@en .
 # 
@@ -17508,6 +17516,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$C$, Control System Matrix C (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N$, Control System Matrix N (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability> <http://purl.org/dc/terms/description> "generalized Sylvester equation for the observability of a bi-linear control system" .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability> <http://www.w3.org/2000/01/rdf-schema#comment> "Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the generalized Lyapunov equations for the calculations of generalized Gramians. However, note the sign change in the CC term."@en .
 <https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability> <http://www.w3.org/2000/01/rdf-schema#label> "Sylvester Generalized Observability"@en .
 # 
@@ -17559,7 +17568,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\bm t = \\bm \\xi_{ij} / \\lVert \\bm \\xi_{ij}\\rVert$, tangential unit vector"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\bm x_{C_{ij}}$, global contact point between particles $i$ and $j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\dot{\\bm \\xi}_{ij}=\\langle \\bm v_i-\\bm v_j, \\bm t\\rangle \\bm t$, tangential component of relative veloctiy"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <http://www.w3.org/2000/01/rdf-schema#comment> "The total force in tangential direction, i.e. the sum of dissipative and conservative force."@en .
+<https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <http://purl.org/dc/terms/description> "tangential component of the total force, i.e. the sum of dissipative and conservative force"@en .
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <http://www.w3.org/2000/01/rdf-schema#label> "Tangential Interaction Force Of Two Particles"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Temperature
@@ -17583,7 +17592,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TendonStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrain> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> .
-<https://mardi4nfdi.de/mathmoddb#TendonStrain> <http://purl.org/dc/terms/description> "injury that involves stretching or tearing of a tendon"@en .
+<https://mardi4nfdi.de/mathmoddb#TendonStrain> <http://purl.org/dc/terms/description> "stretching or partially tearing a tendon"@en .
+<https://mardi4nfdi.de/mathmoddb#TendonStrain> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of the tendon strain by length of tendon under stress and stress-free length of tendon"@en .
 <https://mardi4nfdi.de/mathmoddb#TendonStrain> <http://www.w3.org/2000/01/rdf-schema#label> "Tendon Strain"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition
@@ -17599,8 +17609,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathcal{l}^{\\text{slack}}_\\text{T}$, Stress Free Tendon Length"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$l_{\\text{T}}$, Tendon Length"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <http://purl.org/dc/terms/description> "injury that involves stretching or tearing of a tendon"@en .
-<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "Definition of the tendon strain by length of tendon under stress and stress-free length of tendon"@en .
+<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <http://purl.org/dc/terms/description> "stretching or partially tearing a tendon"@en .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Tendon Strain (Definition)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Time
@@ -17677,7 +17686,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathbf T_i$, torque acting on particle $i$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathbf x_i$, position of particle $i$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathbf x_{a_{ij}} = \\mathbf x_i + \\frac{r_i}{r_i + r_j}(\\mathbf x_i - \\mathbf x_j)$, actuation point, i.e. mid-point of contact area between particles $i$ and $j$ with radii $r_i$ and $r_j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <http://www.w3.org/2000/01/rdf-schema#comment> "The rotation needs to be taken into account when transforming the contact point between two particles from local to global coordinates."@en .
+<https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <http://www.w3.org/2000/01/rdf-schema#comment> "angular velocity needs to be taken into account when transforming the contact point between two particles from local to global coordinates"@en .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <http://www.w3.org/2000/01/rdf-schema#label> "Torque Of Particle"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#TotalNumberOfIndividuals
@@ -17689,7 +17698,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity> <http://purl.org/dc/terms/description> "number of people living in a given area, typically expressed as the number of people per square kilometer or square mile"@en .
+<https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity> <http://purl.org/dc/terms/description> "number of people living in a given area"@en .
+<https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity> <http://www.w3.org/2000/01/rdf-schema#comment> "typically expressed as the number of people per square kilometer or square mile"@en .
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity> <http://www.w3.org/2000/01/rdf-schema#label> "Total Population Density"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation
@@ -17703,7 +17713,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$G^{(\\tilde{l})}(x)$, Isotropic Gaussian Function"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$n(x)$, Total Population Density"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$w_n^{(\\tilde{l})} $, Density Fraction Coefficient"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation> <http://purl.org/dc/terms/description> "Total Population Density represented as a sum of Isotropic gaussian functions of all provinces"@en .
+<https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation> <http://purl.org/dc/terms/description> "represented as a sum of Isotropic Gaussian functions of all provinces"@en .
 <https://mardi4nfdi.de/mathmoddb#TotalPopulationDensityFormulation> <http://www.w3.org/2000/01/rdf-schema#label> "Total Population Density Formulation"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#TotalPopulationSize
@@ -17719,7 +17729,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TrafficLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#TrafficLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#TrafficLoad> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#TrafficLoad> <http://purl.org/dc/terms/description> "number of passengers traveling along each edge in the public transportation network."@en .
+<https://mardi4nfdi.de/mathmoddb#TrafficLoad> <http://purl.org/dc/terms/description> "number of passengers traveling along each edge in the public transportation network"@en .
 <https://mardi4nfdi.de/mathmoddb#TrafficLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Traffic Load"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#TransmembranePotential
@@ -17748,10 +17758,11 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TransportEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#DarcyEquation> .
 <https://mardi4nfdi.de/mathmoddb#TransportEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> .
 <https://mardi4nfdi.de/mathmoddb#TransportEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#OhmEquation> .
+<https://mardi4nfdi.de/mathmoddb#TransportEquation> <http://purl.org/dc/terms/description> "equation that describes the transport of some (extensive) quantity such as mass, energy|heat, momentum, electric charge"@en .
 <https://mardi4nfdi.de/mathmoddb#TransportEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "There are several (constitutive) equations which describe the transport of matter, or properties of it, in an almost identical way. In every case, in words they read: Flux (density) is proportional to a gradient, where the constant of proportionality is a characteristic of the material. In general, the constant must be replaced by a 2nd rank tensor, to account for directional dependencies of the material."@en .
 <https://mardi4nfdi.de/mathmoddb#TransportEquation> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Equation"@en .
-<https://mardi4nfdi.de/mathmoddb#TransportEquation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Constitutive_equation> .
-<https://mardi4nfdi.de/mathmoddb#TransportEquation> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q1937401> .
+<https://mardi4nfdi.de/mathmoddb#TransportEquation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Continuity_equation> .
+<https://mardi4nfdi.de/mathmoddb#TransportEquation> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q105560509> .
 # 
 # https://mardi4nfdi.de/mathmoddb#TransportModel
 <https://mardi4nfdi.de/mathmoddb#TransportModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -18873,7 +18884,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$h \\approx r$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$h$, Free Fall Height"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$r$, Earth Radius"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <http://www.w3.org/2000/01/rdf-schema#comment> "Assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, i.e. a free fall. This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account."@en .
+<https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <http://purl.org/dc/terms/description> "assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, e.g. a free fall"@en .
+<https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account."@en .
 <https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration> <http://www.w3.org/2000/01/rdf-schema#label> "Uniform Gravitational Acceleration"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#UnitNormalVector
@@ -18888,7 +18900,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#UnitTangentVector
 <https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://purl.org/dc/terms/description> "vector that is tangent to a curve or surface at a given point, with unit length"@en .
+<https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://purl.org/dc/terms/description> "vector that is tangential to a curve or surface at a given point, with unit length"@en .
 <https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://www.w3.org/2000/01/rdf-schema#comment> "A vector that is tangent to a curve or surface at a given point, with unit length"@en .
 <https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://www.w3.org/2000/01/rdf-schema#label> "Unit Tangent Vector"@en .
 <https://mardi4nfdi.de/mathmoddb#UnitTangentVector> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Tangent_vector> .
@@ -18897,14 +18909,14 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#UnknownMatrix
 <https://mardi4nfdi.de/mathmoddb#UnknownMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#UnknownMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#UnknownMatrix> <http://purl.org/dc/terms/description> "unknown matrix"@en .
+<https://mardi4nfdi.de/mathmoddb#UnknownMatrix> <http://purl.org/dc/terms/description> "unknown matrix, to be found"@en .
 <https://mardi4nfdi.de/mathmoddb#UnknownMatrix> <http://www.w3.org/2000/01/rdf-schema#label> "Unknown Matrix"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix
 <https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix> <http://purl.org/dc/terms/description> "matrix with all elements below the main diagonal zero"@en .
+<https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix> <http://purl.org/dc/terms/description> "matrix with all elements below the main diagonal equal to zero"@en .
 <https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix> <http://www.w3.org/2000/01/rdf-schema#label> "Upper-Triangular Matrix"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#VanishingAirDensity
@@ -18913,7 +18925,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#VanishingAirDensity> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DensityOfAir> .
 <https://mardi4nfdi.de/mathmoddb#VanishingAirDensity> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\rho\\rightarrow 0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#VanishingAirDensity> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\rho$, Density of Air"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#VanishingAirDensity> <http://www.w3.org/2000/01/rdf-schema#comment> "In the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models."@en .
+<https://mardi4nfdi.de/mathmoddb#VanishingAirDensity> <http://purl.org/dc/terms/description> "in the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models"@en .
 <https://mardi4nfdi.de/mathmoddb#VanishingAirDensity> <http://www.w3.org/2000/01/rdf-schema#label> "Vanishing Air Density"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient
@@ -18922,7 +18934,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DragCoefficient> .
 <https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$C_D\\rightarrow 0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$C_D$, Drag Coefficient"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient> <http://www.w3.org/2000/01/rdf-schema#comment> "In the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models."@en .
+<https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient> <http://purl.org/dc/terms/description> "in the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models"@en .
 <https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient> <http://www.w3.org/2000/01/rdf-schema#label> "Vanishing Drag Coefficient"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Variance
@@ -18956,7 +18968,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Frequency> .
-<https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <http://purl.org/dc/terms/description> "Harmonic frequency of vibration, e.g. of a molecule"@en .
+<https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <http://purl.org/dc/terms/description> "harmonic frequency of vibration, e.g. of a molecule"@en .
 <https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <http://www.w3.org/2000/01/rdf-schema#label> "Vibration Frequency (Harmonic)"@en .
 <https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator> .
 <https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q677864> .
@@ -18971,7 +18983,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Quantum Eigen Energy"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$U$, Intermolecular Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Normal Mode Coordinate (Dimensionless)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency shift of molecular vibrations caused by interaction with surrounding particles (e.g. solvent effect). Results from 1st order non-degenerate perturbation theory. The interpretation is quite straight-forward: Effectively, the intermolecular potential changes the effective force constant of a vibrational normal mode."@en .
+<https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <http://purl.org/dc/terms/description> "frequency shift of molecular vibrations caused by interaction with surrounding particles  from 1st order non-degenerate perturbation theory"@en .
+<https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The interpretation is quite straight-forward: Effectively, the intermolecular potential changes the effective force constant of a vibrational normal mode."@en .
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Vibrational Frequency Shift (1st Order)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder
@@ -18988,7 +19001,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\omega$, Vibration Frequency Harmonic"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\phi$, Force Constant (Anharmonic)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Normal Mode Coordinate (Dimensionless)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "Frequency shift of molecular vibrations caused by interaction with surrounding particles (e.g. solvent effect). Results from 2nd order non-degenerate perturbation theory.  The interpretation is based on the coupling of different vibrational normal modes, mediated by the cubic anharmonicity of the intramolecular force field."@en .
+<https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <http://purl.org/dc/terms/description> "frequency shift of molecular vibrations caused by interaction with surrounding particles  from 2nd order non-degenerate perturbation theory"@en .
+<https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <http://www.w3.org/2000/01/rdf-schema#comment> "The interpretation is based on the coupling of different vibrational normal modes, mediated by the cubic anharmonicity of the intramolecular force field."@en .
 <https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder> <http://www.w3.org/2000/01/rdf-schema#label> "Vibrational Frequency Shift (2nd Order)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Viscosity
@@ -19011,7 +19025,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain> .
 <https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> .
-<https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <http://purl.org/dc/terms/description> "vector pointing in the direction of a wave and whose magnitude is equal to the wavenumber"@en .
+<https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <http://purl.org/dc/terms/description> "vector pointing in the direction of propagation of a wave and whose magnitude is equal to the wavenumber"@en .
 <https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector pointing in the direction of a wave and whose magnitude is equal to the wavenumber. In quantum mechanics/condensed matter physics, a wave vector is the quotient of the momentum vektor of particles or quasi particles and the reduced Planck constant"@en .
 <https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <http://www.w3.org/2000/01/rdf-schema#label> "Wave Vector of an Electron"@en .
 <https://mardi4nfdi.de/mathmoddb#WaveVectorElectron> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q657009> .
@@ -19050,7 +19064,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#WhiteNoise
 <https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://purl.org/dc/terms/description> "Delta-correlated stationary Gaussian process with zero-mean"@en .
+<https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://purl.org/dc/terms/description> "delta-correlated stationary Gaussian process with zero-mean"@en .
 <https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://www.w3.org/2000/01/rdf-schema#comment> "Delta-correlated stationary Gaussian process with zero-mean, i.e., a random signal with equal intensity at all frequencies, yielding a constant power spectral density."@en .
 <https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://www.w3.org/2000/01/rdf-schema#label> "White Noise"@en .
 <https://mardi4nfdi.de/mathmoddb#WhiteNoise> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/White_noise> .
@@ -19077,6 +19091,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Young Modulus"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\sigma$, Normal Stress"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\varepsilon$, Linear Strain"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <http://purl.org/dc/terms/description> "mechanical property that measures stiffness of a solid material"@en .
 <https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Young Modulus (Definition)"@en .
 <https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Young%27s_modulus> .
 <https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q2091584> .
@@ -19112,8 +19127,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#deBroglieWaveLengthDefinition> .
-<https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://purl.org/dc/terms/creator> <https://en.wikipedia.org/wiki/Louis_de_Broglie> .
-<https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://purl.org/dc/terms/description> "wavelength of matter waves"@en .
+<https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://purl.org/dc/terms/description> "wavelength of matter waves in quantum mechanics"@en .
 <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://www.w3.org/2000/01/rdf-schema#comment> "playing a crucial role for the wave-particle duality in quantum mechanics."@en .
 <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://www.w3.org/2000/01/rdf-schema#label> "de Broglie Wavelength"@en .
 <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Matter_wave#De_Broglie_hypothesis> .

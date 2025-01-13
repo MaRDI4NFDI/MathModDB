@@ -710,6 +710,9 @@
   "@id" : "http://purl.org/dc/terms/abstract",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/contributor",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -723,6 +726,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/isReplacedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/license",
@@ -767,7 +773,10 @@
   "@id" : "https://mardi4nfdi.de/mathmoddb",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/abstract" : [ {
-    "@value" : "MathModDB is the ontology for mathematical models developed by the Mathematical Research Data Initiative (MaRDI). TODO: a bit more text"
+    "@value" : "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph."
+  } ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
@@ -791,15 +800,21 @@
     "@language" : "en",
     "@value" : "Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"
   } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2025-01-20"
+  } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : ""
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
     "@value" : "MaRDI (https://www.mardi4nfdi.de)"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "MathModDB: An ontology for mathematical models"
+    "@value" : "MathModDB: An Ontology for Mathematical Models"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -809,18 +824,18 @@
     "@language" : "en",
     "@value" : "MathModDB Ontology"
   } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb/0.1"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "tbd"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#doiID" : [ {
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://doi.org/10.1007/978-3-031-65990-4_14"
   }, {
     "@id" : "https://doi.org/10.48550/arXiv.2408.10003"
   }, {
     "@id" : "https://doi.org/10.52825/cordi.v1i.255"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "0.8.0"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Acceleration",
@@ -1121,7 +1136,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "wave height"
+    "@value" : "amplitude of the wave function representing an electron"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -1577,7 +1592,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "opinion of the Influencers is drawn towards the average opinion of the followers"
+    "@value" : "opinion of the influencers is drawn towards the average opinion of the followers"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -1756,7 +1771,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "opinion of the Influencers is drawn towards the average opinion of the followers"
+    "@value" : "opinion of the influencers is drawn towards the average opinion of the followers"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -2006,6 +2021,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "energy of the lower edge of the electronic conduction band"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -2019,6 +2038,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "energy of the upper edge of the electronic valence band"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -2034,7 +2057,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Beavers-Joseph Coefficient"
+    "@value" : "coefficient for the coupling of a Stokes model and a Darcy model"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -2108,7 +2131,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "contact rate of one sub-population (represented by subscript i) with all other subpopulations"
+    "@value" : "contact rate of one sub-population with all other sub-populations"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -4560,7 +4583,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "physical constant relating energy at the individual particle level with temperature"
+    "@value" : "physical constant relating the average relative thermal energy with the thermodynamic temperature"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -4583,7 +4606,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "mathematical concept"
+    "@value" : "In mathematics, a ring that consists of only idempotent elements"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -4842,7 +4865,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "difference between the current and the original length"
+    "@value" : "difference between the current and the original (equilibrium) length"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -5217,7 +5240,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "energy that can be absorbed or released due to a change of the particle number of the given species"
+    "@value" : "energy that can be absorbed or released due to a change of the particle number of a given species"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -5288,6 +5311,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "rate at which the magnitude and/or direction of velocity changes with time"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -5295,8 +5322,14 @@
     "@language" : "en",
     "@value" : "Classical Acceleration"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Acceleration"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Acceleration"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q11376"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalApproximation",
@@ -5636,11 +5669,17 @@
     "@language" : "en",
     "@value" : "Classical Force"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Force"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Force"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q11402"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations",
@@ -5775,7 +5814,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "rate of change in time of the condition of a dynamic physical system"
+    "@value" : "function of generalized positions and momenta in Hamiltonian mechanics, specifying the total energy of a system"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -5784,11 +5823,17 @@
     "@language" : "en",
     "@value" : "Classical Hamilton Function"
   } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Hamiltonian_mechanics#Mathematical_formalism"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Energy"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q360356"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalLangevinEquation",
@@ -6009,7 +6054,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "momentum(a) of point particle(s) in classical mechanics"
+    "@value" : "momentum of a point particle in classical mechanics"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -6206,7 +6251,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "position(s) of point particle(s) in classical mechanics"
+    "@value" : "position of a point particle in classical mechanics"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -6281,7 +6326,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "velocities of point particle(s) in classical mechanics"
+    "@value" : "velocity of a point particle in classical mechanics"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -9102,7 +9147,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "used within  finite volume discretizations"
+    "@value" : "mathematical abstraction employed in mathematical models of continuum mechanics and thermodynamics used within finite volume discretizations"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -9168,7 +9213,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "describe the interaction between rotational and vibrational motions in molecules"
+    "@value" : "description of the interaction between rotational and vibrational motions, e.g., in molecules"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -9362,7 +9407,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "for use in semiconductor physics"
+    "@value" : "density of current of the electrons, e.g., in a semiconductor device"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -9445,7 +9490,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "for use in semiconductor physics"
+    "@value" : "density of current of the holes, e.g., in a semiconductor device"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -9830,7 +9875,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A variable deciding if an object is chosen or not. In case of line pool generation, it decides if a line is included or not"
+    "@value" : "In case of line pool generation, it decides if a line is included or not"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9944,7 +9989,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "coeffieicnts used in the definition of the density fractions"
+    "@value" : "coefficients used in the definition of the density fractions"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -9962,7 +10007,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "mass per unit volume of earths atmosphere"
+    "@value" : "mass per unit volume of the atmosphere of the planet Earth"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -10009,7 +10054,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "number of holes per surface"
+    "@value" : "probability density of holes being somewhere"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -10221,7 +10266,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Generalized function on the real numbers, whose value is zero everywhere except at zero, and whose integral over the entire real line is equal to one."
+    "@value" : "Value is zero everywhere except at zero, and whose integral over the entire real line is equal to one."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -10485,7 +10530,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "vector that is the shortest distance from the initial to the final position of a point"
+    "@value" : "vector that is the shortest distance from the initial (equilibrium) to the final (current) position of a point"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -10520,7 +10565,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "displacements at the muscle-tendon connection compared to the stress-free position"
+    "@value" : "displacements of  the muscle-tendon connection compared to the stress-free position"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -10562,7 +10607,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical property"
+    "@value" : "measures the propensity of a larger object to separate (dissociate) reversibly into smaller components"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -10868,7 +10913,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "For use in semiconductor physics"
+    "@value" : "intentional introduction of impurities into an intrinsic (undoped) semiconductor for the purpose of modulating its electrical, optical and structural properties"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -10876,6 +10921,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Doping Profile"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Doping_(semiconductor)"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"
@@ -11664,7 +11712,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "mass that needs to be added to a particle mass  to correctly predict the behavior of the system."
+    "@value" : "mass that needs to be added to a particle mass  to correctly predict the behavior of the system"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -12021,6 +12069,9 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotentialFourierCoefficients",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "coefficients in a Fourier expansion of the electric potential"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -13590,7 +13641,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical property"
+    "@value" : "equilibrium constant of a chemical reaction is the value of its reaction quotient at chemical equilibrium, a state approached after sufficient time"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -14048,12 +14099,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ExcitationError",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "in dynamical electron scattering, the excitation error shows how well the Laue condition is satisfied"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In dynamical electron scattering, the excitation error shows how well the Laue condition is satisfied."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -14224,10 +14275,6 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Exposure (time) Of An Individual (e.g. Person or Animal), at a certain age"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Exposure Of An Individual"
@@ -14240,14 +14287,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical potential on the boundary of a domain"
+    "@value" : "chemical potential on the boundary of a domain, i.e., an interface"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Chemical potential on the boundary of a domain, i.e. an interface."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -14258,7 +14301,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "vector field representing the flux density of the hydrostatic force within the bulk of a fluid."
+    "@value" : "vector field representing the flux density of the hydrostatic force within the bulk of a fluid"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -14418,12 +14461,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "For use in semiconductor physics; strictly speaking, a quasi Fermi potential"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -14441,12 +14484,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "For use in semiconductor physics; strictly speaking, a quasi Fermi potential"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -14480,14 +14523,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "fibre stretch"
+    "@value" : "stretch of a fibre, e.g. in a muscle"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Fiber  Stretch"
+    "@value" : "Fiber Stretch"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#LinearStrain"
@@ -14582,7 +14625,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Fixed costs for something, independend of e.g. time, length,..."
+    "@value" : "fixed costs for something, independend of e.g. time, length,..."
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -14670,10 +14713,6 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "de",
-    "@value" : "Die dynamische Viskosität η \\eta und die kinematische Viskosität ν \\nu stehen über die Dichte ρ \\rho in direktem Zusammenhang,  η = ν ⋅ ρ {\\displaystyle \\eta =\\nu \\cdot \\rho }."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -14828,7 +14867,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "flow of electrons"
+    "@value" : "flow of electrons, e.g., in an electric device"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -14858,6 +14897,9 @@
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "For use in semiconductor physics"
+  }, {
+    "@language" : "en",
+    "@value" : "flow of holes, e.g., in an electric device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -14929,7 +14971,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration."
+    "@value" : "coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -16403,7 +16445,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "14-character hierarchical classification system"
+    "@value" : "14-character hierarchical classification system to identify drugs"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -16633,7 +16675,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "matrix used in linear control problems to determine if a system is controllable"
+    "@value" : "matrix used in linear control problems to determine whether a system is controllable"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -16695,7 +16737,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "matrix used in linear control problems to determine if a system is observable"
+    "@value" : "matrix used in linear control problems to determine whether a system is observable"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -16756,7 +16798,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "variable identifying a graph as directed (value=1) or undirected (value=2)."
+    "@value" : "variable identifying a graph as directed (value=1) or undirected (value=2)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -17632,7 +17674,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "shows the different level of susceptibility of dying"
+    "@value" : "shows the different level of susceptibility to dying"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -17932,6 +17974,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#HyperstressPotential",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Hyperstress potential in calculations of elasticity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -18556,10 +18602,6 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstant",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "chemical constant"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -22166,7 +22208,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "interaction force on individual i by media and influencers"
+    "@value" : "interaction force on individual by media and influencers"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -22497,7 +22539,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "identifier in the ICD catalogue"
+    "@value" : "identifier of drugs in the ICD catalogue"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -22566,7 +22608,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "gaussian function representing density and density fractions of provinces"
+    "@value" : "Gaussian function representing density and density fractions of provinces"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -22818,14 +22860,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "measure used in statistics to quantify how well a given set of model parameters explains observed data"
+    "@value" : "probability density of observed data viewed as a function of the parameters of a statistical model"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The likelihood (function) is the probability density of observed data viewed as a function of the parameters of a statistical model."
+    "@value" : "measure used in statistics to quantify how well a given set of model parameters explains observed data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26378,7 +26420,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "aterial Point Displacement in the context of the Material Point Method (MPM) refers to the movement of material points, which are used to track physical information like mass and velocity."
+    "@value" : "Material Point Displacement in the context of the Material Point Method (MPM) refers to the movement of material points, which are used to track physical information like mass and velocity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26556,22 +26598,6 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#MaximumLikelihoodEstimation"
   } ]
 }, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#MaximumFrequency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Maximum Frequency"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Frequency"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
-    "@id" : "https://qudt.org/vocab/quantitykind/Frequency"
-  } ]
-}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MaximumIsometricMuscleForce",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -26669,6 +26695,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "mechanical deformation at a domain boundary"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -26859,7 +26889,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "physical quantity describing the electric potential between the inner and the outer part of a cell"
+    "@value" : "difference of the electric potential between the inner and the outer part of a biological cell"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -26892,7 +26922,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "property to characterize the kinetics of Michaelis–Menten reactions"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -26913,14 +26943,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26997,14 +27023,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27084,14 +27106,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the product of an Uni Uni Reaction under the Steady State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the product of an Uni Uni Reaction under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27160,16 +27178,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "chemical constant"
-  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"
+    "@value" : "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27246,14 +27260,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27321,14 +27331,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27396,14 +27402,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27471,14 +27473,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the substrate of an Uni Uni Reaction under the Staedy State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the substrate of an Uni Uni Reaction under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27744,14 +27742,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -27874,14 +27868,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "chemical constant"
+    "@value" : "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -30131,22 +30121,6 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionMichaelisMentenModelwithoutProductRapidEquilibriumAssumption"
   } ]
 }, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#MinimumFrequency",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Minimum Frequency"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Frequency"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
-    "@id" : "https://qudt.org/vocab/quantitykind/Frequency"
-  } ]
-}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MixedEnzymeInhibitionCouplingConditionUniUniReaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -31340,7 +31314,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "neural input"
+    "@value" : "neural input in a motor neuron pool model"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -31364,7 +31338,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "noise modelling unknown external influences, uncertainties in the communication between individuals or free will"
+    "@value" : "noise caused by influences, uncertainties in the communication between individuals or free will"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -32080,7 +32054,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules."
+    "@value" : "canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -32147,7 +32121,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "dimensionless canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules."
+    "@value" : "dimensionless canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -32520,7 +32494,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "count of how many times a specific event, value, or element appears within a given context or dataset."
+    "@value" : "count of how many times a specific event, value, or element appears within a given context or dataset"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -33848,7 +33822,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Data including, amongst others, information from which origin to which destination passengers travel and which mode of transport they use."
+    "@value" : "data including, amongst others, information from which origin to which destination passengers travel and which mode of transport they use"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -34054,6 +34028,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "parameter to scale attractive force from influencers"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -34068,6 +34046,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "parameter to scale attractive force from media"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -34082,6 +34064,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "parameter to scale attractive force from other individuals"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -34205,14 +34191,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "injury that occurs when muscle fibers cannot cope with the demands placed on them"
+    "@value" : "passive muscle strain"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Passive muscle strain refers to an injury that occurs when muscle fibers cannot cope with the demands placed on them by exercise overload, leading to tearing of the fibers. This mostly happens due to a powerful eccentric contraction or overstretching of the muscle."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -35893,7 +35875,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "fundamental physical constant"
+    "@value" : "fundamental physical constant giving the     proton rest mass"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -36182,10 +36164,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Quantum Density Operator"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "density matrix"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumMechanicalOperator"
@@ -37376,12 +37354,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "solutions of the time-dependent Schrödinger equation, giving the time evolution of a (closed) quantum system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Abstract (Dirac) notation as dynamic quantum states $\\psi(t)>$ or wave functions $\\psi(R,t)$ in coordinate representation. Typically obtained as solutions of the time-dependent Schrödinger equation."
+    "@value" : "Abstract (Dirac) notation as dynamic quantum states $\\psi(t)>$ or wave functions $\\psi(R,t)$ in coordinate representation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37393,12 +37375,15 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "solutions of the time-independent Schrödinger equation, giving stationary states of a (closed) quantum system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Abstract (Dirac) notation as stationary quantum states $\\psi_n>$ or wave functions $\\psi_n(R)$ in coordinate representation. Typically obtained as solutions of the time-independent Schrödinger equation."
+    "@value" : "Abstract (Dirac) notation as stationary quantum states $\\psi_n>$ or wave functions $\\psi_n(R)$ in coordinate representation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37613,7 +37598,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "inverse of Incubation Period"
+    "@value" : "inverse of Incubation period"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -37633,7 +37618,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Partial derevitive of Population Density Fraction Of Exposed PDE w.r.t Time"
+    "@value" : "Partial derivative of Population Density Fraction Of Exposed PDE w.r.t Time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37715,7 +37700,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Partial derevitive of Population Density Fraction Of Infectious PDE w.r.t Time"
+    "@value" : "Partial derivative of Population Density Fraction Of Infectious PDE w.r.t Time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37772,7 +37757,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Partial derevitive of Population Density Fraction Of Removed PDE w.r.t Time"
+    "@value" : "Partial derivative of Population Density Fraction Of Removed PDE w.r.t Time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37834,7 +37819,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Partial derevitive of Population Density Fraction Of Susceptibles PDE w.r.t Time"
+    "@value" : "Partial derivative of Population Density Fraction Of Susceptibles PDE w.r.t Time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37924,7 +37909,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Rate at which an Individual switches the Influencer they are following at a given time"
+    "@value" : "Rate at which an individual switches the influencer they are following at a given time"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -38487,12 +38472,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#RelativisticMomentumDefinition",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "momentum of a particle in special relativity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In special relativity, the momentum of a particle is given by this equation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -38532,7 +38517,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "general quantity for Removed entities"
+    "@value" : "general quantity for removed entities"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -38709,7 +38694,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "number of removed/recovered Individuals"
+    "@value" : "number of removed/recovered individuals"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -38931,7 +38916,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "defines the scale of the rotational energies for a diatomic molecule"
+    "@value" : "defines the scale of rotational energies in molecular spectroscopy"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -38953,12 +38938,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "family of implicit and explicit methods used in temporal discretization for the approximate solutions of differential equations"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "In numerical analysis, the Runge–Kutta methods are a family of implicit and explicit iterative methods, which include the Euler method, used in temporal discretization for the approximate solutions of differential equations. These methods were developed around 1900 by the German mathematicians Carl Runge and Wilhelm Kutta."
+    "@value" : "These methods, which include the Euler method,  were developed around 1900 by the German mathematicians Carl Runge and Wilhelm Kutta."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39030,7 +39019,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "scaling parameter used in the Rate of Switching Influcners"
+    "@value" : "scaling parameter used in the rate of switching influcners"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -39088,12 +39077,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "partial differential equation describing how the quantum state of a non-relativistic physical system changes with time"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "One of the fundamental postulates of Quantum Mechanics on the time evolution of quantum states. More specificially, the (time-dependent!) Schrödinger equation is a partial differential equation describing how the quantum state of a non-relativistic physical system changes with time"
+    "@value" : "One of the fundamental postulates of Quantum Mechanics on the time evolution of quantum states."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39145,6 +39138,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchroedingerNewtonEquation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Coupled equations describing the time evolution in (hybrid) quantum-classical dynamics"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -39171,12 +39168,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchrödingerEquationChebychevPolynomial",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Chebchev polynomial scheme for numerical integration of the time-dependent Schrödinger equation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39197,12 +39194,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchrödingerEquationDifferencingScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Differencing scheme (symmetric combination of Euler forward and backward in time) for numerical integration of the time-dependent Schrödinger equation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39288,12 +39285,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Second order differencing scheme for numerical integration of the time-dependent Schrödinger equation"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Second order differencing scheme for numerical integration of the time-dependent Schrödinger equation: Essentially a symmetric (and symplectic!) combination of Euler forward and backward methods"
+    "@value" : "Essentially a symmetric (and symplectic!) combination of Euler forward and backward methods"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39345,12 +39346,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSplitOperator",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Split operator scheme for numerical integration of the time-dependent Schrödinger equation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39366,12 +39367,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchrödingerEquationStrangMarchuk",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "Second order (Strang-Marchuk) split operator scheme for numerical integration of the time-dependent Schrödinger equation"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39431,12 +39432,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "eigenvalue equation for the quantum-mechanical Hamiltonian operator, yielding stationary states (wave functions), along with their corresponding energies"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -39658,7 +39659,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "second Eigenvalue of Orthogonal Matrix"
+    "@value" : "second eigenvalue of an orthogonal matrix"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -39949,6 +39950,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SolarSystemEquationsOfMotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "mathematical formulation describing the motion of the planets around the sun"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -40176,6 +40181,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SpeedOfLightDefinition",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "speed of electromagnetic waves in vacuum"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -40213,12 +40222,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SphericalHarmonicsExpansion3D",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Representing a function in 3D in terms of spherical harmonics with distance(radius)-dependent coefficients"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Representing a function in 3D in terms of spherical harmonics with distance(radius)-dependent coefficients."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -40363,6 +40372,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#StabilityAutonomousSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "asymptotic stability of fixed points of a system of constant coefficient linear differential equations of first order"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -40426,12 +40439,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SteadyStateAssumption",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "rate of bound enzyme formation and breakdown is equal"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Rate of bound enzyme formation and breakdown is equal."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -40458,7 +40471,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Stokes Darcy Coupling Conditions"
+    "@value" : "Coupling free flow of an incompressible fluid (Stokes) to a flow in/through a permeable media (Darcy)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
@@ -42205,13 +42218,14 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SylvesterEquation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "matrix equation, typically used in the field of control theory"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A matrix equation, typically used in the field of control theory"
-  }, {
     "@language" : "en",
     "@value" : "Due to the different sizes of A, B, C, the matrix X will be rectangular in general"
   } ],
@@ -42255,6 +42269,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SylvesterEquationControllability",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Sylvester equation for the controllability of a linear control system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -42303,6 +42321,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SylvesterEquationObservability",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "Sylvester equation for the observability of a linear control system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -42351,6 +42373,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedControllability",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "generalized Sylvester equation for the controllability of a bi-linear control system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -42391,6 +42417,9 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#SylvesterGeneralizedObservability",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "generalized Sylvester equation for the observability of a bi-linear control system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -42516,12 +42545,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "tangential component of the total force, i.e. the sum of dissipative and conservative force"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The total force in tangential direction, i.e. the sum of dissipative and conservative force."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -42615,10 +42644,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "injury that involves stretching or tearing of a tendon"
+    "@value" : "stretching or partially tearing a tendon"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Definition of the tendon strain by length of tendon under stress and stress-free length of tendon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -42632,14 +42665,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "injury that involves stretching or tearing of a tendon"
+    "@value" : "stretching or partially tearing a tendon"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Definition of the tendon strain by length of tendon under stress and stress-free length of tendon"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -42855,7 +42884,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The rotation needs to be taken into account when transforming the contact point between two particles from local to global coordinates."
+    "@value" : "angular velocity needs to be taken into account when transforming the contact point between two particles from local to global coordinates"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -42900,10 +42929,14 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "number of people living in a given area, typically expressed as the number of people per square kilometer or square mile"
+    "@value" : "number of people living in a given area"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "typically expressed as the number of people per square kilometer or square mile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -42914,7 +42947,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Total Population Density represented as a sum of Isotropic gaussian functions of all provinces"
+    "@value" : "represented as a sum of Isotropic Gaussian functions of all provinces"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
@@ -42977,7 +43010,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "number of passengers traveling along each edge in the public transportation network."
+    "@value" : "number of passengers traveling along each edge in the public transportation network"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -43048,6 +43081,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#TransportEquation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "equation that describes the transport of some (extensive) quantity such as mass, energy|heat, momentum, electric charge"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -43060,7 +43097,7 @@
     "@value" : "Transport Equation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://en.wikipedia.org/wiki/Constitutive_equation"
+    "@id" : "https://en.wikipedia.org/wiki/Continuity_equation"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizesFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#DarcyEquation"
@@ -43070,7 +43107,7 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#OhmEquation"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
-    "@id" : "https://wikidata.org/wiki/Q1937401"
+    "@id" : "https://www.wikidata.org/wiki/Q105560509"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#TransportModel",
@@ -46126,12 +46163,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, e.g. a free fall"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, i.e. a free fall. This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account."
+    "@value" : "This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -46182,7 +46223,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "vector that is tangent to a curve or surface at a given point, with unit length"
+    "@value" : "vector that is tangential to a curve or surface at a given point, with unit length"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -46206,7 +46247,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "unknown matrix"
+    "@value" : "unknown matrix, to be found"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -46220,7 +46261,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "matrix with all elements below the main diagonal zero"
+    "@value" : "matrix with all elements below the main diagonal equal to zero"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -46236,12 +46277,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#VanishingAirDensity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "in the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -46261,12 +46302,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "in the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -46356,7 +46397,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Harmonic frequency of vibration, e.g. of a molecule"
+    "@value" : "harmonic frequency of vibration, e.g. of a molecule"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -46377,12 +46418,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift1stOrder",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "frequency shift of molecular vibrations caused by interaction with surrounding particles  from 1st order non-degenerate perturbation theory"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Frequency shift of molecular vibrations caused by interaction with surrounding particles (e.g. solvent effect). Results from 1st order non-degenerate perturbation theory. The interpretation is quite straight-forward: Effectively, the intermolecular potential changes the effective force constant of a vibrational normal mode."
+    "@value" : "The interpretation is quite straight-forward: Effectively, the intermolecular potential changes the effective force constant of a vibrational normal mode."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -46412,12 +46457,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "frequency shift of molecular vibrations caused by interaction with surrounding particles  from 2nd order non-degenerate perturbation theory"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Frequency shift of molecular vibrations caused by interaction with surrounding particles (e.g. solvent effect). Results from 2nd order non-degenerate perturbation theory.  The interpretation is based on the coupling of different vibrational normal modes, mediated by the cubic anharmonicity of the intramolecular force field."
+    "@value" : "The interpretation is based on the coupling of different vibrational normal modes, mediated by the cubic anharmonicity of the intramolecular force field."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -46496,7 +46545,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "vector pointing in the direction of a wave and whose magnitude is equal to the wavenumber"
+    "@value" : "vector pointing in the direction of propagation of a wave and whose magnitude is equal to the wavenumber"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -46605,7 +46654,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Delta-correlated stationary Gaussian process with zero-mean"
+    "@value" : "delta-correlated stationary Gaussian process with zero-mean"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -46654,6 +46703,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#YoungModulusDefinition",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "mechanical property that measures stiffness of a solid material"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -47798,12 +47851,9 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#deBroglieWavelength",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/creator" : [ {
-    "@id" : "https://en.wikipedia.org/wiki/Louis_de_Broglie"
-  } ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "wavelength of matter waves"
+    "@value" : "wavelength of matter waves in quantum mechanics"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"

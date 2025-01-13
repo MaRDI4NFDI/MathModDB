@@ -12,7 +12,8 @@
      xmlns:mathmoddb="https://mardi4nfdi.de/mathmoddb#">
     <owl:Ontology rdf:about="https://mardi4nfdi.de/mathmoddb">
         <owl:versionIRI rdf:resource="https://mardi4nfdi.de/mathmoddb/0.1"/>
-        <terms:abstract>MathModDB is the ontology for mathematical models developed by the Mathematical Research Data Initiative (MaRDI). TODO: a bit more text</terms:abstract>
+        <terms:abstract>MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.</terms:abstract>
+        <terms:bibliographicCitation>Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models</terms:bibliographicCitation>
         <terms:creator xml:lang="en">Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
         <terms:creator xml:lang="en">Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)</terms:creator>
         <terms:creator xml:lang="en">Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
@@ -20,15 +21,17 @@
         <terms:creator xml:lang="en">Jochen Fiedler (https://orcid.org/0000-0002-9176-780X), Fraunhofer Institute for Industrial Mathematics ITWM (https://ror.org/019hjw009)</terms:creator>
         <terms:creator xml:lang="en">Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)</terms:creator>
         <terms:creator xml:lang="en">Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
+        <terms:issued>2025-01-20</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:modified></terms:modified>
         <terms:publisher>MaRDI (https://www.mardi4nfdi.de)</terms:publisher>
-        <terms:title xml:lang="en">MathModDB: An ontology for mathematical models</terms:title>
+        <terms:title xml:lang="en">MathModDB: An Ontology for Mathematical Models</terms:title>
         <rdfs:comment xml:lang="en">This is the MathModDB Ontology for documenting mathematical models.</rdfs:comment>
         <rdfs:label xml:lang="en">MathModDB Ontology</rdfs:label>
-        <owl:versionInfo>tbd</owl:versionInfo>
-        <doiID rdf:resource="https://doi.org/10.1007/978-3-031-65990-4_14"/>
-        <doiID rdf:resource="https://doi.org/10.48550/arXiv.2408.10003"/>
-        <doiID rdf:resource="https://doi.org/10.52825/cordi.v1i.255"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-65990-4_14"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.48550/arXiv.2408.10003"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.52825/cordi.v1i.255"/>
+        <owl:versionInfo>0.8.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -49,6 +52,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
     
 
 
@@ -84,6 +94,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
@@ -2723,7 +2740,7 @@
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialValueForElectronScattering"/>
-        <terms:description xml:lang="en">wave height</terms:description>
+        <terms:description xml:lang="en">amplitude of the wave function representing an electron</terms:description>
         <rdfs:label xml:lang="en">Amplitude Of Electron Wave</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3001,7 +3018,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#AverageOpinionOfFollowersOfInfluencersInThePartialFieldModel">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">opinion of the Influencers is drawn towards the average opinion of the followers</terms:description>
+        <terms:description xml:lang="en">opinion of the influencers is drawn towards the average opinion of the followers</terms:description>
         <rdfs:label xml:lang="en">Average Opinion Of Followers Of Influencers In The Partial Mean Field Model</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3093,7 +3110,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#AverageOpinionOfInfluencerFollowers">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">opinion of the Influencers is drawn towards the average opinion of the followers</terms:description>
+        <terms:description xml:lang="en">opinion of the influencers is drawn towards the average opinion of the followers</terms:description>
         <rdfs:label xml:lang="en">Average Opinion Of Followers Of Influencers</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3230,6 +3247,7 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForConductionBand">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Energy"/>
+        <terms:description xml:lang="en">energy of the lower edge of the electronic conduction band</terms:description>
         <rdfs:label xml:lang="en">Band Edge Energy For Conduction Band</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3241,6 +3259,7 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BandEdgeEnergyForValenceBand">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Energy"/>
+        <terms:description xml:lang="en">energy of the upper edge of the electronic valence band</terms:description>
         <rdfs:label xml:lang="en">Band Edge Energy For Valence Band</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3251,7 +3270,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BeaversJosephCoefficient">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">Beavers-Joseph Coefficient</terms:description>
+        <terms:description xml:lang="en">coefficient for the coupling of a Stokes model and a Darcy model</terms:description>
         <rdfs:label xml:lang="en">Beavers-Joseph Coefficient</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3292,7 +3311,7 @@
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Rate"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">contact rate of one sub-population (represented by subscript i) with all other subpopulations</terms:description>
+        <terms:description xml:lang="en">contact rate of one sub-population with all other sub-populations</terms:description>
         <rdfs:comment xml:lang="en">Used in multi-population models.</rdfs:comment>
         <rdfs:label xml:lang="en">Between Population Contact Rate</rdfs:label>
     </owl:NamedIndividual>
@@ -4445,7 +4464,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BoltzmannConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">physical constant relating energy at the individual particle level with temperature</terms:description>
+        <terms:description xml:lang="en">physical constant relating the average relative thermal energy with the thermodynamic temperature</terms:description>
         <rdfs:label xml:lang="en">Boltzmann Constant</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Boltzmann_constant"/>
         <qudtID rdf:resource="http://qudt.org/vocab/constant/BoltzmannConstant"/>
@@ -4460,7 +4479,7 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BooleanRing">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">mathematical concept</terms:description>
+        <terms:description xml:lang="en">In mathematics, a ring that consists of only idempotent elements</terms:description>
         <rdfs:label xml:lang="en">Boolean Ring</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q2634401"/>
     </owl:NamedIndividual>
@@ -4610,7 +4629,7 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ChangeInLength">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
-        <terms:description xml:lang="en">difference between the current and the original length</terms:description>
+        <terms:description xml:lang="en">difference between the current and the original (equilibrium) length</terms:description>
         <rdfs:label xml:lang="en">Change In Length</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q91308394"/>
     </owl:NamedIndividual>
@@ -4787,7 +4806,7 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ChemicalPotential">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential"/>
-        <terms:description xml:lang="en">energy that can be absorbed or released due to a change of the particle number of the given species</terms:description>
+        <terms:description xml:lang="en">energy that can be absorbed or released due to a change of the particle number of a given species</terms:description>
         <rdfs:comment xml:lang="en">e.g. in a chemical reaction or phase transition.</rdfs:comment>
         <rdfs:label xml:lang="en">Chemical Potential</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Chemical_potential"/>
@@ -4830,7 +4849,10 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ClassicalAcceleration">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Acceleration"/>
+        <terms:description xml:lang="en">rate at which the magnitude and/or direction of velocity changes with time</terms:description>
         <rdfs:label xml:lang="en">Classical Acceleration</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acceleration"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11376"/>
     </owl:NamedIndividual>
     
 
@@ -4999,6 +5021,8 @@
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Force"/>
         <terms:description xml:lang="en">vector quantity that describes the ability of an action to modify the movement and shape of an object</terms:description>
         <rdfs:label xml:lang="en">Classical Force</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Force"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11402"/>
     </owl:NamedIndividual>
     
 
@@ -5072,8 +5096,10 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Energy"/>
-        <terms:description xml:lang="en">rate of change in time of the condition of a dynamic physical system</terms:description>
+        <terms:description xml:lang="en">function of generalized positions and momenta in Hamiltonian mechanics, specifying the total energy of a system</terms:description>
         <rdfs:label xml:lang="en">Classical Hamilton Function</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hamiltonian_mechanics#Mathematical_formalism"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q360356"/>
     </owl:NamedIndividual>
     
 
@@ -5182,7 +5208,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Momentum"/>
-        <terms:description xml:lang="en">momentum(a) of point particle(s) in classical mechanics</terms:description>
+        <terms:description xml:lang="en">momentum of a point particle in classical mechanics</terms:description>
         <rdfs:label xml:lang="en">Classical Momentum</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Momentum"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q41273"/>
@@ -5274,7 +5300,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
-        <terms:description xml:lang="en">position(s) of point particle(s) in classical mechanics</terms:description>
+        <terms:description xml:lang="en">position of a point particle in classical mechanics</terms:description>
         <rdfs:label xml:lang="en">Classical Position</rdfs:label>
     </owl:NamedIndividual>
     
@@ -5314,7 +5340,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ClassicalVelocity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Velocity"/>
-        <terms:description xml:lang="en">velocities of point particle(s) in classical mechanics</terms:description>
+        <terms:description xml:lang="en">velocity of a point particle in classical mechanics</terms:description>
         <rdfs:label xml:lang="en">Classical Velocity</rdfs:label>
     </owl:NamedIndividual>
     
@@ -6758,7 +6784,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#FiniteVolumeMethod"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlVolumeDefinition"/>
-        <terms:description xml:lang="en">used within  finite volume discretizations</terms:description>
+        <terms:description xml:lang="en">mathematical abstraction employed in mathematical models of continuum mechanics and thermodynamics used within finite volume discretizations</terms:description>
         <rdfs:comment xml:lang="en">used for example in  the Scharfetter-Gummel discretization of the van-Roosbroeck system</rdfs:comment>
         <rdfs:label xml:lang="en">Control Volume</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Control_volume"/>
@@ -6790,7 +6816,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CoriolisCouplingConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">describe the interaction between rotational and vibrational motions in molecules</terms:description>
+        <terms:description xml:lang="en">description of the interaction between rotational and vibrational motions, e.g., in molecules</terms:description>
         <rdfs:label xml:lang="en">Coriolis Coupling Constant</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rotational%E2%80%93vibrational_coupling"/>
         <doiID rdf:resource="https://doi.org/10.1103/PhysRev.56.680"/>
@@ -6912,7 +6938,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"/>
-        <terms:description xml:lang="en">for use in semiconductor physics</terms:description>
+        <terms:description xml:lang="en">density of current of the electrons, e.g., in a semiconductor device</terms:description>
         <rdfs:label xml:lang="en">Current Density Of Electrons</rdfs:label>
         <skos:altLabel xml:lang="en">flux of electrons</skos:altLabel>
     </owl:NamedIndividual>
@@ -6953,7 +6979,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"/>
         <similarToQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"/>
-        <terms:description xml:lang="en">for use in semiconductor physics</terms:description>
+        <terms:description xml:lang="en">density of current of the holes, e.g., in a semiconductor device</terms:description>
         <rdfs:label xml:lang="en">Current Density Of Holes</rdfs:label>
         <skos:altLabel xml:lang="en">flux of holes</skos:altLabel>
     </owl:NamedIndividual>
@@ -7161,7 +7187,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition"/>
         <terms:description xml:lang="en">variable deciding if an object is chosen or not</terms:description>
-        <rdfs:comment xml:lang="en">A variable deciding if an object is chosen or not. In case of line pool generation, it decides if a line is included or not</rdfs:comment>
+        <rdfs:comment xml:lang="en">In case of line pool generation, it decides if a line is included or not</rdfs:comment>
         <rdfs:label xml:lang="en">Decision Variable</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7230,7 +7256,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DensityFractionCoefficient">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">coeffieicnts used in the definition of the density fractions</terms:description>
+        <terms:description xml:lang="en">coefficients used in the definition of the density fractions</terms:description>
         <rdfs:comment xml:lang="en">Coeffieicnts used in the definition of the density fractions in the SEIR Model</rdfs:comment>
         <rdfs:label xml:lang="en">Density Fraction Coefficient</rdfs:label>
     </owl:NamedIndividual>
@@ -7243,7 +7269,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DensityOfAir">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Density"/>
-        <terms:description xml:lang="en">mass per unit volume of earths atmosphere</terms:description>
+        <terms:description xml:lang="en">mass per unit volume of the atmosphere of the planet Earth</terms:description>
         <rdfs:label xml:lang="en">Density Of Air</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Density_of_air"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1511415"/>
@@ -7272,7 +7298,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleNumberDensity"/>
-        <terms:description xml:lang="en">number of holes per surface</terms:description>
+        <terms:description xml:lang="en">probability density of holes being somewhere</terms:description>
         <rdfs:comment xml:lang="en">For use in semiconductor physics</rdfs:comment>
         <rdfs:label xml:lang="en">Density Of Holes</rdfs:label>
     </owl:NamedIndividual>
@@ -7389,7 +7415,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DiracDeltaDistribution">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <terms:description xml:lang="en">generalized function on the real numbers</terms:description>
-        <rdfs:comment xml:lang="en">Generalized function on the real numbers, whose value is zero everywhere except at zero, and whose integral over the entire real line is equal to one.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Value is zero everywhere except at zero, and whose integral over the entire real line is equal to one.</rdfs:comment>
         <rdfs:label xml:lang="en">Dirac Delta Distribution</rdfs:label>
     </owl:NamedIndividual>
     
@@ -7535,7 +7561,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DisplacementMuscleTendon"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DisplacementOfAtoms"/>
-        <terms:description xml:lang="en">vector that is the shortest distance from the initial to the final position of a point</terms:description>
+        <terms:description xml:lang="en">vector that is the shortest distance from the initial (equilibrium) to the final (current) position of a point</terms:description>
         <rdfs:comment xml:lang="en">Vector that is the shortest distance from the initial to the final position of a point. In elasticity, displacements typically denote the motion of particles/matter from their equilibrium geometry</rdfs:comment>
         <rdfs:label xml:lang="en">Displacement</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Displacement_(geometry)"/>
@@ -7552,7 +7578,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ChangeInLength"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Displacement"/>
-        <terms:description xml:lang="en">displacements at the muscle-tendon connection compared to the stress-free position</terms:description>
+        <terms:description xml:lang="en">displacements of  the muscle-tendon connection compared to the stress-free position</terms:description>
         <rdfs:label xml:lang="en">Displacement Muscle Tendon</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q190291"/>
     </owl:NamedIndividual>
@@ -7577,7 +7603,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DissociationConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">chemical property</terms:description>
+        <terms:description xml:lang="en">measures the propensity of a larger object to separate (dissociate) reversibly into smaller components</terms:description>
         <rdfs:label xml:lang="en">Dissociation Constant</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q898254"/>
     </owl:NamedIndividual>
@@ -7711,8 +7737,9 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DopingProfile">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"/>
-        <terms:description xml:lang="en">For use in semiconductor physics</terms:description>
+        <terms:description xml:lang="en">intentional introduction of impurities into an intrinsic (undoped) semiconductor for the purpose of modulating its electrical, optical and structural properties</terms:description>
         <rdfs:label xml:lang="en">Doping Profile</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Doping_(semiconductor)"/>
     </owl:NamedIndividual>
     
 
@@ -8106,7 +8133,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#EffectiveMassSpringMassSystem">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#EffectiveMass"/>
-        <terms:description xml:lang="en">mass that needs to be added to a particle mass  to correctly predict the behavior of the system.</terms:description>
+        <terms:description xml:lang="en">mass that needs to be added to a particle mass  to correctly predict the behavior of the system</terms:description>
         <rdfs:label xml:lang="en">Effective Mass (Spring-Mass System)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Effective_mass_(spring%E2%80%93mass_system)"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3509437"/>
@@ -8330,6 +8357,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained"/>
         <similarToQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
+        <terms:description>coefficients in a Fourier expansion of the electric potential</terms:description>
         <rdfs:label xml:lang="en">Electric Potential Fourier Coefficients</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9130,7 +9158,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#EquilibriumConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">chemical property</terms:description>
+        <terms:description xml:lang="en">equilibrium constant of a chemical reaction is the value of its reaction quotient at chemical equilibrium, a state approached after sufficient time</terms:description>
         <rdfs:label xml:lang="en">Equilibrium Constant</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q857809"/>
     </owl:NamedIndividual>
@@ -9360,7 +9388,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained"/>
-        <rdfs:comment xml:lang="en">In dynamical electron scattering, the excitation error shows how well the Laue condition is satisfied.</rdfs:comment>
+        <terms:description xml:lang="en">in dynamical electron scattering, the excitation error shows how well the Laue condition is satisfied</terms:description>
         <rdfs:label xml:lang="en">Excitation Error</rdfs:label>
         <doiID rdf:resource="https://doi.org/10.1007/s11082-020-02356-y"/>
     </owl:NamedIndividual>
@@ -9455,7 +9483,6 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <terms:description xml:lang="en">exposure (time) of an individual at a certain age</terms:description>
-        <rdfs:comment xml:lang="en">Exposure (time) Of An Individual (e.g. Person or Animal), at a certain age</rdfs:comment>
         <rdfs:label xml:lang="en">Exposure Of An Individual</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9466,8 +9493,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ExternalChemicalPotential">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">chemical potential on the boundary of a domain</terms:description>
-        <rdfs:comment xml:lang="en">Chemical potential on the boundary of a domain, i.e. an interface.</rdfs:comment>
+        <terms:description xml:lang="en">chemical potential on the boundary of a domain, i.e., an interface</terms:description>
         <rdfs:label xml:lang="en">External Chemical Potential</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9478,7 +9504,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ExternalForceDensity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">vector field representing the flux density of the hydrostatic force within the bulk of a fluid.</terms:description>
+        <terms:description xml:lang="en">vector field representing the flux density of the hydrostatic force within the bulk of a fluid</terms:description>
         <rdfs:comment xml:lang="en">In fluid mechanics, the force density is the negative gradient of pressure. It has the physical dimensions of force per unit volume. Force density is a vector field representing the flux density of the hydrostatic force within the bulk of a fluid.</rdfs:comment>
         <rdfs:label xml:lang="en">External Force Density</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Force_density"/>
@@ -9571,7 +9597,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Energy"/>
-        <rdfs:comment xml:lang="en">For use in semiconductor physics; strictly speaking, a quasi Fermi potential</rdfs:comment>
+        <terms:description xml:lang="en">For use in semiconductor physics; strictly speaking, a quasi Fermi potential</terms:description>
         <rdfs:label xml:lang="en">Fermi Potential For Electrons</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q13633683"/>
     </owl:NamedIndividual>
@@ -9585,7 +9611,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Energy"/>
-        <rdfs:comment xml:lang="en">For use in semiconductor physics; strictly speaking, a quasi Fermi potential</rdfs:comment>
+        <terms:description xml:lang="en">For use in semiconductor physics; strictly speaking, a quasi Fermi potential</terms:description>
         <rdfs:label xml:lang="en">Fermi Potential For Holes</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9609,8 +9635,8 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FibreStretch">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#LinearStrain"/>
-        <terms:description xml:lang="en">fibre stretch</terms:description>
-        <rdfs:label xml:lang="en">Fiber  Stretch</rdfs:label>
+        <terms:description xml:lang="en">stretch of a fibre, e.g. in a muscle</terms:description>
+        <rdfs:label xml:lang="en">Fiber Stretch</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -9662,7 +9688,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FixedCosts">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Costs"/>
-        <terms:description xml:lang="en">Fixed costs for something, independend of e.g. time, length,...</terms:description>
+        <terms:description xml:lang="en">fixed costs for something, independend of e.g. time, length,...</terms:description>
         <rdfs:label xml:lang="en">Fixed Costs</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q16897780"/>
     </owl:NamedIndividual>
@@ -9716,7 +9742,6 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Viscosity"/>
         <terms:description xml:lang="en">physical property of a moving fluid in a porous medium</terms:description>
-        <rdfs:comment xml:lang="de">Die dynamische Viskosität η \eta und die kinematische Viskosität ν \nu stehen über die Dichte ρ \rho in direktem Zusammenhang,  η = ν ⋅ ρ {\displaystyle \eta =\nu \cdot \rho }.</rdfs:comment>
         <rdfs:label xml:lang="en">Fluid Dynamic Viscosity (Porous Medium)</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q15152757"/>
     </owl:NamedIndividual>
@@ -9820,7 +9845,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"/>
-        <terms:description xml:lang="en">flow of electrons</terms:description>
+        <terms:description xml:lang="en">flow of electrons, e.g., in an electric device</terms:description>
         <rdfs:comment xml:lang="en">For use in semiconductor physics</rdfs:comment>
         <rdfs:label xml:lang="en">Flux Of Electrons</rdfs:label>
     </owl:NamedIndividual>
@@ -9836,6 +9861,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"/>
         <rdfs:comment xml:lang="en">For use in semiconductor physics</rdfs:comment>
+        <rdfs:comment xml:lang="en">flow of holes, e.g., in an electric device</rdfs:comment>
         <rdfs:label xml:lang="en">Flux Of Holes</rdfs:label>
     </owl:NamedIndividual>
     
@@ -9877,7 +9903,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#SpringConstant"/>
-        <terms:description xml:lang="en">coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration.</terms:description>
+        <terms:description xml:lang="en">coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration</terms:description>
         <rdfs:label xml:lang="en">Force Constant (Harmonic)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hooke%27s_law"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q170282"/>
@@ -10678,7 +10704,7 @@ r_i &amp;= \sigma(W_r x_i + U_r h_{i-1} +b_r) \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GenericProductIdentifier">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">14-character hierarchical classification system</terms:description>
+        <terms:description xml:lang="en">14-character hierarchical classification system to identify drugs</terms:description>
         <rdfs:comment xml:lang="en">The Generic Product Identifier (GPI) is a 14-character hierarchical classification system developed by Wolters Kluwer’s Medi-Span to identify drugs from their primary therapeutic use down to the unique interchangeable product, regardless of manufacturer or package size.</rdfs:comment>
         <rdfs:comment xml:lang="en">mediaction code</rdfs:comment>
         <rdfs:label xml:lang="en">Generic Product Identifier</rdfs:label>
@@ -10816,7 +10842,7 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#LyapunovEquationControllability"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#GramianMatrixControllabilityDefinition"/>
-        <terms:description xml:lang="en">matrix used in linear control problems to determine if a system is controllable</terms:description>
+        <terms:description xml:lang="en">matrix used in linear control problems to determine whether a system is controllable</terms:description>
         <rdfs:label xml:lang="en">Gramian Matrix Controllability</rdfs:label>
         <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Controllability_Gramian</rdfs:seeAlso>
     </owl:NamedIndividual>
@@ -10849,7 +10875,7 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#LyapunovEquationObservability"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#GramianMatrixObservabilityDefinition"/>
-        <terms:description xml:lang="en">matrix used in linear control problems to determine if a system is observable</terms:description>
+        <terms:description xml:lang="en">matrix used in linear control problems to determine whether a system is observable</terms:description>
         <rdfs:label xml:lang="en">Gramian Matrix Observability</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Observability_Gramian"/>
     </owl:NamedIndividual>
@@ -10881,7 +10907,7 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#LineCostsComputation"/>
-        <terms:description xml:lang="en">variable identifying a graph as directed (value=1) or undirected (value=2).</terms:description>
+        <terms:description xml:lang="en">variable identifying a graph as directed (value=1) or undirected (value=2)</terms:description>
         <rdfs:label xml:lang="en">Graph Type Identifier</rdfs:label>
     </owl:NamedIndividual>
     
@@ -11319,7 +11345,7 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#HeterogeneityOfDeathRate">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">shows the different level of susceptibility of dying</terms:description>
+        <terms:description xml:lang="en">shows the different level of susceptibility to dying</terms:description>
         <rdfs:label xml:lang="en">Heterogeneity of Death Rate</rdfs:label>
     </owl:NamedIndividual>
     
@@ -11480,6 +11506,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#HyperstressPotential">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <terms:description xml:lang="en">Hyperstress potential in calculations of elasticity</terms:description>
         <rdfs:label xml:lang="en">Hyperstress Potential</rdfs:label>
     </owl:NamedIndividual>
     
@@ -11808,7 +11835,6 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InhibitionConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DissociationConstant"/>
-        <terms:description xml:lang="en">chemical constant</terms:description>
         <rdfs:label xml:lang="en">Inhibition Constant</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13823,7 +13849,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InteractionForce">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">interaction force on individual i by media and influencers</terms:description>
+        <terms:description xml:lang="en">interaction force on individual by media and influencers</terms:description>
         <rdfs:label xml:lang="en">Interaction Force</rdfs:label>
     </owl:NamedIndividual>
     
@@ -13991,7 +14017,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InternationalClassificationOfDiseases9">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">identifier in the ICD catalogue</terms:description>
+        <terms:description xml:lang="en">identifier of drugs in the ICD catalogue</terms:description>
         <rdfs:label xml:lang="en">International Classification of Diseases - 9</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q14067712"/>
     </owl:NamedIndividual>
@@ -14033,7 +14059,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#IsotropicGaussianFunction">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">gaussian function representing density and density fractions of provinces</terms:description>
+        <terms:description xml:lang="en">Gaussian function representing density and density fractions of provinces</terms:description>
         <rdfs:comment xml:lang="en">Isotropic Gaussian Function located at the center of the respective province used in the PDE SEIR Model for representing density and density fractions</rdfs:comment>
         <rdfs:label xml:lang="en">Isotropic Gaussian Function</rdfs:label>
     </owl:NamedIndividual>
@@ -14186,8 +14212,8 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#LikelihoodValue">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">measure used in statistics to quantify how well a given set of model parameters explains observed data</terms:description>
-        <rdfs:comment xml:lang="en">The likelihood (function) is the probability density of observed data viewed as a function of the parameters of a statistical model.</rdfs:comment>
+        <terms:description xml:lang="en">probability density of observed data viewed as a function of the parameters of a statistical model</terms:description>
+        <rdfs:comment xml:lang="en">measure used in statistics to quantify how well a given set of model parameters explains observed data</rdfs:comment>
         <rdfs:label xml:lang="en">Likelihood Value</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Likelihood_function"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q45284"/>
@@ -15975,7 +16001,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Displacement"/>
         <terms:description xml:lang="en">movement of material points</terms:description>
-        <rdfs:comment xml:lang="en">aterial Point Displacement in the context of the Material Point Method (MPM) refers to the movement of material points, which are used to track physical information like mass and velocity.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Material Point Displacement in the context of the Material Point Method (MPM) refers to the movement of material points, which are used to track physical information like mass and velocity.</rdfs:comment>
         <rdfs:label xml:lang="en">Material Point Displacement</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16024,18 +16050,6 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByTask rdf:resource="https://mardi4nfdi.de/mathmoddb#MaximumLikelihoodEstimation"/>
         <terms:description xml:lang="en">maximizing Poisson log-likelihood of mortality models</terms:description>
         <rdfs:label xml:lang="en">Maximizing Poisson log-Likelihood</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#MaximumFrequency -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MaximumFrequency">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Frequency"/>
-        <rdfs:label xml:lang="en">Maximum Frequency</rdfs:label>
-        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Frequency"/>
     </owl:NamedIndividual>
     
 
@@ -16103,6 +16117,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MechanicalDeformationBoundaryValue">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MechanicalDeformation"/>
+        <terms:description xml:lang="en">mechanical deformation at a domain boundary</terms:description>
         <rdfs:label xml:lang="en">Mechanical Deformation (Boundary Value)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16224,7 +16239,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#TransmembranePotential"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
-        <terms:description xml:lang="en">physical quantity describing the electric potential between the inner and the outer part of a cell</terms:description>
+        <terms:description xml:lang="en">difference of the electric potential between the inner and the outer part of a biological cell</terms:description>
         <rdfs:label xml:lang="en">Membrane Potential</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Membrane_potential"/>
         <skos:altLabel xml:lang="en">Membrane Voltage</skos:altLabel>
@@ -16246,7 +16261,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MichaelisConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">chemical constant</terms:description>
+        <terms:description xml:lang="en">property to characterize the kinetics of Michaelis–Menten reactions</terms:description>
         <rdfs:comment xml:lang="en">Property to characterize the kinetics of Michaelis–Menten reactions</rdfs:comment>
         <rdfs:label xml:lang="en">Michaelis Constant</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q61751178"/>
@@ -16263,8 +16278,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Product 1 (Bi Bi Reaction Ordered - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16302,8 +16316,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Product 2 (Bi Bi Reaction Ordered - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16342,8 +16355,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the product of an Uni Uni Reaction under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the product of an Uni Uni Reaction under the Steady State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Product (Uni Uni Reaction - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16379,8 +16391,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption</rdfs:comment>
+        <rdfs:comment xml:lang="en">Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption</rdfs:comment>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16418,8 +16429,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16455,8 +16465,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate (Uni Uni Reaction - Irreversibility Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16491,8 +16500,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate (Uni Uni Reaction - Rapid Equilibrium Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16527,8 +16535,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate of an Uni Uni Reaction under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the substrate of an Uni Uni Reaction under the Staedy State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16667,8 +16674,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -16735,8 +16741,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
-        <terms:description xml:lang="en">chemical constant</terms:description>
-        <rdfs:comment xml:lang="en">Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption</rdfs:comment>
+        <terms:description xml:lang="en">Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Staedy State Assumption</terms:description>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -17719,18 +17724,6 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     
 
 
-    <!-- https://mardi4nfdi.de/mathmoddb#MinimumFrequency -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MinimumFrequency">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Frequency"/>
-        <rdfs:label xml:lang="en">Minimum Frequency</rdfs:label>
-        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Frequency"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://mardi4nfdi.de/mathmoddb#MixedEnzymeInhibitionCouplingConditionUniUniReaction -->
 
 
@@ -18379,7 +18372,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#NeuralInput">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrent"/>
-        <terms:description xml:lang="en">neural input</terms:description>
+        <terms:description xml:lang="en">neural input in a motor neuron pool model</terms:description>
         <rdfs:label xml:lang="en">Neural Input</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18392,7 +18385,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
         <terms:description xml:lang="en">noise modelling unknown external influences</terms:description>
-        <rdfs:comment xml:lang="en">noise modelling unknown external influences, uncertainties in the communication between individuals or free will</rdfs:comment>
+        <rdfs:comment xml:lang="en">noise caused by influences, uncertainties in the communication between individuals or free will</rdfs:comment>
         <rdfs:label xml:lang="en">Noise Strength</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18771,7 +18764,7 @@ q&amp;=&amp;\sqrt{\gamma}Q \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#NormalModeMomentum">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules.</terms:description>
+        <terms:description xml:lang="en">canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules</terms:description>
         <rdfs:label xml:lang="en">Normal Mode Momentum</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Normal_mode"/>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_vibration#Normal_coordinates"/>
@@ -18812,7 +18805,7 @@ p&amp;=&amp;\frac{1}{\sqrt{\gamma}\hbar}P \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#NormalModeMomentumDefinition"/>
         <nondimensionaliesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#NormalModeMomentum"/>
-        <terms:description xml:lang="en">dimensionless canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules.</terms:description>
+        <terms:description xml:lang="en">dimensionless canonical momenta, corresponding to the normal mode coordinates used for the description of vibrations of many-body systems, e.g. molecules</terms:description>
         <rdfs:label xml:lang="en">Normal Mode Momentum (Dimensionless)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19040,7 +19033,7 @@ $\bm x_j\in \mathbb R^3$, position of center of gravity for particle $j$</inDefi
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#IntegerDimensionless"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">count of how many times a specific event, value, or element appears within a given context or dataset.</terms:description>
+        <terms:description xml:lang="en">count of how many times a specific event, value, or element appears within a given context or dataset</terms:description>
         <rdfs:comment xml:lang="en">e.g., number of events occurring in a fixed interval of time</rdfs:comment>
         <rdfs:label xml:lang="en">Number Of Occurrences</rdfs:label>
     </owl:NamedIndividual>
@@ -19726,7 +19719,7 @@ Subscript denotes the individual</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#OriginDestinationData">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">Data including, amongst others, information from which origin to which destination passengers travel and which mode of transport they use.</terms:description>
+        <terms:description xml:lang="en">data including, amongst others, information from which origin to which destination passengers travel and which mode of transport they use</terms:description>
         <rdfs:label xml:lang="en">Origin Destination Data</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19858,6 +19851,7 @@ Subscript denotes the individual</rdfs:comment>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromInfluencers">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
+        <terms:description xml:lang="en">parameter to scale attractive force from influencers</terms:description>
         <rdfs:label xml:lang="en">Parameter To Scale Attractive Force From Influencers</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19869,6 +19863,7 @@ Subscript denotes the individual</rdfs:comment>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromMedia">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
+        <terms:description xml:lang="en">parameter to scale attractive force from media</terms:description>
         <rdfs:label xml:lang="en">Parameter To Scale Attractive Force From Media</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19880,6 +19875,7 @@ Subscript denotes the individual</rdfs:comment>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ParameterToScaleAttractiveForceFromOtherIndividuals">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
+        <terms:description xml:lang="en">parameter to scale attractive force from other individuals</terms:description>
         <rdfs:label xml:lang="en">Parameter To Scale Attractive Force From Other Individuals</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19957,8 +19953,7 @@ Subscript denotes the individual</rdfs:comment>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#PassiveMuscleStrain">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MechanicalStrain"/>
-        <terms:description xml:lang="en">injury that occurs when muscle fibers cannot cope with the demands placed on them</terms:description>
-        <rdfs:comment xml:lang="en">Passive muscle strain refers to an injury that occurs when muscle fibers cannot cope with the demands placed on them by exercise overload, leading to tearing of the fibers. This mostly happens due to a powerful eccentric contraction or overstretching of the muscle.</rdfs:comment>
+        <terms:description xml:lang="en">passive muscle strain</terms:description>
         <rdfs:label xml:lang="en">Passive Muscle Strain</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20823,7 +20818,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ProtonMass">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Mass"/>
-        <terms:description xml:lang="en">fundamental physical constant</terms:description>
+        <terms:description xml:lang="en">fundamental physical constant giving the     proton rest mass</terms:description>
         <rdfs:comment xml:lang="en">The mass of a proton is a fundamental physical constant, approximately equal to 1.6726219×10^−27 kilograms</rdfs:comment>
         <rdfs:label xml:lang="en">Proton Mass</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proton"/>
@@ -20932,7 +20927,6 @@ deformation</terms:description>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumStateVector"/>
         <terms:description xml:lang="en">matrix that describes an ensemble of physical systems as quantum states</terms:description>
         <rdfs:label xml:lang="en">Quantum Density Operator</rdfs:label>
-        <skos:altLabel xml:lang="en">density matrix</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -21519,7 +21513,8 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#QuantumStateVectorDynamic">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumStateVector"/>
-        <rdfs:comment xml:lang="en">Abstract (Dirac) notation as dynamic quantum states $\psi(t)&gt;$ or wave functions $\psi(R,t)$ in coordinate representation. Typically obtained as solutions of the time-dependent Schrödinger equation.</rdfs:comment>
+        <terms:description xml:lang="en">solutions of the time-dependent Schrödinger equation, giving the time evolution of a (closed) quantum system</terms:description>
+        <rdfs:comment xml:lang="en">Abstract (Dirac) notation as dynamic quantum states $\psi(t)&gt;$ or wave functions $\psi(R,t)$ in coordinate representation</rdfs:comment>
         <rdfs:label xml:lang="en">Quantum State Vector (Dynamic)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21531,7 +21526,8 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#QuantumStateVectorStationary">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumStateVector"/>
-        <rdfs:comment xml:lang="en">Abstract (Dirac) notation as stationary quantum states $\psi_n&gt;$ or wave functions $\psi_n(R)$ in coordinate representation. Typically obtained as solutions of the time-independent Schrödinger equation.</rdfs:comment>
+        <terms:description>solutions of the time-independent Schrödinger equation, giving stationary states of a (closed) quantum system</terms:description>
+        <rdfs:comment xml:lang="en">Abstract (Dirac) notation as stationary quantum states $\psi_n&gt;$ or wave functions $\psi_n(R)$ in coordinate representation.</rdfs:comment>
         <rdfs:label xml:lang="en">Quantum State Vector (Stationary)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21661,7 +21657,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RateOfBecomingInfectious">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Rate"/>
-        <terms:description xml:lang="en">inverse of Incubation Period</terms:description>
+        <terms:description xml:lang="en">inverse of Incubation period</terms:description>
         <rdfs:label xml:lang="en">Rate Of Becoming Infectious</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21697,7 +21693,7 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$s$, Fraction Of Population Density Of Susceptibles</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
-        <rdfs:comment xml:lang="en">Partial derevitive of Population Density Fraction Of Exposed PDE w.r.t Time</rdfs:comment>
+        <rdfs:comment xml:lang="en">Partial derivative of Population Density Fraction Of Exposed PDE w.r.t Time</rdfs:comment>
         <rdfs:label xml:lang="en">Rate Of Change Of Population Density Fraction Of Exposed PDE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21723,7 +21719,7 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$i$, Fraction Of Population Density Of Infectious</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
-        <rdfs:comment xml:lang="en">Partial derevitive of Population Density Fraction Of Infectious PDE w.r.t Time</rdfs:comment>
+        <rdfs:comment xml:lang="en">Partial derivative of Population Density Fraction Of Infectious PDE w.r.t Time</rdfs:comment>
         <rdfs:label xml:lang="en">Rate Of Change Of Population Density Fraction Of Infectious PDE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21751,7 +21747,7 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r$, Fraction Of Population Density Of Removed</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
-        <rdfs:comment xml:lang="en">Partial derevitive of Population Density Fraction Of Removed PDE w.r.t Time</rdfs:comment>
+        <rdfs:comment xml:lang="en">Partial derivative of Population Density Fraction Of Removed PDE w.r.t Time</rdfs:comment>
         <rdfs:label xml:lang="en">Rate Of Change Of Population Density Fraction Of Removed PDE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21783,7 +21779,7 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$s$, Fraction Of Population Density Of Susceptibles</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
-        <rdfs:comment xml:lang="en">Partial derevitive of Population Density Fraction Of Susceptibles PDE w.r.t Time</rdfs:comment>
+        <rdfs:comment xml:lang="en">Partial derivative of Population Density Fraction Of Susceptibles PDE w.r.t Time</rdfs:comment>
         <rdfs:label xml:lang="en">Rate Of Change Of Population Density Fraction Of Susceptibles PDE</rdfs:label>
     </owl:NamedIndividual>
     
@@ -21808,7 +21804,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Rate"/>
-        <terms:description xml:lang="en">Rate at which an Individual switches the Influencer they are following at a given time</terms:description>
+        <terms:description xml:lang="en">Rate at which an individual switches the influencer they are following at a given time</terms:description>
         <rdfs:comment xml:lang="en">Rate at which an Individual switches the Influencer they are following at a given time. Takes the opinion of the individual and the given time as inputs. Subscript represents the medium followed by the Individual.</rdfs:comment>
         <rdfs:label xml:lang="en">Rate Of Switching Influencers</rdfs:label>
     </owl:NamedIndividual>
@@ -22176,7 +22172,7 @@ subscript i denotes the ith subpopulation. if no i is provided, then it is a sin
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$m$, Mass</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$p$, Relativistic Momemtum</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v$, Classical Velocity</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">In special relativity, the momentum of a particle is given by this equation</rdfs:comment>
+        <terms:description xml:lang="en">momentum of a particle in special relativity</terms:description>
         <rdfs:label xml:lang="en">Relativistic Momentum (Definition)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Momentum#Relativistic"/>
     </owl:NamedIndividual>
@@ -22190,7 +22186,7 @@ subscript i denotes the ith subpopulation. if no i is provided, then it is a sin
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#IntegerDimensionless"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">general quantity for Removed entities</terms:description>
+        <terms:description xml:lang="en">general quantity for removed entities</terms:description>
         <rdfs:label xml:lang="en">Removed</rdfs:label>
         <skos:altLabel xml:lang="en">Recovered</skos:altLabel>
         <skos:altLabel xml:lang="en">Resistant</skos:altLabel>
@@ -22274,7 +22270,7 @@ subscript i denotes the ith subpopulation. if no i is provided, then it is a sin
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Removed"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">number of removed/recovered Individuals</terms:description>
+        <terms:description xml:lang="en">number of removed/recovered individuals</terms:description>
         <rdfs:comment xml:lang="en">number of Removed/Recovered Individuals
 
 R^i denotes the removed Individuals in the ith subpopulation. if no i is provided, then it is a single-population model.</rdfs:comment>
@@ -22375,7 +22371,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RotationalConstant">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">defines the scale of the rotational energies for a diatomic molecule</terms:description>
+        <terms:description xml:lang="en">defines the scale of rotational energies in molecular spectroscopy</terms:description>
         <rdfs:comment xml:lang="en">In rotational spectroscopy, the energy levels of a molecule are often given in terms of its rotational constant</rdfs:comment>
         <rdfs:label xml:lang="en">Rotational Constant</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rigid_rotor#Quantum_mechanical_linear_rigid_rotor"/>
@@ -22392,7 +22388,8 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#EulerBackwardMethod"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#EulerForwardMethod"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{array}{c|cccc} c_1    &amp; a_{11} &amp; a_{12}&amp; \dots &amp; a_{1s}\\c_2    &amp; a_{21} &amp; a_{22}&amp; \dots &amp; a_{2s}\\ \vdots &amp; \vdots &amp; \vdots&amp; \ddots&amp; \vdots\\c_s    &amp; a_{s1} &amp; a_{s2}&amp; \dots &amp; a_{ss} \\\hline       &amp; b_1    &amp; b_2   &amp; \dots &amp; b_s\\ \end{array}$</definingFormulation>
-        <rdfs:comment xml:lang="en">In numerical analysis, the Runge–Kutta methods are a family of implicit and explicit iterative methods, which include the Euler method, used in temporal discretization for the approximate solutions of differential equations. These methods were developed around 1900 by the German mathematicians Carl Runge and Wilhelm Kutta.</rdfs:comment>
+        <terms:description xml:lang="en">family of implicit and explicit methods used in temporal discretization for the approximate solutions of differential equations</terms:description>
+        <rdfs:comment xml:lang="en">These methods, which include the Euler method,  were developed around 1900 by the German mathematicians Carl Runge and Wilhelm Kutta.</rdfs:comment>
         <rdfs:label xml:lang="en">Runge–Kutta Method</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://en.wikipedia.org/wiki/Runge%E2%80%93Kutta_methods</rdfs:seeAlso>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q725944"/>
@@ -22428,7 +22425,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ScalingParameterForSwitchingInfluencers">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">scaling parameter used in the Rate of Switching Influcners</terms:description>
+        <terms:description xml:lang="en">scaling parameter used in the rate of switching influcners</terms:description>
         <rdfs:comment xml:lang="en">scaling parameter used in the Rate of Switching Influcners. Real number greater than 0.</rdfs:comment>
         <rdfs:label xml:lang="en">Scaling Parameter For Switching Influencers</rdfs:label>
     </owl:NamedIndividual>
@@ -22471,7 +22468,8 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTimeContinuous>
-        <rdfs:comment xml:lang="en">One of the fundamental postulates of Quantum Mechanics on the time evolution of quantum states. More specificially, the (time-dependent!) Schrödinger equation is a partial differential equation describing how the quantum state of a non-relativistic physical system changes with time</rdfs:comment>
+        <terms:description xml:lang="en">partial differential equation describing how the quantum state of a non-relativistic physical system changes with time</terms:description>
+        <rdfs:comment xml:lang="en">One of the fundamental postulates of Quantum Mechanics on the time evolution of quantum states.</rdfs:comment>
         <rdfs:label xml:lang="en">Schrödinger Equation (Time Dependent)</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q165498"/>
     </owl:NamedIndividual>
@@ -22488,6 +22486,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTimeContinuous>
+        <terms:description xml:lang="en">Coupled equations describing the time evolution in (hybrid) quantum-classical dynamics</terms:description>
         <rdfs:label xml:lang="en">Schrödinger-Newton Equation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22500,7 +22499,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <discretizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <rdfs:comment xml:lang="en">Chebchev polynomial scheme for numerical integration of the time-dependent Schrödinger equation</rdfs:comment>
+        <terms:description xml:lang="en">Chebchev polynomial scheme for numerical integration of the time-dependent Schrödinger equation</terms:description>
         <rdfs:label xml:lang="en">Schrödinger Equation (Chebychev Polynomial)</rdfs:label>
         <doiID rdf:resource="https://doi.org/10.1016/0021-9991(91)90137-A"/>
         <doiID rdf:resource="https://doi.org/10.1063/1.448136"/>
@@ -22518,7 +22517,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <discretizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchrödingerEquationSecondOrderDifferencing"/>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <rdfs:comment xml:lang="en">Differencing scheme (symmetric combination of Euler forward and backward in time) for numerical integration of the time-dependent Schrödinger equation</rdfs:comment>
+        <terms:description xml:lang="en">Differencing scheme (symmetric combination of Euler forward and backward in time) for numerical integration of the time-dependent Schrödinger equation</terms:description>
         <rdfs:label xml:lang="en">Schrödinger Equation (Differencing Scheme)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22570,7 +22569,8 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hbar$, Planck constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi$, Quantum State Vector (Dynamic)</inDefiningFormulation>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <rdfs:comment xml:lang="en">Second order differencing scheme for numerical integration of the time-dependent Schrödinger equation: Essentially a symmetric (and symplectic!) combination of Euler forward and backward methods</rdfs:comment>
+        <terms:description xml:lang="en">Second order differencing scheme for numerical integration of the time-dependent Schrödinger equation</terms:description>
+        <rdfs:comment xml:lang="en">Essentially a symmetric (and symplectic!) combination of Euler forward and backward methods</rdfs:comment>
         <rdfs:label xml:lang="en">Schrödinger Equation (Second Order Differencing)</rdfs:label>
         <doiID rdf:resource="https://doi.org/10.1016/0021-9991(91)90137-A"/>
         <doiID rdf:resource="https://doi.org/10.1063/1.436072"/>
@@ -22585,7 +22585,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <discretizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <rdfs:comment xml:lang="en">Split operator scheme for numerical integration of the time-dependent Schrödinger equation</rdfs:comment>
+        <terms:description xml:lang="en">Split operator scheme for numerical integration of the time-dependent Schrödinger equation</terms:description>
         <rdfs:label xml:lang="en">Schrödinger Equation (Split Operator)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22610,7 +22610,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hbar$, Planck constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi(t)$, Quantum State Vector (Dynamic)</inDefiningFormulation>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <rdfs:comment xml:lang="en">Second order (Strang-Marchuk) split operator scheme for numerical integration of the time-dependent Schrödinger equation</rdfs:comment>
+        <terms:description xml:lang="en">Second order (Strang-Marchuk) split operator scheme for numerical integration of the time-dependent Schrödinger equation</terms:description>
         <rdfs:label xml:lang="en">Schrödinger Equation (Strang-Marchuk)</rdfs:label>
         <doiID rdf:resource="https://doi.org/10.1016/0021-9991(82)90091-2"/>
         <doiID rdf:resource="https://doi.org/10.1016/0021-9991(91)90137-A"/>
@@ -22636,7 +22636,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$H$, Quantum Hamiltonian Operator</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi_n$, Quantum State Vector (Stationary)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$n$, Quantum Number</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">eigenvalue equation for the quantum-mechanical Hamiltonian operator, yielding stationary states (wave functions), along with their corresponding energies</rdfs:comment>
+        <terms:description xml:lang="en">eigenvalue equation for the quantum-mechanical Hamiltonian operator, yielding stationary states (wave functions), along with their corresponding energies</terms:description>
         <rdfs:label xml:lang="en">Schrödinger Equation (Time Independent)</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q25829357"/>
     </owl:NamedIndividual>
@@ -22731,7 +22731,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#SecondEigenvalueofOrthogonalMatrix">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">second Eigenvalue of Orthogonal Matrix</terms:description>
+        <terms:description xml:lang="en">second eigenvalue of an orthogonal matrix</terms:description>
         <rdfs:label xml:lang="en">Second Eigenvalue of Orthogonal Matrix</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22915,6 +22915,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$a$, Classical Acceleration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$m$, Mass</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r$, Classical Position</inDefiningFormulation>
+        <terms:description xml:lang="en">mathematical formulation describing the motion of the planets around the sun</terms:description>
         <rdfs:comment xml:lang="en">The acceleration of a celestial body can be calculated from Newton&apos;s Law of Gravitation. Each body attracts each other body, the total acceleration being the sum of all these attractions.</rdfs:comment>
         <rdfs:label xml:lang="en">Solar System Equations Of Motion</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Numerical_model_of_the_Solar_System"/>
@@ -23043,6 +23044,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\epsilon_0$, Permittivity (Vacuum)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu_0$, Permeability (Vacuum)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c$, Speed Of Light</inDefiningFormulation>
+        <terms:description xml:lang="en">speed of electromagnetic waves in vacuum</terms:description>
         <rdfs:label xml:lang="en">Speed Of Light (Definition)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Speed_of_light"/>
     </owl:NamedIndividual>
@@ -23061,7 +23063,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\theta$, Azimuthal Angle</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\theta$, Polar Angle</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r$, Radius</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">Representing a function in 3D in terms of spherical harmonics with distance(radius)-dependent coefficients.</rdfs:comment>
+        <terms:description xml:lang="en">Representing a function in 3D in terms of spherical harmonics with distance(radius)-dependent coefficients</terms:description>
         <rdfs:label xml:lang="en">Spherical Harmonics Expansion (3D)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23147,6 +23149,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixA"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\Re(eig(A))$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A</inDefiningFormulation>
+        <terms:description xml:lang="en">asymptotic stability of fixed points of a system of constant coefficient linear differential equations of first order</terms:description>
         <rdfs:comment xml:lang="en">The asymptotic stability of fixed points of a system of constant coefficient linear differential equations of first order (aka linear autonomious system, time-invariant system, $\dot{x}=Ax$) can be analyzed using the eigenvalues of the corresponding matrix.</rdfs:comment>
         <rdfs:label xml:lang="en">Stability Autonomous System</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Stability_theory"/>
@@ -23179,7 +23182,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{EX}}{dt} = 0$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{EX}$, Complexed Enzyme Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">Rate of bound enzyme formation and breakdown is equal.</rdfs:comment>
+        <terms:description xml:lang="en">rate of bound enzyme formation and breakdown is equal</terms:description>
         <rdfs:label xml:lang="en">Steady State Assumption</rdfs:label>
     </owl:NamedIndividual>
     
@@ -23193,7 +23196,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#BeaversJosephSaffmanCondition"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityOfTheNormalMassFlux"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityOfTheNormalStresses"/>
-        <terms:description xml:lang="en">Stokes Darcy Coupling Conditions</terms:description>
+        <terms:description xml:lang="en">Coupling free flow of an incompressible fluid (Stokes) to a flow in/through a permeable media (Darcy)</terms:description>
         <rdfs:label xml:lang="en">Stokes Darcy Coupling Conditions</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24075,7 +24078,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$AX+XB=C$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A,B,C$ given matrices</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$X$, Unknown Matrix</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">A matrix equation, typically used in the field of control theory</rdfs:comment>
+        <terms:description xml:lang="en">matrix equation, typically used in the field of control theory</terms:description>
         <rdfs:comment xml:lang="en">Due to the different sizes of A, B, C, the matrix X will be rectangular in general</rdfs:comment>
         <rdfs:label xml:lang="en">Sylvester Equation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Sylvester_equation"/>
@@ -24101,6 +24104,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$X$, Unknown Matrix</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\tilde{A}$, Control System Matrix A (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\tilde{B}$, Control System Matrix B (Reduced)</inDefiningFormulation>
+        <terms:description xml:lang="en">Sylvester equation for the controllability of a linear control system</terms:description>
         <rdfs:comment xml:lang="en">Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the Lyapunov equations for the calculations of Gramians.</rdfs:comment>
         <rdfs:label xml:lang="en">Sylvester Equation Controllability</rdfs:label>
     </owl:NamedIndividual>
@@ -24124,6 +24128,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\tilde{A}$, Control System Matrix A (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\tilde{C}$, Control System Matrix C (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$Υ$, Unknown Matrix</inDefiningFormulation>
+        <terms:description xml:lang="en">Sylvester equation for the observability of a linear control system</terms:description>
         <rdfs:comment xml:lang="en">Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the Lyapunov equations for the calculations of Gramians. However, note the sign change in the CC term.</rdfs:comment>
         <rdfs:label xml:lang="en">Sylvester Equation Observability</rdfs:label>
     </owl:NamedIndividual>
@@ -24144,6 +24149,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$B$, Control System Matrix B (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N$, Control System Matrix N (Reduced)</inDefiningFormulation>
+        <terms:description xml:lang="en">generalized Sylvester equation for the controllability of a bi-linear control system</terms:description>
         <rdfs:comment xml:lang="en">Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the generalized Lyapunov equations for the calculations of generalized Gramians.</rdfs:comment>
         <rdfs:label xml:lang="en">Sylvester Generalized Controllability</rdfs:label>
     </owl:NamedIndividual>
@@ -24163,6 +24169,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C$, Control System Matrix C (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N$, Control System Matrix N (Reduced)</inDefiningFormulation>
+        <terms:description>generalized Sylvester equation for the observability of a bi-linear control system</terms:description>
         <rdfs:comment xml:lang="en">Except for the use of the reduced matrices (tilde-notation), there is a formal similarity with the generalized Lyapunov equations for the calculations of generalized Gramians. However, note the sign change in the CC term.</rdfs:comment>
         <rdfs:label xml:lang="en">Sylvester Generalized Observability</rdfs:label>
     </owl:NamedIndividual>
@@ -24239,7 +24246,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\bm t = \bm \xi_{ij} / \lVert \bm \xi_{ij}\rVert$, tangential unit vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\bm x_{C_{ij}}$, global contact point between particles $i$ and $j$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{\bm \xi}_{ij}=\langle \bm v_i-\bm v_j, \bm t\rangle \bm t$, tangential component of relative veloctiy</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">The total force in tangential direction, i.e. the sum of dissipative and conservative force.</rdfs:comment>
+        <terms:description xml:lang="en">tangential component of the total force, i.e. the sum of dissipative and conservative force</terms:description>
         <rdfs:label xml:lang="en">Tangential Interaction Force Of Two Particles</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24278,7 +24285,8 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TendonStrain">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition"/>
-        <terms:description xml:lang="en">injury that involves stretching or tearing of a tendon</terms:description>
+        <terms:description xml:lang="en">stretching or partially tearing a tendon</terms:description>
+        <rdfs:comment xml:lang="en">Definition of the tendon strain by length of tendon under stress and stress-free length of tendon</rdfs:comment>
         <rdfs:label xml:lang="en">Tendon Strain</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24299,8 +24307,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathcal{l}^{\text{slack}}_\text{T}$, Stress Free Tendon Length</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$l_{\text{T}}$, Tendon Length</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
-        <terms:description xml:lang="en">injury that involves stretching or tearing of a tendon</terms:description>
-        <rdfs:comment xml:lang="en">Definition of the tendon strain by length of tendon under stress and stress-free length of tendon</rdfs:comment>
+        <terms:description xml:lang="en">stretching or partially tearing a tendon</terms:description>
         <rdfs:label xml:lang="en">Tendon Strain (Definition)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24412,7 +24419,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf T_i$, torque acting on particle $i$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf x_i$, position of particle $i$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf x_{a_{ij}} = \mathbf x_i + \frac{r_i}{r_i + r_j}(\mathbf x_i - \mathbf x_j)$, actuation point, i.e. mid-point of contact area between particles $i$ and $j$ with radii $r_i$ and $r_j$</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">The rotation needs to be taken into account when transforming the contact point between two particles from local to global coordinates.</rdfs:comment>
+        <rdfs:comment xml:lang="en">angular velocity needs to be taken into account when transforming the contact point between two particles from local to global coordinates</rdfs:comment>
         <rdfs:label xml:lang="en">Torque Of Particle</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24434,7 +24441,8 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TotalPopulationDensity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">number of people living in a given area, typically expressed as the number of people per square kilometer or square mile</terms:description>
+        <terms:description xml:lang="en">number of people living in a given area</terms:description>
+        <rdfs:comment xml:lang="en">typically expressed as the number of people per square kilometer or square mile</rdfs:comment>
         <rdfs:label xml:lang="en">Total Population Density</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24453,7 +24461,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$G^{(\tilde{l})}(x)$, Isotropic Gaussian Function</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$n(x)$, Total Population Density</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$w_n^{(\tilde{l})} $, Density Fraction Coefficient</inDefiningFormulation>
-        <terms:description xml:lang="en">Total Population Density represented as a sum of Isotropic gaussian functions of all provinces</terms:description>
+        <terms:description xml:lang="en">represented as a sum of Isotropic Gaussian functions of all provinces</terms:description>
         <rdfs:label xml:lang="en">Total Population Density Formulation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24481,7 +24489,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TrafficLoad">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">number of passengers traveling along each edge in the public transportation network.</terms:description>
+        <terms:description xml:lang="en">number of passengers traveling along each edge in the public transportation network</terms:description>
         <rdfs:label xml:lang="en">Traffic Load</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24525,10 +24533,11 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarcyEquation"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#OhmEquation"/>
+        <terms:description xml:lang="en">equation that describes the transport of some (extensive) quantity such as mass, energy|heat, momentum, electric charge</terms:description>
         <rdfs:comment xml:lang="en">There are several (constitutive) equations which describe the transport of matter, or properties of it, in an almost identical way. In every case, in words they read: Flux (density) is proportional to a gradient, where the constant of proportionality is a characteristic of the material. In general, the constant must be replaced by a 2nd rank tensor, to account for directional dependencies of the material.</rdfs:comment>
         <rdfs:label xml:lang="en">Transport Equation</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Constitutive_equation"/>
-        <wikidataID rdf:resource="https://wikidata.org/wiki/Q1937401"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Continuity_equation"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q105560509"/>
     </owl:NamedIndividual>
     
 
@@ -25945,7 +25954,8 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$h \approx r$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$h$, Free Fall Height</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r$, Earth Radius</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">Assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, i.e. a free fall. This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account.</rdfs:comment>
+        <terms:description xml:lang="en">assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, e.g. a free fall</terms:description>
+        <rdfs:comment xml:lang="en">This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account.</rdfs:comment>
         <rdfs:label xml:lang="en">Uniform Gravitational Acceleration</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25970,7 +25980,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UnitTangentVector">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">vector that is tangent to a curve or surface at a given point, with unit length</terms:description>
+        <terms:description xml:lang="en">vector that is tangential to a curve or surface at a given point, with unit length</terms:description>
         <rdfs:comment xml:lang="en">A vector that is tangent to a curve or surface at a given point, with unit length</rdfs:comment>
         <rdfs:label xml:lang="en">Unit Tangent Vector</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tangent_vector"/>
@@ -25984,7 +25994,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UnknownMatrix">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">unknown matrix</terms:description>
+        <terms:description xml:lang="en">unknown matrix, to be found</terms:description>
         <rdfs:label xml:lang="en">Unknown Matrix</rdfs:label>
     </owl:NamedIndividual>
     
@@ -25996,7 +26006,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UpperTriangularMatrix">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <terms:description xml:lang="en">matrix with all elements below the main diagonal zero</terms:description>
+        <terms:description xml:lang="en">matrix with all elements below the main diagonal equal to zero</terms:description>
         <rdfs:label xml:lang="en">Upper-Triangular Matrix</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26010,7 +26020,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfAir"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho\rightarrow 0$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Density of Air</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">In the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models.</rdfs:comment>
+        <terms:description xml:lang="en">in the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models</terms:description>
         <rdfs:label xml:lang="en">Vanishing Air Density</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26024,7 +26034,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DragCoefficient"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_D\rightarrow 0$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_D$, Drag Coefficient</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">In the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models.</rdfs:comment>
+        <terms:description xml:lang="en">in the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models</terms:description>
         <rdfs:label xml:lang="en">Vanishing Drag Coefficient</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26078,7 +26088,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#VibrationFrequencyHarmonic">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Frequency"/>
-        <terms:description xml:lang="en">Harmonic frequency of vibration, e.g. of a molecule</terms:description>
+        <terms:description xml:lang="en">harmonic frequency of vibration, e.g. of a molecule</terms:description>
         <rdfs:label xml:lang="en">Vibration Frequency (Harmonic)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Quantum_harmonic_oscillator"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q677864"/>
@@ -26098,7 +26108,8 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Quantum Eigen Energy</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$U$, Intermolecular Potential</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Normal Mode Coordinate (Dimensionless)</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">Frequency shift of molecular vibrations caused by interaction with surrounding particles (e.g. solvent effect). Results from 1st order non-degenerate perturbation theory. The interpretation is quite straight-forward: Effectively, the intermolecular potential changes the effective force constant of a vibrational normal mode.</rdfs:comment>
+        <terms:description xml:lang="en">frequency shift of molecular vibrations caused by interaction with surrounding particles  from 1st order non-degenerate perturbation theory</terms:description>
+        <rdfs:comment xml:lang="en">The interpretation is quite straight-forward: Effectively, the intermolecular potential changes the effective force constant of a vibrational normal mode.</rdfs:comment>
         <rdfs:label xml:lang="en">Vibrational Frequency Shift (1st Order)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26120,7 +26131,8 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\omega$, Vibration Frequency Harmonic</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi$, Force Constant (Anharmonic)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Normal Mode Coordinate (Dimensionless)</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">Frequency shift of molecular vibrations caused by interaction with surrounding particles (e.g. solvent effect). Results from 2nd order non-degenerate perturbation theory.  The interpretation is based on the coupling of different vibrational normal modes, mediated by the cubic anharmonicity of the intramolecular force field.</rdfs:comment>
+        <terms:description xml:lang="en">frequency shift of molecular vibrations caused by interaction with surrounding particles  from 2nd order non-degenerate perturbation theory</terms:description>
+        <rdfs:comment xml:lang="en">The interpretation is based on the coupling of different vibrational normal modes, mediated by the cubic anharmonicity of the intramolecular force field.</rdfs:comment>
         <rdfs:label xml:lang="en">Vibrational Frequency Shift (2nd Order)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -26158,7 +26170,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationNoStrain"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained"/>
-        <terms:description xml:lang="en">vector pointing in the direction of a wave and whose magnitude is equal to the wavenumber</terms:description>
+        <terms:description xml:lang="en">vector pointing in the direction of propagation of a wave and whose magnitude is equal to the wavenumber</terms:description>
         <rdfs:comment xml:lang="en">Vector pointing in the direction of a wave and whose magnitude is equal to the wavenumber. In quantum mechanics/condensed matter physics, a wave vector is the quotient of the momentum vektor of particles or quasi particles and the reduced Planck constant</rdfs:comment>
         <rdfs:label xml:lang="en">Wave Vector of an Electron</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q657009"/>
@@ -26217,7 +26229,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#WhiteNoise">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <terms:description xml:lang="en">Delta-correlated stationary Gaussian process with zero-mean</terms:description>
+        <terms:description xml:lang="en">delta-correlated stationary Gaussian process with zero-mean</terms:description>
         <rdfs:comment xml:lang="en">Delta-correlated stationary Gaussian process with zero-mean, i.e., a random signal with equal intensity at all frequencies, yielding a constant power spectral density.</rdfs:comment>
         <rdfs:label xml:lang="en">White Noise</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/White_noise"/>
@@ -26254,6 +26266,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Young Modulus</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\sigma$, Normal Stress</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\varepsilon$, Linear Strain</inDefiningFormulation>
+        <terms:description xml:lang="en">mechanical property that measures stiffness of a solid material</terms:description>
         <rdfs:label xml:lang="en">Young Modulus (Definition)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Young%27s_modulus"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q2091584"/>
@@ -26304,8 +26317,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#deBroglieWavelength">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#deBroglieWaveLengthDefinition"/>
-        <terms:creator rdf:resource="https://en.wikipedia.org/wiki/Louis_de_Broglie"/>
-        <terms:description xml:lang="en">wavelength of matter waves</terms:description>
+        <terms:description xml:lang="en">wavelength of matter waves in quantum mechanics</terms:description>
         <rdfs:comment xml:lang="en">playing a crucial role for the wave-particle duality in quantum mechanics.</rdfs:comment>
         <rdfs:label xml:lang="en">de Broglie Wavelength</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Matter_wave#De_Broglie_hypothesis"/>
