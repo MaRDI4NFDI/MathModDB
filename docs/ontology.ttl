@@ -1863,7 +1863,7 @@ rdf:HTML rdf:type rdfs:Datatype .
                              :PermeabilityVacuum ,
                              :PermittivityVacuum ,
                              :Time ;
-           :definingFormulation "$\\nabla \\times \\mathbf{B} &= \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"^^:LaTeX ;
+           :definingFormulation "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"^^:LaTeX ;
            :inDefiningFormulation "$E$, Electric Field"^^:LaTeX ,
                                   "$E$, Magnetic Field"^^:LaTeX ,
                                   "$J$, Electric Current Density"^^:LaTeX ,
@@ -3117,7 +3117,7 @@ rdf:HTML rdf:type rdfs:Datatype .
                                                                 :Substrate1Concentration ,
                                                                 :Substrate2Concentration ,
                                                                 :Time ;
-                                              :definingFormulation """$\\begin{align*}
+                                              :definingFormulation """$\\begin{align}
 \\frac{dc_{S_1}}{dt} &= k_{-1} * c_{ES_1} - k_{1} * c_{E} * c_{S_1} \\\\
 \\frac{dc_{S_2}}{dt} &= k_{-2} * c_{EP_2} * c_{P_1} - k_{2} * c_{ES_1} * c_{S_2} \\\\
 \\frac{dc_{P_1}}{dt} &= k_{2} * c_{ES_1} * c_{S_2} - k_{-2} * c_{EP_2} * c_{P_1} \\\\
@@ -3125,7 +3125,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 \\frac{dc_{ES_1}}{dt} &= k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2} \\\\
 \\frac{dc_{EP_2}}{dt} &= k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2} \\\\
 \\frac{dc_{E}}{dt} &= k_{-1} * c_{ES_1} + k_3 * c_{EP_2} - k_{1} * c_{E} * c_{S_1} - k_{-3} * c_{E} * c_{P_2} 
-\\end{align*}$"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                                               :inDefiningFormulation "$\\frac{dc_{EP_2}}{dt}$, Reaction Rate of Enzyme - Product 2 Complex"^^:LaTeX ,
                                                                      "$\\frac{dc_{ES_1}}{dt}$, Reaction Rate of Enzyme - Substrate 1 Complex"^^:LaTeX ,
                                                                      "$\\frac{dc_{E}}{dt}$, Reaction Rate of Enzyme"^^:LaTeX ,
@@ -3640,7 +3640,7 @@ rdf:HTML rdf:type rdfs:Datatype .
                                                  :ClassicalHamiltonEquations ,
                                                  :ClassicalNewtonEquation ;
                         :containsQuantity :deBroglieWavelength ;
-                        :definingFormulation "$\\lambda \\llt L$"^^:LaTeX ;
+                        :definingFormulation "$\\lambda \\ll L$"^^:LaTeX ;
                         :inDefiningFormulation "$L$, typical dimension of the system"^^:LaTeX ,
                                                "$\\lambda$, de Broglie Wavelength"^^:LaTeX ;
                         <http://purl.org/dc/terms/description> "classical dynamics as an approximation to quantum mechanics"@en ;
@@ -3688,9 +3688,9 @@ rdf:HTML rdf:type rdfs:Datatype .
                         :isDeterministic "false"^^xsd:boolean ;
                         :isDynamic "true"^^xsd:boolean ;
                         <http://purl.org/dc/terms/description> "mathematical model for describing molecular systems in the diffusive regime"@en ;
-                        rdfs:comment "Brownian dynamics is also known as overdamped Langevin dynamics."@en ;
                         rdfs:label "Classical Brownian Model"@en ;
                         rdfs:seeAlso <https://en.wikipedia.org/wiki/Brownian_dynamics> ;
+                        <http://www.w3.org/2004/02/skos/core#altLabel> "overdamped Langevin dynamics"@en ;
                         :wikidataID <https://www.wikidata.org/wiki/Q4976526> .
 
 
@@ -3891,9 +3891,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                               :ClassicalMomentum ,
                                               :ClassicalPosition ,
                                               :Time ;
-                            :generalizedByFormulation :QuantumLiouvilleEquation ;
                             :generalizesFormulation :ClassicalHamiltonEquations ;
-                            :similarToFormulation :QuantumLiouvilleEquation ;
                             :definingFormulation "$\\frac{d\\rho}{dt}=\\frac{\\partial\\rho}{\\partial t}+\\sum_{i=1}^n\\left(\\frac{\\partial\\rho}{\\partial q_i}\\dot{q}_i+\\frac{\\partial\\rho}{\\partial p_i}\\dot{p}_i\\right)$"^^:LaTeX ;
                             :inDefiningFormulation "$H$, Classical Hamilton Function"^^:LaTeX ,
                                                    "$\\rho$, Classical Density (Phase Space)'"^^:LaTeX ,
@@ -4037,8 +4035,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 ###  https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation
 :ClosedSystemApproximation rdf:type owl:NamedIndividual ,
                                     :MathematicalFormulationDefinition ;
-                           :containedAsAssumptionIn :QuantumLiouvilleEquation ,
-                                                    :SchroedingerEquationTimeDependent ,
+                           :containedAsAssumptionIn :SchroedingerEquationTimeDependent ,
                                                     :SchrödingerEquationTimeIndependent ;
                            :containsQuantity :QuantumDampingRate ;
                            :definingFormulation "$\\gamma \\rightarrow 0$"^^:LaTeX ;
@@ -4269,7 +4266,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                              :NumberOfSusceptibleCities ,
                                              :Time ;
                            :generalizedByFormulation :ConservationLaw ;
-                           :definingFormulation "$i_m(t) &= P_m - s_m(t)$"^^:LaTeX ;
+                           :definingFormulation "$i_m(t) = P_m - s_m(t)$"^^:LaTeX ;
                            :inDefiningFormulation "$P_m$, Number of Cities"^^:LaTeX ,
                                                   "$i_m(t)$, Number Of Infected Cities"^^:LaTeX ,
                                                   "$s_m(t)$, Number Of Susceptible Cities"^^:LaTeX ,
@@ -4726,7 +4723,6 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                               :Time ;
                             :generalizesFormulation :ControlSystemInputLinear ,
                                                     :QuantumLindbladEquation ,
-                                                    :QuantumLiouvilleEquation ,
                                                     :SchroedingerEquationTimeDependent ;
                             :definingFormulation "$\\dot{x}(t)=(A+u(t)N)x(t)+Bu(t)$"^^:LaTeX ;
                             :inDefiningFormulation "$A$, Control System Matrix A"^^:LaTeX ,
@@ -4771,7 +4767,6 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                             :ControlSystemState ,
                                             :Time ;
                           :generalizesFormulation :QuantumLindbladEquation ,
-                                                  :QuantumLiouvilleEquation ,
                                                   :SchroedingerEquationTimeDependent ;
                           :definingFormulation "$\\dot{x}(t)=Ax(t)+Bu(t)$"^^:LaTeX ;
                           :inDefiningFormulation "$A$, Control System Matrix A"^^:LaTeX ,
@@ -5061,7 +5056,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                      :approximatesFormulation :ControlSystemOutputQuadratic ;
                                      :containsQuantity :ControlSystemOutput ,
                                                        :Time ;
-                                     :definingFormulation "$y(t)=\\tilde{x}^{\\dag}(t)\\tilde{D}\\tilde{x}(t)$"^^:LaTeX ;
+                                     :definingFormulation "$y(t)=\\tilde{x}^{\\dagger}(t)\\tilde{D}\\tilde{x}(t)$"^^:LaTeX ;
                                      :inDefiningFormulation "$\\tilde{D}$, Control System Matrix D (Reduced)"^^:LaTeX ,
                                                             "$\\tilde{x}$, Control System State (Reduced)"^^:LaTeX ,
                                                             "$t$, Time"^^:LaTeX ,
@@ -5151,7 +5146,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                :containedInFormulation :FiniteVolumeMethod ;
                :definedBy :ControlVolumeDefinition ;
                <http://purl.org/dc/terms/description> "mathematical abstraction employed in mathematical models of continuum mechanics and thermodynamics used within finite volume discretizations"@en ;
-               rdfs:comment "used for example in  the Scharfetter-Gummel discretization of the van-Roosbroeck system"@en ;
+               rdfs:comment "used for example in  the Scharfetter-Gummel discretization of the drift diffusion (aka van-Roosbroeck) system"@en ;
                rdfs:label "Control Volume"@en ;
                rdfs:seeAlso <https://en.wikipedia.org/wiki/Control_volume> ;
                :wikidataID <https://www.wikidata.org/wiki/Q5165895> .
@@ -5260,7 +5255,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 :CurrentDensityOfElectrons rdf:type owl:NamedIndividual ,
                                     :Quantity ;
                            :definedBy :CurrentDensityOfElectronsDefinition ;
-                           <http://purl.org/dc/terms/description> "density of current of the electrons, e.g., in a semiconductor device"@en ;
+                           <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en ;
                            rdfs:label "Current Density Of Electrons"@en ;
                            <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
 
@@ -5283,9 +5278,8 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                                             "$q$, Elementary Charge"^^:LaTeX ;
                                      :isDynamic "false"^^xsd:boolean ;
                                      :isSpaceContinuous "true"^^xsd:boolean ;
-                                     <http://purl.org/dc/terms/description> "for use in semiconductor physics; also known as flux of electrons"@en ;
-                                     rdfs:label "Current Density Of Electrons (Definition)"@en ;
-                                     <http://www.w3.org/2004/02/skos/core#altLabel> "Flux of Electrons"@en .
+                                     <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en ;
+                                     rdfs:label "Current Density Of Electrons (Definition)"@en .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles
@@ -5293,7 +5287,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                 :Quantity ;
                        :definedBy :CurrentDensityOfHolesDefinition ;
                        :similarToQuantity :CurrentDensityOfElectrons ;
-                       <http://purl.org/dc/terms/description> "density of current of the holes, e.g., in a semiconductor device"@en ;
+                       <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en ;
                        rdfs:label "Current Density Of Holes"@en ;
                        <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
 
@@ -5316,18 +5310,16 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                                         "$q$, Elementary Charge"^^:LaTeX ;
                                  :isDynamic "false"^^xsd:boolean ;
                                  :isSpaceContinuous "true"^^xsd:boolean ;
-                                 <http://purl.org/dc/terms/description> "for use in semiconductor physics; also known as flux of holes"@en ;
-                                 rdfs:label "Current Density Of Holes (Definition)"@en ;
-                                 <http://www.w3.org/2004/02/skos/core#altLabel> "Flux Of Holes"@en .
+                                 <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en ;
+                                 rdfs:label "Current Density Of Holes (Definition)"@en .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices
 :CurrentFlowInSemiconductorDevices rdf:type owl:NamedIndividual ,
                                             :ResearchProblem ;
                                    :containedInField :SemiconductorPhysics ;
-                                   :modeledBy :vanRoosbroeckModel ;
                                    <http://purl.org/dc/terms/description> "flow of electrical charge carriers coupled to electrostatic potential distribution in semiconductor devices"@en ;
-                                   rdfs:label "Current flow in semiconductor devices"@en .
+                                   rdfs:label "Current Flow in Semiconductor Devices"@en .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#CurrentProceduralTerminology
@@ -5346,10 +5338,10 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
                                  :FluidIntrinsicPermeabilityPorousMedium ,
                                  :FluidPressurePorousMedium ,
                                  :FluidVelocityPorousMedium ;
-               :definingFormulation """$\\begin{align*}
+               :definingFormulation """$\\begin{align}
 v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 \\nabla \\cdot v^{pm} = 0
-\\end{align*}$"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                :inDefiningFormulation "$K$, Fluid Intrinsic Permeability (Porous Medium)"^^:LaTeX ,
                                       "$\\mu$, Fluid Dynamic Viscosity (Porous Medium)"^^:LaTeX ,
                                       "$p^{pm}$, Fluid Pressure (Porous Medium)"^^:LaTeX ,
@@ -5425,10 +5417,10 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                             :MathematicalFormulationDefinition ;
                                    :containedAsFormulationIn :DynamicalElectronScatteringModel ;
                                    :containsQuantity :UnitNormalVector ;
-                                   :definingFormulation """$\\begin{align*}
+                                   :definingFormulation """$\\begin{align}
 \\frac{\\mathrm d}{\\mathrm d z} \\varphi_{\\mathbf{g}}(z) &= 2\\mathrm{i} \\pi \\Big(s_{\\mathbf{g}} + \\frac{\\mathrm d}{\\mathrm d z}(\\mathbf{g}\\cdot \\mathbf{u}(\\mathbf{r}))\\Big)\\varphi_{\\mathbf{g}}(z)+ \\mathrm{i} \\pi\\sum_{\\mathbf{h}\\in \\Lambda^*_m} U_{\\mathbf{g-h}}\\varphi_{\\mathbf{h}}(z)\\\\
 \\quad s_g &= -\\frac{g\\cdot(2k_0+g)}{2n\\cdot(k_0+g)}
-\\end{align*}$"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                                    :inDefiningFormulation "$U_g$, Electric Potential Fourier Coefficients"^^:LaTeX ,
                                                           "$\\Lambda^*_m$, Reciprocal Lattice"^^:LaTeX ,
                                                           "$\\psi_g$, Amplitude of Electron Wave"^^:LaTeX ,
@@ -5695,7 +5687,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                            :isTimeContinuous "false"^^xsd:boolean ;
                                            <http://purl.org/dc/terms/description> "discrete model for the spreading of infectious diseases considering susceptible, infectious and recovered/removed individuals"@en ;
                                            rdfs:label "Discrete Susceptible Infectious Removed Model"@en ;
-                                           :wikidataID "https://www.wikidata.org/wiki/Q2206263" .
+                                           :wikidataID <https://www.wikidata.org/wiki/Q2206263> .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel
@@ -5707,7 +5699,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                :isTimeContinuous "false"^^xsd:boolean ;
                                                rdfs:comment "discrete-time model for the spreding of infectious diseases with temporary resistance considering susceptible and infectious individuals"@en ;
                                                rdfs:label "Discrete Susceptible Infectious Susceptible Model"@en ;
-                                               :wikidataID "https://www.wikidata.org/wiki/Q2351772" .
+                                               :wikidataID <https://www.wikidata.org/wiki/Q2351772> .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method
@@ -5900,19 +5892,29 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel
 :DriftDiffusionModel rdf:type owl:NamedIndividual ,
                               :MathematicalModel ;
-                     owl:sameAs :vanRoosbroeckModel ;
                      :containsBoundaryCondition :DirichletBoundaryConditionForElectricPotential ,
                                                 :DirichletBoundaryConditionForElectronFermiPotential ,
                                                 :DirichletBoundaryConditionForHoleFermiPotential ,
                                                 :NeumannBoundaryConditionElectricPotential ,
                                                 :NeumannBoundaryConditionForElectronFermiPotential ,
                                                 :NeumannBoundaryConditionForHoleFermiPotential ;
+                     :containsFormulation :BoltzmannApproximationForElectrons ,
+                                          :BoltzmannApproximationForHoles ,
+                                          :ContinuityEquationForElectrons ,
+                                          :ContinuityEquationForHoles ,
+                                          :PoissonEquationForTheElectricPotential ;
+                     :discretizedByModel :ScharfetterGummelScheme ;
+                     :models :CurrentFlowInSemiconductorDevices ;
+                     :surveyedIn :Koprucki_2017_Numerical_methods_for_drift-diffusion_models ;
                      <http://purl.org/dc/terms/description> "mathematical model describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation"@en ;
+                     rdfs:comment "The drift-diffusion system describes the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation. It became the standard model to describe the current flow in semiconductor devices such as diodes, transistors, LEDs, solar cells and lasers, as well as  quantum nanostructures and organic semiconductors."@en ;
                      rdfs:label "Drift-Diffusion Model"@en ;
-                     <http://www.w3.org/2004/02/skos/core#altLabel> "van Roosbroeck Model"@en .
+                     rdfs:seeAlso <https://archive.org/details/bstj29-4-560> ,
+                                  "W. van Roosbroeck. Theory of the ﬂow of electrons and holes in germanium and other semiconductors. Bell Syst. Tech. J., 29(4):560–607, 1950"@en ;
+                     <http://www.w3.org/2004/02/skos/core#altLabel> "van Roosbroeck Model"@en ;
+                     :doiID <https://doi.org/10.20347/WIAS.PREPRINT.2263> ,
+                            <https://doi.org/10.4324/9781315152318-25> .
 
-
-###  https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel
 
 ###  https://mardi4nfdi.de/mathmoddb#Duration
 :Duration rdf:type owl:NamedIndividual ,
@@ -6403,9 +6405,10 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                        :Quantity ;
               :generalizedByQuantity :Mass ;
               <http://purl.org/dc/terms/description> "mass of a stationary electron"@en ;
-              rdfs:comment "In particle physics, the mass of a stationary electron, also known as the invariant mass of the electron. It is one of the fundamental constants of physics."@en ;
+              rdfs:comment "In particle physics, the mass of a stationary electron is one of the fundamental constants of physics."@en ;
               rdfs:label "Electron Mass"@en ;
               rdfs:seeAlso <https://en.wikipedia.org/wiki/Electron_mass> ;
+              <http://www.w3.org/2004/02/skos/core#altLabel> "invariant mass of the electron"@en ;
               :qudtID <http://qudt.org/vocab/constant/ElectronMass> ;
               :wikidataID <https://www.wikidata.org/wiki/Q3814108> .
 
@@ -6419,7 +6422,6 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                         :containsFormulation :LaplaceEquationForTheElectricPotential ,
                                              :QuantumHamiltonianElectricCharge ,
                                              :QuantumLindbladEquation ,
-                                             :QuantumLiouvilleEquation ,
                                              :SchroedingerEquationTimeDependent ,
                                              :SchrödingerEquationTimeIndependent ;
                         :generalizedByModel :ControlSystemModelBilinear ,
@@ -6452,11 +6454,11 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                                 :Pressure ,
                                                                 :StressTensorPiolaKirchhoff ,
                                                                 :Time ;
-                                              :definingFormulation """$$\\begin{align*}
+                                              :definingFormulation """$\\begin{align}
  \\rho_{\\text{M}1} \\mathbf{\\ddot{x}}_{\\text{M}1} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}1}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}1}, \\gamma_{\\text{M}1}) - p_{\\text{M}1}\\mathbf{F}^{-T}_{\\text{M}1} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}1} = 0$} ~ &\\text{in $\\Omega_{\\text{M}1}\\times [0,T_{\\text{end}})$}\\\\ 
  \\rho_{\\text{M}2} \\mathbf{\\ddot{x}}_{\\text{M}2} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}2}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}2}, \\gamma_{\\text{M}2}) - p_{\\text{M}2}\\mathbf{F}^{-T}_{\\text{M}2} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}2} = 0$} ~ &\\text{in $\\Omega_{\\text{M}2}\\times [0,T_{\\text{end}})$}\\\\
  \\rho_{\\text{T}}\\mathbf{\\ddot{x}}_\\text{T}&= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_\\text{passive}(\\mathbf{F}_{\\text{T}}) - p_\\text{T}\\mathbf{F}^{-T}_{\\text{T}}\\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{T}}=0$}& ~\\text{in $\\Omega_{\\text{T}}\\times [0,T_{\\text{end}})$} 
-\\end{align*}$$"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                                               :inDefiningFormulation "$\\ddot{\\mathbf{x}}$, Material Point Acceleration"^^:LaTeX ,
                                                                      "$\\dot{\\mathbf{x}}$, Material Point Velocity"^^:LaTeX ,
                                                                      "$\\gamma$, Lumped Activation Parameter"^^:LaTeX ,
@@ -6612,7 +6614,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                                             :Time ;
                                                           :definingFormulation "$\\frac{dc_{EP_2}}{dt} = k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2}$"^^:LaTeX ;
                                                           :inDefiningFormulation "$\\frac{dc_{EP_2}}{dt}$, Reaction Rate"^^:LaTeX ,
-                                                                                 "$c_{EP_2}}$, Concentration"^^:LaTeX ,
+                                                                                 "$c_{EP_2}$, Concentration"^^:LaTeX ,
                                                                                  "$c_{ES_1}$, Concentration"^^:LaTeX ,
                                                                                  "$c_{E}$, Concentration"^^:LaTeX ,
                                                                                  "$c_{P_1}$, Concentration"^^:LaTeX ,
@@ -6744,7 +6746,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                                               :Time ;
                                                             :definingFormulation "$\\frac{dc_{ES_1}}{dt} = k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2}$"^^:LaTeX ;
                                                             :inDefiningFormulation "$\\frac{dc_{ES_1}}{dt}$, Reaction Rate"^^:LaTeX ,
-                                                                                   "$c_{EP_2}}$, Concentration"^^:LaTeX ,
+                                                                                   "$c_{EP_2}$, Concentration"^^:LaTeX ,
                                                                                    "$c_{ES_1}$, Concentration"^^:LaTeX ,
                                                                                    "$c_{E}$, Concentration"^^:LaTeX ,
                                                                                    "$c_{S_1}$, Concentration"^^:LaTeX ,
@@ -7071,7 +7073,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                   :FractionOfPopulationDensityOfRemoved ,
                                                   :FractionOfPopulationDensityOfSusceptibles ,
                                                   :UnitNormalVector ;
-                                :definingFormulation "$\\nu^T D \\nabla s & =\\nu^T D \\nabla e=\\nu^T D \\nabla i=\\nu^T D \\nabla r=0$"^^:LaTeX ;
+                                :definingFormulation "$\\nu^T D \\nabla s =\\nu^T D \\nabla e=\\nu^T D \\nabla i=\\nu^T D \\nabla r=0$"^^:LaTeX ;
                                 :inDefiningFormulation "$D$, Diffusion Coefficient"^^:LaTeX ,
                                                        "$\\nu$, Unit Normal Vector"^^:LaTeX ,
                                                        "$e$, Fraction Of Population Density Of Exposed"^^:LaTeX ,
@@ -7283,7 +7285,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
             :containsQuantity :ElectricField ,
                               :MagneticField ,
                               :Time ;
-            :definingFormulation "$ \\nabla \\times \\mathbf{E} &= -\\frac{\\partial \\mathbf{B}} {\\partial t}$"^^:LaTeX ;
+            :definingFormulation "$ \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}} {\\partial t}$"^^:LaTeX ;
             :inDefiningFormulation "$B$, Magnetic Field"^^:LaTeX ,
                                    "$E$, Electric Field"^^:LaTeX ,
                                    "$t$, Time"^^:LaTeX ;
@@ -7495,8 +7497,8 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
              :containedInFormulation :ContinuityEquationForHoles ,
                                      :CurrentDensityOfHolesDefinition ;
              :generalizedByQuantity :ParticleFluxDensity ;
-             rdfs:comment "For use in semiconductor physics"@en ,
-                          "flow of holes, e.g., in an electric device"@en ;
+             <http://purl.org/dc/terms/description> "flow of holes, e.g., in an electric device"@en ;
+             rdfs:comment "For use in semiconductor physics"@en ;
              rdfs:label "Flux Of Holes"@en .
 
 
@@ -7728,15 +7730,16 @@ y(t) &=& y_0+v_0t-\\frac{v_\\infty^2}{g}\\ln\\cosh\\left(\\frac{gt}{v_\\infty}\\
                                                 :MathematicalFormulationDefinition ;
                                        :containsQuantity :FreeFallHeight ,
                                                          :FreeFallInitialHeight ,
-                                                         :FreeFallTime ;
+                                                         :FreeFallTime ,
+                                                         :QuantileFunctionOfTheBetaDistribution ;
                                        :generalizesFormulation :FreeFallEquationVacuum ;
                                        :definingFormulation "y(t)=y_0~Q\\left(1-\\frac{t}{t_{\\mathrm{ff}}};\\frac{3}{2},\\frac{1}{2}\\right)"^^:LaTeX ;
-                                       :inDefiningFormulation "$t_\\mathrm{ff}$, Free Fall Time"^^:LaTeX ,
+                                       :inDefiningFormulation "$Q$, Quantile Function Of The Beta Distribution"^^:LaTeX ,
+                                                              "$t_\\mathrm{ff}$, Free Fall Time"^^:LaTeX ,
                                                               "$y$, Free Fall Height"^^:LaTeX ,
                                                               "$y_0$, Free Fall Initial Height"^^:LaTeX ;
                                        <http://purl.org/dc/terms/description> "modeling the fall of objects by the laws of classical mechanics, neglecting aerodynamic drag but allowing for a non-uniform gravitational field"@en ;
-                                       rdfs:comment "Moreover, assuming the falling object to be a point mass."@en ,
-                                                    "Q is the quantile function of the Beta distribution, also known as the inverse function of the regularized incomplete beta function"@en ;
+                                       rdfs:comment "Moreover, assuming the falling object to be a point mass."@en ;
                                        rdfs:label "Free Fall Equation (Non-Uniform Gravitation)"@en .
 
 
@@ -8040,12 +8043,12 @@ y(t) &=& y_0+v_0t-\\frac{1}{2}gt^2
 ###  https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer
 :GatedRecurrentUnitLayer rdf:type owl:NamedIndividual ,
                                   :MathematicalFormulationDefinition ;
-                         :definingFormulation """$\\begin{align*}
+                         :definingFormulation """$\\begin{align}
 h_i &= z_i \\cdot h_{i-1} + (1-z_i) \\cdot \\hat{h_i} \\\\
 \\hat{h_i} &= \\tanh(W_h x_i + r_i \\cdot U_h h_{i-1} + b_h) \\\\
 z_i &= \\sigma(W_z x_i + U_z h_{i-1} + b_z) \\\\
 r_i &= \\sigma(W_r x_i + U_r h_{i-1} +b_r) \\\\
-\\end{align*}&"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                          :inDefiningFormulation "$W$, weight matrix"^^:LaTeX ,
                                                 "$\\hat{h_i}$,intermediate memory unit"^^:LaTeX ,
                                                 "$b$, bias"^^:LaTeX ,
@@ -8675,9 +8678,9 @@ Q_{j}(t_{1},\\ldots,t_{j}) X&=& Q_{j-1}iN e^{A^{*}t_{j}}
                                                               :PassiveMuscleForce ,
                                                               :PassiveTendonForce ,
                                                               :Time ;
-                                            :definingFormulation """$ \\begin{align*} 
+                                            :definingFormulation """$ \\begin{align} 
         m_{1} \\ddot{x}_{1} &= F_\\text{PTE}(t) -F_{\\text{ACE}1}(t) - F_{\\text{PME}1}(t) \\\\ 
-        m_{2} \\ddot{x}_{2} &= -F_\\text{PTE}(t) + F_{\\text{ACE}2}(t) - F_{\\text{PME}2}(t) \\end{align*}$"""^^:LaTeX ;
+        m_{2} \\ddot{x}_{2} &= -F_\\text{PTE}(t) + F_{\\text{ACE}2}(t) - F_{\\text{PME}2}(t) \\end{align}$"""^^:LaTeX ;
                                             :inDefiningFormulation "$F_{\\text{ACE}}$, Active contractile force"^^:LaTeX ,
                                                                    "$F_{\\text{PME}}$, Passive Muscle Force"^^:LaTeX ,
                                                                    "$F_{\\text{PTE}}$, Passive Tendon Force"^^:LaTeX ,
@@ -8738,7 +8741,7 @@ Q_{j}(t_{1},\\ldots,t_{j}) X&=& Q_{j-1}iN e^{A^{*}t_{j}}
                                                  "$\\epsilon$, Mechanical Strain"^^:LaTeX ,
                                                  "$\\sigma$, Mechanical Stress"^^:LaTeX ,
                                                  "$u$, Displacement of Atoms"^^:LaTeX ;
-                          <http://purl.org/dc/terms/description> "force to extend or compress a spring by distance scales linearly with  distance"@en ;
+                          <http://purl.org/dc/terms/description> "force to extend or compress a spring by distance scales linearly with distance"@en ;
                           rdfs:comment "An empirical law which states that the force (F) needed to extend or compress a spring by some distance (x) scales linearly with respect to that distance—that is, $F = kx$. Also the stresses and strains of  material inside a continuous elastic material are connected by a linear relationship that is mathematically similar to Hooke's spring law, and is often referred to by that name."@en ;
                           rdfs:label "Hooke Law (Linear Elasticity)"@en ;
                           rdfs:seeAlso <https://en.wikipedia.org/wiki/Linear_elasticity> ;
@@ -9735,7 +9738,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                                 :MathematicalFormulationDefinition ;
                                                                        :containsQuantity :Concentration ,
                                                                                          :Time ;
-                                                                       :definingFormulation "$c_{E*S_2}(t=0) = c_{E*S_2_{0}}$"^^:LaTeX ;
+                                                                       :definingFormulation "$c_{E*S_2}(t=0) = c_{E*S_{2_{0}}}$"^^:LaTeX ;
                                                                        :inDefiningFormulation "$c_{E*S_2}$, Concentration"^^:LaTeX ,
                                                                                               "$t$, Time"^^:LaTeX ;
                                                                        rdfs:label "Initial Intermediate - Substrate 2 - Complex Concentration (Bi Bi Reaction Ping Pong - ODE Model)"@en .
@@ -9761,7 +9764,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                    :Time ;
                                                  :similarToFormulation :InitialProduct1ConcentrationBiBiPingPongODEModel ;
                                                  :definingFormulation "$c_{P_1}(t=0) = c_{P_{1,0}}$"^^:LaTeX ;
-                                                 :inDefiningFormulation "$c_P_1$, Concentration"^^:LaTeX ,
+                                                 :inDefiningFormulation "$c_{P_1}$, Concentration"^^:LaTeX ,
                                                                         "$t$, Time"^^:LaTeX ;
                                                  rdfs:label "Initial Product 1 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 
@@ -9811,7 +9814,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                         :similarToFormulation :InitialProduct1ConcentrationBiBiOrderedODEModel ,
                                                                               :InitialProduct2ConcentrationBiBiTheorellChanceODEModel ;
                                                         :definingFormulation "$c_{P_1}(t=0) = c_{P_{1,0}}$"^^:LaTeX ;
-                                                        :inDefiningFormulation "$c_P_1$, Concentration"^^:LaTeX ,
+                                                        :inDefiningFormulation "$c_{P_1}$, Concentration"^^:LaTeX ,
                                                                                "$t$, Time"^^:LaTeX ;
                                                         rdfs:label "Initial Product 1 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)"@en .
 
@@ -9884,7 +9887,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                    :Time ;
                                                  :similarToFormulation :InitialProduct2ConcentrationBiBiPingPongODEModel ;
                                                  :definingFormulation "$c_{P_2}(t=0) = c_{P_{2,0}}$"^^:LaTeX ;
-                                                 :inDefiningFormulation "$c_P_2$, Concentration"^^:LaTeX ,
+                                                 :inDefiningFormulation "$c_{P_2}$, Concentration"^^:LaTeX ,
                                                                         "$t$, Time"^^:LaTeX ;
                                                  rdfs:label "Initial Product 2 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 
@@ -10295,7 +10298,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                      :Time ;
                                                    :similarToFormulation :InitialSubstrate1ConcentrationBiBiPingPongODEModel ;
                                                    :definingFormulation "$c_{S_1}(t=0) = c_{S_{1,0}}$"^^:LaTeX ;
-                                                   :inDefiningFormulation "$c_S_1$, Concentration"^^:LaTeX ,
+                                                   :inDefiningFormulation "$c_{S_1}$, Concentration"^^:LaTeX ,
                                                                           "$t$, Time"^^:LaTeX ;
                                                    rdfs:label "Initial Substrate 1 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 
@@ -10308,7 +10311,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                     :similarToFormulation :InitialSubstrate2ConcentrationBiBiPingPongODEModel ,
                                                                           :InitialSubstrateConcentrationUniUniODEModel ;
                                                     :definingFormulation "$c_{S_1}(t=0) = c_{S_{1,0}}$"^^:LaTeX ;
-                                                    :inDefiningFormulation "$c_S_1$, Concentration"^^:LaTeX ,
+                                                    :inDefiningFormulation "$c_{S_1}$, Concentration"^^:LaTeX ,
                                                                            "$t$, Time"^^:LaTeX ;
                                                     rdfs:label "Initial Substrate 1 Concentration (Bi Bi Reaction Ping Pong - ODE Model)"@en .
 
@@ -10333,7 +10336,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                           :similarToFormulation :InitialSubstrate1ConcentrationBiBiOrderedODEModel ,
                                                                                 :InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel ;
                                                           :definingFormulation "$c_{S_1}(t=0) = c_{S_{1,0}}$"^^:LaTeX ;
-                                                          :inDefiningFormulation "$c_S_1$, Concentration"^^:LaTeX ,
+                                                          :inDefiningFormulation "$c_{S_1}$, Concentration"^^:LaTeX ,
                                                                                  "$t$, Time"^^:LaTeX ;
                                                           rdfs:label "Initial Substrate 1 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)"@en .
 
@@ -10371,7 +10374,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                      :Time ;
                                                    :similarToFormulation :InitialSubstrate2ConcentrationBiBiPingPongODEModel ;
                                                    :definingFormulation "$c_{S_2}(t=0) = c_{S_{2,0}}$"^^:LaTeX ;
-                                                   :inDefiningFormulation "$c_S_2$, Concentration"^^:LaTeX ,
+                                                   :inDefiningFormulation "$c_{S_2}$, Concentration"^^:LaTeX ,
                                                                           "$t$, Time"^^:LaTeX ;
                                                    rdfs:label "Initial Substrate 2 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 
@@ -10382,7 +10385,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                     :containsQuantity :Concentration ,
                                                                       :Time ;
                                                     :definingFormulation "$c_{S_2}(t=0) = c_{S_{2,0}}$"^^:LaTeX ;
-                                                    :inDefiningFormulation "$c_S_2$, Concentration"^^:LaTeX ,
+                                                    :inDefiningFormulation "$c_{S_2}$, Concentration"^^:LaTeX ,
                                                                            "$t$, Time"^^:LaTeX ;
                                                     rdfs:label "Initial Substrate 2 Concentration (Bi Bi Reaction Ping Pong - ODE Model)"@en .
 
@@ -10406,7 +10409,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                             :Time ;
                                                           :similarToFormulation :InitialSubstrate2ConcentrationBiBiOrderedODEModel ;
                                                           :definingFormulation "$c_{S_2}(t=0) = c_{S_{2,0}}$"^^:LaTeX ;
-                                                          :inDefiningFormulation "$c_S_2$, Concentration"^^:LaTeX ,
+                                                          :inDefiningFormulation "$c_{S_2}$, Concentration"^^:LaTeX ,
                                                                                  "$t$, Time"^^:LaTeX ;
                                                           rdfs:label "Initial Substrate 2 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)"@en .
 
@@ -10680,7 +10683,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                     :MathematicalFormulationDefinition ;
                            :containsQuantity :ComplexedEnzymeConcentration ,
                                              :ProductConcentration ;
-                           :definingFormulation "$\\frac{c_{EX}}{c_P} \\ggt 1$"^^:LaTeX ;
+                           :definingFormulation "$\\frac{c_{EX}}{c_P} \\gg 1$"^^:LaTeX ;
                            :inDefiningFormulation "$c_P$, Product Concentration"^^:LaTeX ,
                                                   "$c_{EX}$, Complexed Enzyme Concentration"^^:LaTeX ;
                            rdfs:label "Irreversibility Assumption"@en .
@@ -11842,21 +11845,25 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 ###  https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation
 :LiouvilleVonNeumannEquation rdf:type owl:NamedIndividual ,
                                       :MathematicalFormulationDefinition ;
-                             owl:sameAs :QuantumLiouvilleEquation ;
                              :containsQuantity :PlanckConstant ,
                                                :QuantumDensityOperator ,
                                                :QuantumHamiltonianOperator ,
                                                :Time ;
+                             :generalizesFormulation :SchroedingerEquationTimeDependent ;
                              :definingFormulation "$\\frac{\\partial\\hat\\rho}{\\partial t} = -\\frac{i}{\\hbar}\\left[\\hat H, \\hat\\rho\\right]$"^^:LaTeX ;
                              :inDefiningFormulation "$\\hat{H}$, Quantum Hamiltonian Operator"^^:LaTeX ,
                                                     "$\\hat{\\rho}$, Quantum Density Operator"^^:LaTeX ,
                                                     "$\\hbar$, Planck Constant"^^:LaTeX ,
                                                     "$t$, Time"^^:LaTeX ;
                              <http://purl.org/dc/terms/description> "describes how a density operator (for pure or for mixed states) evolves in time"@en ;
-                             rdfs:label "Liouville-von Neumann Equation"@en .
+                             rdfs:comment "Just as the Schrödinger equation describes how pure states evolve in time, the Liouville-von Neumann equation describes how a density operator evolves in time. Note that there can be different density operators for pure or for mixed states."@en ,
+                                          "Note the similarity with the classical Liouville equation where the commutator brackets [.,.] are replaced by Poisson brackets {.,.}"@en ;
+                             rdfs:label "Liouville-von Neumann Equation"@en ;
+                             rdfs:seeAlso <https://en.wikipedia.org/wiki/Density_matrix#Von_Neumann_equation_for_time_evolution> ;
+                             <http://www.w3.org/2004/02/skos/core#altLabel> "Quantum Liouville Equation"@en ,
+                                                                            "von Neumann equation"@en ;
+                             :wikidataID <https://www.wikidata.org/wiki/Q2533076> .
 
-
-###  https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation
 
 ###  https://mardi4nfdi.de/mathmoddb#LogicalRuleExtractionFormulation
 :LogicalRuleExtractionFormulation rdf:type owl:NamedIndividual ,
@@ -12382,21 +12389,6 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                      rdfs:label "Membrane Capacitance"@en .
 
 
-###  https://mardi4nfdi.de/mathmoddb#MembranePotential
-:MembranePotential rdf:type owl:NamedIndividual ,
-                            :Quantity ;
-                   owl:sameAs :TransmembranePotential ;
-                   :generalizedByQuantity :ElectricPotential ;
-                   <http://purl.org/dc/terms/description> "difference of the electric potential between the inner and the outer part of a biological cell"@en ;
-                   rdfs:label "Membrane Potential"@en ;
-                   rdfs:seeAlso <https://en.wikipedia.org/wiki/Membrane_potential> ;
-                   <http://www.w3.org/2004/02/skos/core#altLabel> "Membrane Voltage"@en ,
-                                                                  "Transmembrane Potential"@en ;
-                   :wikidataID <https://www.wikidata.org/wiki/Q389844> .
-
-
-###  https://mardi4nfdi.de/mathmoddb#TransmembranePotential
-
 ###  https://mardi4nfdi.de/mathmoddb#MichaelisConstant
 :MichaelisConstant rdf:type owl:NamedIndividual ,
                             :Quantity ;
@@ -12641,7 +12633,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                               :containsQuantity :MichaelisConstant ,
                                                                                 :RateConstant ;
                                                               :definingFormulation "$K_{P_1} = \\frac{k_{-1} * k_{-2}}{k_{-5} * (k_{-1} + k_{-2})}$"^^:LaTeX ;
-                                                              :inDefiningFormulation "$K_{P_1}}$, Michaelis Constant"^^:LaTeX ,
+                                                              :inDefiningFormulation "$K_{P_1}$, Michaelis Constant"^^:LaTeX ,
                                                                                      "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                      "$k_{-2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                      "$k_{-5}$, Reaction Rate Constant"^^:LaTeX ;
@@ -12654,7 +12646,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                        :containsQuantity :MichaelisConstant ,
                                                                          :RateConstant ;
                                                        :definingFormulation "$K_{P_1} = \\frac{k_{-3} * (k_{-1} + k_{2})}{k_{-2} * (k_{-1} + k_{-3})}$"^^:LaTeX ;
-                                                       :inDefiningFormulation "$K_{P_1}}$, Michaelis Constant"^^:LaTeX ,
+                                                       :inDefiningFormulation "$K_{P_1}$, Michaelis Constant"^^:LaTeX ,
                                                                               "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                               "$k_{-2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                               "$k_{-3}$, Reaction Rate Constant"^^:LaTeX ,
@@ -12668,7 +12660,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                              :containsQuantity :MichaelisConstant ,
                                                                                :RateConstant ;
                                                              :definingFormulation "$K_{P_1} = \\frac{k_{-1}}{k_{-2}}$"^^:LaTeX ;
-                                                             :inDefiningFormulation "$K_{P_1}}$, Michaelis Constant"^^:LaTeX ,
+                                                             :inDefiningFormulation "$K_{P_1}$, Michaelis Constant"^^:LaTeX ,
                                                                                     "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                     "$k_{-2}$, Reaction Rate Constant"^^:LaTeX ;
                                                              rdfs:label "Michaelis Constant Product 1 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -12680,7 +12672,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                               :containsQuantity :MichaelisConstant ,
                                                                                 :RateConstant ;
                                                               :definingFormulation "$K_{P_2} = \\frac{k_{-1} * (k_{-2} + k_4)}{k_{-4} * (k_{-1} + k_{-2})}$"^^:LaTeX ;
-                                                              :inDefiningFormulation "$K_{P_1}}$, Michaelis Constant"^^:LaTeX ,
+                                                              :inDefiningFormulation "$K_{P_2}$, Michaelis Constant"^^:LaTeX ,
                                                                                      "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                      "$k_{-2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                      "$k_{-4}$, Reaction Rate Constant"^^:LaTeX ,
@@ -12694,7 +12686,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                        :containsQuantity :MichaelisConstant ,
                                                                          :RateConstant ;
                                                        :definingFormulation "$K_{P_2} = \\frac{k_{-1} * (k_{-3} + k_{4})}{k_{-4} * (k_{-1} + k_{-3})}$"^^:LaTeX ;
-                                                       :inDefiningFormulation "$K_{P_2}}$, Michaelis Constant"^^:LaTeX ,
+                                                       :inDefiningFormulation "$K_{P_2}$, Michaelis Constant"^^:LaTeX ,
                                                                               "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                               "$k_{-3}$, Reaction Rate Constant"^^:LaTeX ,
                                                                               "$k_{-4}$, Reaction Rate Constant"^^:LaTeX ,
@@ -12708,7 +12700,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                              :containsQuantity :MichaelisConstant ,
                                                                                :RateConstant ;
                                                              :definingFormulation "$K_{P_2} = \\frac{k_{-1}}{k_{-3}}$"^^:LaTeX ;
-                                                             :inDefiningFormulation "$K_{P_2}}$, Michaelis Constant"^^:LaTeX ,
+                                                             :inDefiningFormulation "$K_{P_2}$, Michaelis Constant"^^:LaTeX ,
                                                                                     "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                     "$k_{-3}$, Reaction Rate Constant"^^:LaTeX ;
                                                              rdfs:label "Michaelis Constant Product 2 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -12745,7 +12737,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                          :containsQuantity :MichaelisConstant ,
                                                                            :RateConstant ;
                                                          :definingFormulation "$K_{S_1} = \\frac{k_{4} * (k_{-1} + k_{2})}{k_{1} * (k_{2} + k_{4})}$"^^:LaTeX ;
-                                                         :inDefiningFormulation "$K_{S_1}}$, Michaelis Constant"^^:LaTeX ,
+                                                         :inDefiningFormulation "$K_{S_1}$, Michaelis Constant"^^:LaTeX ,
                                                                                 "$k_{-1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                 "$k_{1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                 "$k_{2}$, Reaction Rate Constant"^^:LaTeX ,
@@ -12759,7 +12751,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                :containsQuantity :MichaelisConstant ,
                                                                                  :RateConstant ;
                                                                :definingFormulation "$K_{S_1} = \\frac{k_{3}}{k_{1}}$"^^:LaTeX ;
-                                                               :inDefiningFormulation "$K_{S_1}}$, Michaelis Constant"^^:LaTeX ,
+                                                               :inDefiningFormulation "$K_{S_1}$, Michaelis Constant"^^:LaTeX ,
                                                                                       "$k_{1}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                       "$k_{3}$, Reaction Rate Constant"^^:LaTeX ;
                                                                rdfs:label "Michaelis Constant Substrate 1 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -12781,8 +12773,8 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                                    :MathematicalFormulationDefinition ;
                                                                           :containsQuantity :MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS ,
                                                                                             :RateConstant ;
-                                                                          :definingFormulation "$K_{S_2}} \\equiv \\frac{k_5 * (k_{-2} + k_4)}{k_2 * (k_4 + k_5)}$"^^:LaTeX ;
-                                                                          :inDefiningFormulation "$K_{S_2}}$, Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"^^:LaTeX ,
+                                                                          :definingFormulation "$K_{S_2} \\equiv \\frac{k_5 * (k_{-2} + k_4)}{k_2 * (k_4 + k_5)}$"^^:LaTeX ;
+                                                                          :inDefiningFormulation "$K_{S_2}$, Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"^^:LaTeX ,
                                                                                                  "$k_{-2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                                  "$k_{2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                                  "$k_{4}$, Reaction Rate Constant"^^:LaTeX ,
@@ -12797,7 +12789,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                          :containsQuantity :MichaelisConstant ,
                                                                            :RateConstant ;
                                                          :definingFormulation "$K_{S_2} = \\frac{k_{2} * (k_{-3} + k_{4})}{k_{3} * (k_{2} + k_{4})}$"^^:LaTeX ;
-                                                         :inDefiningFormulation "$K_{S_2}}$, Michaelis Constant"^^:LaTeX ,
+                                                         :inDefiningFormulation "$K_{S_2}$, Michaelis Constant"^^:LaTeX ,
                                                                                 "$k_{-3}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                 "$k_{2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                 "$k_{3}$, Reaction Rate Constant"^^:LaTeX ,
@@ -12811,7 +12803,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                                :containsQuantity :MichaelisConstant ,
                                                                                  :RateConstant ;
                                                                :definingFormulation "$K_{S_2} = \\frac{k_{3}}{k_{2}}$"^^:LaTeX ;
-                                                               :inDefiningFormulation "$K_{S_2}}$, Michaelis Constant"^^:LaTeX ,
+                                                               :inDefiningFormulation "$K_{S_2}$, Michaelis Constant"^^:LaTeX ,
                                                                                       "$k_{2}$, Reaction Rate Constant"^^:LaTeX ,
                                                                                       "$k_{3}$, Reaction Rate Constant"^^:LaTeX ;
                                                                rdfs:label "Michaelis Constant Substrate 2 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -13892,25 +13884,25 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                                 :FibreStretch ,
                                                 :IonCurrent ,
                                                 :MembraneCapacitance ,
-                                                :MembranePotential ,
                                                 :NeuralInput ,
                                                 :SensoryOrganCurrent ,
-                                                :Time ;
-                              :definingFormulation """$$\\begin{align*} 
+                                                :Time ,
+                                                :TransmembranePotential ;
+                              :definingFormulation """$\\begin{align} 
 \\frac{\\text{d}V^{\\text{d}}_{\\text{m}}}{\\text{d}t} &= \\frac{1}{C^{\\text{d}}_{\\text{m}}}\\left(-I^{\\text{d}}_{\\text{ion}}(V^{\\text{d}}_{\\text{m}}) - I^{\\text{d}}_{\\text{C}}(V^{\\text{d}}_{\\text{m}},V^{\\text{s}}_{\\text{m}}) \\right) \\\\ 
 \\frac{\\text{d}V^{\\text{s}}_{\\text{m}}}{\\text{d}t} &= \\frac{1}{C^{\\text{s}}_{\\text{m}}}\\left(-I^{\\text{s}}_{\\text{ion}}(V^{\\text{s}}_{\\text{m}}) - I^{\\text{s}}_{\\text{C}}(V^{\\text{d}}_{\\text{m}},V^{\\text{s}}_{\\text{m}}) + I_{\\text{spindle}}(\\lambda_{\\text{f}}, \\dot{\\lambda}_\\text{f}) + I_\\text{ext} \\right) \\\\ 
-\\end{align*}$$"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                               :inDefiningFormulation "$t$, Time" ,
                                                      "$C_{\\text{m}}$, Membrane Capacitance"^^:LaTeX ,
                                                      "$I_{\\text{C}}$, Coupling Current"^^:LaTeX ,
                                                      "$I_{\\text{ext}}$, Neural Input"^^:LaTeX ,
                                                      "$I_{\\text{ion}}$, Ion Current"^^:LaTeX ,
                                                      "$I_{\\text{spindle}}$, Sensory Organ Current"^^:LaTeX ,
-                                                     "$V_{\\text{m}}$, Membrane Potential"^^:LaTeX ,
+                                                     "$V_{\\text{m}}$, Transmembrane Potential"^^:LaTeX ,
                                                      "$\\lambda_{\\text{f}}$, Fibre Contraction Velocity"^^:LaTeX ,
                                                      "$\\lambda_{\\text{f}}$, Fibre Stretch"^^:LaTeX ;
-                              <http://purl.org/dc/terms/description> "two coupled ODEs which describe the membrane potentials"@en ;
-                              rdfs:comment "Two coupled ODEs which describe the membrane potentials in the soma and the dendrite compartments."@en ;
+                              <http://purl.org/dc/terms/description> "two coupled ODEs which describe the transmembrane potentials"@en ;
+                              rdfs:comment "Transmembrane potentials in the soma and the dendrite compartments."@en ;
                               rdfs:label "Motor Neuron Pool ODE System"@en .
 
 
@@ -14151,13 +14143,13 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 ###  https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction
 :NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction rdf:type owl:NamedIndividual ,
                                                                         :MathematicalFormulationDefinition ;
-                                                               :definingFormulation """$$\\begin{align*} 
+                                                               :definingFormulation """$\\begin{align}  
 k_{1} &= k_{5} \\\\ 
 k_{-1} &= k_{-5} \\\\
 k_{-3} &= k_{-4}\\\\ 
 k_{3} &= k_{4} \\\\ 
 K_{ic} &= K_{iu}\\\\ 
-\\end{align}$$"""^^:LaTeX ;
+\\end{align}$"""^^:LaTeX ;
                                                                :inDefiningFormulation "$K_{ic}$,Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,
                                                                                       "$K_{iu}$,Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,
                                                                                       "$k_1$, Reaction Rate Constant"^^:LaTeX ,
@@ -14673,7 +14665,7 @@ $\\bm x_j\\in \\mathbb R^3$, position of center of gravity for particle $j$"""^^
                                                              :SusceptibleIndividuals ,
                                                              :TotalPopulationSize ;
                                            :definingFormulation "$$ \\hat{\\mathcal{S}}^{(l)} = \\hat{\\mathcal{N}}^{(l)} - (1 + \\Sigma_{\\mathcal{E}}) \\hat{\\mathcal{I}}^{(l)} - \\hat{\\mathcal{R}}^{(l)} $$"^^:LaTeX ;
-                                           :inDefiningFormulation "$\\Sigma_{\\mathcal{E}}}$, Coefficient Scaling Infectious To Exposed"^^:LaTeX ,
+                                           :inDefiningFormulation "$\\Sigma_{\\mathcal{E}}$, Coefficient Scaling Infectious To Exposed"^^:LaTeX ,
                                                                   "$\\hat{\\mathcal{I}}^{(l)}$, Number Of Infectious Individuals"^^:LaTeX ,
                                                                   "$\\hat{\\mathcal{N}}^{(l)}$, Total Population Size"^^:LaTeX ,
                                                                   "$\\hat{\\mathcal{R}}^{(l)}$, Number Of Removed Individuals"^^:LaTeX ,
@@ -14979,7 +14971,7 @@ Subscript denotes the individual"""@en ;
                                           :ControlSystemMatrixB ,
                                           :ControlSystemMatrixN ,
                                           :Time ;
-                        :definingFormulation "$\\dot{z}(t)=-(A^{\\dag}+ \\sum_ku_k(t)N^{\\dag}_k)z(t)-B^{\\dag}u(t)$"^^:LaTeX ;
+                        :definingFormulation "$\\dot{z}(t)=-(A^{\\dagger}+ \\sum_ku_k(t)N^{\\dagger}_k)z(t)-B^{\\dagger}u(t)$"^^:LaTeX ;
                         :inDefiningFormulation "$A$, Control System Matrix A"^^:LaTeX ,
                                                "$B$, Control System Matrix B"^^:LaTeX ,
                                                "$N$, Control System Matrix N"^^:LaTeX ,
@@ -15001,7 +14993,7 @@ Subscript denotes the individual"""@en ;
                                             :ControlSystemMatrixN ,
                                             :ControlSystemState ,
                                             :Time ;
-                          :definingFormulation "$J[u,x,z]=2\\Re\\int_0^Tdtz^{\\dag}(t)\\left(\\partial_t-A-\\sum_ku_k(t)N_k\\right)x(t)$"^^:LaTeX ;
+                          :definingFormulation "$J[u,x,z]=2\\Re\\int_0^Tdtz^{\\dagger}(t)\\left(\\partial_t-A-\\sum_ku_k(t)N_k\\right)x(t)$"^^:LaTeX ;
                           :inDefiningFormulation "$A$, Control System Matrix A"^^:LaTeX ,
                                                  "$N$, Control System Matrix N"^^:LaTeX ,
                                                  "$T$, Control System Duration"^^:LaTeX ,
@@ -15118,7 +15110,7 @@ Subscript denotes the individual"""@en ;
                                                   :ControlSystemState ,
                                                   :OptimalControlTarget ;
                                 :defines :OptimalControlTarget ;
-                                :definingFormulation "$J[u,x] \\equiv x^{\\dag}(T)Dx(T)$"^^:LaTeX ;
+                                :definingFormulation "$J[u,x] \\equiv x^{\\dagger}(T)Dx(T)$"^^:LaTeX ;
                                 :inDefiningFormulation "$D$, Control System Matrix D"^^:LaTeX ,
                                                        "$J$, Optimal Control Target"^^:LaTeX ,
                                                        "$T$, Control System Duration"^^:LaTeX ,
@@ -15138,7 +15130,7 @@ Subscript denotes the individual"""@en ;
                                         :ControlSystemState ,
                                         :OptimalControlPenaltyFactor ,
                                         :Time ;
-                      :definingFormulation "$u_k(t)=-\\frac{1}{\\alpha_k}\\Im\\left(z^{\\dag}(t)N_kx(t) \\right)$"^^:LaTeX ;
+                      :definingFormulation "$u_k(t)=-\\frac{1}{\\alpha_k}\\Im\\left(z^{\\dagger}(t)N_kx(t) \\right)$"^^:LaTeX ;
                       :inDefiningFormulation "$N$, Control System Matrix N"^^:LaTeX ,
                                              "$\\alpha$, Optimal Control Penalty Factor"^^:LaTeX ,
                                              "$t$, Time"^^:LaTeX ,
@@ -15212,7 +15204,7 @@ Subscript denotes the individual"""@en ;
                         :containedAsAssumptionIn :OpinionModelWithInfluencersAndMedia ;
                         :containsQuantity :PairFunction ;
                         :defines :PairFunction ;
-                        :definingFormulation "$\\phi(x) = exp(-x)$"^^:LaTeX ;
+                        :definingFormulation "$\\phi(x) = \\exp(-x)$"^^:LaTeX ;
                         :inDefiningFormulation "$\\phi(x)$, Pair Function"^^:LaTeX ;
                         :isSpaceContinuous "true"^^xsd:boolean ;
                         rdfs:comment "This pair function places exponentially more weight on close-by individuals. Implies that individuals that are already close in opinion space excert higher social influence on each other (homophily)"@en ;
@@ -15459,9 +15451,11 @@ Subscript denotes the individual"""@en ;
                              :Quantity ;
                     :generalizedByQuantity :PermittivityDielectric ;
                     <http://purl.org/dc/terms/description> "physical constant that represents the capability of the vacuum to permit electric field lines"@en ;
-                    rdfs:comment "Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It may also be referred to as the permittivity of free space, the electric constant, or the distributed capacitance of the vacuum. It is an ideal (baseline) physical constant."@en ;
+                    rdfs:comment "Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It is an ideal (baseline) physical constant."@en ;
                     rdfs:label "Permittivity (Vacuum)"@en ;
                     rdfs:seeAlso <https://en.wikipedia.org/wiki/Vacuum_permittivity> ;
+                    <http://www.w3.org/2004/02/skos/core#altLabel> "distributed capacitance of the vacuum"@en ,
+                                                                   "electric constant"@en ;
                     :qudtID <http://qudt.org/vocab/constant/ElectricConstant> ;
                     :wikidataID <https://wikidata.org/wiki/Q6158> .
 
@@ -16017,6 +16011,15 @@ deformation"""@en ;
                              :wikidataID <https://wikidata.org/wiki/Q18325841> .
 
 
+###  https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution
+:QuantileFunctionOfTheBetaDistribution rdf:type owl:NamedIndividual ,
+                                                :Quantity ;
+                                       rdfs:label "Quantile Function Of The Beta Distribution"@en ;
+                                       <http://www.w3.org/2004/02/skos/core#altLabel> "inverse function of the regularized incomplete beta function"@en ;
+                                       :wikidataID <https://www.wikidata.org/wiki/Q3489473> ,
+                                                   <https://www.wikidata.org/wiki/Q756254> .
+
+
 ###  https://mardi4nfdi.de/mathmoddb#QuantumAngularMomentumOperator
 :QuantumAngularMomentumOperator rdf:type owl:NamedIndividual ,
                                          :Quantity ;
@@ -16407,7 +16410,6 @@ deformation"""@en ;
                                            :QuantumHamiltonianOperator ,
                                            :QuantumJumpOperator ,
                                            :Time ;
-                         :generalizesFormulation :QuantumLiouvilleEquation ;
                          :definingFormulation "$\\frac{\\mathrm d}{\\mathrm{d}t}\\rho=-\\frac{\\mathrm i}\\hbar[H,\\rho]+\\sum _{i=1}^{N^2-1}\\gamma_i\\left(L_i\\rho L_i^\\dagger-\\frac12[L_i^\\dagger L_i,\\rho]_+\\right)$"^^:LaTeX ;
                          :inDefiningFormulation "$H$, Quantum Hamiltonian Operator"^^:LaTeX ,
                                                 "$L$, Quantum Jump Operator"^^:LaTeX ,
@@ -16418,33 +16420,10 @@ deformation"""@en ;
                                                 "$t$, Time"^^:LaTeX ;
                          :isTimeContinuous "true"^^xsd:boolean ;
                          <http://purl.org/dc/terms/description> "describes open system quantum dynamics including dissipation and/or decoherence"@en ;
-                         rdfs:comment "Markovian quantum master equation for the evolution of quantum mechanical density matrices (pure or mixed states), also known as Gorini–Kossakowski–Sudarshan–Lindblad equation (GKSL equation).  It generalizes the Schrödinger equation to open quantum systems; that is, systems in contacts with their surroundings. The resulting dynamics is no longer unitary, but still satisfies the property of being trace-preserving and completely positive for any initial condition"@en ;
+                         rdfs:comment "Markovian quantum master equation for the evolution of quantum mechanical density matrices (pure or mixed states).  It generalizes the Schrödinger equation to open quantum systems; that is, systems in contacts with their surroundings. The resulting dynamics is no longer unitary, but still satisfies the property of being trace-preserving and completely positive for any initial condition"@en ;
                          rdfs:label "Quantum Lindblad Equation"@en ;
                          <http://www.w3.org/2004/02/skos/core#altLabel> "Gorini–Kossakowski–Sudarshan–Lindblad Equation"@en ;
                          :wikidataID <https://wikidata.org/wiki/Q4476520> .
-
-
-###  https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation
-:QuantumLiouvilleEquation rdf:type owl:NamedIndividual ,
-                                   :MathematicalFormulationDefinition ;
-                          :containedAsFormulationIn :QuantumModelClosedSystem ;
-                          :containsQuantity :PlanckConstant ,
-                                            :QuantumDensityOperator ;
-                          :generalizesFormulation :SchroedingerEquationTimeDependent ;
-                          :definingFormulation "$\\frac{\\mathrm d}{\\mathrm{d}t}\\rho(t)=-\\frac{\\mathrm i}\\hbar[H,\\rho(t)]$"^^:LaTeX ;
-                          :inDefiningFormulation "$H$, Quantum Hamiltonian Operator"^^:LaTeX ,
-                                                 "$\\hbar$, Planck Constant"^^:LaTeX ,
-                                                 "$\\rho$, Quantum Density Operator"^^:LaTeX ,
-                                                 "$t$, Time"^^:LaTeX ;
-                          :isSpaceContinuous "true"^^xsd:boolean ;
-                          :isTimeContinuous "true"^^xsd:boolean ;
-                          <http://purl.org/dc/terms/description> "describes how a density operator (for pure or for mixed states) evolves in time"@en ,
-                                                                 "time evolution of quantum density operators; describing open system quantum dynamics"@en ;
-                          rdfs:comment "Just as the Schrödinger equation describes how pure states evolve in time, the von Liouville-von Neumann equation (also known as the quantum Liouville equation) describes how a density operator evolves in time. Note that there can be different density operators for pure or for mixed states."@en ,
-                                       "Note the similarity with the classical Liouville equation where the commutator brackets [.,.] are replaced by Poisson brackets {.,.}"@en ;
-                          rdfs:label "Quantum Liouville Equation"@en ;
-                          <http://www.w3.org/2004/02/skos/core#altLabel> "Liouville-von Neumann Equation"@en ;
-                          :wikidataID <https://wikidata.org/wiki/Q831774> .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#QuantumMechanicalOperator
@@ -16595,7 +16574,6 @@ deformation"""@en ;
                       :containsFormulation :QuantumHamiltonianElectricCharge ,
                                            :QuantumHamiltonianElectricDipole ,
                                            :QuantumLindbladEquation ,
-                                           :QuantumLiouvilleEquation ,
                                            :SchroedingerEquationTimeDependent ;
                       :containsInput :ElectricField ,
                                      :ElectricPotential ,
@@ -16622,7 +16600,7 @@ deformation"""@en ;
 :RapidEquilibriumAssumption rdf:type owl:NamedIndividual ,
                                      :MathematicalFormulationDefinition ;
                             :containsQuantity :RateConstant ;
-                            :definingFormulation "$k_{catalytic} \\llt k_{unbind}$"^^:LaTeX ;
+                            :definingFormulation "$k_{catalytic} \\ll k_{unbind}$"^^:LaTeX ;
                             :inDefiningFormulation "$k_{catalytic}$, Reaction Rate Constant"^^:LaTeX ,
                                                    "$k_{unbind}$, Reaction Rate Constant"^^:LaTeX ;
                             rdfs:label "Rapid Equilibrium Assumption"@en .
@@ -17248,12 +17226,11 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
 ###  https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme
 :ScharfetterGummelScheme rdf:type owl:NamedIndividual ,
                                   :MathematicalModel ;
-                         :discretizesModel :vanRoosbroeckModel ;
                          :isDynamic "false"^^xsd:boolean ;
                          :isLinear "false"^^xsd:boolean ;
                          :isSpaceContinuous "false"^^xsd:boolean ;
                          <http://purl.org/dc/terms/description> "finite volume disretization scheme for solving the van Roosbroeck system describing the semi-classical transport of free electrons and holes"@en ;
-                         rdfs:comment "The Scharfetter-Gummel finite volume disretization scheme is the standard numerical method for solving the van Roosbroeck system describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation."@en ;
+                         rdfs:comment "The Scharfetter-Gummel finite volume disretization scheme is the standard numerical method for solving the drift diffusion (aka van Roosbroeck) system describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation."@en ;
                          rdfs:label "Scharfetter-Gummel Scheme"@en ;
                          :wikidataID <https://wikidata.org/wiki/Q119844> ,
                                      <https://wikidata.org/wiki/Q29367424> .
@@ -18242,7 +18219,7 @@ I_{\\text{ion}} &= I_{\\text{ion}} \\left(V^{\\text{f}}_{\\text{m}}, \\mathbf{y}
                                         :RateOfChangeOfSusceptibleCities ,
                                         :SpreadingRateTimeDependent ,
                                         :Time ;
-                      :definingFormulation "$\\frac{ds_m(t)}{dt} &= -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t)$"^^:LaTeX ;
+                      :definingFormulation "$\\frac{ds_m(t)}{dt} = -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t)$"^^:LaTeX ;
                       :inDefiningFormulation "$G_{m,n}$, Contact Network"^^:LaTeX ,
                                              "$N_R$, Number of Regions"^^:LaTeX ,
                                              "$\\alpha(t)$, Spreading Rate (Time-dependent)"^^:LaTeX ,
@@ -18296,7 +18273,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
                                                                    :Region ,
                                                                    :SpreadingRateTimeDependent ,
                                                                    :Time ;
-                                                 :definingFormulation "$\\begin{align*} \\frac{ds_m(t)}{dt} &= -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t) \\\\ i_m(t) &= P_m - s_m(t) \\end{align*}$"^^:LaTeX ;
+                                                 :definingFormulation "$\\begin{align} \\frac{ds_m(t)}{dt} &= -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t) \\\\ i_m(t) &= P_m - s_m(t) \\end{align}$"^^:LaTeX ;
                                                  :inDefiningFormulation "$G_{m,n}$, Contact Network"^^:LaTeX ,
                                                                         "$N_R$, Number of Regions"^^:LaTeX ,
                                                                         "$P_m$, Number of Cities"^^:LaTeX ,
@@ -18491,7 +18468,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
                                                             "$S_n$, Number Of Susceptible Individuals"^^:LaTeX ,
                                                             "$\\Delta t$, Time Step"^^:LaTeX ,
                                                             "$\\alpha$, Contact Rate"^^:LaTeX ,
-                                                            "$\\gama$, Relative Removal Rate"^^:LaTeX ;
+                                                            "$\\gamma$, Relative Removal Rate"^^:LaTeX ;
                                      :isDeterministic "true"^^xsd:boolean ;
                                      :isTimeContinuous "false"^^xsd:boolean ;
                                      rdfs:label "Susceptibles At Time Step n+1 in The SIS Model"@en .
@@ -18719,7 +18696,6 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
                :QuantityKind ;
       :containedInFormulation :ClassicalHamiltonEquations ,
                               :ClassicalNewtonEquation ,
-                              :QuantumLiouvilleEquation ,
                               :SchroedingerEquationTimeDependent ;
       rdfs:comment "Dimension in which events can be ordered from the past through the present into the future"@en ;
       rdfs:label "Time"@en ,
@@ -18853,7 +18829,6 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
                                  :Quantity ;
                         :generalizedByQuantity :ElectricPotential ;
                         <http://purl.org/dc/terms/description> "difference in electric potential between the interior and the exterior of a biological cell"@en ;
-                        rdfs:comment "Membrane potential (also transmembrane potential or membrane voltage) is the difference in electric potential between the interior and the exterior of a biological cell."@en ;
                         rdfs:label "Transmembrane Potential"@en ;
                         rdfs:seeAlso <https://en.wikipedia.org/wiki/Membrane_potential> ;
                         <http://www.w3.org/2004/02/skos/core#altLabel> "Membrane Potential"@en ,
@@ -20359,27 +20334,6 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
                                    :isDeterministic "true"^^xsd:boolean ;
                                    :isTimeContinuous "false"^^xsd:boolean ;
                                    rdfs:label "Infectious At Time Step n+1 in The SIS Model"@en .
-
-
-###  https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel
-:vanRoosbroeckModel rdf:type owl:NamedIndividual ,
-                             :MathematicalModel ;
-                    :containsFormulation :BoltzmannApproximationForElectrons ,
-                                         :BoltzmannApproximationForHoles ,
-                                         :ContinuityEquationForElectrons ,
-                                         :ContinuityEquationForHoles ,
-                                         :PoissonEquationForTheElectricPotential ;
-                    :surveyedIn :Koprucki_2017_Numerical_methods_for_drift-diffusion_models ;
-                    :isDynamic "false"^^xsd:boolean ;
-                    :isLinear "false"^^xsd:boolean ;
-                    :isSpaceContinuous "true"^^xsd:boolean ;
-                    <http://purl.org/dc/terms/description> "mathematical model describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation"@en ;
-                    rdfs:comment "The van Roosbroeck system describes the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation. It became the standard model to describe the current flow in semiconductor devices such as diodes, transistors, LEDs, solar cells and lasers, as well as  quantum nanostructures and organic semiconductors."@en ;
-                    rdfs:label "van Roosbroeck Model"@en ;
-                    rdfs:seeAlso <https://archive.org/details/bstj29-4-560> ,
-                                 "W. van Roosbroeck. Theory of the ﬂow of electrons and holes in germanium and other semiconductors. Bell Syst. Tech. J., 29(4):560–607, 1950"@en ;
-                    :doiID <https://doi.org/10.20347/WIAS.PREPRINT.2263> ,
-                           <https://doi.org/10.4324/9781315152318-25> .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

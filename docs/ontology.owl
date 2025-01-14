@@ -2717,7 +2717,7 @@
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PermittivityVacuum"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nabla \times \mathbf{B} &amp;= \mu_0\left(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nabla \times \mathbf{B} = \mu_0\left(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Electric Field</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Magnetic Field</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J$, Electric Current Density</inDefiningFormulation>
@@ -4207,7 +4207,7 @@
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Substrate1Concentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Substrate2Concentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align*}
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
 \frac{dc_{S_1}}{dt} &amp;= k_{-1} * c_{ES_1} - k_{1} * c_{E} * c_{S_1} \\
 \frac{dc_{S_2}}{dt} &amp;= k_{-2} * c_{EP_2} * c_{P_1} - k_{2} * c_{ES_1} * c_{S_2} \\
 \frac{dc_{P_1}}{dt} &amp;= k_{2} * c_{ES_1} * c_{S_2} - k_{-2} * c_{EP_2} * c_{P_1} \\
@@ -4215,7 +4215,7 @@
 \frac{dc_{ES_1}}{dt} &amp;= k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2} \\
 \frac{dc_{EP_2}}{dt} &amp;= k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2} \\
 \frac{dc_{E}}{dt} &amp;= k_{-1} * c_{ES_1} + k_3 * c_{EP_2} - k_{1} * c_{E} * c_{S_1} - k_{-3} * c_{E} * c_{P_2} 
-\end{align*}$</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{EP_2}}{dt}$, Reaction Rate of Enzyme - Product 2 Complex</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{ES_1}}{dt}$, Reaction Rate of Enzyme - Substrate 1 Complex</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{E}}{dt}$, Reaction Rate of Enzyme</inDefiningFormulation>
@@ -4866,7 +4866,7 @@
         <containedAsAssumptionIn rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
         <containedAsAssumptionIn rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#deBroglieWavelength"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda \llt L$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda \ll L$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$L$, typical dimension of the system</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda$, de Broglie Wavelength</inDefiningFormulation>
         <terms:description xml:lang="en">classical dynamics as an approximation to quantum mechanics</terms:description>
@@ -4922,9 +4922,9 @@
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDeterministic>
         <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDynamic>
         <terms:description xml:lang="en">mathematical model for describing molecular systems in the diffusive regime</terms:description>
-        <rdfs:comment xml:lang="en">Brownian dynamics is also known as overdamped Langevin dynamics.</rdfs:comment>
         <rdfs:label xml:lang="en">Classical Brownian Model</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Brownian_dynamics"/>
+        <skos:altLabel xml:lang="en">overdamped Langevin dynamics</skos:altLabel>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q4976526"/>
     </owl:NamedIndividual>
     
@@ -5169,9 +5169,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalMomentum"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalPosition"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <generalizedByFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
-        <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{d\rho}{dt}=\frac{\partial\rho}{\partial t}+\sum_{i=1}^n\left(\frac{\partial\rho}{\partial q_i}\dot{q}_i+\frac{\partial\rho}{\partial p_i}\dot{p}_i\right)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$H$, Classical Hamilton Function</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Classical Density (Phase Space)&apos;</inDefiningFormulation>
@@ -5351,7 +5349,6 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containedAsAssumptionIn rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <containedAsAssumptionIn rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <containedAsAssumptionIn rdf:resource="https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumDampingRate"/>
@@ -5651,7 +5648,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleCities"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <generalizedByFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ConservationLaw"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$i_m(t) &amp;= P_m - s_m(t)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$i_m(t) = P_m - s_m(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$P_m$, Number of Cities</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$i_m(t)$, Number Of Infected Cities</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$s_m(t)$, Number Of Susceptible Cities</inDefiningFormulation>
@@ -6224,7 +6221,6 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation"/>
-        <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{x}(t)=(A+u(t)N)x(t)+Bu(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A</inDefiningFormulation>
@@ -6277,7 +6273,6 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemState"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation"/>
-        <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{x}(t)=Ax(t)+Bu(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A</inDefiningFormulation>
@@ -6667,7 +6662,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <approximatesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadratic"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemOutput"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y(t)=\tilde{x}^{\dag}(t)\tilde{D}\tilde{x}(t)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y(t)=\tilde{x}^{\dagger}(t)\tilde{D}\tilde{x}(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\tilde{D}$, Control System Matrix D (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\tilde{x}$, Control System State (Reduced)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
@@ -6785,7 +6780,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#FiniteVolumeMethod"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlVolumeDefinition"/>
         <terms:description xml:lang="en">mathematical abstraction employed in mathematical models of continuum mechanics and thermodynamics used within finite volume discretizations</terms:description>
-        <rdfs:comment xml:lang="en">used for example in  the Scharfetter-Gummel discretization of the van-Roosbroeck system</rdfs:comment>
+        <rdfs:comment xml:lang="en">used for example in  the Scharfetter-Gummel discretization of the drift diffusion (aka van-Roosbroeck) system</rdfs:comment>
         <rdfs:label xml:lang="en">Control Volume</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Control_volume"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q5165895"/>
@@ -6938,7 +6933,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"/>
-        <terms:description xml:lang="en">density of current of the electrons, e.g., in a semiconductor device</terms:description>
+        <terms:description xml:lang="en">density of current of electrons, e.g., in a semiconductor device</terms:description>
         <rdfs:label xml:lang="en">Current Density Of Electrons</rdfs:label>
         <skos:altLabel xml:lang="en">flux of electrons</skos:altLabel>
     </owl:NamedIndividual>
@@ -6965,9 +6960,8 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Elementary Charge</inDefiningFormulation>
         <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
         <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
-        <terms:description xml:lang="en">for use in semiconductor physics; also known as flux of electrons</terms:description>
+        <terms:description xml:lang="en">density of current of electrons, e.g., in a semiconductor device</terms:description>
         <rdfs:label xml:lang="en">Current Density Of Electrons (Definition)</rdfs:label>
-        <skos:altLabel xml:lang="en">Flux of Electrons</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -6979,7 +6973,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"/>
         <similarToQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"/>
-        <terms:description xml:lang="en">density of current of the holes, e.g., in a semiconductor device</terms:description>
+        <terms:description xml:lang="en">density of current of holes, e.g., in a semiconductor device</terms:description>
         <rdfs:label xml:lang="en">Current Density Of Holes</rdfs:label>
         <skos:altLabel xml:lang="en">flux of holes</skos:altLabel>
     </owl:NamedIndividual>
@@ -7006,9 +7000,8 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Elementary Charge</inDefiningFormulation>
         <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
         <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
-        <terms:description xml:lang="en">for use in semiconductor physics; also known as flux of holes</terms:description>
+        <terms:description xml:lang="en">density of current of holes, e.g., in a semiconductor device</terms:description>
         <rdfs:label xml:lang="en">Current Density Of Holes (Definition)</rdfs:label>
-        <skos:altLabel xml:lang="en">Flux Of Holes</skos:altLabel>
     </owl:NamedIndividual>
     
 
@@ -7019,9 +7012,8 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
         <containedInField rdf:resource="https://mardi4nfdi.de/mathmoddb#SemiconductorPhysics"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel"/>
         <terms:description xml:lang="en">flow of electrical charge carriers coupled to electrostatic potential distribution in semiconductor devices</terms:description>
-        <rdfs:label xml:lang="en">Current flow in semiconductor devices</rdfs:label>
+        <rdfs:label xml:lang="en">Current Flow in Semiconductor Devices</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7048,10 +7040,10 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FluidIntrinsicPermeabilityPorousMedium"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FluidPressurePorousMedium"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FluidVelocityPorousMedium"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align*}
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
 v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 \nabla \cdot v^{pm} = 0
-\end{align*}$</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K$, Fluid Intrinsic Permeability (Porous Medium)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu$, Fluid Dynamic Viscosity (Porous Medium)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$p^{pm}$, Fluid Pressure (Porous Medium)</inDefiningFormulation>
@@ -7151,10 +7143,10 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containedAsFormulationIn rdf:resource="https://mardi4nfdi.de/mathmoddb#DynamicalElectronScatteringModel"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#UnitNormalVector"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align*}
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
 \frac{\mathrm d}{\mathrm d z} \varphi_{\mathbf{g}}(z) &amp;= 2\mathrm{i} \pi \Big(s_{\mathbf{g}} + \frac{\mathrm d}{\mathrm d z}(\mathbf{g}\cdot \mathbf{u}(\mathbf{r}))\Big)\varphi_{\mathbf{g}}(z)+ \mathrm{i} \pi\sum_{\mathbf{h}\in \Lambda^*_m} U_{\mathbf{g-h}}\varphi_{\mathbf{h}}(z)\\
 \quad s_g &amp;= -\frac{g\cdot(2k_0+g)}{2n\cdot(k_0+g)}
-\end{align*}$</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$U_g$, Electric Potential Fourier Coefficients</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\Lambda^*_m$, Reciprocal Lattice</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi_g$, Amplitude of Electron Wave</inDefiningFormulation>
@@ -7517,7 +7509,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
         <terms:description xml:lang="en">discrete model for the spreading of infectious diseases considering susceptible, infectious and recovered/removed individuals</terms:description>
         <rdfs:label xml:lang="en">Discrete Susceptible Infectious Removed Model</rdfs:label>
-        <wikidataID>https://www.wikidata.org/wiki/Q2206263</wikidataID>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q2206263"/>
     </owl:NamedIndividual>
     
 
@@ -7533,7 +7525,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
         <rdfs:comment xml:lang="en">discrete-time model for the spreding of infectious diseases with temporary resistance considering susceptible and infectious individuals</rdfs:comment>
         <rdfs:label xml:lang="en">Discrete Susceptible Infectious Susceptible Model</rdfs:label>
-        <wikidataID>https://www.wikidata.org/wiki/Q2351772</wikidataID>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q2351772"/>
     </owl:NamedIndividual>
     
 
@@ -7778,24 +7770,29 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
-        <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#DirichletBoundaryConditionForElectricPotential"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#DirichletBoundaryConditionForElectronFermiPotential"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#DirichletBoundaryConditionForHoleFermiPotential"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#NeumannBoundaryConditionElectricPotential"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#NeumannBoundaryConditionForElectronFermiPotential"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#NeumannBoundaryConditionForHoleFermiPotential"/>
+        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForElectrons"/>
+        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForHoles"/>
+        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons"/>
+        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles"/>
+        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"/>
+        <discretizedByModel rdf:resource="https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices"/>
+        <surveyedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Koprucki_2017_Numerical_methods_for_drift-diffusion_models"/>
         <terms:description xml:lang="en">mathematical model describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation</terms:description>
+        <rdfs:comment xml:lang="en">The drift-diffusion system describes the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation. It became the standard model to describe the current flow in semiconductor devices such as diodes, transistors, LEDs, solar cells and lasers, as well as  quantum nanostructures and organic semiconductors.</rdfs:comment>
         <rdfs:label xml:lang="en">Drift-Diffusion Model</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://archive.org/details/bstj29-4-560"/>
+        <rdfs:seeAlso xml:lang="en">W. van Roosbroeck. Theory of the ﬂow of electrons and holes in germanium and other semiconductors. Bell Syst. Tech. J., 29(4):560–607, 1950</rdfs:seeAlso>
         <skos:altLabel xml:lang="en">van Roosbroeck Model</skos:altLabel>
+        <doiID rdf:resource="https://doi.org/10.20347/WIAS.PREPRINT.2263"/>
+        <doiID rdf:resource="https://doi.org/10.4324/9781315152318-25"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel -->
-
-
-    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel"/>
     
 
 
@@ -8448,9 +8445,10 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Mass"/>
         <terms:description xml:lang="en">mass of a stationary electron</terms:description>
-        <rdfs:comment xml:lang="en">In particle physics, the mass of a stationary electron, also known as the invariant mass of the electron. It is one of the fundamental constants of physics.</rdfs:comment>
+        <rdfs:comment xml:lang="en">In particle physics, the mass of a stationary electron is one of the fundamental constants of physics.</rdfs:comment>
         <rdfs:label xml:lang="en">Electron Mass</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electron_mass"/>
+        <skos:altLabel xml:lang="en">invariant mass of the electron</skos:altLabel>
         <qudtID rdf:resource="http://qudt.org/vocab/constant/ElectronMass"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3814108"/>
     </owl:NamedIndividual>
@@ -8468,7 +8466,6 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#LaplaceEquationForTheElectricPotential"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianElectricCharge"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent"/>
         <generalizedByModel rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemModelBilinear"/>
@@ -8509,11 +8506,11 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Pressure"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#StressTensorPiolaKirchhoff"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$$\begin{align*}
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
  \rho_{\text{M}1} \mathbf{\ddot{x}}_{\text{M}1} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}1}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}1}, \gamma_{\text{M}1}) - p_{\text{M}1}\mathbf{F}^{-T}_{\text{M}1} \right), &amp;\text{div $\mathbf{\dot{x}}_{\text{M}1} = 0$} ~ &amp;\text{in $\Omega_{\text{M}1}\times [0,T_{\text{end}})$}\\ 
  \rho_{\text{M}2} \mathbf{\ddot{x}}_{\text{M}2} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}2}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}2}, \gamma_{\text{M}2}) - p_{\text{M}2}\mathbf{F}^{-T}_{\text{M}2} \right), &amp;\text{div $\mathbf{\dot{x}}_{\text{M}2} = 0$} ~ &amp;\text{in $\Omega_{\text{M}2}\times [0,T_{\text{end}})$}\\
  \rho_{\text{T}}\mathbf{\ddot{x}}_\text{T}&amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_\text{passive}(\mathbf{F}_{\text{T}}) - p_\text{T}\mathbf{F}^{-T}_{\text{T}}\right), &amp;\text{div $\mathbf{\dot{x}}_{\text{T}}=0$}&amp; ~\text{in $\Omega_{\text{T}}\times [0,T_{\text{end}})$} 
-\end{align*}$$</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\ddot{\mathbf{x}}$, Material Point Acceleration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{\mathbf{x}}$, Material Point Velocity</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\gamma$, Lumped Activation Parameter</inDefiningFormulation>
@@ -8705,7 +8702,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{EP_2}}{dt} = k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{EP_2}}{dt}$, Reaction Rate</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{EP_2}}$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{EP_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{ES_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{E}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_1}$, Concentration</inDefiningFormulation>
@@ -8861,7 +8858,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{ES_1}}{dt} = k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{dc_{ES_1}}{dt}$, Reaction Rate</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{EP_2}}$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{EP_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{ES_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{E}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}$, Concentration</inDefiningFormulation>
@@ -9280,7 +9277,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FractionOfPopulationDensityOfRemoved"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FractionOfPopulationDensityOfSusceptibles"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#UnitNormalVector"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nu^T D \nabla s &amp; =\nu^T D \nabla e=\nu^T D \nabla i=\nu^T D \nabla r=0$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nu^T D \nabla s =\nu^T D \nabla e=\nu^T D \nabla i=\nu^T D \nabla r=0$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$D$, Diffusion Coefficient</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nu$, Unit Normal Vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$e$, Fraction Of Population Density Of Exposed</inDefiningFormulation>
@@ -9564,7 +9561,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricField"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MagneticField"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$ \nabla \times \mathbf{E} &amp;= -\frac{\partial \mathbf{B}} {\partial t}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}} {\partial t}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$B$, Magnetic Field</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Electric Field</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
@@ -9860,8 +9857,8 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"/>
+        <terms:description xml:lang="en">flow of holes, e.g., in an electric device</terms:description>
         <rdfs:comment xml:lang="en">For use in semiconductor physics</rdfs:comment>
-        <rdfs:comment xml:lang="en">flow of holes, e.g., in an electric device</rdfs:comment>
         <rdfs:label xml:lang="en">Flux Of Holes</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10171,14 +10168,15 @@ y(t) &amp;=&amp; y_0+v_0t-\frac{v_\infty^2}{g}\ln\cosh\left(\frac{gt}{v_\infty}\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTime"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution"/>
         <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">y(t)=y_0~Q\left(1-\frac{t}{t_{\mathrm{ff}}};\frac{3}{2},\frac{1}{2}\right)</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$Q$, Quantile Function Of The Beta Distribution</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t_\mathrm{ff}$, Free Fall Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Free Fall Height</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_0$, Free Fall Initial Height</inDefiningFormulation>
         <terms:description xml:lang="en">modeling the fall of objects by the laws of classical mechanics, neglecting aerodynamic drag but allowing for a non-uniform gravitational field</terms:description>
         <rdfs:comment xml:lang="en">Moreover, assuming the falling object to be a point mass.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Q is the quantile function of the Beta distribution, also known as the inverse function of the regularized incomplete beta function</rdfs:comment>
         <rdfs:label xml:lang="en">Free Fall Equation (Non-Uniform Gravitation)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -10574,12 +10572,12 @@ y(t) &amp;=&amp; y_0+v_0t-\frac{1}{2}gt^2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align*}
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
 h_i &amp;= z_i \cdot h_{i-1} + (1-z_i) \cdot \hat{h_i} \\
 \hat{h_i} &amp;= \tanh(W_h x_i + r_i \cdot U_h h_{i-1} + b_h) \\
 z_i &amp;= \sigma(W_z x_i + U_z h_{i-1} + b_z) \\
 r_i &amp;= \sigma(W_r x_i + U_r h_{i-1} +b_r) \\
-\end{align*}&amp;</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$W$, weight matrix</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hat{h_i}$,intermediate memory unit</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$b$, bias</inDefiningFormulation>
@@ -11385,9 +11383,9 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PassiveMuscleForce"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PassiveTendonForce"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$ \begin{align*} 
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$ \begin{align} 
         m_{1} \ddot{x}_{1} &amp;= F_\text{PTE}(t) -F_{\text{ACE}1}(t) - F_{\text{PME}1}(t) \\ 
-        m_{2} \ddot{x}_{2} &amp;= -F_\text{PTE}(t) + F_{\text{ACE}2}(t) - F_{\text{PME}2}(t) \end{align*}$</definingFormulation>
+        m_{2} \ddot{x}_{2} &amp;= -F_\text{PTE}(t) + F_{\text{ACE}2}(t) - F_{\text{PME}2}(t) \end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$F_{\text{ACE}}$, Active contractile force</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$F_{\text{PME}}$, Passive Muscle Force</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$F_{\text{PTE}}$, Passive Tendon Force</inDefiningFormulation>
@@ -11464,7 +11462,7 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\epsilon$, Mechanical Strain</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\sigma$, Mechanical Stress</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$u$, Displacement of Atoms</inDefiningFormulation>
-        <terms:description xml:lang="en">force to extend or compress a spring by distance scales linearly with  distance</terms:description>
+        <terms:description xml:lang="en">force to extend or compress a spring by distance scales linearly with distance</terms:description>
         <rdfs:comment xml:lang="en">An empirical law which states that the force (F) needed to extend or compress a spring by some distance (x) scales linearly with respect to that distance—that is, $F = kx$. Also the stresses and strains of  material inside a continuous elastic material are connected by a linear relationship that is mathematically similar to Hooke&apos;s spring law, and is often referred to by that name.</rdfs:comment>
         <rdfs:label xml:lang="en">Hooke Law (Linear Elasticity)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linear_elasticity"/>
@@ -12765,7 +12763,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{E*S_2}(t=0) = c_{E*S_2_{0}}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{E*S_2}(t=0) = c_{E*S_{2_{0}}}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{E*S_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Intermediate - Substrate 2 - Complex Concentration (Bi Bi Reaction Ping Pong - ODE Model)</rdfs:label>
@@ -12799,7 +12797,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiPingPongODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_1}(t=0) = c_{P_{1,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_P_1$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Product 1 Concentration (Bi Bi Reaction Ordered - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -12865,7 +12863,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiTheorellChanceODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_1}(t=0) = c_{P_{1,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_P_1$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Product 1 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -12962,7 +12960,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiPingPongODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_2}(t=0) = c_{P_{2,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_P_2$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{P_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Product 2 Concentration (Bi Bi Reaction Ordered - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -13545,7 +13543,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}(t=0) = c_{S_{1,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_S_1$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Substrate 1 Concentration (Bi Bi Reaction Ordered - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -13562,7 +13560,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrateConcentrationUniUniODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}(t=0) = c_{S_{1,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_S_1$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Substrate 1 Concentration (Bi Bi Reaction Ping Pong - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -13595,7 +13593,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}(t=0) = c_{S_{1,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_S_1$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_1}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Substrate 1 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -13645,7 +13643,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_2}(t=0) = c_{S_{2,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_S_2$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Substrate 2 Concentration (Bi Bi Reaction Ordered - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -13660,7 +13658,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Concentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_2}(t=0) = c_{S_{2,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_S_2$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Substrate 2 Concentration (Bi Bi Reaction Ping Pong - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -13692,7 +13690,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_2}(t=0) = c_{S_{2,0}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_S_2$, Concentration</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{S_2}$, Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <rdfs:label xml:lang="en">Initial Substrate 2 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)</rdfs:label>
     </owl:NamedIndividual>
@@ -14046,7 +14044,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ComplexedEnzymeConcentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ProductConcentration"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{c_{EX}}{c_P} \ggt 1$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{c_{EX}}{c_P} \gg 1$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_P$, Product Concentration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$c_{EX}$, Complexed Enzyme Concentration</inDefiningFormulation>
         <rdfs:label xml:lang="en">Irreversibility Assumption</rdfs:label>
@@ -15516,26 +15514,25 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PlanckConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{\partial\hat\rho}{\partial t} = -\frac{i}{\hbar}\left[\hat H, \hat\rho\right]$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hat{H}$, Quantum Hamiltonian Operator</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hat{\rho}$, Quantum Density Operator</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hbar$, Planck Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <terms:description xml:lang="en">describes how a density operator (for pure or for mixed states) evolves in time</terms:description>
+        <rdfs:comment xml:lang="en">Just as the Schrödinger equation describes how pure states evolve in time, the Liouville-von Neumann equation describes how a density operator evolves in time. Note that there can be different density operators for pure or for mixed states.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Note the similarity with the classical Liouville equation where the commutator brackets [.,.] are replaced by Poisson brackets {.,.}</rdfs:comment>
         <rdfs:label xml:lang="en">Liouville-von Neumann Equation</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Density_matrix#Von_Neumann_equation_for_time_evolution"/>
+        <skos:altLabel xml:lang="en">Quantum Liouville Equation</skos:altLabel>
+        <skos:altLabel xml:lang="en">von Neumann equation</skos:altLabel>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q2533076"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation -->
-
-
-    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
     
 
 
@@ -16232,30 +16229,6 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     
 
 
-    <!-- https://mardi4nfdi.de/mathmoddb#MembranePotential -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MembranePotential">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#TransmembranePotential"/>
-        <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
-        <terms:description xml:lang="en">difference of the electric potential between the inner and the outer part of a biological cell</terms:description>
-        <rdfs:label xml:lang="en">Membrane Potential</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Membrane_potential"/>
-        <skos:altLabel xml:lang="en">Membrane Voltage</skos:altLabel>
-        <skos:altLabel xml:lang="en">Transmembrane Potential</skos:altLabel>
-        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q389844"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#TransmembranePotential -->
-
-
-    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#TransmembranePotential"/>
-    
-
-
     <!-- https://mardi4nfdi.de/mathmoddb#MichaelisConstant -->
 
 
@@ -16570,7 +16543,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1} = \frac{k_{-1} * k_{-2}}{k_{-5} * (k_{-1} + k_{-2})}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-5}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16587,7 +16560,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1} = \frac{k_{-3} * (k_{-1} + k_{2})}{k_{-2} * (k_{-1} + k_{-3})}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-3}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16605,7 +16578,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1} = \frac{k_{-1}}{k_{-2}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-2}$, Reaction Rate Constant</inDefiningFormulation>
         <rdfs:label xml:lang="en">Michaelis Constant Product 1 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)</rdfs:label>
@@ -16621,7 +16594,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2} = \frac{k_{-1} * (k_{-2} + k_4)}{k_{-4} * (k_{-1} + k_{-2})}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_1}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-4}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16639,7 +16612,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2} = \frac{k_{-1} * (k_{-3} + k_{4})}{k_{-4} * (k_{-1} + k_{-3})}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-3}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-4}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16657,7 +16630,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2} = \frac{k_{-1}}{k_{-3}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{P_2}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-3}$, Reaction Rate Constant</inDefiningFormulation>
         <rdfs:label xml:lang="en">Michaelis Constant Product 2 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)</rdfs:label>
@@ -16706,7 +16679,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_1} = \frac{k_{4} * (k_{-1} + k_{2})}{k_{1} * (k_{2} + k_{4})}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_1}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_1}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{2}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16724,7 +16697,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_1} = \frac{k_{3}}{k_{1}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_1}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_1}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{1}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{3}$, Reaction Rate Constant</inDefiningFormulation>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate 1 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)</rdfs:label>
@@ -16754,8 +16727,8 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}} \equiv \frac{k_5 * (k_{-2} + k_4)}{k_2 * (k_4 + k_5)}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}}$, Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)</inDefiningFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2} \equiv \frac{k_5 * (k_{-2} + k_4)}{k_2 * (k_4 + k_5)}$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}$, Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{4}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16774,7 +16747,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2} = \frac{k_{2} * (k_{-3} + k_{4})}{k_{3} * (k_{2} + k_{4})}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{-3}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{3}$, Reaction Rate Constant</inDefiningFormulation>
@@ -16792,7 +16765,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstant"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2} = \frac{k_{3}}{k_{2}}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}}$, Michaelis Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{S_2}$, Michaelis Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{2}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{3}$, Reaction Rate Constant</inDefiningFormulation>
         <rdfs:label xml:lang="en">Michaelis Constant Substrate 2 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)</rdfs:label>
@@ -18073,25 +18046,25 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FibreStretch"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#IonCurrent"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MembraneCapacitance"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MembranePotential"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#NeuralInput"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SensoryOrganCurrent"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$$\begin{align*} 
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#TransmembranePotential"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align} 
 \frac{\text{d}V^{\text{d}}_{\text{m}}}{\text{d}t} &amp;= \frac{1}{C^{\text{d}}_{\text{m}}}\left(-I^{\text{d}}_{\text{ion}}(V^{\text{d}}_{\text{m}}) - I^{\text{d}}_{\text{C}}(V^{\text{d}}_{\text{m}},V^{\text{s}}_{\text{m}}) \right) \\ 
 \frac{\text{d}V^{\text{s}}_{\text{m}}}{\text{d}t} &amp;= \frac{1}{C^{\text{s}}_{\text{m}}}\left(-I^{\text{s}}_{\text{ion}}(V^{\text{s}}_{\text{m}}) - I^{\text{s}}_{\text{C}}(V^{\text{d}}_{\text{m}},V^{\text{s}}_{\text{m}}) + I_{\text{spindle}}(\lambda_{\text{f}}, \dot{\lambda}_\text{f}) + I_\text{ext} \right) \\ 
-\end{align*}$$</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation>$t$, Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_{\text{m}}$, Membrane Capacitance</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$I_{\text{C}}$, Coupling Current</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$I_{\text{ext}}$, Neural Input</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$I_{\text{ion}}$, Ion Current</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$I_{\text{spindle}}$, Sensory Organ Current</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$V_{\text{m}}$, Membrane Potential</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$V_{\text{m}}$, Transmembrane Potential</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda_{\text{f}}$, Fibre Contraction Velocity</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda_{\text{f}}$, Fibre Stretch</inDefiningFormulation>
-        <terms:description xml:lang="en">two coupled ODEs which describe the membrane potentials</terms:description>
-        <rdfs:comment xml:lang="en">Two coupled ODEs which describe the membrane potentials in the soma and the dendrite compartments.</rdfs:comment>
+        <terms:description xml:lang="en">two coupled ODEs which describe the transmembrane potentials</terms:description>
+        <rdfs:comment xml:lang="en">Transmembrane potentials in the soma and the dendrite compartments.</rdfs:comment>
         <rdfs:label xml:lang="en">Motor Neuron Pool ODE System</rdfs:label>
     </owl:NamedIndividual>
     
@@ -18416,13 +18389,13 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$$\begin{align*} 
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}  
 k_{1} &amp;= k_{5} \\ 
 k_{-1} &amp;= k_{-5} \\
 k_{-3} &amp;= k_{-4}\\ 
 k_{3} &amp;= k_{4} \\ 
 K_{ic} &amp;= K_{iu}\\ 
-\end{align}$$</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{ic}$,Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{iu}$,Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_1$, Reaction Rate Constant</inDefiningFormulation>
@@ -19090,7 +19063,7 @@ $\bm x_j\in \mathbb R^3$, position of center of gravity for particle $j$</inDefi
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SusceptibleIndividuals"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#TotalPopulationSize"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$$ \hat{\mathcal{S}}^{(l)} = \hat{\mathcal{N}}^{(l)} - (1 + \Sigma_{\mathcal{E}}) \hat{\mathcal{I}}^{(l)} - \hat{\mathcal{R}}^{(l)} $$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\Sigma_{\mathcal{E}}}$, Coefficient Scaling Infectious To Exposed</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\Sigma_{\mathcal{E}}$, Coefficient Scaling Infectious To Exposed</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hat{\mathcal{I}}^{(l)}$, Number Of Infectious Individuals</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hat{\mathcal{N}}^{(l)}$, Total Population Size</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hat{\mathcal{R}}^{(l)}$, Number Of Removed Individuals</inDefiningFormulation>
@@ -19492,7 +19465,7 @@ Subscript denotes the individual</rdfs:comment>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixB"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixN"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{z}(t)=-(A^{\dag}+ \sum_ku_k(t)N^{\dag}_k)z(t)-B^{\dag}u(t)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{z}(t)=-(A^{\dagger}+ \sum_ku_k(t)N^{\dagger}_k)z(t)-B^{\dagger}u(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$B$, Control System Matrix B</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N$, Control System Matrix N</inDefiningFormulation>
@@ -19518,7 +19491,7 @@ Subscript denotes the individual</rdfs:comment>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixN"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemState"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J[u,x,z]=2\Re\int_0^Tdtz^{\dag}(t)\left(\partial_t-A-\sum_ku_k(t)N_k\right)x(t)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J[u,x,z]=2\Re\int_0^Tdtz^{\dagger}(t)\left(\partial_t-A-\sum_ku_k(t)N_k\right)x(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Control System Matrix A</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N$, Control System Matrix N</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$T$, Control System Duration</inDefiningFormulation>
@@ -19667,7 +19640,7 @@ Subscript denotes the individual</rdfs:comment>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemState"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#OptimalControlTarget"/>
         <defines rdf:resource="https://mardi4nfdi.de/mathmoddb#OptimalControlTarget"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J[u,x] \equiv x^{\dag}(T)Dx(T)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J[u,x] \equiv x^{\dagger}(T)Dx(T)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$D$, Control System Matrix D</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J$, Optimal Control Target</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$T$, Control System Duration</inDefiningFormulation>
@@ -19691,7 +19664,7 @@ Subscript denotes the individual</rdfs:comment>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ControlSystemState"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#OptimalControlPenaltyFactor"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$u_k(t)=-\frac{1}{\alpha_k}\Im\left(z^{\dag}(t)N_kx(t) \right)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$u_k(t)=-\frac{1}{\alpha_k}\Im\left(z^{\dagger}(t)N_kx(t) \right)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N$, Control System Matrix N</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\alpha$, Optimal Control Penalty Factor</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
@@ -19797,7 +19770,7 @@ Subscript denotes the individual</rdfs:comment>
         <containedAsAssumptionIn rdf:resource="https://mardi4nfdi.de/mathmoddb#OpinionModelWithInfluencersAndMedia"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PairFunction"/>
         <defines rdf:resource="https://mardi4nfdi.de/mathmoddb#PairFunction"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi(x) = exp(-x)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi(x) = \exp(-x)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi(x)$, Pair Function</inDefiningFormulation>
         <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
         <rdfs:comment xml:lang="en">This pair function places exponentially more weight on close-by individuals. Implies that individuals that are already close in opinion space excert higher social influence on each other (homophily)</rdfs:comment>
@@ -20136,9 +20109,11 @@ Subscript denotes the individual</rdfs:comment>
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PermittivityDielectric"/>
         <terms:description xml:lang="en">physical constant that represents the capability of the vacuum to permit electric field lines</terms:description>
-        <rdfs:comment xml:lang="en">Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It may also be referred to as the permittivity of free space, the electric constant, or the distributed capacitance of the vacuum. It is an ideal (baseline) physical constant.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It is an ideal (baseline) physical constant.</rdfs:comment>
         <rdfs:label xml:lang="en">Permittivity (Vacuum)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Vacuum_permittivity"/>
+        <skos:altLabel xml:lang="en">distributed capacitance of the vacuum</skos:altLabel>
+        <skos:altLabel xml:lang="en">electric constant</skos:altLabel>
         <qudtID rdf:resource="http://qudt.org/vocab/constant/ElectricConstant"/>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q6158"/>
     </owl:NamedIndividual>
@@ -20844,6 +20819,19 @@ deformation</terms:description>
     
 
 
+    <!-- https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <rdfs:label xml:lang="en">Quantile Function Of The Beta Distribution</rdfs:label>
+        <skos:altLabel xml:lang="en">inverse function of the regularized incomplete beta function</skos:altLabel>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3489473"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q756254"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mardi4nfdi.de/mathmoddb#QuantumAngularMomentumOperator -->
 
 
@@ -21328,7 +21316,6 @@ deformation</terms:description>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumJumpOperator"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{\mathrm d}{\mathrm{d}t}\rho=-\frac{\mathrm i}\hbar[H,\rho]+\sum _{i=1}^{N^2-1}\gamma_i\left(L_i\rho L_i^\dagger-\frac12[L_i^\dagger L_i,\rho]_+\right)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$H$, Quantum Hamiltonian Operator</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$L$, Quantum Jump Operator</inDefiningFormulation>
@@ -21339,37 +21326,10 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTimeContinuous>
         <terms:description xml:lang="en">describes open system quantum dynamics including dissipation and/or decoherence</terms:description>
-        <rdfs:comment xml:lang="en">Markovian quantum master equation for the evolution of quantum mechanical density matrices (pure or mixed states), also known as Gorini–Kossakowski–Sudarshan–Lindblad equation (GKSL equation).  It generalizes the Schrödinger equation to open quantum systems; that is, systems in contacts with their surroundings. The resulting dynamics is no longer unitary, but still satisfies the property of being trace-preserving and completely positive for any initial condition</rdfs:comment>
+        <rdfs:comment xml:lang="en">Markovian quantum master equation for the evolution of quantum mechanical density matrices (pure or mixed states).  It generalizes the Schrödinger equation to open quantum systems; that is, systems in contacts with their surroundings. The resulting dynamics is no longer unitary, but still satisfies the property of being trace-preserving and completely positive for any initial condition</rdfs:comment>
         <rdfs:label xml:lang="en">Quantum Lindblad Equation</rdfs:label>
         <skos:altLabel xml:lang="en">Gorini–Kossakowski–Sudarshan–Lindblad Equation</skos:altLabel>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q4476520"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containedAsFormulationIn rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumModelClosedSystem"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PlanckConstant"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator"/>
-        <generalizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{\mathrm d}{\mathrm{d}t}\rho(t)=-\frac{\mathrm i}\hbar[H,\rho(t)]$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$H$, Quantum Hamiltonian Operator</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\hbar$, Planck Constant</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Quantum Density Operator</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
-        <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
-        <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isTimeContinuous>
-        <terms:description xml:lang="en">describes how a density operator (for pure or for mixed states) evolves in time</terms:description>
-        <terms:description xml:lang="en">time evolution of quantum density operators; describing open system quantum dynamics</terms:description>
-        <rdfs:comment xml:lang="en">Just as the Schrödinger equation describes how pure states evolve in time, the von Liouville-von Neumann equation (also known as the quantum Liouville equation) describes how a density operator evolves in time. Note that there can be different density operators for pure or for mixed states.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Note the similarity with the classical Liouville equation where the commutator brackets [.,.] are replaced by Poisson brackets {.,.}</rdfs:comment>
-        <rdfs:label xml:lang="en">Quantum Liouville Equation</rdfs:label>
-        <skos:altLabel xml:lang="en">Liouville-von Neumann Equation</skos:altLabel>
-        <wikidataID rdf:resource="https://wikidata.org/wiki/Q831774"/>
     </owl:NamedIndividual>
     
 
@@ -21568,7 +21528,6 @@ deformation</terms:description>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianElectricCharge"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianElectricDipole"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricField"/>
         <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
@@ -21603,7 +21562,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateConstant"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{catalytic} \llt k_{unbind}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{catalytic} \ll k_{unbind}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{catalytic}$, Reaction Rate Constant</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{unbind}$, Reaction Rate Constant</inDefiningFormulation>
         <rdfs:label xml:lang="en">Rapid Equilibrium Assumption</rdfs:label>
@@ -22437,12 +22396,11 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
-        <discretizesModel rdf:resource="https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel"/>
         <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
         <isLinear rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLinear>
         <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSpaceContinuous>
         <terms:description xml:lang="en">finite volume disretization scheme for solving the van Roosbroeck system describing the semi-classical transport of free electrons and holes</terms:description>
-        <rdfs:comment xml:lang="en">The Scharfetter-Gummel finite volume disretization scheme is the standard numerical method for solving the van Roosbroeck system describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Scharfetter-Gummel finite volume disretization scheme is the standard numerical method for solving the drift diffusion (aka van Roosbroeck) system describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation.</rdfs:comment>
         <rdfs:label xml:lang="en">Scharfetter-Gummel Scheme</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q119844"/>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q29367424"/>
@@ -23727,7 +23685,7 @@ I_{\text{ion}} &amp;= I_{\text{ion}} \left(V^{\text{f}}_{\text{m}}, \mathbf{y}\r
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateOfChangeOfSusceptibleCities"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SpreadingRateTimeDependent"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{ds_m(t)}{dt} &amp;= -s_m(t) * \alpha(t) \sum_{n=1}^{N_R} G_{m,n} * i_n(t)$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{ds_m(t)}{dt} = -s_m(t) * \alpha(t) \sum_{n=1}^{N_R} G_{m,n} * i_n(t)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$G_{m,n}$, Contact Network</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N_R$, Number of Regions</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\alpha(t)$, Spreading Rate (Time-dependent)</inDefiningFormulation>
@@ -23793,7 +23751,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Region"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SpreadingRateTimeDependent"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align*} \frac{ds_m(t)}{dt} &amp;= -s_m(t) * \alpha(t) \sum_{n=1}^{N_R} G_{m,n} * i_n(t) \\ i_m(t) &amp;= P_m - s_m(t) \end{align*}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align} \frac{ds_m(t)}{dt} &amp;= -s_m(t) * \alpha(t) \sum_{n=1}^{N_R} G_{m,n} * i_n(t) \\ i_m(t) &amp;= P_m - s_m(t) \end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$G_{m,n}$, Contact Network</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N_R$, Number of Regions</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$P_m$, Number of Cities</inDefiningFormulation>
@@ -24028,7 +23986,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$S_n$, Number Of Susceptible Individuals</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\Delta t$, Time Step</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\alpha$, Contact Rate</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\gama$, Relative Removal Rate</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\gamma$, Relative Removal Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
         <rdfs:label xml:lang="en">Susceptibles At Time Step n+1 in The SIS Model</rdfs:label>
@@ -24320,7 +24278,6 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation"/>
-        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
         <rdfs:comment xml:lang="en">Dimension in which events can be ordered from the past through the present into the future</rdfs:comment>
         <rdfs:label xml:lang="en">Time</rdfs:label>
@@ -24502,7 +24459,6 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
         <terms:description xml:lang="en">difference in electric potential between the interior and the exterior of a biological cell</terms:description>
-        <rdfs:comment xml:lang="en">Membrane potential (also transmembrane potential or membrane voltage) is the difference in electric potential between the interior and the exterior of a biological cell.</rdfs:comment>
         <rdfs:label xml:lang="en">Transmembrane Potential</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Membrane_potential"/>
         <skos:altLabel xml:lang="en">Membrane Potential</skos:altLabel>
@@ -26348,31 +26304,6 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
         <rdfs:label xml:lang="en">Infectious At Time Step n+1 in The SIS Model</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForElectrons"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForHoles"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles"/>
-        <containsFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential"/>
-        <surveyedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Koprucki_2017_Numerical_methods_for_drift-diffusion_models"/>
-        <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
-        <isLinear rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLinear>
-        <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
-        <terms:description xml:lang="en">mathematical model describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation</terms:description>
-        <rdfs:comment xml:lang="en">The van Roosbroeck system describes the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation. It became the standard model to describe the current flow in semiconductor devices such as diodes, transistors, LEDs, solar cells and lasers, as well as  quantum nanostructures and organic semiconductors.</rdfs:comment>
-        <rdfs:label xml:lang="en">van Roosbroeck Model</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://archive.org/details/bstj29-4-560"/>
-        <rdfs:seeAlso xml:lang="en">W. van Roosbroeck. Theory of the ﬂow of electrons and holes in germanium and other semiconductors. Bell Syst. Tech. J., 29(4):560–607, 1950</rdfs:seeAlso>
-        <doiID rdf:resource="https://doi.org/10.20347/WIAS.PREPRINT.2263"/>
-        <doiID rdf:resource="https://doi.org/10.4324/9781315152318-25"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

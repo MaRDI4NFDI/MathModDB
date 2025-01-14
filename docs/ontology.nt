@@ -2086,7 +2086,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\nabla \\times \\mathbf{B} &= \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Electric Field"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Magnetic Field"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$J$, Electric Current Density"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -3229,7 +3229,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Substrate1Concentration> .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Substrate2Concentration> .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align*}\n\\frac{dc_{S_1}}{dt} &= k_{-1} * c_{ES_1} - k_{1} * c_{E} * c_{S_1} \\\\\n\\frac{dc_{S_2}}{dt} &= k_{-2} * c_{EP_2} * c_{P_1} - k_{2} * c_{ES_1} * c_{S_2} \\\\\n\\frac{dc_{P_1}}{dt} &= k_{2} * c_{ES_1} * c_{S_2} - k_{-2} * c_{EP_2} * c_{P_1} \\\\\n\\frac{dc_{P_2}}{dt} &= k_{3} * c_{EP_2} - k_{-3} * c_{E} * c_{P_2} \\\\\n\\frac{dc_{ES_1}}{dt} &= k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2} \\\\\n\\frac{dc_{EP_2}}{dt} &= k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2} \\\\\n\\frac{dc_{E}}{dt} &= k_{-1} * c_{ES_1} + k_3 * c_{EP_2} - k_{1} * c_{E} * c_{S_1} - k_{-3} * c_{E} * c_{P_2} \n\\end{align*}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align}\n\\frac{dc_{S_1}}{dt} &= k_{-1} * c_{ES_1} - k_{1} * c_{E} * c_{S_1} \\\\\n\\frac{dc_{S_2}}{dt} &= k_{-2} * c_{EP_2} * c_{P_1} - k_{2} * c_{ES_1} * c_{S_2} \\\\\n\\frac{dc_{P_1}}{dt} &= k_{2} * c_{ES_1} * c_{S_2} - k_{-2} * c_{EP_2} * c_{P_1} \\\\\n\\frac{dc_{P_2}}{dt} &= k_{3} * c_{EP_2} - k_{-3} * c_{E} * c_{P_2} \\\\\n\\frac{dc_{ES_1}}{dt} &= k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2} \\\\\n\\frac{dc_{EP_2}}{dt} &= k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2} \\\\\n\\frac{dc_{E}}{dt} &= k_{-1} * c_{ES_1} + k_3 * c_{EP_2} - k_{1} * c_{E} * c_{S_1} - k_{-3} * c_{E} * c_{P_2} \n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\frac{dc_{EP_2}}{dt}$, Reaction Rate of Enzyme - Product 2 Complex"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\frac{dc_{ES_1}}{dt}$, Reaction Rate of Enzyme - Substrate 1 Complex"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODESystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\frac{dc_{E}}{dt}$, Reaction Rate of Enzyme"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -3707,7 +3707,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#containedAsAssumptionIn> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#containedAsAssumptionIn> <https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#deBroglieWavelength> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\lambda \\llt L$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\lambda \\ll L$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$L$, typical dimension of the system"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\lambda$, de Broglie Wavelength"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalApproximation> <http://purl.org/dc/terms/description> "classical dynamics as an approximation to quantum mechanics"@en .
@@ -3753,9 +3753,9 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <https://mardi4nfdi.de/mathmoddb#isDynamic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <http://purl.org/dc/terms/description> "mathematical model for describing molecular systems in the diffusive regime"@en .
-<https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <http://www.w3.org/2000/01/rdf-schema#comment> "Brownian dynamics is also known as overdamped Langevin dynamics."@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Brownian Model"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Brownian_dynamics> .
+<https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <http://www.w3.org/2004/02/skos/core#altLabel> "overdamped Langevin dynamics"@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q4976526> .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClassicalDensityPhaseSpace
@@ -3938,9 +3938,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ClassicalMomentum> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ClassicalPosition> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#generalizedByFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
-<https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{d\\rho}{dt}=\\frac{\\partial\\rho}{\\partial t}+\\sum_{i=1}^n\\left(\\frac{\\partial\\rho}{\\partial q_i}\\dot{q}_i+\\frac{\\partial\\rho}{\\partial p_i}\\dot{p}_i\\right)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$H$, Classical Hamilton Function"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\rho$, Classical Density (Phase Space)'"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -4075,7 +4073,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation
 <https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation> <https://mardi4nfdi.de/mathmoddb#containedAsAssumptionIn> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation> <https://mardi4nfdi.de/mathmoddb#containedAsAssumptionIn> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation> <https://mardi4nfdi.de/mathmoddb#containedAsAssumptionIn> <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> .
 <https://mardi4nfdi.de/mathmoddb#ClosedSystemApproximation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumDampingRate> .
@@ -4290,7 +4287,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleCities> .
 <https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#generalizedByFormulation> <https://mardi4nfdi.de/mathmoddb#ConservationLaw> .
-<https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$i_m(t) &= P_m - s_m(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$i_m(t) = P_m - s_m(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$P_m$, Number of Cities"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$i_m(t)$, Number Of Infected Cities"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ConservationOfCityNumbers> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$s_m(t)$, Number Of Susceptible Cities"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -4718,7 +4715,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> .
-<https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\dot{x}(t)=(A+u(t)N)x(t)+Bu(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputBilinear> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -4761,7 +4757,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemState> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> .
-<https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\dot{x}(t)=Ax(t)+Bu(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemInputLinear> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -5026,7 +5021,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#approximatesFormulation> <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadratic> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemOutput> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$y(t)=\\tilde{x}^{\\dag}(t)\\tilde{D}\\tilde{x}(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$y(t)=\\tilde{x}^{\\dagger}(t)\\tilde{D}\\tilde{x}(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\tilde{D}$, Control System Matrix D (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\tilde{x}$, Control System State (Reduced)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#ControlSystemOutputQuadraticReduced> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -5109,7 +5104,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#FiniteVolumeMethod> .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#ControlVolumeDefinition> .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://purl.org/dc/terms/description> "mathematical abstraction employed in mathematical models of continuum mechanics and thermodynamics used within finite volume discretizations"@en .
-<https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "used for example in  the Scharfetter-Gummel discretization of the van-Roosbroeck system"@en .
+<https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "used for example in  the Scharfetter-Gummel discretization of the drift diffusion (aka van-Roosbroeck) system"@en .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Control Volume"@en .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Control_volume> .
 <https://mardi4nfdi.de/mathmoddb#ControlVolume> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q5165895> .
@@ -5207,7 +5202,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://purl.org/dc/terms/description> "density of current of the electrons, e.g., in a semiconductor device"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Electrons"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
 # 
@@ -5229,16 +5224,15 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Elementary Charge"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://purl.org/dc/terms/description> "for use in semiconductor physics; also known as flux of electrons"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Electrons (Definition)"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://www.w3.org/2004/02/skos/core#altLabel> "Flux of Electrons"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#similarToQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://purl.org/dc/terms/description> "density of current of the holes, e.g., in a semiconductor device"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Holes"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
 # 
@@ -5260,17 +5254,15 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Elementary Charge"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://purl.org/dc/terms/description> "for use in semiconductor physics; also known as flux of holes"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Holes (Definition)"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://www.w3.org/2004/02/skos/core#altLabel> "Flux Of Holes"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices
 <https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#ResearchProblem> .
 <https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <https://mardi4nfdi.de/mathmoddb#containedInField> <https://mardi4nfdi.de/mathmoddb#SemiconductorPhysics> .
-<https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <https://mardi4nfdi.de/mathmoddb#modeledBy> <https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> .
 <https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <http://purl.org/dc/terms/description> "flow of electrical charge carriers coupled to electrostatic potential distribution in semiconductor devices"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <http://www.w3.org/2000/01/rdf-schema#label> "Current flow in semiconductor devices"@en .
+<https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <http://www.w3.org/2000/01/rdf-schema#label> "Current Flow in Semiconductor Devices"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#CurrentProceduralTerminology
 <https://mardi4nfdi.de/mathmoddb#CurrentProceduralTerminology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5287,7 +5279,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FluidIntrinsicPermeabilityPorousMedium> .
 <https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FluidPressurePorousMedium> .
 <https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FluidVelocityPorousMedium> .
-<https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align*}\nv^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\\n\\nabla \\cdot v^{pm} = 0\n\\end{align*}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align}\nv^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\\n\\nabla \\cdot v^{pm} = 0\n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K$, Fluid Intrinsic Permeability (Porous Medium)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mu$, Fluid Dynamic Viscosity (Porous Medium)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DarcyEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$p^{pm}$, Fluid Pressure (Porous Medium)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -5354,7 +5346,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#containedAsFormulationIn> <https://mardi4nfdi.de/mathmoddb#DynamicalElectronScatteringModel> .
 <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#UnitNormalVector> .
-<https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align*}\n\\frac{\\mathrm d}{\\mathrm d z} \\varphi_{\\mathbf{g}}(z) &= 2\\mathrm{i} \\pi \\Big(s_{\\mathbf{g}} + \\frac{\\mathrm d}{\\mathrm d z}(\\mathbf{g}\\cdot \\mathbf{u}(\\mathbf{r}))\\Big)\\varphi_{\\mathbf{g}}(z)+ \\mathrm{i} \\pi\\sum_{\\mathbf{h}\\in \\Lambda^*_m} U_{\\mathbf{g-h}}\\varphi_{\\mathbf{h}}(z)\\\\\n\\quad s_g &= -\\frac{g\\cdot(2k_0+g)}{2n\\cdot(k_0+g)}\n\\end{align*}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align}\n\\frac{\\mathrm d}{\\mathrm d z} \\varphi_{\\mathbf{g}}(z) &= 2\\mathrm{i} \\pi \\Big(s_{\\mathbf{g}} + \\frac{\\mathrm d}{\\mathrm d z}(\\mathbf{g}\\cdot \\mathbf{u}(\\mathbf{r}))\\Big)\\varphi_{\\mathbf{g}}(z)+ \\mathrm{i} \\pi\\sum_{\\mathbf{h}\\in \\Lambda^*_m} U_{\\mathbf{g-h}}\\varphi_{\\mathbf{h}}(z)\\\\\n\\quad s_g &= -\\frac{g\\cdot(2k_0+g)}{2n\\cdot(k_0+g)}\n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$U_g$, Electric Potential Fourier Coefficients"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\Lambda^*_m$, Reciprocal Lattice"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DarwinHowieWhelanEquationStrained> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi_g$, Amplitude of Electron Wave"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -5597,7 +5589,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousRemovedModel> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousRemovedModel> <http://purl.org/dc/terms/description> "discrete model for the spreading of infectious diseases considering susceptible, infectious and recovered/removed individuals"@en .
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousRemovedModel> <http://www.w3.org/2000/01/rdf-schema#label> "Discrete Susceptible Infectious Removed Model"@en .
-<https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousRemovedModel> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q2206263" .
+<https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousRemovedModel> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q2206263> .
 # 
 # https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5608,7 +5600,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel> <http://www.w3.org/2000/01/rdf-schema#comment> "discrete-time model for the spreding of infectious diseases with temporary resistance considering susceptible and infectious individuals"@en .
 <https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel> <http://www.w3.org/2000/01/rdf-schema#label> "Discrete Susceptible Infectious Susceptible Model"@en .
-<https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q2351772" .
+<https://mardi4nfdi.de/mathmoddb#DiscreteSusceptibleInfectiousSusceptibleModel> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q2351772> .
 # 
 # https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5788,18 +5780,28 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
-<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition> <https://mardi4nfdi.de/mathmoddb#DirichletBoundaryConditionForElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition> <https://mardi4nfdi.de/mathmoddb#DirichletBoundaryConditionForElectronFermiPotential> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition> <https://mardi4nfdi.de/mathmoddb#DirichletBoundaryConditionForHoleFermiPotential> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition> <https://mardi4nfdi.de/mathmoddb#NeumannBoundaryConditionElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition> <https://mardi4nfdi.de/mathmoddb#NeumannBoundaryConditionForElectronFermiPotential> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition> <https://mardi4nfdi.de/mathmoddb#NeumannBoundaryConditionForHoleFermiPotential> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForElectrons> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForHoles> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#discretizedByModel> <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#models> <https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#surveyedIn> <https://mardi4nfdi.de/mathmoddb#Koprucki_2017_Numerical_methods_for_drift-diffusion_models> .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://purl.org/dc/terms/description> "mathematical model describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation"@en .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/2000/01/rdf-schema#comment> "The drift-diffusion system describes the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation. It became the standard model to describe the current flow in semiconductor devices such as diodes, transistors, LEDs, solar cells and lasers, as well as  quantum nanostructures and organic semiconductors."@en .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/2000/01/rdf-schema#label> "Drift-Diffusion Model"@en .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://archive.org/details/bstj29-4-560> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "W. van Roosbroeck. Theory of the ﬂow of electrons and holes in germanium and other semiconductors. Bell Syst. Tech. J., 29(4):560–607, 1950"@en .
 <https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <http://www.w3.org/2004/02/skos/core#altLabel> "van Roosbroeck Model"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.20347/WIAS.PREPRINT.2263> .
+<https://mardi4nfdi.de/mathmoddb#DriftDiffusionModel> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.4324/9781315152318-25> .
 # 
 # https://mardi4nfdi.de/mathmoddb#Duration
 <https://mardi4nfdi.de/mathmoddb#Duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -6253,9 +6255,10 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Mass> .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://purl.org/dc/terms/description> "mass of a stationary electron"@en .
-<https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2000/01/rdf-schema#comment> "In particle physics, the mass of a stationary electron, also known as the invariant mass of the electron. It is one of the fundamental constants of physics."@en .
+<https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2000/01/rdf-schema#comment> "In particle physics, the mass of a stationary electron is one of the fundamental constants of physics."@en .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2000/01/rdf-schema#label> "Electron Mass"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Electron_mass> .
+<https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2004/02/skos/core#altLabel> "invariant mass of the electron"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <https://mardi4nfdi.de/mathmoddb#qudtID> <http://qudt.org/vocab/constant/ElectronMass> .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3814108> .
 # 
@@ -6268,7 +6271,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#LaplaceEquationForTheElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianElectricCharge> .
 <https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> .
-<https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> .
 <https://mardi4nfdi.de/mathmoddb#ElectronShuttlingModel> <https://mardi4nfdi.de/mathmoddb#generalizedByModel> <https://mardi4nfdi.de/mathmoddb#ControlSystemModelBilinear> .
@@ -6299,7 +6301,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Pressure> .
 <https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#StressTensorPiolaKirchhoff> .
 <https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$$\\begin{align*}\n \\rho_{\\text{M}1} \\mathbf{\\ddot{x}}_{\\text{M}1} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}1}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}1}, \\gamma_{\\text{M}1}) - p_{\\text{M}1}\\mathbf{F}^{-T}_{\\text{M}1} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}1} = 0$} ~ &\\text{in $\\Omega_{\\text{M}1}\\times [0,T_{\\text{end}})$}\\\\ \n \\rho_{\\text{M}2} \\mathbf{\\ddot{x}}_{\\text{M}2} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}2}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}2}, \\gamma_{\\text{M}2}) - p_{\\text{M}2}\\mathbf{F}^{-T}_{\\text{M}2} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}2} = 0$} ~ &\\text{in $\\Omega_{\\text{M}2}\\times [0,T_{\\text{end}})$}\\\\\n \\rho_{\\text{T}}\\mathbf{\\ddot{x}}_\\text{T}&= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_\\text{passive}(\\mathbf{F}_{\\text{T}}) - p_\\text{T}\\mathbf{F}^{-T}_{\\text{T}}\\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{T}}=0$}& ~\\text{in $\\Omega_{\\text{T}}\\times [0,T_{\\text{end}})$} \n\\end{align*}$$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align}\n \\rho_{\\text{M}1} \\mathbf{\\ddot{x}}_{\\text{M}1} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}1}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}1}, \\gamma_{\\text{M}1}) - p_{\\text{M}1}\\mathbf{F}^{-T}_{\\text{M}1} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}1} = 0$} ~ &\\text{in $\\Omega_{\\text{M}1}\\times [0,T_{\\text{end}})$}\\\\ \n \\rho_{\\text{M}2} \\mathbf{\\ddot{x}}_{\\text{M}2} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}2}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}2}, \\gamma_{\\text{M}2}) - p_{\\text{M}2}\\mathbf{F}^{-T}_{\\text{M}2} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}2} = 0$} ~ &\\text{in $\\Omega_{\\text{M}2}\\times [0,T_{\\text{end}})$}\\\\\n \\rho_{\\text{T}}\\mathbf{\\ddot{x}}_\\text{T}&= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_\\text{passive}(\\mathbf{F}_{\\text{T}}) - p_\\text{T}\\mathbf{F}^{-T}_{\\text{T}}\\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{T}}=0$}& ~\\text{in $\\Omega_{\\text{T}}\\times [0,T_{\\text{end}})$} \n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\ddot{\\mathbf{x}}$, Material Point Acceleration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\dot{\\mathbf{x}}$, Material Point Velocity"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Electrophysiological_Muscle_Model_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\gamma$, Lumped Activation Parameter"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -6446,7 +6448,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{dc_{EP_2}}{dt} = k_{2} * c_{ES_1} * c_{S_2} + k_{-3} * c_{E} * c_{P_2} - k_{-2} * c_{EP_2} * c_{P_1} - k_3 * c_{EP_2}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\frac{dc_{EP_2}}{dt}$, Reaction Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{EP_2}}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{EP_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{ES_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{E}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Product2ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{P_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -6572,7 +6574,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{dc_{ES_1}}{dt} = k_{1} * c_{E} * c_{S_1} + k_{-2} * c_{EP_{2}} * c_{P_1} - k_{-1} * c_{ES_1} - k_2 * c_{ES_1} * c_{S_2}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\frac{dc_{ES_1}}{dt}$, Reaction Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{EP_2}}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{EP_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{ES_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{E}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Enzyme-Substrate1ComplexConcentrationODEBiBiTheorellChance> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -6876,7 +6878,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FractionOfPopulationDensityOfRemoved> .
 <https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FractionOfPopulationDensityOfSusceptibles> .
 <https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#UnitNormalVector> .
-<https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\nu^T D \\nabla s & =\\nu^T D \\nabla e=\\nu^T D \\nabla i=\\nu^T D \\nabla r=0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\nu^T D \\nabla s =\\nu^T D \\nabla e=\\nu^T D \\nabla i=\\nu^T D \\nabla r=0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$D$, Diffusion Coefficient"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\nu$, Unit Normal Vector"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#EquivalanceEquationPlaceholder> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$e$, Fraction Of Population Density Of Exposed"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -7070,7 +7072,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricField> .
 <https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MagneticField> .
 <https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$ \\nabla \\times \\mathbf{E} &= -\\frac{\\partial \\mathbf{B}} {\\partial t}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$ \\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}} {\\partial t}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$B$, Magnetic Field"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Electric Field"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FaradayLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -7261,8 +7263,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity> .
+<https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://purl.org/dc/terms/description> "flow of holes, e.g., in an electric device"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics"@en .
-<https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "flow of holes, e.g., in an electric device"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Flux Of Holes"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Force
@@ -7473,14 +7475,15 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FreeFallHeight> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FreeFallTime> .
+<https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "y(t)=y_0~Q\\left(1-\\frac{t}{t_{\\mathrm{ff}}};\\frac{3}{2},\\frac{1}{2}\\right)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$Q$, Quantile Function Of The Beta Distribution"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t_\\mathrm{ff}$, Free Fall Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$y$, Free Fall Height"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$y_0$, Free Fall Initial Height"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <http://purl.org/dc/terms/description> "modeling the fall of objects by the laws of classical mechanics, neglecting aerodynamic drag but allowing for a non-uniform gravitational field"@en .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Moreover, assuming the falling object to be a point mass."@en .
-<https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <http://www.w3.org/2000/01/rdf-schema#comment> "Q is the quantile function of the Beta distribution, also known as the inverse function of the regularized incomplete beta function"@en .
 <https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation> <http://www.w3.org/2000/01/rdf-schema#label> "Free Fall Equation (Non-Uniform Gravitation)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum
@@ -7757,7 +7760,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer
 <https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align*}\nh_i &= z_i \\cdot h_{i-1} + (1-z_i) \\cdot \\hat{h_i} \\\\\n\\hat{h_i} &= \\tanh(W_h x_i + r_i \\cdot U_h h_{i-1} + b_h) \\\\\nz_i &= \\sigma(W_z x_i + U_z h_{i-1} + b_z) \\\\\nr_i &= \\sigma(W_r x_i + U_r h_{i-1} +b_r) \\\\\n\\end{align*}&"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align}\nh_i &= z_i \\cdot h_{i-1} + (1-z_i) \\cdot \\hat{h_i} \\\\\n\\hat{h_i} &= \\tanh(W_h x_i + r_i \\cdot U_h h_{i-1} + b_h) \\\\\nz_i &= \\sigma(W_z x_i + U_z h_{i-1} + b_z) \\\\\nr_i &= \\sigma(W_r x_i + U_r h_{i-1} +b_r) \\\\\n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$W$, weight matrix"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hat{h_i}$,intermediate memory unit"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#GatedRecurrentUnitLayer> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$b$, bias"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -8335,7 +8338,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PassiveMuscleForce> .
 <https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PassiveTendonForce> .
 <https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$ \\begin{align*} \n        m_{1} \\ddot{x}_{1} &= F_\\text{PTE}(t) -F_{\\text{ACE}1}(t) - F_{\\text{PME}1}(t) \\\\ \n        m_{2} \\ddot{x}_{2} &= -F_\\text{PTE}(t) + F_{\\text{ACE}2}(t) - F_{\\text{PME}2}(t) \\end{align*}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$ \\begin{align} \n        m_{1} \\ddot{x}_{1} &= F_\\text{PTE}(t) -F_{\\text{ACE}1}(t) - F_{\\text{PME}1}(t) \\\\ \n        m_{2} \\ddot{x}_{2} &= -F_\\text{PTE}(t) + F_{\\text{ACE}2}(t) - F_{\\text{PME}2}(t) \\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$F_{\\text{ACE}}$, Active contractile force"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$F_{\\text{PME}}$, Passive Muscle Force"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Hill-Type_Two-Muscle-One-Tendon_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$F_{\\text{PTE}}$, Passive Tendon Force"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -8392,7 +8395,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\epsilon$, Mechanical Strain"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\sigma$, Mechanical Stress"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$u$, Displacement of Atoms"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <http://purl.org/dc/terms/description> "force to extend or compress a spring by distance scales linearly with  distance"@en .
+<https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <http://purl.org/dc/terms/description> "force to extend or compress a spring by distance scales linearly with distance"@en .
 <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <http://www.w3.org/2000/01/rdf-schema#comment> "An empirical law which states that the force (F) needed to extend or compress a spring by some distance (x) scales linearly with respect to that distance—that is, $F = kx$. Also the stresses and strains of  material inside a continuous elastic material are connected by a linear relationship that is mathematically similar to Hooke's spring law, and is often referred to by that name."@en .
 <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <http://www.w3.org/2000/01/rdf-schema#label> "Hooke Law (Linear Elasticity)"@en .
 <https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Linear_elasticity> .
@@ -9310,7 +9313,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{E*S_2}(t=0) = c_{E*S_2_{0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{E*S_2}(t=0) = c_{E*S_{2_{0}}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{E*S_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialIntermediateSubstrate2ComplexConcentrationBiBiPingPongODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Intermediate - Substrate 2 - Complex Concentration (Bi Bi Reaction Ping Pong - ODE Model)"@en .
@@ -9334,7 +9337,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiPingPongODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{P_1}(t=0) = c_{P_{1,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_P_1$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{P_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Product 1 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 # 
@@ -9380,7 +9383,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiOrderedODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiTheorellChanceODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{P_1}(t=0) = c_{P_{1,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_P_1$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{P_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct1ConcentrationBiBiTheorellChanceODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Product 1 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)"@en .
 # 
@@ -9447,7 +9450,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiPingPongODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{P_2}(t=0) = c_{P_{2,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_P_2$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{P_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialProduct2ConcentrationBiBiOrderedODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Product 2 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 # 
@@ -9815,7 +9818,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{S_1}(t=0) = c_{S_{1,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_S_1$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Substrate 1 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 # 
@@ -9827,7 +9830,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrateConcentrationUniUniODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{S_1}(t=0) = c_{S_{1,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_S_1$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiPingPongODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Substrate 1 Concentration (Bi Bi Reaction Ping Pong - ODE Model)"@en .
 # 
@@ -9850,7 +9853,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiOrderedODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{S_1}(t=0) = c_{S_{1,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_S_1$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_1}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate1ConcentrationBiBiTheorellChanceODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Substrate 1 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)"@en .
 # 
@@ -9885,7 +9888,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{S_2}(t=0) = c_{S_{2,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_S_2$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Substrate 2 Concentration (Bi Bi Reaction Ordered - ODE Model)"@en .
 # 
@@ -9895,7 +9898,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{S_2}(t=0) = c_{S_{2,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_S_2$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiPingPongODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Substrate 2 Concentration (Bi Bi Reaction Ping Pong - ODE Model)"@en .
 # 
@@ -9917,7 +9920,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiOrderedODEModel> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$c_{S_2}(t=0) = c_{S_{2,0}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_S_2$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{S_2}$, Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#InitialSubstrate2ConcentrationBiBiTheorellChanceODEModel> <http://www.w3.org/2000/01/rdf-schema#label> "Initial Substrate 2 Concentration (Bi Bi Reaction Theorell-Chance - ODE Model)"@en .
 # 
@@ -10171,7 +10174,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ComplexedEnzymeConcentration> .
 <https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ProductConcentration> .
-<https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{c_{EX}}{c_P} \\ggt 1$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{c_{EX}}{c_P} \\gg 1$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_P$, Product Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$c_{EX}$, Complexed Enzyme Concentration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#IrreversibilityAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Irreversibility Assumption"@en .
@@ -11256,20 +11259,24 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PlanckConstant> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{\\partial\\hat\\rho}{\\partial t} = -\\frac{i}{\\hbar}\\left[\\hat H, \\hat\\rho\\right]$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hat{H}$, Quantum Hamiltonian Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hat{\\rho}$, Quantum Density Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hbar$, Planck Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://purl.org/dc/terms/description> "describes how a density operator (for pure or for mixed states) evolves in time"@en .
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Just as the Schrödinger equation describes how pure states evolve in time, the Liouville-von Neumann equation describes how a density operator evolves in time. Note that there can be different density operators for pure or for mixed states."@en .
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Note the similarity with the classical Liouville equation where the commutator brackets [.,.] are replaced by Poisson brackets {.,.}"@en .
 <https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2000/01/rdf-schema#label> "Liouville-von Neumann Equation"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Density_matrix#Von_Neumann_equation_for_time_evolution> .
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2004/02/skos/core#altLabel> "Quantum Liouville Equation"@en .
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <http://www.w3.org/2004/02/skos/core#altLabel> "von Neumann equation"@en .
+<https://mardi4nfdi.de/mathmoddb#LiouvilleVonNeumannEquation> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q2533076> .
 # 
 # https://mardi4nfdi.de/mathmoddb#LogicalRuleExtractionFormulation
 <https://mardi4nfdi.de/mathmoddb#LogicalRuleExtractionFormulation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -11754,20 +11761,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MembraneCapacitance> <http://purl.org/dc/terms/description> "how much charge a cell membrane can store when a voltage is applied across it"@en .
 <https://mardi4nfdi.de/mathmoddb#MembraneCapacitance> <http://www.w3.org/2000/01/rdf-schema#label> "Membrane Capacitance"@en .
 # 
-# https://mardi4nfdi.de/mathmoddb#MembranePotential
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://purl.org/dc/terms/description> "difference of the electric potential between the inner and the outer part of a biological cell"@en .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2000/01/rdf-schema#label> "Membrane Potential"@en .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Membrane_potential> .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2004/02/skos/core#altLabel> "Membrane Voltage"@en .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <http://www.w3.org/2004/02/skos/core#altLabel> "Transmembrane Potential"@en .
-<https://mardi4nfdi.de/mathmoddb#MembranePotential> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q389844> .
-# 
-# https://mardi4nfdi.de/mathmoddb#TransmembranePotential
-# 
 # https://mardi4nfdi.de/mathmoddb#MichaelisConstant
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
@@ -11995,7 +11988,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{P_1} = \\frac{k_{-1} * k_{-2}}{k_{-5} * (k_{-1} + k_{-2})}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-5}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12007,7 +12000,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{P_1} = \\frac{k_{-3} * (k_{-1} + k_{2})}{k_{-2} * (k_{-1} + k_{-3})}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12020,7 +12013,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{P_1} = \\frac{k_{-1}}{k_{-2}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct1BiBiReactionTheorellChanceSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product 1 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -12031,7 +12024,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{P_2} = \\frac{k_{-1} * (k_{-2} + k_4)}{k_{-4} * (k_{-1} + k_{-2})}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_1}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_2}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-4}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12044,7 +12037,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{P_2} = \\frac{k_{-1} * (k_{-3} + k_{4})}{k_{-4} * (k_{-1} + k_{-3})}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_2}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_2}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-4}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12057,7 +12050,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{P_2} = \\frac{k_{-1}}{k_{-3}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_2}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{P_2}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantProduct2BiBiReactionTheorellChanceSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product 2 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -12091,7 +12084,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{S_1} = \\frac{k_{4} * (k_{-1} + k_{2})}{k_{1} * (k_{2} + k_{4})}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_1}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_1}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12104,7 +12097,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{S_1} = \\frac{k_{3}}{k_{1}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_1}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_1}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{1}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionTheorellChanceSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 1 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -12124,8 +12117,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{S_2}} \\equiv \\frac{k_5 * (k_{-2} + k_4)}{k_2 * (k_4 + k_5)}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_2}}$, Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{S_2} \\equiv \\frac{k_5 * (k_{-2} + k_4)}{k_2 * (k_4 + k_5)}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_2}$, Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{4}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12139,7 +12132,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{S_2} = \\frac{k_{2} * (k_{-3} + k_{4})}{k_{3} * (k_{2} + k_{4})}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_2}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_2}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{-3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionPingPongSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12152,7 +12145,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$K_{S_2} = \\frac{k_{3}}{k_{2}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_2}}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{S_2}$, Michaelis Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{2}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{3}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionTheorellChanceSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 2 (Bi Bi Reaction Theorell-Chance - Michaelis Menten Model - Steady State Assumption)"@en .
@@ -13183,22 +13176,22 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FibreStretch> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#IonCurrent> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MembraneCapacitance> .
-<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MembranePotential> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#NeuralInput> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SensoryOrganCurrent> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$$\\begin{align*} \n\\frac{\\text{d}V^{\\text{d}}_{\\text{m}}}{\\text{d}t} &= \\frac{1}{C^{\\text{d}}_{\\text{m}}}\\left(-I^{\\text{d}}_{\\text{ion}}(V^{\\text{d}}_{\\text{m}}) - I^{\\text{d}}_{\\text{C}}(V^{\\text{d}}_{\\text{m}},V^{\\text{s}}_{\\text{m}}) \\right) \\\\ \n\\frac{\\text{d}V^{\\text{s}}_{\\text{m}}}{\\text{d}t} &= \\frac{1}{C^{\\text{s}}_{\\text{m}}}\\left(-I^{\\text{s}}_{\\text{ion}}(V^{\\text{s}}_{\\text{m}}) - I^{\\text{s}}_{\\text{C}}(V^{\\text{d}}_{\\text{m}},V^{\\text{s}}_{\\text{m}}) + I_{\\text{spindle}}(\\lambda_{\\text{f}}, \\dot{\\lambda}_\\text{f}) + I_\\text{ext} \\right) \\\\ \n\\end{align*}$$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> .
+<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align} \n\\frac{\\text{d}V^{\\text{d}}_{\\text{m}}}{\\text{d}t} &= \\frac{1}{C^{\\text{d}}_{\\text{m}}}\\left(-I^{\\text{d}}_{\\text{ion}}(V^{\\text{d}}_{\\text{m}}) - I^{\\text{d}}_{\\text{C}}(V^{\\text{d}}_{\\text{m}},V^{\\text{s}}_{\\text{m}}) \\right) \\\\ \n\\frac{\\text{d}V^{\\text{s}}_{\\text{m}}}{\\text{d}t} &= \\frac{1}{C^{\\text{s}}_{\\text{m}}}\\left(-I^{\\text{s}}_{\\text{ion}}(V^{\\text{s}}_{\\text{m}}) - I^{\\text{s}}_{\\text{C}}(V^{\\text{d}}_{\\text{m}},V^{\\text{s}}_{\\text{m}}) + I_{\\text{spindle}}(\\lambda_{\\text{f}}, \\dot{\\lambda}_\\text{f}) + I_\\text{ext} \\right) \\\\ \n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time" .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$C_{\\text{m}}$, Membrane Capacitance"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$I_{\\text{C}}$, Coupling Current"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$I_{\\text{ext}}$, Neural Input"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$I_{\\text{ion}}$, Ion Current"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$I_{\\text{spindle}}$, Sensory Organ Current"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$V_{\\text{m}}$, Membrane Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$V_{\\text{m}}$, Transmembrane Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\lambda_{\\text{f}}$, Fibre Contraction Velocity"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\lambda_{\\text{f}}$, Fibre Stretch"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <http://purl.org/dc/terms/description> "two coupled ODEs which describe the membrane potentials"@en .
-<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <http://www.w3.org/2000/01/rdf-schema#comment> "Two coupled ODEs which describe the membrane potentials in the soma and the dendrite compartments."@en .
+<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <http://purl.org/dc/terms/description> "two coupled ODEs which describe the transmembrane potentials"@en .
+<https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <http://www.w3.org/2000/01/rdf-schema#comment> "Transmembrane potentials in the soma and the dendrite compartments."@en .
 <https://mardi4nfdi.de/mathmoddb#Motor_Neuron_Pool_ODE_System> <http://www.w3.org/2000/01/rdf-schema#label> "Motor Neuron Pool ODE System"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#MultiPopulationSusceptibleInfectiousModel
@@ -13418,7 +13411,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction
 <https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$$\\begin{align*} \nk_{1} &= k_{5} \\\\ \nk_{-1} &= k_{-5} \\\\\nk_{-3} &= k_{-4}\\\\ \nk_{3} &= k_{4} \\\\ \nK_{ic} &= K_{iu}\\\\ \n\\end{align}$$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align}  \nk_{1} &= k_{5} \\\\ \nk_{-1} &= k_{-5} \\\\\nk_{-3} &= k_{-4}\\\\ \nk_{3} &= k_{4} \\\\ \nK_{ic} &= K_{iu}\\\\ \n\\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{ic}$,Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{iu}$,Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#NoncompetitiveEnzymeInhibitionCouplingConditionUniUniReaction> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_1$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -13882,7 +13875,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SusceptibleIndividuals> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#TotalPopulationSize> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$$ \\hat{\\mathcal{S}}^{(l)} = \\hat{\\mathcal{N}}^{(l)} - (1 + \\Sigma_{\\mathcal{E}}) \\hat{\\mathcal{I}}^{(l)} - \\hat{\\mathcal{R}}^{(l)} $$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\Sigma_{\\mathcal{E}}}$, Coefficient Scaling Infectious To Exposed"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\Sigma_{\\mathcal{E}}$, Coefficient Scaling Infectious To Exposed"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hat{\\mathcal{I}}^{(l)}$, Number Of Infectious Individuals"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hat{\\mathcal{N}}^{(l)}$, Total Population Size"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#NumberOfSusceptibleIndividualsFormulation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hat{\\mathcal{R}}^{(l)}$, Number Of Removed Individuals"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -14163,7 +14156,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixB> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixN> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\dot{z}(t)=-(A^{\\dag}+ \\sum_ku_k(t)N^{\\dag}_k)z(t)-B^{\\dag}u(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\dot{z}(t)=-(A^{\\dagger}+ \\sum_ku_k(t)N^{\\dagger}_k)z(t)-B^{\\dagger}u(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$B$, Control System Matrix B"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlBackward> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N$, Control System Matrix N"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -14184,7 +14177,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemMatrixN> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemState> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$J[u,x,z]=2\\Re\\int_0^Tdtz^{\\dag}(t)\\left(\\partial_t-A-\\sum_ku_k(t)N_k\\right)x(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$J[u,x,z]=2\\Re\\int_0^Tdtz^{\\dagger}(t)\\left(\\partial_t-A-\\sum_ku_k(t)N_k\\right)x(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$A$, Control System Matrix A"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N$, Control System Matrix N"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlConstraint> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$T$, Control System Duration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -14293,7 +14286,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemState> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#OptimalControlTarget> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#defines> <https://mardi4nfdi.de/mathmoddb#OptimalControlTarget> .
-<https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$J[u,x] \\equiv x^{\\dag}(T)Dx(T)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$J[u,x] \\equiv x^{\\dagger}(T)Dx(T)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$D$, Control System Matrix D"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$J$, Optimal Control Target"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlTargetDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$T$, Control System Duration"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -14312,7 +14305,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ControlSystemState> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#OptimalControlPenaltyFactor> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$u_k(t)=-\\frac{1}{\\alpha_k}\\Im\\left(z^{\\dag}(t)N_kx(t) \\right)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$u_k(t)=-\\frac{1}{\\alpha_k}\\Im\\left(z^{\\dagger}(t)N_kx(t) \\right)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N$, Control System Matrix N"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\alpha$, Optimal Control Penalty Factor"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#OptimalControlUpdate> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -14378,7 +14371,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#containedAsAssumptionIn> <https://mardi4nfdi.de/mathmoddb#OpinionModelWithInfluencersAndMedia> .
 <https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PairFunction> .
 <https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#defines> <https://mardi4nfdi.de/mathmoddb#PairFunction> .
-<https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\phi(x) = exp(-x)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\phi(x) = \\exp(-x)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\phi(x)$, Pair Function"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#PairFunctionAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "This pair function places exponentially more weight on close-by individuals. Implies that individuals that are already close in opinion space excert higher social influence on each other (homophily)"@en .
@@ -14602,9 +14595,11 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#PermittivityDielectric> .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://purl.org/dc/terms/description> "physical constant that represents the capability of the vacuum to permit electric field lines"@en .
-<https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2000/01/rdf-schema#comment> "Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It may also be referred to as the permittivity of free space, the electric constant, or the distributed capacitance of the vacuum. It is an ideal (baseline) physical constant."@en .
+<https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2000/01/rdf-schema#comment> "Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It is an ideal (baseline) physical constant."@en .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2000/01/rdf-schema#label> "Permittivity (Vacuum)"@en .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Vacuum_permittivity> .
+<https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2004/02/skos/core#altLabel> "distributed capacitance of the vacuum"@en .
+<https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2004/02/skos/core#altLabel> "electric constant"@en .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <https://mardi4nfdi.de/mathmoddb#qudtID> <http://qudt.org/vocab/constant/ElectricConstant> .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q6158> .
 # 
@@ -15121,6 +15116,14 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "Public Transportation Network"@en .
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q18325841> .
 # 
+# https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution
+<https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> <http://www.w3.org/2000/01/rdf-schema#label> "Quantile Function Of The Beta Distribution"@en .
+<https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> <http://www.w3.org/2004/02/skos/core#altLabel> "inverse function of the regularized incomplete beta function"@en .
+<https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3489473> .
+<https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q756254> .
+# 
 # https://mardi4nfdi.de/mathmoddb#QuantumAngularMomentumOperator
 <https://mardi4nfdi.de/mathmoddb#QuantumAngularMomentumOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#QuantumAngularMomentumOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
@@ -15488,7 +15491,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumJumpOperator> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{\\mathrm d}{\\mathrm{d}t}\\rho=-\\frac{\\mathrm i}\\hbar[H,\\rho]+\\sum _{i=1}^{N^2-1}\\gamma_i\\left(L_i\\rho L_i^\\dagger-\\frac12[L_i^\\dagger L_i,\\rho]_+\\right)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$H$, Quantum Hamiltonian Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$L$, Quantum Jump Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -15499,32 +15501,10 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <http://purl.org/dc/terms/description> "describes open system quantum dynamics including dissipation and/or decoherence"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Markovian quantum master equation for the evolution of quantum mechanical density matrices (pure or mixed states), also known as Gorini–Kossakowski–Sudarshan–Lindblad equation (GKSL equation).  It generalizes the Schrödinger equation to open quantum systems; that is, systems in contacts with their surroundings. The resulting dynamics is no longer unitary, but still satisfies the property of being trace-preserving and completely positive for any initial condition"@en .
+<https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Markovian quantum master equation for the evolution of quantum mechanical density matrices (pure or mixed states).  It generalizes the Schrödinger equation to open quantum systems; that is, systems in contacts with their surroundings. The resulting dynamics is no longer unitary, but still satisfies the property of being trace-preserving and completely positive for any initial condition"@en .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum Lindblad Equation"@en .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <http://www.w3.org/2004/02/skos/core#altLabel> "Gorini–Kossakowski–Sudarshan–Lindblad Equation"@en .
 <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q4476520> .
-# 
-# https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#containedAsFormulationIn> <https://mardi4nfdi.de/mathmoddb#QuantumModelClosedSystem> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PlanckConstant> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#generalizesFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{\\mathrm d}{\\mathrm{d}t}\\rho(t)=-\\frac{\\mathrm i}\\hbar[H,\\rho(t)]$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$H$, Quantum Hamiltonian Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\hbar$, Planck Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\rho$, Quantum Density Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://purl.org/dc/terms/description> "describes how a density operator (for pure or for mixed states) evolves in time"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://purl.org/dc/terms/description> "time evolution of quantum density operators; describing open system quantum dynamics"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Just as the Schrödinger equation describes how pure states evolve in time, the von Liouville-von Neumann equation (also known as the quantum Liouville equation) describes how a density operator evolves in time. Note that there can be different density operators for pure or for mixed states."@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://www.w3.org/2000/01/rdf-schema#comment> "Note the similarity with the classical Liouville equation where the commutator brackets [.,.] are replaced by Poisson brackets {.,.}"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://www.w3.org/2000/01/rdf-schema#label> "Quantum Liouville Equation"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <http://www.w3.org/2004/02/skos/core#altLabel> "Liouville-von Neumann Equation"@en .
-<https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q831774> .
 # 
 # https://mardi4nfdi.de/mathmoddb#QuantumMechanicalOperator
 <https://mardi4nfdi.de/mathmoddb#QuantumMechanicalOperator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -15663,7 +15643,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianElectricCharge> .
 <https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianElectricDipole> .
 <https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLindbladEquation> .
-<https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsInput> <https://mardi4nfdi.de/mathmoddb#ElectricField> .
 <https://mardi4nfdi.de/mathmoddb#QuantumTimeEvolution> <https://mardi4nfdi.de/mathmoddb#containsInput> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
@@ -15688,7 +15667,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateConstant> .
-<https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$k_{catalytic} \\llt k_{unbind}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$k_{catalytic} \\ll k_{unbind}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{catalytic}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$k_{unbind}$, Reaction Rate Constant"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#RapidEquilibriumAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Rapid Equilibrium Assumption"@en .
@@ -16257,12 +16236,11 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
-<https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <https://mardi4nfdi.de/mathmoddb#discretizesModel> <https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <https://mardi4nfdi.de/mathmoddb#isLinear> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <http://purl.org/dc/terms/description> "finite volume disretization scheme for solving the van Roosbroeck system describing the semi-classical transport of free electrons and holes"@en .
-<https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The Scharfetter-Gummel finite volume disretization scheme is the standard numerical method for solving the van Roosbroeck system describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation."@en .
+<https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <http://www.w3.org/2000/01/rdf-schema#comment> "The Scharfetter-Gummel finite volume disretization scheme is the standard numerical method for solving the drift diffusion (aka van Roosbroeck) system describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation."@en .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <http://www.w3.org/2000/01/rdf-schema#label> "Scharfetter-Gummel Scheme"@en .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q119844> .
 <https://mardi4nfdi.de/mathmoddb#ScharfetterGummelScheme> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q29367424> .
@@ -17171,7 +17149,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#RateOfChangeOfSusceptibleCities> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SpreadingRateTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{ds_m(t)}{dt} &= -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{ds_m(t)}{dt} = -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$G_{m,n}$, Contact Network"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N_R$, Number of Regions"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleCitiesODE> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\alpha(t)$, Spreading Rate (Time-dependent)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -17220,7 +17198,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Region> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SpreadingRateTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align*} \\frac{ds_m(t)}{dt} &= -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t) \\\\ i_m(t) &= P_m - s_m(t) \\end{align*}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\begin{align} \\frac{ds_m(t)}{dt} &= -s_m(t) * \\alpha(t) \\sum_{n=1}^{N_R} G_{m,n} * i_n(t) \\\\ i_m(t) &= P_m - s_m(t) \\end{align}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$G_{m,n}$, Contact Network"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N_R$, Number of Regions"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptibleInfectiousEpidemicSpreadingODESystem> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$P_m$, Number of Cities"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -17405,7 +17383,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$S_n$, Number Of Susceptible Individuals"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\Delta t$, Time Step"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\alpha$, Contact Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\gama$, Relative Removal Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\gamma$, Relative Removal Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#SusceptiblesAtTimeStepInTheSISModel> <http://www.w3.org/2000/01/rdf-schema#label> "Susceptibles At Time Step n+1 in The SIS Model"@en .
@@ -17617,7 +17595,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
 <https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation> .
-<https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#QuantumLiouvilleEquation> .
 <https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
 <https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension in which events can be ordered from the past through the present into the future"@en .
 <https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time"@en .
@@ -17737,7 +17714,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <http://purl.org/dc/terms/description> "difference in electric potential between the interior and the exterior of a biological cell"@en .
-<https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <http://www.w3.org/2000/01/rdf-schema#comment> "Membrane potential (also transmembrane potential or membrane voltage) is the difference in electric potential between the interior and the exterior of a biological cell."@en .
 <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <http://www.w3.org/2000/01/rdf-schema#label> "Transmembrane Potential"@en .
 <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Membrane_potential> .
 <https://mardi4nfdi.de/mathmoddb#TransmembranePotential> <http://www.w3.org/2004/02/skos/core#altLabel> "Membrane Potential"@en .
@@ -19153,25 +19129,5 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#infectiousAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#infectiousAtTimeStepInTheSISModel> <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#infectiousAtTimeStepInTheSISModel> <http://www.w3.org/2000/01/rdf-schema#label> "Infectious At Time Step n+1 in The SIS Model"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForElectrons> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#BoltzmannApproximationForHoles> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#containsFormulation> <https://mardi4nfdi.de/mathmoddb#PoissonEquationForTheElectricPotential> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#surveyedIn> <https://mardi4nfdi.de/mathmoddb#Koprucki_2017_Numerical_methods_for_drift-diffusion_models> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#isLinear> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://purl.org/dc/terms/description> "mathematical model describing the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation"@en .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://www.w3.org/2000/01/rdf-schema#comment> "The van Roosbroeck system describes the semi-classical transport of free electrons and holes in a self-consistent electric field using a drift-diffusion approximation. It became the standard model to describe the current flow in semiconductor devices such as diodes, transistors, LEDs, solar cells and lasers, as well as  quantum nanostructures and organic semiconductors."@en .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://www.w3.org/2000/01/rdf-schema#label> "van Roosbroeck Model"@en .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://archive.org/details/bstj29-4-560> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "W. van Roosbroeck. Theory of the ﬂow of electrons and holes in germanium and other semiconductors. Bell Syst. Tech. J., 29(4):560–607, 1950"@en .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.20347/WIAS.PREPRINT.2263> .
-<https://mardi4nfdi.de/mathmoddb#vanRoosbroeckModel> <https://mardi4nfdi.de/mathmoddb#doiID> <https://doi.org/10.4324/9781315152318-25> .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
