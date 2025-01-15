@@ -1758,7 +1758,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 ###  https://mardi4nfdi.de/mathmoddb#Acceleration
 :Acceleration rdf:type owl:NamedIndividual ,
                        :QuantityKind ;
-              rdfs:comment "Rate at which the magnitude and/or direction of velocity changes with time"@en ;
+              <http://purl.org/dc/terms/description> "rate at which the magnitude and/or direction of velocity changes with time"@en ;
               rdfs:label "Acceleration"@en ,
                          "Beschleunigung"@de ;
               rdfs:seeAlso <https://en.wikipedia.org/wiki/Acceleration> ;
@@ -1863,7 +1863,7 @@ rdf:HTML rdf:type rdfs:Datatype .
                              :PermeabilityVacuum ,
                              :PermittivityVacuum ,
                              :Time ;
-           :definingFormulation "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"^^:LaTeX ;
+           :definingFormulation "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right)$"^^:LaTeX ;
            :inDefiningFormulation "$E$, Electric Field"^^:LaTeX ,
                                   "$E$, Magnetic Field"^^:LaTeX ,
                                   "$J$, Electric Current Density"^^:LaTeX ,
@@ -1890,7 +1890,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 :AngularMomentum rdf:type owl:NamedIndividual ,
                           :QuantityKind ;
                  :generalizesQuantity :PlanckConstant ;
-                 rdfs:comment "measure of the extent to which an object will continue to rotate in the absence of an applied torque"@en ;
+                 <http://purl.org/dc/terms/description> "measure of the extent to which an object will continue to rotate in the absence of an applied torque"@en ;
                  rdfs:label "Angular Momentum"@en ,
                             "Drehimpuls"@de ;
                  rdfs:seeAlso <https://en.wikipedia.org/wiki/Angular_momentum> ;
@@ -2007,7 +2007,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 ###  https://mardi4nfdi.de/mathmoddb#Area
 :Area rdf:type owl:NamedIndividual ,
                :QuantityKind ;
-      rdfs:comment "Quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"@en ;
+      <http://purl.org/dc/terms/description> "quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"@en ;
       rdfs:label "Area"@en ,
                  "Fläche"@de ;
       rdfs:seeAlso <https://en.wikipedia.org/wiki/Area> ;
@@ -2185,7 +2185,7 @@ rdf:HTML rdf:type rdfs:Datatype .
 ###  https://mardi4nfdi.de/mathmoddb#AzimuthalAngle
 :AzimuthalAngle rdf:type owl:NamedIndividual ,
                          :QuantityKind ;
-                rdfs:comment "Angle in the spherical coordinate system in the range $-\\pi < \\phi \\leq \\pi$"@en ;
+                <http://purl.org/dc/terms/description> "angle in the spherical coordinate system"@en ;
                 rdfs:label "Azimuthal Angle"@en ,
                            "Azimutwinkel"@de ;
                 rdfs:seeAlso <https://en.wikipedia.org/wiki/Azimuth> ;
@@ -3379,7 +3379,7 @@ o & \\textrm{otherwise} \\\\
                           :QuantityKind ;
                  :generalizesQuantity :ObjectProperty ;
                  :isDimensionless "true"^^xsd:boolean ;
-                 rdfs:comment "data type that represents true or false values"@en ;
+                 <http://purl.org/dc/terms/description> "data type that represents true or false values"@en ;
                  rdfs:label "Boolean Variable"@en ,
                             "Boolesche Variable"@de ;
                  :wikidataID <https://www.wikidata.org/wiki/Q520777> .
@@ -3441,7 +3441,7 @@ o & \\textrm{otherwise} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#Capacitance
 :Capacitance rdf:type owl:NamedIndividual ,
                       :QuantityKind ;
-             rdfs:comment "Ability of a body to store electrical charge"@en ;
+             <http://purl.org/dc/terms/description> "ability of a body to store electrical charge"@en ;
              rdfs:label "Electric Capacitance"@en ,
                         "Elektrische Kapazität"@de ;
              rdfs:seeAlso <https://en.wikipedia.org/wiki/Capacitance> ;
@@ -3732,7 +3732,6 @@ o & \\textrm{otherwise} \\\\
                             :generalizedByQuantity :ProbabilityDistribution ,
                                                    :QuantumDensityOperator ;
                             <http://purl.org/dc/terms/description> "probability that the system will be found in the infinitesimal phase space volume"@en ;
-                            rdfs:comment "The phase space distribution ρ ( p , q ) $\\rho(p,q)$ determines the probability ρ ( p , q ) d n q d n p ${\\displaystyle \\rho (p,q)\\;\\mathrm {d} ^{n}q\\,\\mathrm {d} ^{n}p}$ that the system will be found in the infinitesimal phase space volume d n q d n p ${\\displaystyle \\mathrm {d} ^{n}q\\,\\mathrm {d} ^{n}p}$."@en ;
                             rdfs:label "Classical Density (Phase Space)"@en .
 
 
@@ -4117,6 +4116,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 :ComplexDimensionless rdf:type owl:NamedIndividual ,
                                :QuantityKind ;
                       :isDimensionless "true"^^xsd:boolean ;
+                      <http://purl.org/dc/terms/description> "number that can be put in the form a + bi, where a and b are real numbers and i is called the imaginary unit"@en ;
                       rdfs:label "Complex Number (Dimensionless)"@en ,
                                  "Komplexe Zahl (dimensionslos)"@de ;
                       :wikidataID <https://www.wikidata.org/wiki/Q11567> .
@@ -4143,8 +4143,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 ###  https://mardi4nfdi.de/mathmoddb#Concentration
 :Concentration rdf:type owl:NamedIndividual ,
                         :QuantityKind ;
-               rdfs:comment "Abundance of a constituent divided by the total volume of a mixture"@en ,
-                            "Verhältnisse von Stoffmengen in der Chemie"@de ;
+               <http://purl.org/dc/terms/description> "abundance of a constituent divided by the total volume of a mixture"@en ;
                rdfs:label "Concentration"@en ,
                           "Konzentration"@de ;
                rdfs:seeAlso <https://en.wikipedia.org/wiki/Concentration> ;
@@ -4411,7 +4410,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 ###  https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons
 :ContinuityEquationForElectrons rdf:type owl:NamedIndividual ,
                                          :MathematicalFormulationDefinition ;
-                                :containsQuantity :CurrentDensityOfElectrons ,
+                                :containsQuantity :ElectricCurrentDensityOfElectrons ,
                                                   :ElectricPotential ,
                                                   :ElementaryCharge ,
                                                   :FermiPotentialForElectrons ,
@@ -4448,7 +4447,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 ###  https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles
 :ContinuityEquationForHoles rdf:type owl:NamedIndividual ,
                                      :MathematicalFormulationDefinition ;
-                            :containsQuantity :CurrentDensityOfHoles ,
+                            :containsQuantity :ElectricCurrentDensityOfHoles ,
                                               :ElectricPotential ,
                                               :ElementaryCharge ,
                                               :FermiPotentialForElectrons ,
@@ -5239,8 +5238,8 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 :Coulomb_Friction_Of_Two_Particles rdf:type owl:NamedIndividual ,
                                             :MathematicalFormulationDefinition ;
                                    :containedAsFormulationIn :Linear_Discrete_Element_Method ;
-                                   :definingFormulation "if $F^{T, cons}_{ij}> \\mu F_{ij}^N$ then $\\bm F_{ij}^T = \\mu F_{ij}^N \\bm\\xi_{ij}/\\lVert \\bm\\xi_{ij}\\rVert$"^^:LaTeX ;
-                                   :inDefiningFormulation "$F_{ij}^{T, cons}=-k_{ij}^T\\lVert \\bm \\xi_{ij}\\rVert$, conservative part of tangential interaction force"^^:LaTeX ;
+                                   :definingFormulation "if $F^{T, cons}_{ij}> \\mu F_{ij}^N$ then $\\mathbf F_{ij}^T = \\mu F_{ij}^N \\mathbf\\xi_{ij}/\\lVert \\mathbf\\xi_{ij}\\rVert$"^^:LaTeX ;
+                                   :inDefiningFormulation "$F_{ij}^{T, cons}=-k_{ij}^T\\lVert \\mathbf \\xi_{ij}\\rVert$, conservative part of tangential interaction force"^^:LaTeX ;
                                    <http://purl.org/dc/terms/description> "slipping occurs, if tangential force is high in relation to normal force in the contact of two particles"@en ;
                                    rdfs:label "Coulomb Friction Of Two Particles"@en .
 
@@ -5275,76 +5274,13 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 ###  https://mardi4nfdi.de/mathmoddb#CurrentDensity
 :CurrentDensity rdf:type owl:NamedIndividual ,
                          :Quantity ;
-                :generalizesQuantity :CurrentDensityOfElectrons ,
-                                     :CurrentDensityOfHoles ;
+                :generalizesQuantity :ElectricCurrentDensityOfElectrons ,
+                                     :ElectricCurrentDensityOfHoles ;
                 <http://purl.org/dc/terms/description> "amount of charge per unit time that flows through a unit area"@en ;
                 rdfs:comment "The (electric) current density is defined as the amount of charge per unit time that flows through a unit area"@en ;
                 rdfs:label "Current Density"@en ;
                 rdfs:seeAlso <https://en.wikipedia.org/wiki/Current_density> ;
                 :wikidataID <https://www.wikidata.org/wiki/Q234072> .
-
-
-###  https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons
-:CurrentDensityOfElectrons rdf:type owl:NamedIndividual ,
-                                    :Quantity ;
-                           :definedBy :CurrentDensityOfElectronsDefinition ;
-                           <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en ;
-                           rdfs:label "Current Density Of Electrons"@en ;
-                           <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
-
-
-###  https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition
-:CurrentDensityOfElectronsDefinition rdf:type owl:NamedIndividual ,
-                                              :MathematicalFormulationDefinition ;
-                                     :containsQuantity :CurrentDensityOfElectrons ,
-                                                       :DensityOfElectrons ,
-                                                       :ElectricPotential ,
-                                                       :ElementaryCharge ,
-                                                       :FermiPotentialForElectrons ,
-                                                       :MobilityOfElectrons ;
-                                     :definingFormulation "$j_n \\equiv -q\\mu_nn(\\psi\\phi_n) \\nabla \\phi_n$"^^:LaTeX ;
-                                     :inDefiningFormulation "$\\mu_n$, Mobility Of Electrons"^^:LaTeX ,
-                                                            "$\\phi_n$, Fermi Potential For Electrons"^^:LaTeX ,
-                                                            "$\\psi$, Electric Potential"^^:LaTeX ,
-                                                            "$j_n$, Current Density Of Electrons"^^:LaTeX ,
-                                                            "$n$, Density Of Electrons"^^:LaTeX ,
-                                                            "$q$, Elementary Charge"^^:LaTeX ;
-                                     :isDynamic "false"^^xsd:boolean ;
-                                     :isSpaceContinuous "true"^^xsd:boolean ;
-                                     <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en ;
-                                     rdfs:label "Current Density Of Electrons (Definition)"@en .
-
-
-###  https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles
-:CurrentDensityOfHoles rdf:type owl:NamedIndividual ,
-                                :Quantity ;
-                       :definedBy :CurrentDensityOfHolesDefinition ;
-                       :similarToQuantity :CurrentDensityOfElectrons ;
-                       <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en ;
-                       rdfs:label "Current Density Of Holes"@en ;
-                       <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
-
-
-###  https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition
-:CurrentDensityOfHolesDefinition rdf:type owl:NamedIndividual ,
-                                          :MathematicalFormulationDefinition ;
-                                 :containsQuantity :CurrentDensityOfHoles ,
-                                                   :DensityOfHoles ,
-                                                   :ElectricPotential ,
-                                                   :ElementaryCharge ,
-                                                   :FermiPotentialForHoles ,
-                                                   :MobilityOfHoles ;
-                                 :definingFormulation "$j_p \\equiv -q\\mu_pp(\\psi\\phi_p) \\nabla \\phi_p$"^^:LaTeX ;
-                                 :inDefiningFormulation "$\\mu_p$, Mobility Of Holes"^^:LaTeX ,
-                                                        "$\\phi_p$, Fermi Potential For Holes"^^:LaTeX ,
-                                                        "$\\psi$, Electric Potential"^^:LaTeX ,
-                                                        "$j_p$, Current Density Of Holes"^^:LaTeX ,
-                                                        "$p$, Density Of Holes"^^:LaTeX ,
-                                                        "$q$, Elementary Charge"^^:LaTeX ;
-                                 :isDynamic "false"^^xsd:boolean ;
-                                 :isSpaceContinuous "true"^^xsd:boolean ;
-                                 <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en ;
-                                 rdfs:label "Current Density Of Holes (Definition)"@en .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices
@@ -5505,7 +5441,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#Density
 :Density rdf:type owl:NamedIndividual ,
                   :QuantityKind ;
-         rdfs:comment "Mass per volume of a substance, aka volumetric mass density or specific mass"@en ;
+         <http://purl.org/dc/terms/description> "mass per volume of a substance, aka volumetric mass density or specific mass"@en ;
          rdfs:label "Density"@en ,
                     "Dichte"@de ;
          rdfs:seeAlso <https://en.wikipedia.org/wiki/Density> ;
@@ -6261,7 +6197,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#ElectricCharge
 :ElectricCharge rdf:type owl:NamedIndividual ,
                          :QuantityKind ;
-                rdfs:comment "Physical property that quantifies an object's interaction with electric fields"@en ;
+                <http://purl.org/dc/terms/description> "physical property that quantifies an object's interaction with electric fields"@en ;
                 rdfs:label "Electric Charge"@en ,
                            "Elektrische Ladung"@de ,
                            "Ηλεκτρικό φορτίο"@el ;
@@ -6284,7 +6220,8 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#ElectricConductivity
 :ElectricConductivity rdf:type owl:NamedIndividual ,
                                :QuantityKind ;
-                      rdfs:comment "physical quantity and property of material describing how readily a given material allows the flow of electric current"@en ;
+                      <http://purl.org/dc/terms/description> "physical quantity and property of material describing how readily a given material allows the flow of electric current"@en ;
+                      rdfs:comment "when subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation."@en ;
                       rdfs:label "Electric Conductivity"@en ,
                                  "Elektrische Leitfähigkeit"@de ;
                       rdfs:seeAlso <https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity> ;
@@ -6295,7 +6232,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#ElectricCurrent
 :ElectricCurrent rdf:type owl:NamedIndividual ,
                           :QuantityKind ;
-                 rdfs:comment "Base quantity of the International System of Quantities (ISQ), measured in ampere (A)"@en ;
+                 <http://purl.org/dc/terms/description> "base quantity of the International System of Quantities (ISQ), measured in ampere (A)"@en ;
                  rdfs:label "Electric Current"@en ,
                             "Elektrischer Strom"@de ,
                             "Ηλεκτρικό ρεύμα"@el ;
@@ -6314,10 +6251,73 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                         :wikidataID <https://wikidata.org/wiki/Q234072> .
 
 
+###  https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons
+:ElectricCurrentDensityOfElectrons rdf:type owl:NamedIndividual ,
+                                            :Quantity ;
+                                   :definedBy :ElectricCurrentDensityOfElectronsDefinition ;
+                                   <http://purl.org/dc/terms/description> "density of electric current of electrons, e.g., in a semiconductor device"@en ;
+                                   rdfs:label "Electric Current Density Of Electrons"@en ;
+                                   <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
+
+
+###  https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition
+:ElectricCurrentDensityOfElectronsDefinition rdf:type owl:NamedIndividual ,
+                                                      :MathematicalFormulationDefinition ;
+                                             :containsQuantity :DensityOfElectrons ,
+                                                               :ElectricCurrentDensityOfElectrons ,
+                                                               :ElectricPotential ,
+                                                               :ElementaryCharge ,
+                                                               :FermiPotentialForElectrons ,
+                                                               :MobilityOfElectrons ;
+                                             :definingFormulation "$j_n \\equiv -q\\mu_nn(\\psi,\\phi_n) \\nabla \\phi_n$"^^:LaTeX ;
+                                             :inDefiningFormulation "$\\mu_n$, Mobility Of Electrons"^^:LaTeX ,
+                                                                    "$\\phi_n$, Fermi Potential For Electrons"^^:LaTeX ,
+                                                                    "$\\psi$, Electric Potential"^^:LaTeX ,
+                                                                    "$j_n$, Current Density Of Electrons"^^:LaTeX ,
+                                                                    "$n$, Density Of Electrons"^^:LaTeX ,
+                                                                    "$q$, Elementary Charge"^^:LaTeX ;
+                                             :isDynamic "false"^^xsd:boolean ;
+                                             :isSpaceContinuous "true"^^xsd:boolean ;
+                                             <http://purl.org/dc/terms/description> "density of electric current of electrons, e.g., in a semiconductor device"@en ;
+                                             rdfs:label "Electric Current Density Of Electrons (Definition)"@en .
+
+
+###  https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles
+:ElectricCurrentDensityOfHoles rdf:type owl:NamedIndividual ,
+                                        :Quantity ;
+                               :definedBy :ElectricCurrentDensityOfHolesDefinition ;
+                               :similarToQuantity :ElectricCurrentDensityOfElectrons ;
+                               <http://purl.org/dc/terms/description> "density of electric current of holes, e.g., in a semiconductor device"@en ;
+                               rdfs:label "Electric Current Density Of Holes"@en ;
+                               <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
+
+
+###  https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition
+:ElectricCurrentDensityOfHolesDefinition rdf:type owl:NamedIndividual ,
+                                                  :MathematicalFormulationDefinition ;
+                                         :containsQuantity :DensityOfHoles ,
+                                                           :ElectricCurrentDensityOfHoles ,
+                                                           :ElectricPotential ,
+                                                           :ElementaryCharge ,
+                                                           :FermiPotentialForHoles ,
+                                                           :MobilityOfHoles ;
+                                         :definingFormulation "$j_p \\equiv -q\\mu_pp(\\psi,\\phi_p) \\nabla \\phi_p$"^^:LaTeX ;
+                                         :inDefiningFormulation "$\\mu_p$, Mobility Of Holes"^^:LaTeX ,
+                                                                "$\\phi_p$, Fermi Potential For Holes"^^:LaTeX ,
+                                                                "$\\psi$, Electric Potential"^^:LaTeX ,
+                                                                "$j_p$, Current Density Of Holes"^^:LaTeX ,
+                                                                "$p$, Density Of Holes"^^:LaTeX ,
+                                                                "$q$, Elementary Charge"^^:LaTeX ;
+                                         :isDynamic "false"^^xsd:boolean ;
+                                         :isSpaceContinuous "true"^^xsd:boolean ;
+                                         <http://purl.org/dc/terms/description> "density of electric current of holes, e.g., in a semiconductor device"@en ;
+                                         rdfs:label "Electric Current Density Of Holes (Definition)"@en .
+
+
 ###  https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment
 :ElectricDipoleMoment rdf:type owl:NamedIndividual ,
                                :QuantityKind ;
-                      rdfs:comment "vector physical quantity measuring the separation of positive and negative electrical charges within a system"@en ;
+                      <http://purl.org/dc/terms/description> "vector physical quantity measuring the separation of positive and negative electrical charges within a system"@en ;
                       rdfs:label "Electric Dipole Moment"@en ,
                                  "Elektrisches Dipolmoment"@de ;
                       rdfs:seeAlso <https://en.wikipedia.org/wiki/Electric_dipole_moment> ;
@@ -6327,7 +6327,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#ElectricField
 :ElectricField rdf:type owl:NamedIndividual ,
                         :QuantityKind ;
-               rdfs:comment "Vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential"@en ;
+               <http://purl.org/dc/terms/description> "vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential"@en ;
                rdfs:label "Electric Field"@en ,
                           "Elektrisches Feld"@de ;
                rdfs:seeAlso <https://en.wikipedia.org/wiki/Electric_field> ;
@@ -6339,7 +6339,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :ElectricPolarizability rdf:type owl:NamedIndividual ,
                                  :QuantityKind ;
                         :similarToQuantity :PermittivityDielectric ;
-                        rdfs:comment "Tendency of matter subjected to an electric field to acquire an electric dipole moment. When subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation."@en ;
+                        <http://purl.org/dc/terms/description> "tendency of matter subjected to an electric field to acquire an electric dipole moment"@en ;
                         rdfs:label "Electric Polarizability"@en ,
                                    "Elektrische Polarisierbarkeit"@de ;
                         rdfs:seeAlso <https://en.wikipedia.org/wiki/Polarizability> ;
@@ -6373,7 +6373,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#ElectricVoltage
 :ElectricVoltage rdf:type owl:NamedIndividual ,
                           :QuantityKind ;
-                 rdfs:comment "Difference in electric potential between two points (indicated in volt)"@en ;
+                 <http://purl.org/dc/terms/description> "difference in electric potential between two points (indicated in volt)"@en ;
                  rdfs:label "Elektrische Spannung"@de ,
                             "Voltage"@en ,
                             "Ηλεκτρική Τάση"@el ;
@@ -6542,7 +6542,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#Energy
 :Energy rdf:type owl:NamedIndividual ,
                  :QuantityKind ;
-        rdfs:comment "Quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"@en ;
+        <http://purl.org/dc/terms/description> "quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"@en ;
         rdfs:label "Energie"@de ,
                    "Energy"@en ,
                    "Ενέργεια"@el ;
@@ -7190,6 +7190,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :ExpectationValue rdf:type owl:NamedIndividual ,
                            :QuantityKind ;
                   :generalizesQuantity :ExpectationValueQuantumDensity ;
+                  <http://purl.org/dc/terms/description> "long-run average value of a random variable"@en ;
                   rdfs:label "Erwartungswert"@de ,
                              "Expectation Value"@en ;
                   rdfs:seeAlso <https://en.wikipedia.org/wiki/Expected_value> ;
@@ -7508,7 +7509,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :FluxOfElectrons rdf:type owl:NamedIndividual ,
                           :Quantity ;
                  :containedInFormulation :ContinuityEquationForElectrons ,
-                                         :CurrentDensityOfElectronsDefinition ;
+                                         :ElectricCurrentDensityOfElectronsDefinition ;
                  :generalizedByQuantity :ParticleFluxDensity ;
                  <http://purl.org/dc/terms/description> "flow of electrons, e.g., in an electric device"@en ;
                  rdfs:comment "For use in semiconductor physics"@en ;
@@ -7519,7 +7520,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :FluxOfHoles rdf:type owl:NamedIndividual ,
                       :Quantity ;
              :containedInFormulation :ContinuityEquationForHoles ,
-                                     :CurrentDensityOfHolesDefinition ;
+                                     :ElectricCurrentDensityOfHolesDefinition ;
              :generalizedByQuantity :ParticleFluxDensity ;
              <http://purl.org/dc/terms/description> "flow of holes, e.g., in an electric device"@en ;
              rdfs:comment "For use in semiconductor physics"@en ;
@@ -7529,7 +7530,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#Force
 :Force rdf:type owl:NamedIndividual ,
                 :QuantityKind ;
-       rdfs:comment "physical influence that tends to cause an object to change motion unless opposed by other forces"@en ;
+       <http://purl.org/dc/terms/description> "physical influence that tends to cause an object to change motion unless opposed by other forces"@en ;
        rdfs:label "Force"@en ,
                   "Kraft"@de ,
                   "Δύναμη"@el ;
@@ -10496,8 +10497,8 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 :IntegerDimensionless rdf:type owl:NamedIndividual ,
                                :QuantityKind ;
                       :isDimensionless "true"^^xsd:boolean ;
-                      rdfs:comment "Number that can be written without a fractional or decimal component"@en ,
-                                   "Ακέραιος αριθμός"@el ;
+                      <http://purl.org/dc/terms/description> "number that can be written without a fractional or decimal component"@en ;
+                      rdfs:comment "Ακέραιος αριθμός"@el ;
                       rdfs:label "Ganze Zahl (dimensionslos)"@de ,
                                  "Integer Number (Dimensionless)"@en ;
                       :wikidataID <https://wikidata.org/wiki/Q12503> .
@@ -10806,7 +10807,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 ###  https://mardi4nfdi.de/mathmoddb#Length
 :Length rdf:type owl:NamedIndividual ,
                  :QuantityKind ;
-        rdfs:comment "Measured dimension of an object"@en ;
+        <http://purl.org/dc/terms/description> "measured dimension of an object"@en ;
         rdfs:label "Length"@en ,
                    "Länge"@de ,
                    "Μήκος"@el ;
@@ -12189,7 +12190,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 ###  https://mardi4nfdi.de/mathmoddb#MagneticField
 :MagneticField rdf:type owl:NamedIndividual ,
                         :QuantityKind ;
-               rdfs:comment "Spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"@en ;
+               <http://purl.org/dc/terms/description> "spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"@en ;
                rdfs:label "Magnetic Field"@en ,
                           "Magnetisches Feld"@de ;
                rdfs:seeAlso <https://en.wikipedia.org/wiki/Magnetic_field> ;
@@ -12210,7 +12211,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 :Mass rdf:type owl:NamedIndividual ,
                :QuantityKind ;
       :containedInFormulation :ClassicalNewtonEquation ;
-      rdfs:comment "Property of matter to resist changes of the state of motion and to attract other bodies"@en ;
+      <http://purl.org/dc/terms/description> "property of matter to resist changes of the state of motion and to attract other bodies"@en ;
       rdfs:label "Mass"@en ,
                  "Masse"@de ,
                  "Μάζα"@el ;
@@ -12339,7 +12340,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 ###  https://mardi4nfdi.de/mathmoddb#MechanicalDeformation
 :MechanicalDeformation rdf:type owl:NamedIndividual ,
                                 :QuantityKind ;
-                       rdfs:comment "In engineering or in continuum mechanics, any changes in the shape or size of a matter object"@en ;
+                       <http://purl.org/dc/terms/description> "in engineering or in continuum mechanics, any changes in the shape or size of a matter object"@en ;
                        rdfs:label "Mechanical Deformation"@en ,
                                   "Mechanische Deformation"@de ;
                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Deformation_(engineering)> ;
@@ -12359,7 +12360,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                            :QuantityKind ;
                   :generalizesQuantity :LinearStrain ;
                   :nondimensionaliesQuantity :MechanicalDeformation ;
-                  rdfs:comment "In continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress."@en ;
+                  <http://purl.org/dc/terms/description> "in continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress"@en ;
                   rdfs:label "Mechanical Strain"@en ,
                              "Mechanische Dehnung"@de ;
                   rdfs:seeAlso <https://en.wikipedia.org/wiki/Strain_(mechanics)> ;
@@ -12374,7 +12375,8 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
                                        :FluidViscousStress ,
                                        :NormalStress ,
                                        :StressOfCrystal ;
-                  rdfs:comment "Internal forces caused by deformation of a continuous material. Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules."@en ;
+                  <http://purl.org/dc/terms/description> "internal forces caused by deformation of a continuous material"@en ;
+                  rdfs:comment "Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules."@en ;
                   rdfs:label "Mechanical Stress"@en ,
                              "Mechanische Spannung"@de ;
                   rdfs:seeAlso <https://en.wikipedia.org/wiki/Stress_(mechanics)> ;
@@ -13855,7 +13857,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 ###  https://mardi4nfdi.de/mathmoddb#Momentum
 :Momentum rdf:type owl:NamedIndividual ,
                    :QuantityKind ;
-          rdfs:comment "conserved physical quantity related to the motion of a body"@en ;
+          <http://purl.org/dc/terms/description> "conserved physical quantity related to the motion of a body"@en ;
           rdfs:label "Impuls"@de ,
                      "Momentum"@en ,
                      "Ορμή"@el ;
@@ -14602,7 +14604,7 @@ $\\bm x_j\\in \\mathbb R^3$, position of center of gravity for particle $j$"""^^
 :NumberDimensionless rdf:type owl:NamedIndividual ,
                               :QuantityKind ;
                      :isDimensionless "true"^^xsd:boolean ;
-                     rdfs:comment "mathematical object used to count, label, and measure"@en ;
+                     <http://purl.org/dc/terms/description> "mathematical object used to count, label, and measure"@en ;
                      rdfs:label "Number (Dimensionless)"@en ,
                                 "Zahl (dimensionslos)"@de ;
                      rdfs:seeAlso <https://en.wikipedia.org/wiki/Number> ;
@@ -14738,7 +14740,7 @@ $\\bm x_j\\in \\mathbb R^3$, position of center of gravity for particle $j$"""^^
 :Object rdf:type owl:NamedIndividual ,
                  :QuantityKind ;
         :isDimensionless "true"^^xsd:boolean ;
-        rdfs:comment "anything that may be observed or acted upon by a subject"@en ;
+        <http://purl.org/dc/terms/description> "anything that may be observed or acted upon by a subject"@en ;
         rdfs:label "Object"@en ;
         :wikidataID <https://www.wikidata.org/wiki/Q488383> .
 
@@ -15661,7 +15663,7 @@ Subscript denotes the individual"""@en ;
 ###  https://mardi4nfdi.de/mathmoddb#PolarAngle
 :PolarAngle rdf:type owl:NamedIndividual ,
                      :QuantityKind ;
-            rdfs:comment "Angle in the spherical coordinate system in the range $0 < \\theta < \\pi$"@en ;
+            <http://purl.org/dc/terms/description> "angle in the spherical coordinate system"@en ;
             rdfs:label "Polar Angle"@en ,
                        "Polarwinkel"@de ;
             :wikidataID <https://www.wikidata.org/wiki/Q116757614> .
@@ -15825,7 +15827,7 @@ deformation"""@en ;
 ###  https://mardi4nfdi.de/mathmoddb#Pressure
 :Pressure rdf:type owl:NamedIndividual ,
                    :QuantityKind ;
-          rdfs:comment "Force applied over an area"@en ;
+          <http://purl.org/dc/terms/description> "force applied over an area"@en ;
           rdfs:label "Druck"@de ,
                      "Pressure"@en ,
                      "Πίεση"@el ;
@@ -16036,6 +16038,7 @@ deformation"""@en ;
                                   :QuantityKind ;
                          :nondimensionaliesQuantity :ProtonMass ;
                          :isDimensionless "true"^^xsd:boolean ;
+                         <http://purl.org/dc/terms/description> "proton-to-electron mass ratio"@en ;
                          rdfs:label "Proton Electron Mass Ratio"@en ;
                          rdfs:seeAlso <https://en.wikipedia.org/wiki/Proton-to-electron_mass_ratio> ;
                          :qudtID <https://qudt.org/vocab/constant/Value_ProtonElectronMassRatio> ;
@@ -16648,7 +16651,7 @@ deformation"""@en ;
 ###  https://mardi4nfdi.de/mathmoddb#Radius
 :Radius rdf:type owl:NamedIndividual ,
                  :QuantityKind ;
-        rdfs:comment "Segment in a circle or sphere from its center to its perimeter or surface and its length."@en ;
+        <http://purl.org/dc/terms/description> "segment in a circle or sphere from its center to its perimeter or surface and its length"@en ;
         rdfs:label "Radius"@en ;
         :wikidataID <https://www.wikidata.org/wiki/Q173817> .
 
@@ -16669,6 +16672,7 @@ deformation"""@en ;
       :generalizesQuantity :RateOfAging ,
                            :ReactionRate ,
                            :RiskOfDeath ;
+      <http://purl.org/dc/terms/description> "quantity of process intensivity"@en ;
       rdfs:comment "Rate"@de ;
       rdfs:label "Rate"@en ;
       rdfs:seeAlso <https://en.wikipedia.org/wiki/Rate_(mathematics)> ;
@@ -16988,7 +16992,7 @@ deformation"""@en ;
 :RealDimensionless rdf:type owl:NamedIndividual ,
                             :QuantityKind ;
                    :isDimensionless "true"^^xsd:boolean ;
-                   rdfs:comment "Quantity along a continuous line"@en ;
+                   <http://purl.org/dc/terms/description> "quantity along a continuous line"@en ;
                    rdfs:label "Real Number (Dimensionless)"@en ,
                               "Reelle Zahl (dimensionslos)"@de ,
                               "Πραγματικός αριθμός"@el ;
@@ -18721,7 +18725,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
 ###  https://mardi4nfdi.de/mathmoddb#Temperature
 :Temperature rdf:type owl:NamedIndividual ,
                       :QuantityKind ;
-             rdfs:comment "Physical property of matter that quantitatively expresses the common notions of hot and cold"@en ;
+             <http://purl.org/dc/terms/description> "physical property of matter that quantitatively expresses the common notions of hot and cold"@en ;
              rdfs:label "Temperatur"@de ,
                         "Temperature"@en ,
                         "Θερμοκρασία"@el ;
@@ -18769,7 +18773,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
       :containedInFormulation :ClassicalHamiltonEquations ,
                               :ClassicalNewtonEquation ,
                               :SchroedingerEquationTimeDependent ;
-      rdfs:comment "Dimension in which events can be ordered from the past through the present into the future"@en ;
+      <http://purl.org/dc/terms/description> "dimension in which events can be ordered from the past through the present into the future"@en ;
       rdfs:label "Time"@en ,
                  "Zeit"@de ,
                  "Χρόνος"@el ;
@@ -18838,7 +18842,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
 ###  https://mardi4nfdi.de/mathmoddb#Torque
 :Torque rdf:type owl:NamedIndividual ,
                  :QuantityKind ;
-        rdfs:comment "tendency of a force to rotate an object"@en ;
+        <http://purl.org/dc/terms/description> "tendency of a force to rotate an object"@en ;
         rdfs:label "Drehmoment"@de ,
                    "Torque"@en ;
         rdfs:seeAlso <https://en.wikipedia.org/wiki/Torque> ;
@@ -18973,8 +18977,9 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
 ###  https://mardi4nfdi.de/mathmoddb#TransportRoute
 :TransportRoute rdf:type owl:NamedIndividual ,
-                         :QuantityKind ;
+                         :Quantity ;
                 :generalizesQuantity :PTNLine ;
+                <http://purl.org/dc/terms/description> "route on which goods, persons or data are transported"@en ;
                 rdfs:label "Transport Route"@en ;
                 :wikidataID "https://www.wikidata.org/wiki/Q1297806" .
 
@@ -20190,6 +20195,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 ###  https://mardi4nfdi.de/mathmoddb#Variance
 :Variance rdf:type owl:NamedIndividual ,
                    :QuantityKind ;
+          <http://purl.org/dc/terms/description> "expectation of the squared deviation of a random variable from its mean"@en ;
           rdfs:label "Variance"@en ,
                      "Varianz"@de ;
           rdfs:seeAlso <https://en.wikipedia.org/wiki/Variance> ;
@@ -20199,7 +20205,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 ###  https://mardi4nfdi.de/mathmoddb#Velocity
 :Velocity rdf:type owl:NamedIndividual ,
                    :QuantityKind ;
-          rdfs:comment "Rate of change of the position of an object as a function of time, and the direction of that change"@en ;
+          <http://purl.org/dc/terms/description> "rate of change of the position of an object as a function of time, and the direction of that change"@en ;
           rdfs:label "Geschwindigkeit"@de ,
                      "Velocity"@en ,
                      "Ταχύτητα"@el ;
@@ -20264,7 +20270,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 ###  https://mardi4nfdi.de/mathmoddb#Viscosity
 :Viscosity rdf:type owl:NamedIndividual ,
                     :QuantityKind ;
-           rdfs:comment "Resistance of a fluid to shear deformation"@en ;
+           <http://purl.org/dc/terms/description> "resistance of a fluid to shear deformation"@en ;
            rdfs:label "Viscosity"@en ,
                       "Viskosität"@de ;
            :qudtID <https://qudt.org/vocab/quantitykind/Viscosity> ;

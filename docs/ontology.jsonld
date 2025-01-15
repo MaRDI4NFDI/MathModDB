@@ -840,12 +840,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Acceleration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "rate at which the magnitude and/or direction of velocity changes with time"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Rate at which the magnitude and/or direction of velocity changes with time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1107,7 +1107,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"
+    "@value" : "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right)$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -1155,12 +1155,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#AngularMomentum",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "measure of the extent to which an object will continue to rotate in the absence of an applied torque"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1385,12 +1385,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Area",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1808,12 +1808,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#AzimuthalAngle",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "angle in the spherical coordinate system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Angle in the spherical coordinate system in the range $-\\pi < \\phi \\leq \\pi$"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4699,12 +4699,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#BooleanVariable",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "data type that represents true or false values"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -4841,12 +4841,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Capacitance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "ability of a body to store electrical charge"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Ability of a body to store electrical charge"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -5576,10 +5576,6 @@
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The phase space distribution ρ ( p , q ) $\\rho(p,q)$ determines the probability ρ ( p , q ) d n q d n p ${\\displaystyle \\rho (p,q)\\;\\mathrm {d} ^{n}q\\,\\mathrm {d} ^{n}p}$ that the system will be found in the infinitesimal phase space volume d n q d n p ${\\displaystyle \\mathrm {d} ^{n}q\\,\\mathrm {d} ^{n}p}$."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -6536,6 +6532,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ComplexDimensionless",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "number that can be put in the form a + bi, where a and b are real numbers and i is called the imaginary unit"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
@@ -6627,15 +6627,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "abundance of a constituent divided by the total volume of a mixture"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Abundance of a constituent divided by the total volume of a mixture"
-  }, {
-    "@language" : "de",
-    "@value" : "Verhältnisse von Stoffmengen in der Chemie"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -7341,7 +7338,7 @@
     "@value" : "Continuity Equation For Electrons"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotential"
   }, {
@@ -7439,7 +7436,7 @@
     "@value" : "Continuity Equation For Holes"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotential"
   }, {
@@ -9373,11 +9370,11 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "if $F^{T, cons}_{ij}> \\mu F_{ij}^N$ then $\\bm F_{ij}^T = \\mu F_{ij}^N \\bm\\xi_{ij}/\\lVert \\bm\\xi_{ij}\\rVert$"
+    "@value" : "if $F^{T, cons}_{ij}> \\mu F_{ij}^N$ then $\\mathbf F_{ij}^T = \\mu F_{ij}^N \\mathbf\\xi_{ij}/\\lVert \\mathbf\\xi_{ij}\\rVert$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$F_{ij}^{T, cons}=-k_{ij}^T\\lVert \\bm \\xi_{ij}\\rVert$, conservative part of tangential interaction force"
+    "@value" : "$F_{ij}^{T, cons}=-k_{ij}^T\\lVert \\mathbf \\xi_{ij}\\rVert$, conservative part of tangential interaction force"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#CouplingCurrent",
@@ -9461,173 +9458,12 @@
     "@id" : "https://en.wikipedia.org/wiki/Current_density"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizesQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"
   }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q234072"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "density of current of electrons, e.g., in a semiconductor device"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Current Density Of Electrons"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "flux of electrons"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "density of current of electrons, e.g., in a semiconductor device"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Current Density Of Electrons (Definition)"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#DensityOfElectrons"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotential"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ElementaryCharge"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MobilityOfElectrons"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$j_n \\equiv -q\\mu_nn(\\psi\\phi_n) \\nabla \\phi_n$"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\mu_n$, Mobility Of Electrons"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\phi_n$, Fermi Potential For Electrons"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\psi$, Electric Potential"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$j_n$, Current Density Of Electrons"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$n$, Density Of Electrons"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$q$, Elementary Charge"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#isDynamic" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "false"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#isSpaceContinuous" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "density of current of holes, e.g., in a semiconductor device"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Current Density Of Holes"
-  } ],
-  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
-    "@language" : "en",
-    "@value" : "flux of holes"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#similarToQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "density of current of holes, e.g., in a semiconductor device"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Current Density Of Holes (Definition)"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#DensityOfHoles"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotential"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ElementaryCharge"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MobilityOfHoles"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$j_p \\equiv -q\\mu_pp(\\psi\\phi_p) \\nabla \\phi_p$"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\mu_p$, Mobility Of Holes"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\phi_p$, Fermi Potential For Holes"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\psi$, Electric Potential"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$j_p$, Current Density Of Holes"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$p$, Density Of Holes"
-  }, {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$q$, Elementary Charge"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#isDynamic" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "false"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#isSpaceContinuous" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "@value" : "true"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices",
@@ -9987,12 +9823,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Density",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "mass per volume of a substance, aka volumetric mass density or specific mass"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Mass per volume of a substance, aka volumetric mass density or specific mass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -11895,12 +11731,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCharge",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "physical property that quantifies an object's interaction with electric fields"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Physical property that quantifies an object's interaction with electric fields"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -11949,12 +11785,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricConductivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "physical quantity and property of material describing how readily a given material allows the flow of electric current"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "physical quantity and property of material describing how readily a given material allows the flow of electric current"
+    "@value" : "when subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -11975,12 +11815,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrent",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "base quantity of the International System of Quantities (ISQ), measured in ampere (A)"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Base quantity of the International System of Quantities (ISQ), measured in ampere (A)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -12024,14 +11864,175 @@
     "@id" : "https://wikidata.org/wiki/Q234072"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "density of electric current of electrons, e.g., in a semiconductor device"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric Current Density Of Electrons"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "flux of electrons"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "density of electric current of electrons, e.g., in a semiconductor device"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric Current Density Of Electrons (Definition)"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#DensityOfElectrons"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotential"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElementaryCharge"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MobilityOfElectrons"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$j_n \\equiv -q\\mu_nn(\\psi,\\phi_n) \\nabla \\phi_n$"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\mu_n$, Mobility Of Electrons"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\phi_n$, Fermi Potential For Electrons"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\psi$, Electric Potential"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$j_n$, Current Density Of Electrons"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$n$, Density Of Electrons"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$q$, Elementary Charge"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isDynamic" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isSpaceContinuous" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "density of electric current of holes, e.g., in a semiconductor device"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric Current Density Of Holes"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "flux of holes"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#similarToQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "density of electric current of holes, e.g., in a semiconductor device"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Electric Current Density Of Holes (Definition)"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#DensityOfHoles"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPotential"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElementaryCharge"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MobilityOfHoles"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$j_p \\equiv -q\\mu_pp(\\psi,\\phi_p) \\nabla \\phi_p$"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\mu_p$, Mobility Of Holes"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\phi_p$, Fermi Potential For Holes"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\psi$, Electric Potential"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$j_p$, Current Density Of Holes"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$p$, Density Of Holes"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$q$, Elementary Charge"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isDynamic" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isSpaceContinuous" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "vector physical quantity measuring the separation of positive and negative electrical charges within a system"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -12049,12 +12050,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricField",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -12075,12 +12076,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricPolarizability",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "tendency of matter subjected to an electric field to acquire an electric dipole moment"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Tendency of matter subjected to an electric field to acquire an electric dipole moment. When subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -12158,12 +12159,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricVoltage",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "difference in electric potential between two points (indicated in volt)"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Difference in electric potential between two points (indicated in volt)"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -12554,12 +12555,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Energy",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -14195,6 +14196,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ExpectationValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "long-run average value of a random variable"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
@@ -14957,7 +14962,7 @@
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons"
   }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"
@@ -14983,7 +14988,7 @@
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles"
   }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"
@@ -14991,12 +14996,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Force",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "physical influence that tends to cause an object to change motion unless opposed by other forces"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -22127,13 +22132,14 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#IntegerDimensionless",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "number that can be written without a fractional or decimal component"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Number that can be written without a fractional or decimal component"
-  }, {
     "@language" : "el",
     "@value" : "Ακέραιος αριθμός"
   } ],
@@ -22884,12 +22890,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Length",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "measured dimension of an object"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Measured dimension of an object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26373,12 +26379,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MagneticField",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26420,12 +26426,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Mass",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "property of matter to resist changes of the state of motion and to attract other bodies"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Property of matter to resist changes of the state of motion and to attract other bodies"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26811,12 +26817,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MechanicalDeformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "in engineering or in continuum mechanics, any changes in the shape or size of a matter object"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In engineering or in continuum mechanics, any changes in the shape or size of a matter object"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26851,12 +26857,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MechanicalStrain",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "in continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -26883,12 +26889,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MechanicalStress",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "internal forces caused by deformation of a continuous material"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Internal forces caused by deformation of a continuous material. Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules."
+    "@value" : "Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -30693,12 +30703,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Momentum",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "conserved physical quantity related to the motion of a body"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -32453,12 +32463,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#NumberDimensionless",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "mathematical object used to count, label, and measure"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -32772,12 +32782,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Object",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "anything that may be observed or acted upon by a subject"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -35065,12 +35075,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#PolarAngle",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "angle in the spherical coordinate system"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Angle in the spherical coordinate system in the range $0 < \\theta < \\pi$"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -35471,12 +35481,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Pressure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "force applied over an area"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Force applied over an area"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -35993,6 +36003,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "proton-to-electron mass ratio"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
@@ -37591,12 +37605,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Radius",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "segment in a circle or sphere from its center to its perimeter or surface and its length"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Segment in a circle or sphere from its center to its perimeter or surface and its length."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -37632,6 +37646,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Rate",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "quantity of process intensivity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
@@ -38400,12 +38418,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#RealDimensionless",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "quantity along a continuous line"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Quantity along a continuous line"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -42754,12 +42772,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Temperature",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "physical property of matter that quantitatively expresses the common notions of hot and cold"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Physical property of matter that quantitatively expresses the common notions of hot and cold"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -42861,12 +42879,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Time",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "dimension in which events can be ordered from the past through the present into the future"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Dimension in which events can be ordered from the past through the present into the future"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -43038,12 +43056,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Torque",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
     "@value" : "tendency of a force to rotate an object"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -43359,8 +43377,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#TransportRoute",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "route on which goods, persons or data are transported"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -46515,6 +46537,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Variance",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "expectation of the squared deviation of a random variable from its mean"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
@@ -46534,12 +46560,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Velocity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "rate of change of the position of an object as a function of time, and the direction of that change"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Rate of change of the position of an object as a function of time, and the direction of that change"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "de",
@@ -46694,12 +46720,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Viscosity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "resistance of a fluid to shear deformation"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Resistance of a fluid to shear deformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

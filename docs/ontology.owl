@@ -2580,7 +2580,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Acceleration">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Rate at which the magnitude and/or direction of velocity changes with time</rdfs:comment>
+        <terms:description xml:lang="en">rate at which the magnitude and/or direction of velocity changes with time</terms:description>
         <rdfs:label xml:lang="en">Acceleration</rdfs:label>
         <rdfs:label xml:lang="de">Beschleunigung</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acceleration"/>
@@ -2717,7 +2717,7 @@
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PermittivityVacuum"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nabla \times \mathbf{B} = \mu_0\left(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nabla \times \mathbf{B} = \mu_0\left(\mathbf{J} + \epsilon_0 \frac{\partial \mathbf{E}} {\partial t} \right)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Electric Field</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Magnetic Field</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$J$, Electric Current Density</inDefiningFormulation>
@@ -2752,7 +2752,7 @@
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#AngularMomentum">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PlanckConstant"/>
-        <rdfs:comment xml:lang="en">measure of the extent to which an object will continue to rotate in the absence of an applied torque</rdfs:comment>
+        <terms:description xml:lang="en">measure of the extent to which an object will continue to rotate in the absence of an applied torque</terms:description>
         <rdfs:label xml:lang="en">Angular Momentum</rdfs:label>
         <rdfs:label xml:lang="de">Drehimpuls</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Angular_momentum"/>
@@ -2897,7 +2897,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Area">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane</rdfs:comment>
+        <terms:description xml:lang="en">quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane</terms:description>
         <rdfs:label xml:lang="en">Area</rdfs:label>
         <rdfs:label xml:lang="de">Fläche</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Area"/>
@@ -3135,7 +3135,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#AzimuthalAngle">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Angle in the spherical coordinate system in the range $-\pi &lt; \phi \leq \pi$</rdfs:comment>
+        <terms:description xml:lang="en">angle in the spherical coordinate system</terms:description>
         <rdfs:label xml:lang="en">Azimuthal Angle</rdfs:label>
         <rdfs:label xml:lang="de">Azimutwinkel</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Azimuth"/>
@@ -4533,7 +4533,7 @@ o &amp; \textrm{otherwise} \\
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ObjectProperty"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <rdfs:comment xml:lang="en">data type that represents true or false values</rdfs:comment>
+        <terms:description xml:lang="en">data type that represents true or false values</terms:description>
         <rdfs:label xml:lang="en">Boolean Variable</rdfs:label>
         <rdfs:label xml:lang="de">Boolesche Variable</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q520777"/>
@@ -4611,7 +4611,7 @@ o &amp; \textrm{otherwise} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Capacitance">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Ability of a body to store electrical charge</rdfs:comment>
+        <terms:description xml:lang="en">ability of a body to store electrical charge</terms:description>
         <rdfs:label xml:lang="en">Electric Capacitance</rdfs:label>
         <rdfs:label xml:lang="de">Elektrische Kapazität</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Capacitance"/>
@@ -4978,7 +4978,6 @@ o &amp; \textrm{otherwise} \\
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ProbabilityDistribution"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator"/>
         <terms:description xml:lang="en">probability that the system will be found in the infinitesimal phase space volume</terms:description>
-        <rdfs:comment xml:lang="en">The phase space distribution ρ ( p , q ) $\rho(p,q)$ determines the probability ρ ( p , q ) d n q d n p ${\displaystyle \rho (p,q)\;\mathrm {d} ^{n}q\,\mathrm {d} ^{n}p}$ that the system will be found in the infinitesimal phase space volume d n q d n p ${\displaystyle \mathrm {d} ^{n}q\,\mathrm {d} ^{n}p}$.</rdfs:comment>
         <rdfs:label xml:lang="en">Classical Density (Phase Space)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -5455,6 +5454,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ComplexDimensionless">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
+        <terms:description xml:lang="en">number that can be put in the form a + bi, where a and b are real numbers and i is called the imaginary unit</terms:description>
         <rdfs:label xml:lang="en">Complex Number (Dimensionless)</rdfs:label>
         <rdfs:label xml:lang="de">Komplexe Zahl (dimensionslos)</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11567"/>
@@ -5493,8 +5493,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Concentration">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Abundance of a constituent divided by the total volume of a mixture</rdfs:comment>
-        <rdfs:comment xml:lang="de">Verhältnisse von Stoffmengen in der Chemie</rdfs:comment>
+        <terms:description xml:lang="en">abundance of a constituent divided by the total volume of a mixture</terms:description>
         <rdfs:label xml:lang="en">Concentration</rdfs:label>
         <rdfs:label xml:lang="de">Konzentration</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Concentration"/>
@@ -5833,7 +5832,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElementaryCharge"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons"/>
@@ -5878,7 +5877,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElementaryCharge"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons"/>
@@ -6905,8 +6904,8 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containedAsFormulationIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">if $F^{T, cons}_{ij}&gt; \mu F_{ij}^N$ then $\bm F_{ij}^T = \mu F_{ij}^N \bm\xi_{ij}/\lVert \bm\xi_{ij}\rVert$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$F_{ij}^{T, cons}=-k_{ij}^T\lVert \bm \xi_{ij}\rVert$, conservative part of tangential interaction force</inDefiningFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">if $F^{T, cons}_{ij}&gt; \mu F_{ij}^N$ then $\mathbf F_{ij}^T = \mu F_{ij}^N \mathbf\xi_{ij}/\lVert \mathbf\xi_{ij}\rVert$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$F_{ij}^{T, cons}=-k_{ij}^T\lVert \mathbf \xi_{ij}\rVert$, conservative part of tangential interaction force</inDefiningFormulation>
         <terms:description xml:lang="en">slipping occurs, if tangential force is high in relation to normal force in the contact of two particles</terms:description>
         <rdfs:label xml:lang="en">Coulomb Friction Of Two Particles</rdfs:label>
     </owl:NamedIndividual>
@@ -6957,92 +6956,13 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"/>
-        <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles"/>
+        <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"/>
+        <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles"/>
         <terms:description xml:lang="en">amount of charge per unit time that flows through a unit area</terms:description>
         <rdfs:comment xml:lang="en">The (electric) current density is defined as the amount of charge per unit time that flows through a unit area</rdfs:comment>
         <rdfs:label xml:lang="en">Current Density</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Current_density"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q234072"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"/>
-        <terms:description xml:lang="en">density of current of electrons, e.g., in a semiconductor device</terms:description>
-        <rdfs:label xml:lang="en">Current Density Of Electrons</rdfs:label>
-        <skos:altLabel xml:lang="en">flux of electrons</skos:altLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfElectrons"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElementaryCharge"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MobilityOfElectrons"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_n \equiv -q\mu_nn(\psi\phi_n) \nabla \phi_n$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu_n$, Mobility Of Electrons</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi_n$, Fermi Potential For Electrons</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi$, Electric Potential</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_n$, Current Density Of Electrons</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$n$, Density Of Electrons</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Elementary Charge</inDefiningFormulation>
-        <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
-        <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
-        <terms:description xml:lang="en">density of current of electrons, e.g., in a semiconductor device</terms:description>
-        <rdfs:label xml:lang="en">Current Density Of Electrons (Definition)</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"/>
-        <similarToQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons"/>
-        <terms:description xml:lang="en">density of current of holes, e.g., in a semiconductor device</terms:description>
-        <rdfs:label xml:lang="en">Current Density Of Holes</rdfs:label>
-        <skos:altLabel xml:lang="en">flux of holes</skos:altLabel>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfHoles"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElementaryCharge"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MobilityOfHoles"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_p \equiv -q\mu_pp(\psi\phi_p) \nabla \phi_p$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu_p$, Mobility Of Holes</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi_p$, Fermi Potential For Holes</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi$, Electric Potential</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_p$, Current Density Of Holes</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$p$, Density Of Holes</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Elementary Charge</inDefiningFormulation>
-        <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
-        <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
-        <terms:description xml:lang="en">density of current of holes, e.g., in a semiconductor device</terms:description>
-        <rdfs:label xml:lang="en">Current Density Of Holes (Definition)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7259,7 +7179,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Density">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Mass per volume of a substance, aka volumetric mass density or specific mass</rdfs:comment>
+        <terms:description xml:lang="en">mass per volume of a substance, aka volumetric mass density or specific mass</terms:description>
         <rdfs:label xml:lang="en">Density</rdfs:label>
         <rdfs:label xml:lang="de">Dichte</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Density"/>
@@ -8235,7 +8155,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricCharge">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Physical property that quantifies an object&apos;s interaction with electric fields</rdfs:comment>
+        <terms:description xml:lang="en">physical property that quantifies an object&apos;s interaction with electric fields</terms:description>
         <rdfs:label xml:lang="en">Electric Charge</rdfs:label>
         <rdfs:label xml:lang="de">Elektrische Ladung</rdfs:label>
         <rdfs:label xml:lang="el">Ηλεκτρικό φορτίο</rdfs:label>
@@ -8266,7 +8186,8 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricConductivity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">physical quantity and property of material describing how readily a given material allows the flow of electric current</rdfs:comment>
+        <terms:description xml:lang="en">physical quantity and property of material describing how readily a given material allows the flow of electric current</terms:description>
+        <rdfs:comment xml:lang="en">when subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation.</rdfs:comment>
         <rdfs:label xml:lang="en">Electric Conductivity</rdfs:label>
         <rdfs:label xml:lang="de">Elektrische Leitfähigkeit</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity"/>
@@ -8281,7 +8202,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricCurrent">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Base quantity of the International System of Quantities (ISQ), measured in ampere (A)</rdfs:comment>
+        <terms:description xml:lang="en">base quantity of the International System of Quantities (ISQ), measured in ampere (A)</terms:description>
         <rdfs:label xml:lang="en">Electric Current</rdfs:label>
         <rdfs:label xml:lang="de">Elektrischer Strom</rdfs:label>
         <rdfs:label xml:lang="el">Ηλεκτρικό ρεύμα</rdfs:label>
@@ -8306,12 +8227,91 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     
 
 
+    <!-- https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition"/>
+        <terms:description xml:lang="en">density of electric current of electrons, e.g., in a semiconductor device</terms:description>
+        <rdfs:label xml:lang="en">Electric Current Density Of Electrons</rdfs:label>
+        <skos:altLabel xml:lang="en">flux of electrons</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfElectrons"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElementaryCharge"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MobilityOfElectrons"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_n \equiv -q\mu_nn(\psi,\phi_n) \nabla \phi_n$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu_n$, Mobility Of Electrons</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi_n$, Fermi Potential For Electrons</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi$, Electric Potential</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_n$, Current Density Of Electrons</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$n$, Density Of Electrons</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Elementary Charge</inDefiningFormulation>
+        <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
+        <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
+        <terms:description xml:lang="en">density of electric current of electrons, e.g., in a semiconductor device</terms:description>
+        <rdfs:label xml:lang="en">Electric Current Density Of Electrons (Definition)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition"/>
+        <similarToQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons"/>
+        <terms:description xml:lang="en">density of electric current of holes, e.g., in a semiconductor device</terms:description>
+        <rdfs:label xml:lang="en">Electric Current Density Of Holes</rdfs:label>
+        <skos:altLabel xml:lang="en">flux of holes</skos:altLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfHoles"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricPotential"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ElementaryCharge"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MobilityOfHoles"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_p \equiv -q\mu_pp(\psi,\phi_p) \nabla \phi_p$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu_p$, Mobility Of Holes</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\phi_p$, Fermi Potential For Holes</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\psi$, Electric Potential</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$j_p$, Current Density Of Holes</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$p$, Density Of Holes</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Elementary Charge</inDefiningFormulation>
+        <isDynamic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDynamic>
+        <isSpaceContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isSpaceContinuous>
+        <terms:description xml:lang="en">density of electric current of holes, e.g., in a semiconductor device</terms:description>
+        <rdfs:label xml:lang="en">Electric Current Density Of Holes (Definition)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment -->
 
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">vector physical quantity measuring the separation of positive and negative electrical charges within a system</rdfs:comment>
+        <terms:description xml:lang="en">vector physical quantity measuring the separation of positive and negative electrical charges within a system</terms:description>
         <rdfs:label xml:lang="en">Electric Dipole Moment</rdfs:label>
         <rdfs:label xml:lang="de">Elektrisches Dipolmoment</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electric_dipole_moment"/>
@@ -8325,7 +8325,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricField">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential</rdfs:comment>
+        <terms:description xml:lang="en">vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential</terms:description>
         <rdfs:label xml:lang="en">Electric Field</rdfs:label>
         <rdfs:label xml:lang="de">Elektrisches Feld</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Electric_field"/>
@@ -8341,7 +8341,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricPolarizability">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <similarToQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PermittivityDielectric"/>
-        <rdfs:comment xml:lang="en">Tendency of matter subjected to an electric field to acquire an electric dipole moment. When subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation.</rdfs:comment>
+        <terms:description xml:lang="en">tendency of matter subjected to an electric field to acquire an electric dipole moment</terms:description>
         <rdfs:label xml:lang="en">Electric Polarizability</rdfs:label>
         <rdfs:label xml:lang="de">Elektrische Polarisierbarkeit</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Polarizability"/>
@@ -8387,7 +8387,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricVoltage">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Difference in electric potential between two points (indicated in volt)</rdfs:comment>
+        <terms:description xml:lang="en">difference in electric potential between two points (indicated in volt)</terms:description>
         <rdfs:label xml:lang="de">Elektrische Spannung</rdfs:label>
         <rdfs:label xml:lang="en">Voltage</rdfs:label>
         <rdfs:label xml:lang="el">Ηλεκτρική Τάση</rdfs:label>
@@ -8609,7 +8609,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Energy">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light</rdfs:comment>
+        <terms:description xml:lang="en">quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light</terms:description>
         <rdfs:label xml:lang="de">Energie</rdfs:label>
         <rdfs:label xml:lang="en">Energy</rdfs:label>
         <rdfs:label xml:lang="el">Ενέργεια</rdfs:label>
@@ -9421,6 +9421,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ExpectationValue">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ExpectationValueQuantumDensity"/>
+        <terms:description xml:lang="en">long-run average value of a random variable</terms:description>
         <rdfs:label xml:lang="de">Erwartungswert</rdfs:label>
         <rdfs:label xml:lang="en">Expectation Value</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Expected_value"/>
@@ -9863,7 +9864,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FluxOfElectrons">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons"/>
-        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition"/>
+        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"/>
         <terms:description xml:lang="en">flow of electrons, e.g., in an electric device</terms:description>
         <rdfs:comment xml:lang="en">For use in semiconductor physics</rdfs:comment>
@@ -9878,7 +9879,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FluxOfHoles">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles"/>
-        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition"/>
+        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity"/>
         <terms:description xml:lang="en">flow of holes, e.g., in an electric device</terms:description>
         <rdfs:comment xml:lang="en">For use in semiconductor physics</rdfs:comment>
@@ -9892,7 +9893,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Force">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">physical influence that tends to cause an object to change motion unless opposed by other forces</rdfs:comment>
+        <terms:description xml:lang="en">physical influence that tends to cause an object to change motion unless opposed by other forces</terms:description>
         <rdfs:label xml:lang="en">Force</rdfs:label>
         <rdfs:label xml:lang="de">Kraft</rdfs:label>
         <rdfs:label xml:lang="el">Δύναμη</rdfs:label>
@@ -13796,7 +13797,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#IntegerDimensionless">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <rdfs:comment xml:lang="en">Number that can be written without a fractional or decimal component</rdfs:comment>
+        <terms:description xml:lang="en">number that can be written without a fractional or decimal component</terms:description>
         <rdfs:comment xml:lang="el">Ακέραιος αριθμός</rdfs:comment>
         <rdfs:label xml:lang="de">Ganze Zahl (dimensionslos)</rdfs:label>
         <rdfs:label xml:lang="en">Integer Number (Dimensionless)</rdfs:label>
@@ -14202,7 +14203,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Length">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Measured dimension of an object</rdfs:comment>
+        <terms:description xml:lang="en">measured dimension of an object</terms:description>
         <rdfs:label xml:lang="en">Length</rdfs:label>
         <rdfs:label xml:lang="de">Länge</rdfs:label>
         <rdfs:label xml:lang="el">Μήκος</rdfs:label>
@@ -15933,7 +15934,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MagneticField">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Spatial distribution of vectors allowing the calculation of the magnetic force on a test particle</rdfs:comment>
+        <terms:description xml:lang="en">spatial distribution of vectors allowing the calculation of the magnetic force on a test particle</terms:description>
         <rdfs:label xml:lang="en">Magnetic Field</rdfs:label>
         <rdfs:label xml:lang="de">Magnetisches Feld</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Magnetic_field"/>
@@ -15962,7 +15963,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Mass">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation"/>
-        <rdfs:comment xml:lang="en">Property of matter to resist changes of the state of motion and to attract other bodies</rdfs:comment>
+        <terms:description xml:lang="en">property of matter to resist changes of the state of motion and to attract other bodies</terms:description>
         <rdfs:label xml:lang="en">Mass</rdfs:label>
         <rdfs:label xml:lang="de">Masse</rdfs:label>
         <rdfs:label xml:lang="el">Μάζα</rdfs:label>
@@ -16139,7 +16140,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MechanicalDeformation">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">In engineering or in continuum mechanics, any changes in the shape or size of a matter object</rdfs:comment>
+        <terms:description xml:lang="en">in engineering or in continuum mechanics, any changes in the shape or size of a matter object</terms:description>
         <rdfs:label xml:lang="en">Mechanical Deformation</rdfs:label>
         <rdfs:label xml:lang="de">Mechanische Deformation</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Deformation_(engineering)"/>
@@ -16167,7 +16168,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#LinearStrain"/>
         <nondimensionaliesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MechanicalDeformation"/>
-        <rdfs:comment xml:lang="en">In continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress.</rdfs:comment>
+        <terms:description xml:lang="en">in continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress</terms:description>
         <rdfs:label xml:lang="en">Mechanical Strain</rdfs:label>
         <rdfs:label xml:lang="de">Mechanische Dehnung</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Strain_(mechanics)"/>
@@ -16186,7 +16187,8 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#FluidViscousStress"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#NormalStress"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#StressOfCrystal"/>
-        <rdfs:comment xml:lang="en">Internal forces caused by deformation of a continuous material. Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules.</rdfs:comment>
+        <terms:description xml:lang="en">internal forces caused by deformation of a continuous material</terms:description>
+        <rdfs:comment xml:lang="en">Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules.</rdfs:comment>
         <rdfs:label xml:lang="en">Mechanical Stress</rdfs:label>
         <rdfs:label xml:lang="de">Mechanische Spannung</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Stress_(mechanics)"/>
@@ -17995,7 +17997,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Momentum">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">conserved physical quantity related to the motion of a body</rdfs:comment>
+        <terms:description xml:lang="en">conserved physical quantity related to the motion of a body</terms:description>
         <rdfs:label xml:lang="de">Impuls</rdfs:label>
         <rdfs:label xml:lang="en">Momentum</rdfs:label>
         <rdfs:label xml:lang="el">Ορμή</rdfs:label>
@@ -18954,7 +18956,7 @@ $\bm x_j\in \mathbb R^3$, position of center of gravity for particle $j$</inDefi
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#NumberDimensionless">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <rdfs:comment xml:lang="en">mathematical object used to count, label, and measure</rdfs:comment>
+        <terms:description xml:lang="en">mathematical object used to count, label, and measure</terms:description>
         <rdfs:label xml:lang="en">Number (Dimensionless)</rdfs:label>
         <rdfs:label xml:lang="de">Zahl (dimensionslos)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Number"/>
@@ -19146,7 +19148,7 @@ $\bm x_j\in \mathbb R^3$, position of center of gravity for particle $j$</inDefi
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Object">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <rdfs:comment xml:lang="en">anything that may be observed or acted upon by a subject</rdfs:comment>
+        <terms:description xml:lang="en">anything that may be observed or acted upon by a subject</terms:description>
         <rdfs:label xml:lang="en">Object</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q488383"/>
     </owl:NamedIndividual>
@@ -20361,7 +20363,7 @@ Subscript denotes the individual</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#PolarAngle">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Angle in the spherical coordinate system in the range $0 &lt; \theta &lt; \pi$</rdfs:comment>
+        <terms:description xml:lang="en">angle in the spherical coordinate system</terms:description>
         <rdfs:label xml:lang="en">Polar Angle</rdfs:label>
         <rdfs:label xml:lang="de">Polarwinkel</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q116757614"/>
@@ -20569,7 +20571,7 @@ deformation</terms:description>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Pressure">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Force applied over an area</rdfs:comment>
+        <terms:description xml:lang="en">force applied over an area</terms:description>
         <rdfs:label xml:lang="de">Druck</rdfs:label>
         <rdfs:label xml:lang="en">Pressure</rdfs:label>
         <rdfs:label xml:lang="el">Πίεση</rdfs:label>
@@ -20836,6 +20838,7 @@ deformation</terms:description>
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <nondimensionaliesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ProtonMass"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
+        <terms:description xml:lang="en">proton-to-electron mass ratio</terms:description>
         <rdfs:label xml:lang="en">Proton Electron Mass Ratio</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Proton-to-electron_mass_ratio"/>
         <qudtID rdf:resource="https://qudt.org/vocab/constant/Value_ProtonElectronMassRatio"/>
@@ -21608,7 +21611,7 @@ deformation</terms:description>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Radius">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Segment in a circle or sphere from its center to its perimeter or surface and its length.</rdfs:comment>
+        <terms:description xml:lang="en">segment in a circle or sphere from its center to its perimeter or surface and its length</terms:description>
         <rdfs:label xml:lang="en">Radius</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q173817"/>
     </owl:NamedIndividual>
@@ -21637,6 +21640,7 @@ deformation</terms:description>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RateOfAging"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#RiskOfDeath"/>
+        <terms:description xml:lang="en">quantity of process intensivity</terms:description>
         <rdfs:comment xml:lang="de">Rate</rdfs:comment>
         <rdfs:label xml:lang="en">Rate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Rate_(mathematics)"/>
@@ -22056,7 +22060,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RealDimensionless">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
-        <rdfs:comment xml:lang="en">Quantity along a continuous line</rdfs:comment>
+        <terms:description xml:lang="en">quantity along a continuous line</terms:description>
         <rdfs:label xml:lang="en">Real Number (Dimensionless)</rdfs:label>
         <rdfs:label xml:lang="de">Reelle Zahl (dimensionslos)</rdfs:label>
         <rdfs:label xml:lang="el">Πραγματικός αριθμός</rdfs:label>
@@ -24289,7 +24293,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Temperature">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Physical property of matter that quantitatively expresses the common notions of hot and cold</rdfs:comment>
+        <terms:description xml:lang="en">physical property of matter that quantitatively expresses the common notions of hot and cold</terms:description>
         <rdfs:label xml:lang="de">Temperatur</rdfs:label>
         <rdfs:label xml:lang="en">Temperature</rdfs:label>
         <rdfs:label xml:lang="el">Θερμοκρασία</rdfs:label>
@@ -24353,7 +24357,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent"/>
-        <rdfs:comment xml:lang="en">Dimension in which events can be ordered from the past through the present into the future</rdfs:comment>
+        <terms:description xml:lang="en">dimension in which events can be ordered from the past through the present into the future</terms:description>
         <rdfs:label xml:lang="en">Time</rdfs:label>
         <rdfs:label xml:lang="de">Zeit</rdfs:label>
         <rdfs:label xml:lang="el">Χρόνος</rdfs:label>
@@ -24446,7 +24450,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Torque">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">tendency of a force to rotate an object</rdfs:comment>
+        <terms:description xml:lang="en">tendency of a force to rotate an object</terms:description>
         <rdfs:label xml:lang="de">Drehmoment</rdfs:label>
         <rdfs:label xml:lang="en">Torque</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Torque"/>
@@ -24629,8 +24633,9 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TransportRoute">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PTNLine"/>
+        <terms:description xml:lang="en">route on which goods, persons or data are transported</terms:description>
         <rdfs:label xml:lang="en">Transport Route</rdfs:label>
         <wikidataID>https://www.wikidata.org/wiki/Q1297806</wikidataID>
     </owl:NamedIndividual>
@@ -26094,6 +26099,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Variance">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms:description xml:lang="en">expectation of the squared deviation of a random variable from its mean</terms:description>
         <rdfs:label xml:lang="en">Variance</rdfs:label>
         <rdfs:label xml:lang="de">Varianz</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Variance"/>
@@ -26107,7 +26113,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Velocity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Rate of change of the position of an object as a function of time, and the direction of that change</rdfs:comment>
+        <terms:description xml:lang="en">rate of change of the position of an object as a function of time, and the direction of that change</terms:description>
         <rdfs:label xml:lang="de">Geschwindigkeit</rdfs:label>
         <rdfs:label xml:lang="en">Velocity</rdfs:label>
         <rdfs:label xml:lang="el">Ταχύτητα</rdfs:label>
@@ -26192,7 +26198,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Viscosity">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Resistance of a fluid to shear deformation</rdfs:comment>
+        <terms:description xml:lang="en">resistance of a fluid to shear deformation</terms:description>
         <rdfs:label xml:lang="en">Viscosity</rdfs:label>
         <rdfs:label xml:lang="de">Viskosität</rdfs:label>
         <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Viscosity"/>

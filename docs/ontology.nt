@@ -1989,7 +1989,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Acceleration
 <https://mardi4nfdi.de/mathmoddb#Acceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Acceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Acceleration> <http://www.w3.org/2000/01/rdf-schema#comment> "Rate at which the magnitude and/or direction of velocity changes with time"@en .
+<https://mardi4nfdi.de/mathmoddb#Acceleration> <http://purl.org/dc/terms/description> "rate at which the magnitude and/or direction of velocity changes with time"@en .
 <https://mardi4nfdi.de/mathmoddb#Acceleration> <http://www.w3.org/2000/01/rdf-schema#label> "Acceleration"@en .
 <https://mardi4nfdi.de/mathmoddb#Acceleration> <http://www.w3.org/2000/01/rdf-schema#label> "Beschleunigung"@de .
 <https://mardi4nfdi.de/mathmoddb#Acceleration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Acceleration> .
@@ -2086,7 +2086,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\nabla \\times \\mathbf{B} = \\mu_0\\left(\\mathbf{J} + \\epsilon_0 \\frac{\\partial \\mathbf{E}} {\\partial t} \\right)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Electric Field"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Magnetic Field"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#AmpereLaw> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$J$, Electric Current Density"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -2111,7 +2111,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#AngularMomentum> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#PlanckConstant> .
-<https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://www.w3.org/2000/01/rdf-schema#comment> "measure of the extent to which an object will continue to rotate in the absence of an applied torque"@en .
+<https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://purl.org/dc/terms/description> "measure of the extent to which an object will continue to rotate in the absence of an applied torque"@en .
 <https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://www.w3.org/2000/01/rdf-schema#label> "Angular Momentum"@en .
 <https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://www.w3.org/2000/01/rdf-schema#label> "Drehimpuls"@de .
 <https://mardi4nfdi.de/mathmoddb#AngularMomentum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Angular_momentum> .
@@ -2197,7 +2197,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Area
 <https://mardi4nfdi.de/mathmoddb#Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Area> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Area> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"@en .
+<https://mardi4nfdi.de/mathmoddb#Area> <http://purl.org/dc/terms/description> "quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane"@en .
 <https://mardi4nfdi.de/mathmoddb#Area> <http://www.w3.org/2000/01/rdf-schema#label> "Area"@en .
 <https://mardi4nfdi.de/mathmoddb#Area> <http://www.w3.org/2000/01/rdf-schema#label> "Fläche"@de .
 <https://mardi4nfdi.de/mathmoddb#Area> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Area> .
@@ -2360,7 +2360,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#AzimuthalAngle
 <https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://www.w3.org/2000/01/rdf-schema#comment> "Angle in the spherical coordinate system in the range $-\\pi < \\phi \\leq \\pi$"@en .
+<https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://purl.org/dc/terms/description> "angle in the spherical coordinate system"@en .
 <https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://www.w3.org/2000/01/rdf-schema#label> "Azimuthal Angle"@en .
 <https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://www.w3.org/2000/01/rdf-schema#label> "Azimutwinkel"@de .
 <https://mardi4nfdi.de/mathmoddb#AzimuthalAngle> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Azimuth> .
@@ -3462,7 +3462,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BooleanVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#BooleanVariable> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#ObjectProperty> .
 <https://mardi4nfdi.de/mathmoddb#BooleanVariable> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#BooleanVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "data type that represents true or false values"@en .
+<https://mardi4nfdi.de/mathmoddb#BooleanVariable> <http://purl.org/dc/terms/description> "data type that represents true or false values"@en .
 <https://mardi4nfdi.de/mathmoddb#BooleanVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Boolean Variable"@en .
 <https://mardi4nfdi.de/mathmoddb#BooleanVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Boolesche Variable"@de .
 <https://mardi4nfdi.de/mathmoddb#BooleanVariable> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q520777> .
@@ -3517,7 +3517,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Capacitance
 <https://mardi4nfdi.de/mathmoddb#Capacitance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Capacitance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Capacitance> <http://www.w3.org/2000/01/rdf-schema#comment> "Ability of a body to store electrical charge"@en .
+<https://mardi4nfdi.de/mathmoddb#Capacitance> <http://purl.org/dc/terms/description> "ability of a body to store electrical charge"@en .
 <https://mardi4nfdi.de/mathmoddb#Capacitance> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Capacitance"@en .
 <https://mardi4nfdi.de/mathmoddb#Capacitance> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrische Kapazität"@de .
 <https://mardi4nfdi.de/mathmoddb#Capacitance> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Capacitance> .
@@ -3789,7 +3789,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ClassicalDensityPhaseSpace> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ProbabilityDistribution> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalDensityPhaseSpace> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumDensityOperator> .
 <https://mardi4nfdi.de/mathmoddb#ClassicalDensityPhaseSpace> <http://purl.org/dc/terms/description> "probability that the system will be found in the infinitesimal phase space volume"@en .
-<https://mardi4nfdi.de/mathmoddb#ClassicalDensityPhaseSpace> <http://www.w3.org/2000/01/rdf-schema#comment> "The phase space distribution ρ ( p , q ) $\\rho(p,q)$ determines the probability ρ ( p , q ) d n q d n p ${\\displaystyle \\rho (p,q)\\;\\mathrm {d} ^{n}q\\,\\mathrm {d} ^{n}p}$ that the system will be found in the infinitesimal phase space volume d n q d n p ${\\displaystyle \\mathrm {d} ^{n}q\\,\\mathrm {d} ^{n}p}$."@en .
 <https://mardi4nfdi.de/mathmoddb#ClassicalDensityPhaseSpace> <http://www.w3.org/2000/01/rdf-schema#label> "Classical Density (Phase Space)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#ClassicalDynamicsModel
@@ -4144,6 +4143,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <http://purl.org/dc/terms/description> "number that can be put in the form a + bi, where a and b are real numbers and i is called the imaginary unit"@en .
 <https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Complex Number (Dimensionless)"@en .
 <https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Komplexe Zahl (dimensionslos)"@de .
 <https://mardi4nfdi.de/mathmoddb#ComplexDimensionless> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q11567> .
@@ -4167,8 +4167,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Concentration
 <https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Abundance of a constituent divided by the total volume of a mixture"@en .
-<https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Verhältnisse von Stoffmengen in der Chemie"@de .
+<https://mardi4nfdi.de/mathmoddb#Concentration> <http://purl.org/dc/terms/description> "abundance of a constituent divided by the total volume of a mixture"@en .
 <https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Concentration"@en .
 <https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Konzentration"@de .
 <https://mardi4nfdi.de/mathmoddb#Concentration> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Concentration> .
@@ -4417,7 +4416,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> .
+<https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElementaryCharge> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> .
@@ -4452,7 +4451,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> .
+<https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElementaryCharge> .
 <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> .
@@ -5184,8 +5183,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#containedAsFormulationIn> <https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> .
-<https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "if $F^{T, cons}_{ij}> \\mu F_{ij}^N$ then $\\bm F_{ij}^T = \\mu F_{ij}^N \\bm\\xi_{ij}/\\lVert \\bm\\xi_{ij}\\rVert$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$F_{ij}^{T, cons}=-k_{ij}^T\\lVert \\bm \\xi_{ij}\\rVert$, conservative part of tangential interaction force"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "if $F^{T, cons}_{ij}> \\mu F_{ij}^N$ then $\\mathbf F_{ij}^T = \\mu F_{ij}^N \\mathbf\\xi_{ij}/\\lVert \\mathbf\\xi_{ij}\\rVert$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$F_{ij}^{T, cons}=-k_{ij}^T\\lVert \\mathbf \\xi_{ij}\\rVert$, conservative part of tangential interaction force"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <http://purl.org/dc/terms/description> "slipping occurs, if tangential force is high in relation to normal force in the contact of two particles"@en .
 <https://mardi4nfdi.de/mathmoddb#Coulomb_Friction_Of_Two_Particles> <http://www.w3.org/2000/01/rdf-schema#label> "Coulomb Friction Of Two Particles"@en .
 # 
@@ -5216,72 +5215,13 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#CurrentDensity
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensity> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensity> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensity> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> .
+<https://mardi4nfdi.de/mathmoddb#CurrentDensity> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <http://purl.org/dc/terms/description> "amount of charge per unit time that flows through a unit area"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <http://www.w3.org/2000/01/rdf-schema#comment> "The (electric) current density is defined as the amount of charge per unit time that flows through a unit area"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density"@en .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Current_density> .
 <https://mardi4nfdi.de/mathmoddb#CurrentDensity> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q234072> .
-# 
-# https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Electrons"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DensityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElementaryCharge> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MobilityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$j_n \\equiv -q\\mu_nn(\\psi\\phi_n) \\nabla \\phi_n$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mu_n$, Mobility Of Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\phi_n$, Fermi Potential For Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi$, Electric Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$j_n$, Current Density Of Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$n$, Density Of Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Elementary Charge"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://purl.org/dc/terms/description> "density of current of electrons, e.g., in a semiconductor device"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Electrons (Definition)"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#similarToQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectrons> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Holes"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHoles> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElementaryCharge> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MobilityOfHoles> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$j_p \\equiv -q\\mu_pp(\\psi\\phi_p) \\nabla \\phi_p$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mu_p$, Mobility Of Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\phi_p$, Fermi Potential For Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi$, Electric Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$j_p$, Current Density Of Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$p$, Density Of Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Elementary Charge"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://purl.org/dc/terms/description> "density of current of holes, e.g., in a semiconductor device"@en .
-<https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Current Density Of Holes (Definition)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices
 <https://mardi4nfdi.de/mathmoddb#CurrentFlowInSemiconductorDevices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5419,7 +5359,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Density
 <https://mardi4nfdi.de/mathmoddb#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Density> <http://www.w3.org/2000/01/rdf-schema#comment> "Mass per volume of a substance, aka volumetric mass density or specific mass"@en .
+<https://mardi4nfdi.de/mathmoddb#Density> <http://purl.org/dc/terms/description> "mass per volume of a substance, aka volumetric mass density or specific mass"@en .
 <https://mardi4nfdi.de/mathmoddb#Density> <http://www.w3.org/2000/01/rdf-schema#label> "Density"@en .
 <https://mardi4nfdi.de/mathmoddb#Density> <http://www.w3.org/2000/01/rdf-schema#label> "Dichte"@de .
 <https://mardi4nfdi.de/mathmoddb#Density> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Density> .
@@ -6120,7 +6060,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ElectricCharge
 <https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical property that quantifies an object's interaction with electric fields"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://purl.org/dc/terms/description> "physical property that quantifies an object's interaction with electric fields"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Charge"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrische Ladung"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricCharge> <http://www.w3.org/2000/01/rdf-schema#label> "Ηλεκτρικό φορτίο"@el .
@@ -6141,7 +6081,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ElectricConductivity
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/2000/01/rdf-schema#comment> "physical quantity and property of material describing how readily a given material allows the flow of electric current"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://purl.org/dc/terms/description> "physical quantity and property of material describing how readily a given material allows the flow of electric current"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/2000/01/rdf-schema#comment> "when subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation."@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Conductivity"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrische Leitfähigkeit"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity> .
@@ -6151,7 +6092,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ElectricCurrent
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#comment> "Base quantity of the International System of Quantities (ISQ), measured in ampere (A)"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://purl.org/dc/terms/description> "base quantity of the International System of Quantities (ISQ), measured in ampere (A)"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Current"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrischer Strom"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/2000/01/rdf-schema#label> "Ηλεκτρικό ρεύμα"@el .
@@ -6168,10 +6109,69 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Current_density> .
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensity> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q234072> .
 # 
+# https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> <http://purl.org/dc/terms/description> "density of electric current of electrons, e.g., in a semiconductor device"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Current Density Of Electrons"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of electrons"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DensityOfElectrons> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElementaryCharge> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FermiPotentialForElectrons> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MobilityOfElectrons> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$j_n \\equiv -q\\mu_nn(\\psi,\\phi_n) \\nabla \\phi_n$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mu_n$, Mobility Of Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\phi_n$, Fermi Potential For Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi$, Electric Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$j_n$, Current Density Of Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$n$, Density Of Electrons"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Elementary Charge"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <http://purl.org/dc/terms/description> "density of electric current of electrons, e.g., in a semiconductor device"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Current Density Of Electrons (Definition)"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <https://mardi4nfdi.de/mathmoddb#similarToQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectrons> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <http://purl.org/dc/terms/description> "density of electric current of holes, e.g., in a semiconductor device"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Current Density Of Holes"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> <http://www.w3.org/2004/02/skos/core#altLabel> "flux of holes"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DensityOfHoles> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHoles> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElectricPotential> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#ElementaryCharge> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#FermiPotentialForHoles> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MobilityOfHoles> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$j_p \\equiv -q\\mu_pp(\\psi,\\phi_p) \\nabla \\phi_p$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mu_p$, Mobility Of Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\phi_p$, Fermi Potential For Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\psi$, Electric Potential"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$j_p$, Current Density Of Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$p$, Density Of Holes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$q$, Elementary Charge"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#isDynamic> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <http://purl.org/dc/terms/description> "density of electric current of holes, e.g., in a semiconductor device"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Current Density Of Holes (Definition)"@en .
+# 
 # https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment
 <https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://www.w3.org/2000/01/rdf-schema#comment> "vector physical quantity measuring the separation of positive and negative electrical charges within a system"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://purl.org/dc/terms/description> "vector physical quantity measuring the separation of positive and negative electrical charges within a system"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Dipole Moment"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrisches Dipolmoment"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricDipoleMoment> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Electric_dipole_moment> .
@@ -6180,7 +6180,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ElectricField
 <https://mardi4nfdi.de/mathmoddb#ElectricField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#ElectricField> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricField> <http://purl.org/dc/terms/description> "vector field representing the force applied to a charged test particle. The electric field is  the gradient of the electrostatic potential"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricField> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Field"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricField> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrisches Feld"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricField> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Electric_field> .
@@ -6191,7 +6191,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <https://mardi4nfdi.de/mathmoddb#similarToQuantity> <https://mardi4nfdi.de/mathmoddb#PermittivityDielectric> .
-<https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://www.w3.org/2000/01/rdf-schema#comment> "Tendency of matter subjected to an electric field to acquire an electric dipole moment. When subject to an electric field, the negatively charged electrons and positively charged atomic nuclei are subject to opposite forces and undergo charge separation."@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://purl.org/dc/terms/description> "tendency of matter subjected to an electric field to acquire an electric dipole moment"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Polarizability"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrische Polarisierbarkeit"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricPolarizability> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Polarizability> .
@@ -6222,7 +6222,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ElectricVoltage
 <https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://www.w3.org/2000/01/rdf-schema#comment> "Difference in electric potential between two points (indicated in volt)"@en .
+<https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://purl.org/dc/terms/description> "difference in electric potential between two points (indicated in volt)"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "Elektrische Spannung"@de .
 <https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "Voltage"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectricVoltage> <http://www.w3.org/2000/01/rdf-schema#label> "Ηλεκτρική Τάση"@el .
@@ -6375,7 +6375,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Energy
 <https://mardi4nfdi.de/mathmoddb#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Energy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Energy> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"@en .
+<https://mardi4nfdi.de/mathmoddb#Energy> <http://purl.org/dc/terms/description> "quantitative property of a physical system, recognizable in the performance of work and in the form of heat and light"@en .
 <https://mardi4nfdi.de/mathmoddb#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energie"@de .
 <https://mardi4nfdi.de/mathmoddb#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Energy"@en .
 <https://mardi4nfdi.de/mathmoddb#Energy> <http://www.w3.org/2000/01/rdf-schema#label> "Ενέργεια"@el .
@@ -6982,6 +6982,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ExpectationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ExpectationValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#ExpectationValue> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#ExpectationValueQuantumDensity> .
+<https://mardi4nfdi.de/mathmoddb#ExpectationValue> <http://purl.org/dc/terms/description> "long-run average value of a random variable"@en .
 <https://mardi4nfdi.de/mathmoddb#ExpectationValue> <http://www.w3.org/2000/01/rdf-schema#label> "Erwartungswert"@de .
 <https://mardi4nfdi.de/mathmoddb#ExpectationValue> <http://www.w3.org/2000/01/rdf-schema#label> "Expectation Value"@en .
 <https://mardi4nfdi.de/mathmoddb#ExpectationValue> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Expected_value> .
@@ -7269,7 +7270,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForElectrons> .
-<https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfElectronsDefinition> .
+<https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfElectronsDefinition> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://purl.org/dc/terms/description> "flow of electrons, e.g., in an electric device"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfElectrons> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics"@en .
@@ -7279,7 +7280,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ContinuityEquationForHoles> .
-<https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#CurrentDensityOfHolesDefinition> .
+<https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ElectricCurrentDensityOfHolesDefinition> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ParticleFluxDensity> .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://purl.org/dc/terms/description> "flow of holes, e.g., in an electric device"@en .
 <https://mardi4nfdi.de/mathmoddb#FluxOfHoles> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics"@en .
@@ -7288,7 +7289,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Force
 <https://mardi4nfdi.de/mathmoddb#Force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Force> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Force> <http://www.w3.org/2000/01/rdf-schema#comment> "physical influence that tends to cause an object to change motion unless opposed by other forces"@en .
+<https://mardi4nfdi.de/mathmoddb#Force> <http://purl.org/dc/terms/description> "physical influence that tends to cause an object to change motion unless opposed by other forces"@en .
 <https://mardi4nfdi.de/mathmoddb#Force> <http://www.w3.org/2000/01/rdf-schema#label> "Force"@en .
 <https://mardi4nfdi.de/mathmoddb#Force> <http://www.w3.org/2000/01/rdf-schema#label> "Kraft"@de .
 <https://mardi4nfdi.de/mathmoddb#Force> <http://www.w3.org/2000/01/rdf-schema#label> "Δύναμη"@el .
@@ -9991,7 +9992,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://www.w3.org/2000/01/rdf-schema#comment> "Number that can be written without a fractional or decimal component"@en .
+<https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://purl.org/dc/terms/description> "number that can be written without a fractional or decimal component"@en .
 <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://www.w3.org/2000/01/rdf-schema#comment> "Ακέραιος αριθμός"@el .
 <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Ganze Zahl (dimensionslos)"@de .
 <https://mardi4nfdi.de/mathmoddb#IntegerDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Integer Number (Dimensionless)"@en .
@@ -10277,7 +10278,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Length
 <https://mardi4nfdi.de/mathmoddb#Length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Length> <http://www.w3.org/2000/01/rdf-schema#comment> "Measured dimension of an object"@en .
+<https://mardi4nfdi.de/mathmoddb#Length> <http://purl.org/dc/terms/description> "measured dimension of an object"@en .
 <https://mardi4nfdi.de/mathmoddb#Length> <http://www.w3.org/2000/01/rdf-schema#label> "Length"@en .
 <https://mardi4nfdi.de/mathmoddb#Length> <http://www.w3.org/2000/01/rdf-schema#label> "Länge"@de .
 <https://mardi4nfdi.de/mathmoddb#Length> <http://www.w3.org/2000/01/rdf-schema#label> "Μήκος"@el .
@@ -11573,7 +11574,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#MagneticField
 <https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/2000/01/rdf-schema#comment> "Spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"@en .
+<https://mardi4nfdi.de/mathmoddb#MagneticField> <http://purl.org/dc/terms/description> "spatial distribution of vectors allowing the calculation of the magnetic force on a test particle"@en .
 <https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetic Field"@en .
 <https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetisches Feld"@de .
 <https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Magnetic_field> .
@@ -11592,7 +11593,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Mass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Mass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#Mass> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation> .
-<https://mardi4nfdi.de/mathmoddb#Mass> <http://www.w3.org/2000/01/rdf-schema#comment> "Property of matter to resist changes of the state of motion and to attract other bodies"@en .
+<https://mardi4nfdi.de/mathmoddb#Mass> <http://purl.org/dc/terms/description> "property of matter to resist changes of the state of motion and to attract other bodies"@en .
 <https://mardi4nfdi.de/mathmoddb#Mass> <http://www.w3.org/2000/01/rdf-schema#label> "Mass"@en .
 <https://mardi4nfdi.de/mathmoddb#Mass> <http://www.w3.org/2000/01/rdf-schema#label> "Masse"@de .
 <https://mardi4nfdi.de/mathmoddb#Mass> <http://www.w3.org/2000/01/rdf-schema#label> "Μάζα"@el .
@@ -11709,7 +11710,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#MechanicalDeformation
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://www.w3.org/2000/01/rdf-schema#comment> "In engineering or in continuum mechanics, any changes in the shape or size of a matter object"@en .
+<https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://purl.org/dc/terms/description> "in engineering or in continuum mechanics, any changes in the shape or size of a matter object"@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Deformation"@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanische Deformation"@de .
 <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Deformation_(engineering)> .
@@ -11727,7 +11728,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#LinearStrain> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <https://mardi4nfdi.de/mathmoddb#nondimensionaliesQuantity> <https://mardi4nfdi.de/mathmoddb#MechanicalDeformation> .
-<https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <http://www.w3.org/2000/01/rdf-schema#comment> "In continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress."@en .
+<https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <http://purl.org/dc/terms/description> "in continuum mechanics, strain is defined as the relative deformation of matter caused by mechanical stress"@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Strain"@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanische Dehnung"@de .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStrain> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Strain_(mechanics)> .
@@ -11741,7 +11742,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MechanicalStress> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#FluidViscousStress> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStress> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#NormalStress> .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStress> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#StressOfCrystal> .
-<https://mardi4nfdi.de/mathmoddb#MechanicalStress> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal forces caused by deformation of a continuous material. Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules."@en .
+<https://mardi4nfdi.de/mathmoddb#MechanicalStress> <http://purl.org/dc/terms/description> "internal forces caused by deformation of a continuous material"@en .
+<https://mardi4nfdi.de/mathmoddb#MechanicalStress> <http://www.w3.org/2000/01/rdf-schema#comment> "Has components shear stress, normal stress. These macroscopic forces are actually the net result of a very large number of intermolecular forces and collisions between the constituent atoms or molecules."@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStress> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Stress"@en .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStress> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanische Spannung"@de .
 <https://mardi4nfdi.de/mathmoddb#MechanicalStress> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Stress_(mechanics)> .
@@ -13140,7 +13142,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Momentum
 <https://mardi4nfdi.de/mathmoddb#Momentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Momentum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Momentum> <http://www.w3.org/2000/01/rdf-schema#comment> "conserved physical quantity related to the motion of a body"@en .
+<https://mardi4nfdi.de/mathmoddb#Momentum> <http://purl.org/dc/terms/description> "conserved physical quantity related to the motion of a body"@en .
 <https://mardi4nfdi.de/mathmoddb#Momentum> <http://www.w3.org/2000/01/rdf-schema#label> "Impuls"@de .
 <https://mardi4nfdi.de/mathmoddb#Momentum> <http://www.w3.org/2000/01/rdf-schema#label> "Momentum"@en .
 <https://mardi4nfdi.de/mathmoddb#Momentum> <http://www.w3.org/2000/01/rdf-schema#label> "Ορμή"@el .
@@ -13811,7 +13813,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://www.w3.org/2000/01/rdf-schema#comment> "mathematical object used to count, label, and measure"@en .
+<https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://purl.org/dc/terms/description> "mathematical object used to count, label, and measure"@en .
 <https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Number (Dimensionless)"@en .
 <https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Zahl (dimensionslos)"@de .
 <https://mardi4nfdi.de/mathmoddb#NumberDimensionless> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Number> .
@@ -13933,7 +13935,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Object> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#Object> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#Object> <http://www.w3.org/2000/01/rdf-schema#comment> "anything that may be observed or acted upon by a subject"@en .
+<https://mardi4nfdi.de/mathmoddb#Object> <http://purl.org/dc/terms/description> "anything that may be observed or acted upon by a subject"@en .
 <https://mardi4nfdi.de/mathmoddb#Object> <http://www.w3.org/2000/01/rdf-schema#label> "Object"@en .
 <https://mardi4nfdi.de/mathmoddb#Object> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q488383> .
 # 
@@ -14782,7 +14784,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#PolarAngle
 <https://mardi4nfdi.de/mathmoddb#PolarAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#PolarAngle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#PolarAngle> <http://www.w3.org/2000/01/rdf-schema#comment> "Angle in the spherical coordinate system in the range $0 < \\theta < \\pi$"@en .
+<https://mardi4nfdi.de/mathmoddb#PolarAngle> <http://purl.org/dc/terms/description> "angle in the spherical coordinate system"@en .
 <https://mardi4nfdi.de/mathmoddb#PolarAngle> <http://www.w3.org/2000/01/rdf-schema#label> "Polar Angle"@en .
 <https://mardi4nfdi.de/mathmoddb#PolarAngle> <http://www.w3.org/2000/01/rdf-schema#label> "Polarwinkel"@de .
 <https://mardi4nfdi.de/mathmoddb#PolarAngle> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q116757614> .
@@ -14934,7 +14936,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Pressure
 <https://mardi4nfdi.de/mathmoddb#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Pressure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Pressure> <http://www.w3.org/2000/01/rdf-schema#comment> "Force applied over an area"@en .
+<https://mardi4nfdi.de/mathmoddb#Pressure> <http://purl.org/dc/terms/description> "force applied over an area"@en .
 <https://mardi4nfdi.de/mathmoddb#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Druck"@de .
 <https://mardi4nfdi.de/mathmoddb#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Pressure"@en .
 <https://mardi4nfdi.de/mathmoddb#Pressure> <http://www.w3.org/2000/01/rdf-schema#label> "Πίεση"@el .
@@ -15131,6 +15133,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <https://mardi4nfdi.de/mathmoddb#nondimensionaliesQuantity> <https://mardi4nfdi.de/mathmoddb#ProtonMass> .
 <https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <http://purl.org/dc/terms/description> "proton-to-electron mass ratio"@en .
 <https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <http://www.w3.org/2000/01/rdf-schema#label> "Proton Electron Mass Ratio"@en .
 <https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Proton-to-electron_mass_ratio> .
 <https://mardi4nfdi.de/mathmoddb#ProtonElectronMassRatio> <https://mardi4nfdi.de/mathmoddb#qudtID> <https://qudt.org/vocab/constant/Value_ProtonElectronMassRatio> .
@@ -15703,7 +15706,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Radius
 <https://mardi4nfdi.de/mathmoddb#Radius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Radius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Radius> <http://www.w3.org/2000/01/rdf-schema#comment> "Segment in a circle or sphere from its center to its perimeter or surface and its length."@en .
+<https://mardi4nfdi.de/mathmoddb#Radius> <http://purl.org/dc/terms/description> "segment in a circle or sphere from its center to its perimeter or surface and its length"@en .
 <https://mardi4nfdi.de/mathmoddb#Radius> <http://www.w3.org/2000/01/rdf-schema#label> "Radius"@en .
 <https://mardi4nfdi.de/mathmoddb#Radius> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q173817> .
 # 
@@ -15722,6 +15725,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Rate> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#RateOfAging> .
 <https://mardi4nfdi.de/mathmoddb#Rate> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
 <https://mardi4nfdi.de/mathmoddb#Rate> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#RiskOfDeath> .
+<https://mardi4nfdi.de/mathmoddb#Rate> <http://purl.org/dc/terms/description> "quantity of process intensivity"@en .
 <https://mardi4nfdi.de/mathmoddb#Rate> <http://www.w3.org/2000/01/rdf-schema#comment> "Rate"@de .
 <https://mardi4nfdi.de/mathmoddb#Rate> <http://www.w3.org/2000/01/rdf-schema#label> "Rate"@en .
 <https://mardi4nfdi.de/mathmoddb#Rate> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Rate_(mathematics)> .
@@ -16016,7 +16020,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
 <https://mardi4nfdi.de/mathmoddb#RealDimensionless> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-<https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://www.w3.org/2000/01/rdf-schema#comment> "Quantity along a continuous line"@en .
+<https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://purl.org/dc/terms/description> "quantity along a continuous line"@en .
 <https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Real Number (Dimensionless)"@en .
 <https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Reelle Zahl (dimensionslos)"@de .
 <https://mardi4nfdi.de/mathmoddb#RealDimensionless> <http://www.w3.org/2000/01/rdf-schema#label> "Πραγματικός αριθμός"@el .
@@ -17612,7 +17616,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Temperature
 <https://mardi4nfdi.de/mathmoddb#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Temperature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Temperature> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical property of matter that quantitatively expresses the common notions of hot and cold"@en .
+<https://mardi4nfdi.de/mathmoddb#Temperature> <http://purl.org/dc/terms/description> "physical property of matter that quantitatively expresses the common notions of hot and cold"@en .
 <https://mardi4nfdi.de/mathmoddb#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperatur"@de .
 <https://mardi4nfdi.de/mathmoddb#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Temperature"@en .
 <https://mardi4nfdi.de/mathmoddb#Temperature> <http://www.w3.org/2000/01/rdf-schema#label> "Θερμοκρασία"@el .
@@ -17656,7 +17660,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalHamiltonEquations> .
 <https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#ClassicalNewtonEquation> .
 <https://mardi4nfdi.de/mathmoddb#Time> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#SchroedingerEquationTimeDependent> .
-<https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension in which events can be ordered from the past through the present into the future"@en .
+<https://mardi4nfdi.de/mathmoddb#Time> <http://purl.org/dc/terms/description> "dimension in which events can be ordered from the past through the present into the future"@en .
 <https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time"@en .
 <https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Zeit"@de .
 <https://mardi4nfdi.de/mathmoddb#Time> <http://www.w3.org/2000/01/rdf-schema#label> "Χρόνος"@el .
@@ -17719,7 +17723,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Torque
 <https://mardi4nfdi.de/mathmoddb#Torque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Torque> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Torque> <http://www.w3.org/2000/01/rdf-schema#comment> "tendency of a force to rotate an object"@en .
+<https://mardi4nfdi.de/mathmoddb#Torque> <http://purl.org/dc/terms/description> "tendency of a force to rotate an object"@en .
 <https://mardi4nfdi.de/mathmoddb#Torque> <http://www.w3.org/2000/01/rdf-schema#label> "Drehmoment"@de .
 <https://mardi4nfdi.de/mathmoddb#Torque> <http://www.w3.org/2000/01/rdf-schema#label> "Torque"@en .
 <https://mardi4nfdi.de/mathmoddb#Torque> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Torque> .
@@ -17840,8 +17844,9 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://mardi4nfdi.de/mathmoddb#TransportRoute
 <https://mardi4nfdi.de/mathmoddb#TransportRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#TransportRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
+<https://mardi4nfdi.de/mathmoddb#TransportRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#TransportRoute> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#PTNLine> .
+<https://mardi4nfdi.de/mathmoddb#TransportRoute> <http://purl.org/dc/terms/description> "route on which goods, persons or data are transported"@en .
 <https://mardi4nfdi.de/mathmoddb#TransportRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Transport Route"@en .
 <https://mardi4nfdi.de/mathmoddb#TransportRoute> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q1297806" .
 # 
@@ -18990,6 +18995,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Variance
 <https://mardi4nfdi.de/mathmoddb#Variance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Variance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
+<https://mardi4nfdi.de/mathmoddb#Variance> <http://purl.org/dc/terms/description> "expectation of the squared deviation of a random variable from its mean"@en .
 <https://mardi4nfdi.de/mathmoddb#Variance> <http://www.w3.org/2000/01/rdf-schema#label> "Variance"@en .
 <https://mardi4nfdi.de/mathmoddb#Variance> <http://www.w3.org/2000/01/rdf-schema#label> "Varianz"@de .
 <https://mardi4nfdi.de/mathmoddb#Variance> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Variance> .
@@ -18998,7 +19004,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Velocity
 <https://mardi4nfdi.de/mathmoddb#Velocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Velocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Velocity> <http://www.w3.org/2000/01/rdf-schema#comment> "Rate of change of the position of an object as a function of time, and the direction of that change"@en .
+<https://mardi4nfdi.de/mathmoddb#Velocity> <http://purl.org/dc/terms/description> "rate of change of the position of an object as a function of time, and the direction of that change"@en .
 <https://mardi4nfdi.de/mathmoddb#Velocity> <http://www.w3.org/2000/01/rdf-schema#label> "Geschwindigkeit"@de .
 <https://mardi4nfdi.de/mathmoddb#Velocity> <http://www.w3.org/2000/01/rdf-schema#label> "Velocity"@en .
 <https://mardi4nfdi.de/mathmoddb#Velocity> <http://www.w3.org/2000/01/rdf-schema#label> "Ταχύτητα"@el .
@@ -19058,7 +19064,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Viscosity
 <https://mardi4nfdi.de/mathmoddb#Viscosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Viscosity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Viscosity> <http://www.w3.org/2000/01/rdf-schema#comment> "Resistance of a fluid to shear deformation"@en .
+<https://mardi4nfdi.de/mathmoddb#Viscosity> <http://purl.org/dc/terms/description> "resistance of a fluid to shear deformation"@en .
 <https://mardi4nfdi.de/mathmoddb#Viscosity> <http://www.w3.org/2000/01/rdf-schema#label> "Viscosity"@en .
 <https://mardi4nfdi.de/mathmoddb#Viscosity> <http://www.w3.org/2000/01/rdf-schema#label> "Viskosität"@de .
 <https://mardi4nfdi.de/mathmoddb#Viscosity> <https://mardi4nfdi.de/mathmoddb#qudtID> <https://qudt.org/vocab/quantitykind/Viscosity> .
