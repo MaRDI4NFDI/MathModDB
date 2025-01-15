@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="https://mardi4nfdi.de/mathmoddb">
         <owl:versionIRI rdf:resource="https://mardi4nfdi.de/mathmoddb/0.8.0"/>
         <terms:abstract>MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.</terms:abstract>
-        <terms:bibliographicCitation>Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models</terms:bibliographicCitation>
+        <terms:bibliographicCitation>Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models</terms:bibliographicCitation>
         <terms:creator xml:lang="en">Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
         <terms:creator xml:lang="en">Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)</terms:creator>
         <terms:creator xml:lang="en">Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
@@ -24,8 +24,8 @@
         <terms:issued>2025-01-20</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified></terms:modified>
-        <terms:publisher>MaRDI (https://www.mardi4nfdi.de)</terms:publisher>
-        <terms:title xml:lang="en">MathModDB: An Ontology for Mathematical Models</terms:title>
+        <terms:publisher>Mathematical Research Data Initiative (MaRDI, &lt;a href=&quot;https://www.mardi4nfdi.de&quot;&gt;https://www.mardi4nfdi.de&lt;/a&gt;)</terms:publisher>
+        <terms:title xml:lang="en">MathModDB Ontology and Knowledge Graph for Mathematical Models</terms:title>
         <rdfs:comment xml:lang="en">This is the MathModDB Ontology for documenting mathematical models.</rdfs:comment>
         <rdfs:label xml:lang="en">MathModDB Ontology</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-65990-4_14"/>
@@ -3332,8 +3332,8 @@
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#TotalPopulationSize"/>
         <defines rdf:resource="https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$a_i = \sum_{k\neq i}\alpha_{ik} \Delta t N^k/N^i$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$N^i$, Total Population Size</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\Delta t$, Time Step</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\N^i$, Total Population Size</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\alpha_{ik}$, Contact Rate</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$a_i$, Between Population Contact Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -21876,7 +21876,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
-        <terms:description xml:lang="en">speed at which an enzyme converts a substrate into a product</terms:description>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21890,6 +21890,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme - Product 1 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21903,6 +21904,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme - Product 1 - Product 2 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21916,6 +21918,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme - Product 2 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21929,6 +21932,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme - Substrate 1 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21942,6 +21946,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme - Substrate 1 - Substrate 2 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21955,6 +21960,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Intermediate</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21967,6 +21973,7 @@ deformation</terms:description>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Intermediate - Substrate 2 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21980,6 +21987,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Product 1</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -21993,6 +22001,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Product 2</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -22006,6 +22015,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Substrate 1</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -22019,6 +22029,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#ReactionRate"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Substrate 2</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>
@@ -22031,6 +22042,7 @@ deformation</terms:description>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <terms:description xml:lang="en">reaction rate of specific entity</terms:description>
         <rdfs:label xml:lang="en">Reaction Rate of Enzyme - Substrate 1 - Substrate 2 = Enzyme - Product 1 - Product 2 Complex</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Reaction_rate"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3394849"/>

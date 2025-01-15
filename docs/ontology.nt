@@ -1,7 +1,7 @@
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionIRI> <https://mardi4nfdi.de/mathmoddb/0.8.0> .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/abstract> "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph." .
-<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models" .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models" .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
@@ -12,8 +12,8 @@
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/issued> "2025-01-20" .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/modified> "" .
-<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/publisher> "MaRDI (https://www.mardi4nfdi.de)" .
-<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/title> "MathModDB: An Ontology for Mathematical Models"@en .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/publisher> "Mathematical Research Data Initiative (MaRDI, <a href=\"https://www.mardi4nfdi.de\">https://www.mardi4nfdi.de</a>)" .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/title> "MathModDB Ontology and Knowledge Graph for Mathematical Models"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#comment> "This is the MathModDB Ontology for documenting mathematical models."@en .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#label> "MathModDB Ontology"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://doi.org/10.1007/978-3-031-65990-4_14> .
@@ -2507,8 +2507,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#TotalPopulationSize> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#defines> <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRate> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$a_i = \\sum_{k\\neq i}\\alpha_{ik} \\Delta t N^k/N^i$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$N^i$, Total Population Size"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\Delta t$, Time Step"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\N^i$, Total Population Size"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\alpha_{ik}$, Contact Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$a_i$, Between Population Contact Rate"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#BetweenPopulationContactRateEquation> <https://mardi4nfdi.de/mathmoddb#isDeterministic> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
@@ -15901,7 +15901,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
-<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <http://purl.org/dc/terms/description> "speed at which an enzyme converts a substrate into a product"@en .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzyme> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15910,6 +15910,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme - Product 1 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15918,6 +15919,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme - Product 1 - Product 2 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15926,6 +15928,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme - Product 2 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15934,6 +15937,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme - Substrate 1 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15942,6 +15946,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme - Substrate 1 - Substrate 2 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15950,6 +15955,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Intermediate"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15957,6 +15963,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Intermediate - Substrate 2 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15965,6 +15972,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Product 1"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15973,6 +15981,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Product 2"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15981,6 +15990,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Substrate 1"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15989,6 +15999,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#ReactionRate> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Substrate 2"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .
@@ -15996,6 +16007,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex
 <https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex> <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate of Enzyme - Substrate 1 - Substrate 2 = Enzyme - Product 1 - Product 2 Complex"@en .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Reaction_rate> .
 <https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q3394849> .

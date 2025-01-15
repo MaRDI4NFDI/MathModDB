@@ -9,7 +9,7 @@
 <https://mardi4nfdi.de/mathmoddb> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://mardi4nfdi.de/mathmoddb/0.8.0> ;
                                    <http://purl.org/dc/terms/abstract> "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph." ;
-                                   <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models" ;
+                                   <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models" ;
                                    <http://purl.org/dc/terms/creator> "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en ,
                                                                       "Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)"@en ,
                                                                       "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en ,
@@ -20,8 +20,8 @@
                                    <http://purl.org/dc/terms/issued> "2025-01-20" ;
                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                    <http://purl.org/dc/terms/modified> "" ;
-                                   <http://purl.org/dc/terms/publisher> "MaRDI (https://www.mardi4nfdi.de)" ;
-                                   <http://purl.org/dc/terms/title> "MathModDB: An Ontology for Mathematical Models"@en ;
+                                   <http://purl.org/dc/terms/publisher> "Mathematical Research Data Initiative (MaRDI, <a href=\"https://www.mardi4nfdi.de\">https://www.mardi4nfdi.de</a>)" ;
+                                   <http://purl.org/dc/terms/title> "MathModDB Ontology and Knowledge Graph for Mathematical Models"@en ;
                                    rdfs:comment "This is the MathModDB Ontology for documenting mathematical models."@en ;
                                    rdfs:label "MathModDB Ontology"@en ;
                                    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-65990-4_14> ,
@@ -2342,8 +2342,8 @@ rdf:HTML rdf:type rdfs:Datatype .
                                                         :TotalPopulationSize ;
                                       :defines :BetweenPopulationContactRate ;
                                       :definingFormulation "$a_i = \\sum_{k\\neq i}\\alpha_{ik} \\Delta t N^k/N^i$"^^:LaTeX ;
-                                      :inDefiningFormulation "$\\Delta t$, Time Step"^^:LaTeX ,
-                                                             "$\\N^i$, Total Population Size"^^:LaTeX ,
+                                      :inDefiningFormulation "$N^i$, Total Population Size"^^:LaTeX ,
+                                                             "$\\Delta t$, Time Step"^^:LaTeX ,
                                                              "$\\alpha_{ik}$, Contact Rate"^^:LaTeX ,
                                                              "$a_i$, Between Population Contact Rate"^^:LaTeX ;
                                       :isDeterministic "true"^^xsd:boolean ;
@@ -16860,7 +16860,7 @@ deformation"""@en ;
 :ReactionRateOfEnzyme rdf:type owl:NamedIndividual ,
                                :Quantity ;
                       :generalizedByQuantity :ReactionRate ;
-                      <http://purl.org/dc/terms/description> "speed at which an enzyme converts a substrate into a product"@en ;
+                      <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                       rdfs:label "Reaction Rate of Enzyme"@en ;
                       rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                       :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16870,6 +16870,7 @@ deformation"""@en ;
 :ReactionRateOfEnzymeProduct1Complex rdf:type owl:NamedIndividual ,
                                               :Quantity ;
                                      :generalizedByQuantity :ReactionRate ;
+                                     <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                      rdfs:label "Reaction Rate of Enzyme - Product 1 Complex"@en ;
                                      rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                      :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16879,6 +16880,7 @@ deformation"""@en ;
 :ReactionRateOfEnzymeProduct1Product2Complex rdf:type owl:NamedIndividual ,
                                                       :Quantity ;
                                              :generalizedByQuantity :ReactionRate ;
+                                             <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                              rdfs:label "Reaction Rate of Enzyme - Product 1 - Product 2 Complex"@en ;
                                              rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                              :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16888,6 +16890,7 @@ deformation"""@en ;
 :ReactionRateOfEnzymeProduct2Complex rdf:type owl:NamedIndividual ,
                                               :Quantity ;
                                      :generalizedByQuantity :ReactionRate ;
+                                     <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                      rdfs:label "Reaction Rate of Enzyme - Product 2 Complex"@en ;
                                      rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                      :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16897,6 +16900,7 @@ deformation"""@en ;
 :ReactionRateOfEnzymeSubstrate1Complex rdf:type owl:NamedIndividual ,
                                                 :Quantity ;
                                        :generalizedByQuantity :ReactionRate ;
+                                       <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                        rdfs:label "Reaction Rate of Enzyme - Substrate 1 Complex"@en ;
                                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                        :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16906,6 +16910,7 @@ deformation"""@en ;
 :ReactionRateOfEnzymeSubstrate1Substrate2Complex rdf:type owl:NamedIndividual ,
                                                           :Quantity ;
                                                  :generalizedByQuantity :ReactionRate ;
+                                                 <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                                  rdfs:label "Reaction Rate of Enzyme - Substrate 1 - Substrate 2 Complex"@en ;
                                                  rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                                  :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16915,6 +16920,7 @@ deformation"""@en ;
 :ReactionRateOfIntermediate rdf:type owl:NamedIndividual ,
                                      :Quantity ;
                             :generalizedByQuantity :ReactionRate ;
+                            <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                             rdfs:label "Reaction Rate of Intermediate"@en ;
                             rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                             :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16923,6 +16929,7 @@ deformation"""@en ;
 ###  https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex
 :ReactionRateOfIntermediateSubstrate2Complex rdf:type owl:NamedIndividual ,
                                                       :Quantity ;
+                                             <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                              rdfs:label "Reaction Rate of Intermediate - Substrate 2 Complex"@en ;
                                              rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                              :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16932,6 +16939,7 @@ deformation"""@en ;
 :ReactionRateOfProduct1 rdf:type owl:NamedIndividual ,
                                  :Quantity ;
                         :generalizedByQuantity :ReactionRate ;
+                        <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                         rdfs:label "Reaction Rate of Product 1"@en ;
                         rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                         :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16941,6 +16949,7 @@ deformation"""@en ;
 :ReactionRateOfProduct2 rdf:type owl:NamedIndividual ,
                                  :Quantity ;
                         :generalizedByQuantity :ReactionRate ;
+                        <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                         rdfs:label "Reaction Rate of Product 2"@en ;
                         rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                         :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16950,6 +16959,7 @@ deformation"""@en ;
 :ReactionRateOfSubstrate1 rdf:type owl:NamedIndividual ,
                                    :Quantity ;
                           :generalizedByQuantity :ReactionRate ;
+                          <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                           rdfs:label "Reaction Rate of Substrate 1"@en ;
                           rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                           :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16959,6 +16969,7 @@ deformation"""@en ;
 :ReactionRateOfSubstrate2 rdf:type owl:NamedIndividual ,
                                    :Quantity ;
                           :generalizedByQuantity :ReactionRate ;
+                          <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                           rdfs:label "Reaction Rate of Substrate 2"@en ;
                           rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                           :wikidataID <https://www.wikidata.org/wiki/Q3394849> .
@@ -16967,6 +16978,7 @@ deformation"""@en ;
 ###  https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex
 :ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex rdf:type owl:NamedIndividual ,
                                                                                 :Quantity ;
+                                                                       <http://purl.org/dc/terms/description> "reaction rate of specific entity"@en ;
                                                                        rdfs:label "Reaction Rate of Enzyme - Substrate 1 - Substrate 2 = Enzyme - Product 1 - Product 2 Complex"@en ;
                                                                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Reaction_rate> ;
                                                                        :wikidataID <https://www.wikidata.org/wiki/Q3394849> .

@@ -776,7 +776,7 @@
     "@value" : "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph."
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models"
+    "@value" : "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
@@ -810,11 +810,11 @@
     "@value" : ""
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@value" : "MaRDI (https://www.mardi4nfdi.de)"
+    "@value" : "Mathematical Research Data Initiative (MaRDI, <a href=\"https://www.mardi4nfdi.de\">https://www.mardi4nfdi.de</a>)"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@language" : "en",
-    "@value" : "MathModDB: An Ontology for Mathematical Models"
+    "@value" : "MathModDB Ontology and Knowledge Graph for Mathematical Models"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2194,10 +2194,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\Delta t$, Time Step"
+    "@value" : "$N^i$, Total Population Size"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\N^i$, Total Population Size"
+    "@value" : "$\\Delta t$, Time Step"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$\\alpha_{ik}$, Contact Rate"
@@ -38109,7 +38109,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "speed at which an enzyme converts a substrate into a product"
+    "@value" : "reaction rate of specific entity"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -38130,6 +38130,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38149,6 +38153,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct1Product2Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38168,6 +38176,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeProduct2Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38187,6 +38199,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38206,6 +38222,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfEnzymeSubstrate1Substrate2Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38225,6 +38245,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediate",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38244,6 +38268,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfIntermediateSubstrate2Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38260,6 +38288,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38279,6 +38311,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfProduct2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38298,6 +38334,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate1",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38317,6 +38357,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateOfSubstrate2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -38336,6 +38380,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ReactionRateofEnzymeSubstrate1Substrate2EnzymeProduct1Product2Complex",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "reaction rate of specific entity"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
