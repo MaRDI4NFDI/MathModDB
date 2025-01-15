@@ -11,7 +11,7 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:mathmoddb="https://mardi4nfdi.de/mathmoddb#">
     <owl:Ontology rdf:about="https://mardi4nfdi.de/mathmoddb">
-        <owl:versionIRI rdf:resource="https://mardi4nfdi.de/mathmoddb/0.1"/>
+        <owl:versionIRI rdf:resource="https://mardi4nfdi.de/mathmoddb/0.8.0"/>
         <terms:abstract>MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.</terms:abstract>
         <terms:bibliographicCitation>Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models</terms:bibliographicCitation>
         <terms:creator xml:lang="en">Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
@@ -2911,6 +2911,8 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <generalizesModel rdf:resource="https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network"/>
+        <terms:description xml:lang="en">computational model used in machine learning, based on connected, hierarchical functions</terms:description>
         <rdfs:label xml:lang="en">Artificial Neural Network</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q192776"/>
     </owl:NamedIndividual>
@@ -2959,6 +2961,7 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <terms:description xml:lang="en">attraction force at an individuals opinion by influencers and media</terms:description>
         <rdfs:label xml:lang="en">Attraction Force At Opinion</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4302,6 +4305,43 @@
         <containedInField rdf:resource="https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"/>
         <rdfs:comment xml:lang="en">Bi Bi reaction with a sequential mechanism in which the substrates bind to the enzyme, are converted to products and released. Binding of substrates and unbinding of products occurs in an ordered sequence, not triple complexes are formed.</rdfs:comment>
         <rdfs:label xml:lang="en">Bi Bi Reaction following Theorell-Chance Mechanism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition"/>
+        <terms:description xml:lang="en">binary variable deciding if an object is chosen or not</terms:description>
+        <rdfs:comment xml:lang="en">In case of line pool generation, it decides if a line is included or not</rdfs:comment>
+        <rdfs:label xml:lang="en">Binary Decision Variable</rdfs:label>
+        <rdfs:label xml:lang="de">Binäre Entscheidungsvariable</rdfs:label>
+        <rdfs:seeAlso xml:lang="de">https://de.wikipedia.org/wiki/Optimierungsproblem#Mathematische_Definition_und_Begriffe</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">https://en.wikipedia.org/wiki/Integer_programming</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x_l \equiv \left\{
+\begin{array}{ll}
+1 &amp; l \textrm{is chosen}\\
+o &amp; \textrm{otherwise} \\
+\end{array}
+\right. $</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x_l$, Binary Decision Variable</inDefiningFormulation>
+        <terms:description xml:lang="en">binary variable deciding if an object is chosen or not</terms:description>
+        <rdfs:label xml:lang="en">Binary Decision Variable (Definition)</rdfs:label>
+        <rdfs:label xml:lang="de">Binäre Entscheidungsvariable (Definition)</rdfs:label>
+        <rdfs:seeAlso xml:lang="de">https://de.wikipedia.org/wiki/Optimierungsproblem#Mathematische_Definition_und_Begriffe</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -6825,6 +6865,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Costs">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms:description xml:lang="en">value of money required for e.g. producing, buying or running something</terms:description>
         <rdfs:label xml:lang="en">Costs</rdfs:label>
         <rdfs:label xml:lang="de">Kosten</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cost"/>
@@ -7176,25 +7217,10 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
 
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DecisionVariable">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition"/>
-        <terms:description xml:lang="en">variable deciding if an object is chosen or not</terms:description>
-        <rdfs:comment xml:lang="en">In case of line pool generation, it decides if a line is included or not</rdfs:comment>
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <generalizesQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable"/>
+        <terms:description xml:lang="en">vector which is to be decided in integer linear program</terms:description>
         <rdfs:label xml:lang="en">Decision Variable</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
-        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DecisionVariable"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x_l \equiv 1$ if $l$ is chosen, otherwise $x_l=0$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x_l$, Decision Variable</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">A variable deciding if an object is chosen or not. In case of line pool generation, it decides if a line is included or not</rdfs:comment>
-        <rdfs:label xml:lang="en">Decision Variable (Definition)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -7536,7 +7562,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
         <inventedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Cundall_1979_Discrete_model_granular_assemblies"/>
-        <terms:description xml:lang="en">family of numerical methods for computing the motion and effect of a large number of small particles</terms:description>
+        <terms:description xml:lang="en">family of numerical methods for modeling the behavior of assemblies of discrete particles in contact</terms:description>
         <rdfs:comment xml:lang="en">Describes any family of numerical functions for computing the motion and the effects of a large number of small particles. DEM is an effective method of addressing engineering problems in granular and discontinuous materials, especially in granular flows, powder mechanics, ice and rock mechanics.</rdfs:comment>
         <rdfs:label xml:lang="en">Discrete Element Method</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Discrete_element_method"/>
@@ -8080,6 +8106,21 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     
 
 
+    <!-- https://mardi4nfdi.de/mathmoddb#Edges -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Edges">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork"/>
+        <terms:description xml:lang="de">Kanten in einem Graphen</terms:description>
+        <terms:description xml:lang="en">set of all edges in a graph</terms:description>
+        <rdfs:label xml:lang="en">Edges</rdfs:label>
+        <rdfs:label xml:lang="de">Kanten</rdfs:label>
+        <wikidataID>https://www.wikidata.org/wiki/Q124247109</wikidataID>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mardi4nfdi.de/mathmoddb#EffectiveConductivity -->
 
 
@@ -8146,6 +8187,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containedInField rdf:resource="https://mardi4nfdi.de/mathmoddb#Civil_Engineering"/>
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method"/>
         <studiedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Jahnke_2022_Efficient_Numerical_Simulation_of_Soil-Tool_Interaction"/>
+        <terms:description xml:lang="en">computational method for efficient simulation of soil-tool interactions</terms:description>
         <rdfs:label xml:lang="en">Efficient Numerical Simulation of Soil-Tool Interaction</rdfs:label>
     </owl:NamedIndividual>
     
@@ -8231,26 +8273,6 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Conductivity.html"/>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q4593291"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#ElectricConstant -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ElectricConstant">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#PermittivityVacuum"/>
-        <terms:description xml:lang="en">physical constant that represents the capability of the vacuum to permit electric field lines</terms:description>
-        <rdfs:label xml:lang="en">Electric Constant</rdfs:label>
-        <qudtID rdf:resource="http://qudt.org/vocab/constant/ElectricConstant"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#PermittivityVacuum -->
-
-
-    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#PermittivityVacuum"/>
     
 
 
@@ -8430,6 +8452,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Electromagnetism">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
         <containsProblem rdf:resource="https://mardi4nfdi.de/mathmoddb#ElectromagneticFieldsAndWaves"/>
+        <terms:description xml:lang="en">branch of science concerned with the phenomena of electricity and magnetism</terms:description>
         <rdfs:comment xml:lang="en">branch of theoretical physics that studies consequences of the electromagnetic fields, waves, and forces between electric charges and currents</rdfs:comment>
         <rdfs:label xml:lang="en">Electromagnetism</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Classical_electromagnetism"/>
@@ -10501,7 +10524,7 @@ y(t) &amp;=&amp; y_0+v_0t-\frac{1}{2}gt^2
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Frequency">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
-        <rdfs:comment xml:lang="en">Number of occurrences or cycles per time</rdfs:comment>
+        <terms:description xml:lang="en">number of occurrences or cycles per time</terms:description>
         <rdfs:label xml:lang="en">Frequency</rdfs:label>
         <rdfs:label xml:lang="de">Frequenz</rdfs:label>
         <rdfs:label xml:lang="el">Συχνότητα</rdfs:label>
@@ -10905,8 +10928,28 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;=&amp; Q_{j-1}iN e^{A^{*}t_{j}}
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#LineCostsComputation"/>
+        <definedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition"/>
         <terms:description xml:lang="en">variable identifying a graph as directed (value=1) or undirected (value=2)</terms:description>
         <rdfs:label xml:lang="en">Graph Type Identifier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#DecisionVariable"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x \equiv \left\{
+\begin{array}{ll}
+1 &amp;  \textrm{graph directed}\\
+2 &amp; \textrm{graph undirected} \\
+\end{array}
+\right. $</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x$, Decision Variable</inDefiningFormulation>
+        <terms:description>variable identifying a graph as directed (value=1) or undirected (value=2)</terms:description>
+        <rdfs:label>Graph Type Identifier (Definition)</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -13889,7 +13932,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InteractionWeight">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <rdfs:comment xml:lang="en">Interaction Weight</rdfs:comment>
+        <terms:description xml:lang="en">interaction weight between a pair of individuals to account for their influence on each other&apos;s opinions</terms:description>
         <rdfs:label xml:lang="en">Interaction Weight</rdfs:label>
     </owl:NamedIndividual>
     
@@ -14575,10 +14618,12 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Frequency"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#PTNLine"/>
+        <documentedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$(\mathcal{L},f)$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathcal{L}$, PTNLine</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$f_l$, Frequncy$</inDefiningFormulation>
-        <rdfs:comment rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">A line concept $(mathcal{L}, f )$ is a set of lines $mathcal{L}$ together with their frequencies $f_l$ for all $l \in L$. The frequency $f_l$ of a line $l$ says how often service is offered along line $l$ within a given time period $I$ (e.g., an hour, a day).</rdfs:comment>
+        <terms:description xml:lang="en">line concepts assign frequencies to lines of a line pool</terms:description>
+        <rdfs:comment xml:lang="en">A line concept is a set of lines  together with their frequencies. The frequency of a line says how often service is offered along that line within a given time period (e.g., an hour, a day).</rdfs:comment>
         <rdfs:label xml:lang="en">Line Concept</rdfs:label>
     </owl:NamedIndividual>
     
@@ -14595,11 +14640,12 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#CostsOfLineConcept"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Frequency"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$cost(\mathcal{L},f)=\sum_{l \in \mathcal{L}} f_l \cdot cost_l$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathcal{L},f)$, Line Concept</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$(\mathcal{L},f)$, Line Concept</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$cost(\mathcal{L},f)$,Costs of Line Concept</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$cost_l$, Costs</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$f_l$, Frequency</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">The costs for a line concept</rdfs:comment>
+        <terms:description xml:lang="en">costs of a line concept</terms:description>
+        <rdfs:comment xml:lang="en">The costs for a line concept summarizing the costs of single lines multiplied by their frequencies.</rdfs:comment>
         <rdfs:label xml:lang="en">Line Concept Costs</rdfs:label>
     </owl:NamedIndividual>
     
@@ -14629,8 +14675,23 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$period\_length$, Period Length</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$turn\_over\_time$, Turn Over Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x$,Graph Type Identifier</inDefiningFormulation>
-        <rdfs:comment xml:lang="en">Sum of all costs of a single line</rdfs:comment>
+        <terms:description xml:lang="en">sum of all costs of a single line</terms:description>
+        <rdfs:comment xml:lang="en">The costs of a single line in public transport are made up of various individual costs.</rdfs:comment>
         <rdfs:label xml:lang="en">Line Costs Computation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#LinePlanning -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#LinePlanning">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <containedInField rdf:resource="https://mardi4nfdi.de/mathmoddb#TransportationPlanning"/>
+        <studiedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"/>
+        <terms:description xml:lang="en">choosing subset of line from line pool to generate a line plan afterwards</terms:description>
+        <rdfs:label xml:lang="en">Line Planning</rdfs:label>
+        <rdfs:seeAlso xml:lang="de">https://de.wikipedia.org/wiki/Linienplanung</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -15281,7 +15342,7 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
         <containedInModel rdf:resource="https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method"/>
         <generalizedByModel rdf:resource="https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method"/>
-        <terms:description xml:lang="en">computational technique used to simulate the behaviour of granular materials, powders and other particulate systems</terms:description>
+        <terms:description xml:lang="en">variant of the discrete element method that employs linear contact models for inter-particle forces</terms:description>
         <rdfs:label xml:lang="en">Linear Discrete Element Method</rdfs:label>
     </owl:NamedIndividual>
     
@@ -15864,27 +15925,6 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
         <terms:description xml:lang="en">transformation matrix, to be applied to the input-output formulation of linear or bilinear control systems</terms:description>
         <rdfs:label xml:lang="en">MOR Transformation Matrix</rdfs:label>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#MagneticConstant -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#MagneticConstant">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum"/>
-        <terms:description xml:lang="en">ratio between the magnetic H-field and the magnetic B-field in classical vacuum</terms:description>
-        <rdfs:label xml:lang="en">Magnetic Constant</rdfs:label>
-        <qudtID rdf:resource="http://qudt.org/vocab/constant/MagneticConstant"/>
-        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1515261"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum -->
-
-
-    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum"/>
     
 
 
@@ -18351,6 +18391,21 @@ I^i denotes the infectious Individuals in the ith subpopulation. if no i is prov
     
 
 
+    <!-- https://mardi4nfdi.de/mathmoddb#Nodes -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Nodes">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <containedInFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork"/>
+        <terms:description xml:lang="de">Knoten in ein einem Graphen</terms:description>
+        <terms:description xml:lang="en">set of all nodes in a graph</terms:description>
+        <rdfs:label xml:lang="de">Knoten</rdfs:label>
+        <rdfs:label xml:lang="en">Nodes</rdfs:label>
+        <wikidataID>https://www.wikidata.org/wiki/Q124247078</wikidataID>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mardi4nfdi.de/mathmoddb#NoiseStrength -->
 
 
@@ -18887,7 +18942,7 @@ $\bm v_j\in \mathbb R^3$, velocity of particle $j$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\bm x_i\in \mathbb R^3$, position of center of gravity for particle $i$
 $\bm x_j\in \mathbb R^3$, position of center of gravity for particle $j$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r_{ij}=(r_i+r_j)/2$, mean radius of particles $i$ and $j$</inDefiningFormulation>
-        <terms:description xml:lang="en">Component of the total force in normal direction, i.e. the sum of dissipative and conservative forces</terms:description>
+        <terms:description xml:lang="en">force component acting normally at the contact interface between two particles</terms:description>
         <rdfs:label xml:lang="en">Normal Interaction Force Of Two Particles</rdfs:label>
     </owl:NamedIndividual>
     
@@ -19682,6 +19737,7 @@ Subscript denotes the individual</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#OptimizationInPublicTransportation">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <studiedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"/>
         <rdfs:label xml:lang="en">Optimization in Public Transportation</rdfs:label>
     </owl:NamedIndividual>
     
@@ -20044,6 +20100,7 @@ Subscript denotes the individual</rdfs:comment>
         <rdfs:comment xml:lang="en">The magnetic permeability in a classical vacuum. It is a physical constant, conventionally written as μ0 (pronounced &quot;mu nought&quot; or &quot;mu zero&quot;). It quantifies the strength of the magnetic field induced by an electric current.</rdfs:comment>
         <rdfs:label xml:lang="en">Permeability (Vacuum)</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Vacuum_permeability"/>
+        <skos:altLabel xml:lang="en">magnetic constant</skos:altLabel>
         <qudtID rdf:resource="http://qudt.org/vocab/constant/MagneticConstant"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1515261"/>
     </owl:NamedIndividual>
@@ -20808,11 +20865,13 @@ deformation</terms:description>
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Edges"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Nodes"/>
+        <studiedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$PTN=(V,E)$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, edges of network</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$V$, nodes of network</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E$, Edges</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$V$, Nodes</inDefiningFormulation>
         <terms:description xml:lang="en">graph given by a set of stops or stations and a set of direct connections between them</terms:description>
-        <rdfs:comment xml:lang="en">We assume that it is an undirected graph.</rdfs:comment>
         <rdfs:label xml:lang="en">Public Transportation Network</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q18325841"/>
     </owl:NamedIndividual>
@@ -21763,7 +21822,7 @@ deformation</terms:description>
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Rate"/>
-        <terms:description xml:lang="en">Rate at which an individual switches the influencer they are following at a given time</terms:description>
+        <terms:description xml:lang="en">rate at which an individual switches the influencer they are following at a given time</terms:description>
         <rdfs:comment xml:lang="en">Rate at which an Individual switches the Influencer they are following at a given time. Takes the opinion of the individual and the given time as inputs. Subscript represents the medium followed by the Individual.</rdfs:comment>
         <rdfs:label xml:lang="en">Rate Of Switching Influencers</rdfs:label>
     </owl:NamedIndividual>
@@ -22039,14 +22098,15 @@ deformation</terms:description>
     
 
 
-    <!-- https://mardi4nfdi.de/mathmoddb#RecoveryRate -->
+    <!-- https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network -->
 
 
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#RecoveryRate">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <rdfs:comment xml:lang="en">Subscript e refers to recovery rate of the Exposed class. 
-Subscript i refers to recovery rate of of the Infectious class</rdfs:comment>
-        <rdfs:label xml:lang="en">Recovery Rate</rdfs:label>
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <generalizesModel rdf:resource="https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method"/>
+        <terms:description xml:lang="en">class of artificial neural network where connections between units form a directed graph along a temporal sequence</terms:description>
+        <rdfs:label xml:lang="en">Recurrent Neural Network</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1457734"/>
     </owl:NamedIndividual>
     
 
@@ -22058,6 +22118,7 @@ Subscript i refers to recovery rate of of the Infectious class</rdfs:comment>
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
         <models rdf:resource="https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction"/>
         <studiedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Jahnke_2022_Efficient_Numerical_Simulation_of_Soil-Tool_Interaction"/>
+        <terms:description xml:lang="en">surrogate model employing recurrent neural networks to approximate discrete element method simulations</terms:description>
         <rdfs:label xml:lang="en">Recurrent Neural Network Surrogate for Discrete Element Method</rdfs:label>
     </owl:NamedIndividual>
     
@@ -22583,6 +22644,7 @@ R^i denotes the removed Individuals in the ith subpopulation. if no i is provide
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsAssumption rdf:resource="https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergy"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumNumber"/>
@@ -24204,7 +24266,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\bm t = \bm \xi_{ij} / \lVert \bm \xi_{ij}\rVert$, tangential unit vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\bm x_{C_{ij}}$, global contact point between particles $i$ and $j$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{\bm \xi}_{ij}=\langle \bm v_i-\bm v_j, \bm t\rangle \bm t$, tangential component of relative veloctiy</inDefiningFormulation>
-        <terms:description xml:lang="en">tangential component of the total force, i.e. the sum of dissipative and conservative force</terms:description>
+        <terms:description xml:lang="en">force component acting tangentially at the contact interface between two particles</terms:description>
         <rdfs:label xml:lang="en">Tangential Interaction Force Of Two Particles</rdfs:label>
     </owl:NamedIndividual>
     
@@ -24325,6 +24387,23 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
     
 
 
+    <!-- https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian -->
+
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator"/>
+        <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{\partial}{\partial t}\hat{H}=0$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$H$, Quantum Hamiltonian Operator</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <terms:description>assuming that the Hamiltonian of a quantum system does not dependend on time explicitly</terms:description>
+        <rdfs:label xml:lang="en">Time Independence Of Hamiltonian</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-independent_equation"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mardi4nfdi.de/mathmoddb#TimePoint -->
 
 
@@ -24376,6 +24455,7 @@ S^i denotes the susceptible Individuals in the ith subpopulation. if no i is pro
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf T_i$, torque acting on particle $i$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf x_i$, position of particle $i$</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf x_{a_{ij}} = \mathbf x_i + \frac{r_i}{r_i + r_j}(\mathbf x_i - \mathbf x_j)$, actuation point, i.e. mid-point of contact area between particles $i$ and $j$ with radii $r_i$ and $r_j$</inDefiningFormulation>
+        <terms:description xml:lang="en">equation expressing the torque on a particle</terms:description>
         <rdfs:comment xml:lang="en">angular velocity needs to be taken into account when transforming the contact point between two particles from local to global coordinates</rdfs:comment>
         <rdfs:label xml:lang="en">Torque Of Particle</rdfs:label>
     </owl:NamedIndividual>
@@ -24550,6 +24630,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TransportationPlanning">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <studiedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"/>
         <terms:description xml:lang="en">planning of transportation networks and traffic</terms:description>
         <rdfs:label xml:lang="en">Transportation Planning</rdfs:label>
         <wikidataID>https://www.wikidata.org/wiki/Q1034047</wikidataID>
@@ -24563,7 +24644,7 @@ superscript i denotes the ith subpopulation. if no i is provided, then it is a s
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#TurnOverTime">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
         <generalizedByQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
-        <terms:description xml:lang="en">Time between two events</terms:description>
+        <terms:description xml:lang="en">time between two events</terms:description>
         <rdfs:comment xml:lang="en">Time between two events, e.g. minimal time between services of lines in public transport</rdfs:comment>
         <rdfs:label xml:lang="en">Turn Over Time</rdfs:label>
     </owl:NamedIndividual>

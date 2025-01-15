@@ -1,5 +1,5 @@
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionIRI> <https://mardi4nfdi.de/mathmoddb/0.1> .
+<https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionIRI> <https://mardi4nfdi.de/mathmoddb/0.8.0> .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/abstract> "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph." .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB. An Ontology for Mathematical Models" .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
@@ -2206,6 +2206,8 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network
 <https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+<https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network> <https://mardi4nfdi.de/mathmoddb#generalizesModel> <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> .
+<https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network> <http://purl.org/dc/terms/description> "computational model used in machine learning, based on connected, hierarchical functions"@en .
 <https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network> <http://www.w3.org/2000/01/rdf-schema#label> "Artificial Neural Network"@en .
 <https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q192776> .
 # 
@@ -2234,6 +2236,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion
 <https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion> <http://purl.org/dc/terms/description> "attraction force at an individuals opinion by influencers and media"@en .
 <https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion> <http://www.w3.org/2000/01/rdf-schema#label> "Attraction Force At Opinion"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinionFormulation
@@ -3296,6 +3299,28 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionfollowingTheorellChanceMechanism> <https://mardi4nfdi.de/mathmoddb#containedInField> <https://mardi4nfdi.de/mathmoddb#EnzymeKinetics> .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionfollowingTheorellChanceMechanism> <http://www.w3.org/2000/01/rdf-schema#comment> "Bi Bi reaction with a sequential mechanism in which the substrates bind to the enzyme, are converted to products and released. Binding of substrates and unbinding of products occurs in an ordered sequence, not triple complexes are formed."@en .
 <https://mardi4nfdi.de/mathmoddb#BiBiReactionfollowingTheorellChanceMechanism> <http://www.w3.org/2000/01/rdf-schema#label> "Bi Bi Reaction following Theorell-Chance Mechanism"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://purl.org/dc/terms/description> "binary variable deciding if an object is chosen or not"@en .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "In case of line pool generation, it decides if a line is included or not"@en .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Binary Decision Variable"@en .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Binäre Entscheidungsvariable"@de .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://de.wikipedia.org/wiki/Optimierungsproblem#Mathematische_Definition_und_Begriffe"@de .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://en.wikipedia.org/wiki/Integer_programming"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$x_l \\equiv \\left\\{\n\\begin{array}{ll}\n1 & l \\textrm{is chosen}\\\\\no & \\textrm{otherwise} \\\\\n\\end{array}\n\\right. $"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$x_l$, Binary Decision Variable"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <http://purl.org/dc/terms/description> "binary variable deciding if an object is chosen or not"@en .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Binary Decision Variable (Definition)"@en .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Binäre Entscheidungsvariable (Definition)"@de .
+<https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://de.wikipedia.org/wiki/Optimierungsproblem#Mathematische_Definition_und_Begriffe"@de .
 # 
 # https://mardi4nfdi.de/mathmoddb#Biology
 <https://mardi4nfdi.de/mathmoddb#Biology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5134,6 +5159,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Costs
 <https://mardi4nfdi.de/mathmoddb#Costs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Costs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
+<https://mardi4nfdi.de/mathmoddb#Costs> <http://purl.org/dc/terms/description> "value of money required for e.g. producing, buying or running something"@en .
 <https://mardi4nfdi.de/mathmoddb#Costs> <http://www.w3.org/2000/01/rdf-schema#label> "Costs"@en .
 <https://mardi4nfdi.de/mathmoddb#Costs> <http://www.w3.org/2000/01/rdf-schema#label> "Kosten"@de .
 <https://mardi4nfdi.de/mathmoddb#Costs> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Cost> .
@@ -5366,20 +5392,10 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://mardi4nfdi.de/mathmoddb#DecisionVariable
 <https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://purl.org/dc/terms/description> "variable deciding if an object is chosen or not"@en .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/2000/01/rdf-schema#comment> "In case of line pool generation, it decides if a line is included or not"@en .
+<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
+<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <https://mardi4nfdi.de/mathmoddb#generalizesQuantity> <https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable> .
+<https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://purl.org/dc/terms/description> "vector which is to be decided in integer linear program"@en .
 <https://mardi4nfdi.de/mathmoddb#DecisionVariable> <http://www.w3.org/2000/01/rdf-schema#label> "Decision Variable"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DecisionVariable> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$x_l \\equiv 1$ if $l$ is chosen, otherwise $x_l=0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$x_l$, Decision Variable"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "A variable deciding if an object is chosen or not. In case of line pool generation, it decides if a line is included or not"@en .
-<https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Decision Variable (Definition)"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Demography
 <https://mardi4nfdi.de/mathmoddb#Demography> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -5606,7 +5622,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <https://mardi4nfdi.de/mathmoddb#inventedIn> <https://mardi4nfdi.de/mathmoddb#Cundall_1979_Discrete_model_granular_assemblies> .
-<https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://purl.org/dc/terms/description> "family of numerical methods for computing the motion and effect of a large number of small particles"@en .
+<https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://purl.org/dc/terms/description> "family of numerical methods for modeling the behavior of assemblies of discrete particles in contact"@en .
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes any family of numerical functions for computing the motion and the effects of a large number of small particles. DEM is an effective method of addressing engineering problems in granular and discontinuous materials, especially in granular flows, powder mechanics, ice and rock mechanics."@en .
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://www.w3.org/2000/01/rdf-schema#label> "Discrete Element Method"@en .
 <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Discrete_element_method> .
@@ -6022,6 +6038,16 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Earth_radius> .
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q1155470> .
 # 
+# https://mardi4nfdi.de/mathmoddb#Edges
+<https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#Edges> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> .
+<https://mardi4nfdi.de/mathmoddb#Edges> <http://purl.org/dc/terms/description> "Kanten in einem Graphen"@de .
+<https://mardi4nfdi.de/mathmoddb#Edges> <http://purl.org/dc/terms/description> "set of all edges in a graph"@en .
+<https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/2000/01/rdf-schema#label> "Edges"@en .
+<https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/2000/01/rdf-schema#label> "Kanten"@de .
+<https://mardi4nfdi.de/mathmoddb#Edges> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q124247109" .
+# 
 # https://mardi4nfdi.de/mathmoddb#EffectiveConductivity
 <https://mardi4nfdi.de/mathmoddb#EffectiveConductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EffectiveConductivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
@@ -6066,6 +6092,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> <https://mardi4nfdi.de/mathmoddb#containedInField> <https://mardi4nfdi.de/mathmoddb#Civil_Engineering> .
 <https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> <https://mardi4nfdi.de/mathmoddb#modeledBy> <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> .
 <https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> <https://mardi4nfdi.de/mathmoddb#studiedIn> <https://mardi4nfdi.de/mathmoddb#Jahnke_2022_Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> .
+<https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> <http://purl.org/dc/terms/description> "computational method for efficient simulation of soil-tool interactions"@en .
 <https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> <http://www.w3.org/2000/01/rdf-schema#label> "Efficient Numerical Simulation of Soil-Tool Interaction"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Egyptology
@@ -6120,16 +6147,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity> .
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <https://mardi4nfdi.de/mathmoddb#qudtID> <https://qudt.org/vocab/quantitykind/Conductivity.html> .
 <https://mardi4nfdi.de/mathmoddb#ElectricConductivity> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q4593291> .
-# 
-# https://mardi4nfdi.de/mathmoddb#ElectricConstant
-<https://mardi4nfdi.de/mathmoddb#ElectricConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#ElectricConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#ElectricConstant> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> .
-<https://mardi4nfdi.de/mathmoddb#ElectricConstant> <http://purl.org/dc/terms/description> "physical constant that represents the capability of the vacuum to permit electric field lines"@en .
-<https://mardi4nfdi.de/mathmoddb#ElectricConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Constant"@en .
-<https://mardi4nfdi.de/mathmoddb#ElectricConstant> <https://mardi4nfdi.de/mathmoddb#qudtID> <http://qudt.org/vocab/constant/ElectricConstant> .
-# 
-# https://mardi4nfdi.de/mathmoddb#PermittivityVacuum
 # 
 # https://mardi4nfdi.de/mathmoddb#ElectricCurrent
 <https://mardi4nfdi.de/mathmoddb#ElectricCurrent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -6245,6 +6262,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Electromagnetism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Electromagnetism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#ResearchField> .
 <https://mardi4nfdi.de/mathmoddb#Electromagnetism> <https://mardi4nfdi.de/mathmoddb#containsProblem> <https://mardi4nfdi.de/mathmoddb#ElectromagneticFieldsAndWaves> .
+<https://mardi4nfdi.de/mathmoddb#Electromagnetism> <http://purl.org/dc/terms/description> "branch of science concerned with the phenomena of electricity and magnetism"@en .
 <https://mardi4nfdi.de/mathmoddb#Electromagnetism> <http://www.w3.org/2000/01/rdf-schema#comment> "branch of theoretical physics that studies consequences of the electromagnetic fields, waves, and forces between electric charges and currents"@en .
 <https://mardi4nfdi.de/mathmoddb#Electromagnetism> <http://www.w3.org/2000/01/rdf-schema#label> "Electromagnetism"@en .
 <https://mardi4nfdi.de/mathmoddb#Electromagnetism> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Classical_electromagnetism> .
@@ -7709,7 +7727,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#Frequency
 <https://mardi4nfdi.de/mathmoddb#Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#QuantityKind> .
-<https://mardi4nfdi.de/mathmoddb#Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of occurrences or cycles per time"@en .
+<https://mardi4nfdi.de/mathmoddb#Frequency> <http://purl.org/dc/terms/description> "number of occurrences or cycles per time"@en .
 <https://mardi4nfdi.de/mathmoddb#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency"@en .
 <https://mardi4nfdi.de/mathmoddb#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequenz"@de .
 <https://mardi4nfdi.de/mathmoddb#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Συχνότητα"@el .
@@ -7985,8 +8003,18 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#LineCostsComputation> .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://purl.org/dc/terms/description> "variable identifying a graph as directed (value=1) or undirected (value=2)"@en .
 <https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifier> <http://www.w3.org/2000/01/rdf-schema#label> "Graph Type Identifier"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#DecisionVariable> .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$x \\equiv \\left\\{\n\\begin{array}{ll}\n1 &  \\textrm{graph directed}\\\\\n2 & \\textrm{graph undirected} \\\\\n\\end{array}\n\\right. $"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$x$, Decision Variable"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <http://purl.org/dc/terms/description> "variable identifying a graph as directed (value=1) or undirected (value=2)" .
+<https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Graph Type Identifier (Definition)" .
 # 
 # https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationDefinition
 <https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationDefinition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -10064,7 +10092,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#InteractionWeight
 <https://mardi4nfdi.de/mathmoddb#InteractionWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#InteractionWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#InteractionWeight> <http://www.w3.org/2000/01/rdf-schema#comment> "Interaction Weight"@en .
+<https://mardi4nfdi.de/mathmoddb#InteractionWeight> <http://purl.org/dc/terms/description> "interaction weight between a pair of individuals to account for their influence on each other's opinions"@en .
 <https://mardi4nfdi.de/mathmoddb#InteractionWeight> <http://www.w3.org/2000/01/rdf-schema#label> "Interaction Weight"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#InteractionWeightBetweenIndividuals
@@ -10545,10 +10573,12 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Frequency> .
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#PTNLine> .
+<https://mardi4nfdi.de/mathmoddb#LineConcept> <https://mardi4nfdi.de/mathmoddb#documentedIn> <https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation> .
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$(\\mathcal{L},f)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathcal{L}$, PTNLine"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$f_l$, Frequncy$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#LineConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "A line concept $(mathcal{L}, f )$ is a set of lines $mathcal{L}$ together with their frequencies $f_l$ for all $l \\in L$. The frequency $f_l$ of a line $l$ says how often service is offered along line $l$ within a given time period $I$ (e.g., an hour, a day)."^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#LineConcept> <http://purl.org/dc/terms/description> "line concepts assign frequencies to lines of a line pool"@en .
+<https://mardi4nfdi.de/mathmoddb#LineConcept> <http://www.w3.org/2000/01/rdf-schema#comment> "A line concept is a set of lines  together with their frequencies. The frequency of a line says how often service is offered along that line within a given time period (e.g., an hour, a day)."@en .
 <https://mardi4nfdi.de/mathmoddb#LineConcept> <http://www.w3.org/2000/01/rdf-schema#label> "Line Concept"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#LineConceptCosts
@@ -10560,11 +10590,12 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#CostsOfLineConcept> .
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Frequency> .
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$cost(\\mathcal{L},f)=\\sum_{l \\in \\mathcal{L}} f_l \\cdot cost_l$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathcal{L},f)$, Line Concept"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$(\\mathcal{L},f)$, Line Concept"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$cost(\\mathcal{L},f)$,Costs of Line Concept"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$cost_l$, Costs"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$f_l$, Frequency"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <http://www.w3.org/2000/01/rdf-schema#comment> "The costs for a line concept"@en .
+<https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <http://purl.org/dc/terms/description> "costs of a line concept"@en .
+<https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <http://www.w3.org/2000/01/rdf-schema#comment> "The costs for a line concept summarizing the costs of single lines multiplied by their frequencies."@en .
 <https://mardi4nfdi.de/mathmoddb#LineConceptCosts> <http://www.w3.org/2000/01/rdf-schema#label> "Line Concept Costs"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#LineCostsComputation
@@ -10589,8 +10620,18 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$period\\_length$, Period Length"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$turn\\_over\\_time$, Turn Over Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$x$,Graph Type Identifier"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <http://www.w3.org/2000/01/rdf-schema#comment> "Sum of all costs of a single line"@en .
+<https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <http://purl.org/dc/terms/description> "sum of all costs of a single line"@en .
+<https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <http://www.w3.org/2000/01/rdf-schema#comment> "The costs of a single line in public transport are made up of various individual costs."@en .
 <https://mardi4nfdi.de/mathmoddb#LineCostsComputation> <http://www.w3.org/2000/01/rdf-schema#label> "Line Costs Computation"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#LinePlanning
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#ResearchProblem> .
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <https://mardi4nfdi.de/mathmoddb#containedInField> <https://mardi4nfdi.de/mathmoddb#TransportationPlanning> .
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <https://mardi4nfdi.de/mathmoddb#studiedIn> <https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation> .
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <http://purl.org/dc/terms/description> "choosing subset of line from line pool to generate a line plan afterwards"@en .
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <http://www.w3.org/2000/01/rdf-schema#label> "Line Planning"@en .
+<https://mardi4nfdi.de/mathmoddb#LinePlanning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "https://de.wikipedia.org/wiki/Linienplanung"@de .
 # 
 # https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionWithoutProductEHIrreversibility
 <https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionWithoutProductEHIrreversibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -11076,7 +11117,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
 <https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> <https://mardi4nfdi.de/mathmoddb#containedInModel> <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> .
 <https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> <https://mardi4nfdi.de/mathmoddb#generalizedByModel> <https://mardi4nfdi.de/mathmoddb#Discrete_Element_Method> .
-<https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> <http://purl.org/dc/terms/description> "computational technique used to simulate the behaviour of granular materials, powders and other particulate systems"@en .
+<https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> <http://purl.org/dc/terms/description> "variant of the discrete element method that employs linear contact models for inter-particle forces"@en .
 <https://mardi4nfdi.de/mathmoddb#Linear_Discrete_Element_Method> <http://www.w3.org/2000/01/rdf-schema#label> "Linear Discrete Element Method"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#LineweaverBurkEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption
@@ -11528,17 +11569,6 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MOR_TransformationMatrix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#MOR_TransformationMatrix> <http://purl.org/dc/terms/description> "transformation matrix, to be applied to the input-output formulation of linear or bilinear control systems"@en .
 <https://mardi4nfdi.de/mathmoddb#MOR_TransformationMatrix> <http://www.w3.org/2000/01/rdf-schema#label> "MOR Transformation Matrix"@en .
-# 
-# https://mardi4nfdi.de/mathmoddb#MagneticConstant
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <http://www.w3.org/2002/07/owl#sameAs> <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> .
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <http://purl.org/dc/terms/description> "ratio between the magnetic H-field and the magnetic B-field in classical vacuum"@en .
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Magnetic Constant"@en .
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <https://mardi4nfdi.de/mathmoddb#qudtID> <http://qudt.org/vocab/constant/MagneticConstant> .
-<https://mardi4nfdi.de/mathmoddb#MagneticConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q1515261> .
-# 
-# https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum
 # 
 # https://mardi4nfdi.de/mathmoddb#MagneticField
 <https://mardi4nfdi.de/mathmoddb#MagneticField> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
@@ -13385,6 +13415,16 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://purl.org/dc/terms/description> "neural input in a motor neuron pool model"@en .
 <https://mardi4nfdi.de/mathmoddb#NeuralInput> <http://www.w3.org/2000/01/rdf-schema#label> "Neural Input"@en .
 # 
+# https://mardi4nfdi.de/mathmoddb#Nodes
+<https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <http://purl.org/dc/terms/description> "Knoten in ein einem Graphen"@de .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <http://purl.org/dc/terms/description> "set of all nodes in a graph"@en .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/2000/01/rdf-schema#label> "Knoten"@de .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/2000/01/rdf-schema#label> "Nodes"@en .
+<https://mardi4nfdi.de/mathmoddb#Nodes> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q124247078" .
+# 
 # https://mardi4nfdi.de/mathmoddb#NoiseStrength
 <https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#NoiseStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
@@ -13764,7 +13804,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Normal_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\bm v_i\\in \\mathbb R^3$, velocity of particle $i$\n$\\bm v_j\\in \\mathbb R^3$, velocity of particle $j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Normal_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\bm x_i\\in \\mathbb R^3$, position of center of gravity for particle $i$\n$\\bm x_j\\in \\mathbb R^3$, position of center of gravity for particle $j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Normal_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$r_{ij}=(r_i+r_j)/2$, mean radius of particles $i$ and $j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Normal_Interaction_Force_Of_Two_Particles> <http://purl.org/dc/terms/description> "Component of the total force in normal direction, i.e. the sum of dissipative and conservative forces"@en .
+<https://mardi4nfdi.de/mathmoddb#Normal_Interaction_Force_Of_Two_Particles> <http://purl.org/dc/terms/description> "force component acting normally at the contact interface between two particles"@en .
 <https://mardi4nfdi.de/mathmoddb#Normal_Interaction_Force_Of_Two_Particles> <http://www.w3.org/2000/01/rdf-schema#label> "Normal Interaction Force Of Two Particles"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#NumberDimensionless
@@ -14318,6 +14358,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#OptimizationInPublicTransportation
 <https://mardi4nfdi.de/mathmoddb#OptimizationInPublicTransportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#OptimizationInPublicTransportation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#ResearchField> .
+<https://mardi4nfdi.de/mathmoddb#OptimizationInPublicTransportation> <https://mardi4nfdi.de/mathmoddb#studiedIn> <https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation> .
 <https://mardi4nfdi.de/mathmoddb#OptimizationInPublicTransportation> <http://www.w3.org/2000/01/rdf-schema#label> "Optimization in Public Transportation"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#OriginDestinationData
@@ -14550,6 +14591,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/2000/01/rdf-schema#comment> "The magnetic permeability in a classical vacuum. It is a physical constant, conventionally written as μ0 (pronounced \"mu nought\" or \"mu zero\"). It quantifies the strength of the magnetic field induced by an electric current."@en .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/2000/01/rdf-schema#label> "Permeability (Vacuum)"@en .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Vacuum_permeability> .
+<https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/2004/02/skos/core#altLabel> "magnetic constant"@en .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <https://mardi4nfdi.de/mathmoddb#qudtID> <http://qudt.org/vocab/constant/MagneticConstant> .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q1515261> .
 # 
@@ -15108,11 +15150,13 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Edges> .
+<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Nodes> .
+<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#studiedIn> <https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation> .
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$PTN=(V,E)$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, edges of network"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$V$, nodes of network"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$E$, Edges"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$V$, Nodes"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <http://purl.org/dc/terms/description> "graph given by a set of stops or stations and a set of direct connections between them"@en .
-<https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <http://www.w3.org/2000/01/rdf-schema#comment> "We assume that it is an undirected graph."@en .
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "Public Transportation Network"@en .
 <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://wikidata.org/wiki/Q18325841> .
 # 
@@ -15818,7 +15862,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Rate> .
-<https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://purl.org/dc/terms/description> "Rate at which an individual switches the influencer they are following at a given time"@en .
+<https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://purl.org/dc/terms/description> "rate at which an individual switches the influencer they are following at a given time"@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/2000/01/rdf-schema#comment> "Rate at which an Individual switches the Influencer they are following at a given time. Takes the opinion of the individual and the given time as inputs. Subscript represents the medium followed by the Individual."@en .
 <https://mardi4nfdi.de/mathmoddb#RateOfSwitchingInfluencers> <http://www.w3.org/2000/01/rdf-schema#label> "Rate Of Switching Influencers"@en .
 # 
@@ -15996,17 +16040,20 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#RecombinationOfElectronHolePairs> <http://www.w3.org/2000/01/rdf-schema#comment> "For use in semiconductor physics; strictly speaking, the combined effect  of recombination and generation of electron-hole pairs"@en .
 <https://mardi4nfdi.de/mathmoddb#RecombinationOfElectronHolePairs> <http://www.w3.org/2000/01/rdf-schema#label> "Recombination Of Electron Hole Pairs"@en .
 # 
-# https://mardi4nfdi.de/mathmoddb#RecoveryRate
-<https://mardi4nfdi.de/mathmoddb#RecoveryRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
-<https://mardi4nfdi.de/mathmoddb#RecoveryRate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
-<https://mardi4nfdi.de/mathmoddb#RecoveryRate> <http://www.w3.org/2000/01/rdf-schema#comment> "Subscript e refers to recovery rate of the Exposed class. \nSubscript i refers to recovery rate of of the Infectious class"@en .
-<https://mardi4nfdi.de/mathmoddb#RecoveryRate> <http://www.w3.org/2000/01/rdf-schema#label> "Recovery Rate"@en .
+# https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> <https://mardi4nfdi.de/mathmoddb#generalizesModel> <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> .
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> <http://purl.org/dc/terms/description> "class of artificial neural network where connections between units form a directed graph along a temporal sequence"@en .
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrent Neural Network"@en .
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q1457734> .
 # 
 # https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method
 <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
 <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> <https://mardi4nfdi.de/mathmoddb#models> <https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> .
 <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> <https://mardi4nfdi.de/mathmoddb#studiedIn> <https://mardi4nfdi.de/mathmoddb#Jahnke_2022_Efficient_Numerical_Simulation_of_Soil-Tool_Interaction> .
+<https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> <http://purl.org/dc/terms/description> "surrogate model employing recurrent neural networks to approximate discrete element method simulations"@en .
 <https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method> <http://www.w3.org/2000/01/rdf-schema#label> "Recurrent Neural Network Surrogate for Discrete Element Method"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Region
@@ -16378,6 +16425,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#containsAssumption> <https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergy> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator> .
 <https://mardi4nfdi.de/mathmoddb#SchrödingerEquationTimeIndependent> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumNumber> .
@@ -17546,7 +17594,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\bm t = \\bm \\xi_{ij} / \\lVert \\bm \\xi_{ij}\\rVert$, tangential unit vector"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\bm x_{C_{ij}}$, global contact point between particles $i$ and $j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\dot{\\bm \\xi}_{ij}=\\langle \\bm v_i-\\bm v_j, \\bm t\\rangle \\bm t$, tangential component of relative veloctiy"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <http://purl.org/dc/terms/description> "tangential component of the total force, i.e. the sum of dissipative and conservative force"@en .
+<https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <http://purl.org/dc/terms/description> "force component acting tangentially at the contact interface between two particles"@en .
 <https://mardi4nfdi.de/mathmoddb#Tangential_Interaction_Force_Of_Two_Particles> <http://www.w3.org/2000/01/rdf-schema#label> "Tangential Interaction Force Of Two Particles"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#Temperature
@@ -17629,6 +17677,18 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TimeDependentContactNetworkDefinition> <http://www.w3.org/2000/01/rdf-schema#comment> "definition of tuple of spreading rate and contact network interpreted as time-evolving contact network"@en .
 <https://mardi4nfdi.de/mathmoddb#TimeDependentContactNetworkDefinition> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Network (Time-dependent, Definition)"@en .
 # 
+# https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{\\partial}{\\partial t}\\hat{H}=0$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$H$, Quantum Hamiltonian Operator"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <http://purl.org/dc/terms/description> "assuming that the Hamiltonian of a quantum system does not dependend on time explicitly" .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <http://www.w3.org/2000/01/rdf-schema#label> "Time Independence Of Hamiltonian"@en .
+<https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-independent_equation> .
+# 
 # https://mardi4nfdi.de/mathmoddb#TimePoint
 <https://mardi4nfdi.de/mathmoddb#TimePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#TimePoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
@@ -17663,6 +17723,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathbf T_i$, torque acting on particle $i$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathbf x_i$, position of particle $i$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathbf x_{a_{ij}} = \\mathbf x_i + \\frac{r_i}{r_i + r_j}(\\mathbf x_i - \\mathbf x_j)$, actuation point, i.e. mid-point of contact area between particles $i$ and $j$ with radii $r_i$ and $r_j$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <http://purl.org/dc/terms/description> "equation expressing the torque on a particle"@en .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <http://www.w3.org/2000/01/rdf-schema#comment> "angular velocity needs to be taken into account when transforming the contact point between two particles from local to global coordinates"@en .
 <https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle> <http://www.w3.org/2000/01/rdf-schema#label> "Torque Of Particle"@en .
 # 
@@ -17775,6 +17836,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#TransportationPlanning
 <https://mardi4nfdi.de/mathmoddb#TransportationPlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#TransportationPlanning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#ResearchField> .
+<https://mardi4nfdi.de/mathmoddb#TransportationPlanning> <https://mardi4nfdi.de/mathmoddb#studiedIn> <https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation> .
 <https://mardi4nfdi.de/mathmoddb#TransportationPlanning> <http://purl.org/dc/terms/description> "planning of transportation networks and traffic"@en .
 <https://mardi4nfdi.de/mathmoddb#TransportationPlanning> <http://www.w3.org/2000/01/rdf-schema#label> "Transportation Planning"@en .
 <https://mardi4nfdi.de/mathmoddb#TransportationPlanning> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q1034047" .
@@ -17783,7 +17845,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TurnOverTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#TurnOverTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#TurnOverTime> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
-<https://mardi4nfdi.de/mathmoddb#TurnOverTime> <http://purl.org/dc/terms/description> "Time between two events"@en .
+<https://mardi4nfdi.de/mathmoddb#TurnOverTime> <http://purl.org/dc/terms/description> "time between two events"@en .
 <https://mardi4nfdi.de/mathmoddb#TurnOverTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Time between two events, e.g. minimal time between services of lines in public transport"@en .
 <https://mardi4nfdi.de/mathmoddb#TurnOverTime> <http://www.w3.org/2000/01/rdf-schema#label> "Turn Over Time"@en .
 # 

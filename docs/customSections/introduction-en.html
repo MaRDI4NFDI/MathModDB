@@ -2,15 +2,58 @@
 
 
 
-<b>Motivation</b>
-<br>
-Proper documentation and storage of research data, adhering to FAIR principles, are crucial for reproducibility and scientific integrity.
+<h3>Motivation</h3>
+
+
+<p>Proper documentation and storage of research data, adhering to FAIR principles, are crucial for reproducibility and scientific integrity.
 Applied mathematics, producing diverse numerical and symbolic data, heavily relies on models that must be well-documented for replication and future use.
 Here, we present MathModDB, an ontology for mathematical models, along with a knowledge graph containing over xxxxx elements.
+</p>
+<h3>Structure</h3>
+<p>
+The ontology consists of the classes <it>Mathemical Model</it>, <it>Mathemical Formulation</it>, <it>[Computational] Task</it>, <it>Quantity [Kind]</it>, <it>Research Field</it> and <it>Research Problem</it>.
 
-<br>
-<b>Structure</b>
+The structure of the ontology, in conjunction with the neighboring knowledge graph for mathematical algorithms <a href="https://mathalgodb.mardi4nfdi.de/">MathAlgoDB</a> is display in the image below
+</p>
 
-<img src=images/MathModDB_Schema.png>
 
-foo
+<p><img src="https://raw.githubusercontent.com/MaRDI4NFDI/MathModDB/refs/heads/doctest/docs/customSections/images/MathModDB_Schema.png" alt="Structure of MathModDB" width="768px"></p>
+
+The classes have the following semantics:
+
+<table>
+<tbody>
+<tr>
+<td>Mathematical Model</td>
+<td>A mathematical model for describing a part of the reality by means of abstraction and simplifying assumptions. The aim of modeling is to make a particular part or feature of the world easier to simulate, interpret and/or optimize based on existing knowledge.</td>
+</tr>
+<tr>
+<td>Research Field</td>
+<td>A field of research (or academic discipline), e.g. Arts & Humanities, Life Sciences & Biomedicine, Physical & Natural Sciences or Engineering.</td>
+</tr>
+<tr>
+<td>Research Problem</td>
+<td>A research problem (or research question) to be investigated, typically from a scientific or engineering application, i.e. a specific issue or gap in existing knowledge that you aim to address in your research.</td>
+</tr>
+<tr>
+<td>Mathematical Formulation</td>
+<td>Typically, a mathematical formulation is based on equations (general construct indicating equality of quantities) or on inequalities (non-equal relations between quantities), or a  logic quantifier</td>
+</tr>
+<tr>
+<td>Quantity</td>
+<td>A quantity is a property of a system that can be measured or obtained from calculation/simulation. Can be a scalar, a vector, a matrix or a higher-order tensor. The overarching, abstract quantity in the QuantityKind class should be referenced if possible/applicable.</td>
+</tr>
+<tr>
+<td>Quantity Kind</td>
+<td>The kind of quantity, e.g. the abstract, generalized concept of a quantity. Typically, it could be chosen from an established, controlled vocabulary of quantityKinds, such as QUDT, IEC, .... Note that the kind of a quantity cannot be generalized by another (kind of a) quantity.</td>
+</tr>
+<tr>
+<td>Task</td>
+<td>A specific task associated with a mathematical model. The subclasses of this superclass should reflect their differences, e.g. a computational task or a task of doing a mathematical analysis (the latter is not yet implemented).</td>
+</tr>
+<tr>
+<td>Computational Task</td>
+<td>A specific computational task associated with a mathematical model. Typically, various tasks differ from each other by the choice of given quantities (input), unknown quantities (output), parameters or constants as well as boundary conditions, initial conditions and/or final conditions.</td>
+</tr>
+</tbody>
+</table>

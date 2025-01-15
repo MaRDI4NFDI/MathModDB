@@ -832,7 +832,7 @@
     "@id" : "https://doi.org/10.52825/cordi.v1i.255"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb/0.1"
+    "@id" : "https://mardi4nfdi.de/mathmoddb/0.8.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.8.0"
@@ -1408,12 +1408,19 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "computational model used in machine learning, based on connected, hierarchical functions"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalModel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Artificial Neural Network"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#generalizesModel" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q192776"
@@ -1475,6 +1482,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#AttractionForceAtOpinion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "attraction force at an individuals opinion by influencers and media"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
   } ],
@@ -4281,6 +4292,69 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedInField" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "binary variable deciding if an object is chosen or not"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "In case of line pool generation, it decides if a line is included or not"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Binary Decision Variable"
+  }, {
+    "@language" : "de",
+    "@value" : "Binäre Entscheidungsvariable"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "de",
+    "@value" : "https://de.wikipedia.org/wiki/Optimierungsproblem#Mathematische_Definition_und_Begriffe"
+  }, {
+    "@language" : "en",
+    "@value" : "https://en.wikipedia.org/wiki/Integer_programming"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariableDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "binary variable deciding if an object is chosen or not"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Binary Decision Variable (Definition)"
+  }, {
+    "@language" : "de",
+    "@value" : "Binäre Entscheidungsvariable (Definition)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "de",
+    "@value" : "https://de.wikipedia.org/wiki/Optimierungsproblem#Mathematische_Definition_und_Begriffe"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$x_l \\equiv \\left\\{\n\\begin{array}{ll}\n1 & l \\textrm{is chosen}\\\\\no & \\textrm{otherwise} \\\\\n\\end{array}\n\\right. $"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$x_l$, Binary Decision Variable"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Biology",
@@ -9222,6 +9296,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Costs",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "value of money required for e.g. producing, buying or running something"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
@@ -9845,46 +9923,17 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "variable deciding if an object is chosen or not"
+    "@value" : "vector which is to be decided in integer linear program"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "In case of line pool generation, it decides if a line is included or not"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Decision Variable"
   } ],
-  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#DecisionVariableDefinition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A variable deciding if an object is chosen or not. In case of line pool generation, it decides if a line is included or not"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Decision Variable (Definition)"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#DecisionVariable"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$x_l \\equiv 1$ if $l$ is chosen, otherwise $x_l=0$"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$x_l$, Decision Variable"
+  "https://mardi4nfdi.de/mathmoddb#generalizesQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#BinaryDecisionVariable"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Demography",
@@ -10480,7 +10529,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "family of numerical methods for computing the motion and effect of a large number of small particles"
+    "@value" : "family of numerical methods for modeling the behavior of assemblies of discrete particles in contact"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalModel"
@@ -11639,6 +11688,32 @@
     "@id" : "https://www.wikidata.org/wiki/Q1155470"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#Edges",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Kanten in einem Graphen"
+  }, {
+    "@language" : "en",
+    "@value" : "set of all edges in a graph"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Edges"
+  }, {
+    "@language" : "de",
+    "@value" : "Kanten"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q124247109"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#EffectiveConductivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -11742,6 +11817,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Efficient_Numerical_Simulation_of_Soil-Tool_Interaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "computational method for efficient simulation of soil-tool interactions"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchProblem"
   } ],
@@ -11892,26 +11971,6 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://wikidata.org/wiki/Q4593291"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricConstant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "physical constant that represents the capability of the vacuum to permit electric field lines"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Electric Constant"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#PermittivityVacuum"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
-    "@id" : "http://qudt.org/vocab/constant/ElectricConstant"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrent",
@@ -12194,6 +12253,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Electromagnetism",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "branch of science concerned with the phenomena of electricity and magnetism"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchField"
   } ],
@@ -16075,12 +16138,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Frequency",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "number of occurrences or cycles per time"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantityKind"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Number of occurrences or cycles per time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -16823,6 +16886,32 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#LineCostsComputation"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definedBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#GraphTypeIdentifierDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "variable identifying a graph as directed (value=1) or undirected (value=2)"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Graph Type Identifier (Definition)"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#DecisionVariable"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$x \\equiv \\left\\{\n\\begin{array}{ll}\n1 &  \\textrm{graph directed}\\\\\n2 & \\textrm{graph undirected} \\\\\n\\end{array}\n\\right. $"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$x$, Decision Variable"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationDefinition",
@@ -22308,12 +22397,12 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#InteractionWeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "interaction weight between a pair of individuals to account for their influence on each other's opinions"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Interaction Weight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -23597,12 +23686,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#LineConcept",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "line concepts assign frequencies to lines of a line pool"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "A line concept $(mathcal{L}, f )$ is a set of lines $mathcal{L}$ together with their frequencies $f_l$ for all $l \\in L$. The frequency $f_l$ of a line $l$ says how often service is offered along line $l$ within a given time period $I$ (e.g., an hour, a day)."
+    "@language" : "en",
+    "@value" : "A line concept is a set of lines  together with their frequencies. The frequency of a line says how often service is offered along that line within a given time period (e.g., an hour, a day)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -23617,6 +23710,9 @@
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$(\\mathcal{L},f)$"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#documentedIn" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$\\mathcal{L}$, PTNLine"
@@ -23627,12 +23723,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#LineConceptCosts",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "costs of a line concept"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The costs for a line concept"
+    "@value" : "The costs for a line concept summarizing the costs of single lines multiplied by their frequencies."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -23656,7 +23756,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\mathcal{L},f)$, Line Concept"
+    "@value" : "$(\\mathcal{L},f)$, Line Concept"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$cost(\\mathcal{L},f)$,Costs of Line Concept"
@@ -23670,12 +23770,16 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#LineCostsComputation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "sum of all costs of a single line"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Sum of all costs of a single line"
+    "@value" : "The costs of a single line in public transport are made up of various individual costs."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -23732,6 +23836,30 @@
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$x$,Graph Type Identifier"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#LinePlanning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "choosing subset of line from line pool to generate a line plan afterwards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchProblem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Line Planning"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@language" : "de",
+    "@value" : "https://de.wikipedia.org/wiki/Linienplanung"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containedInField" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#TransportationPlanning"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#studiedIn" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionWithoutProductEHIrreversibility",
@@ -24964,7 +25092,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "computational technique used to simulate the behaviour of granular materials, powders and other particulate systems"
+    "@value" : "variant of the discrete element method that employs linear contact models for inter-particle forces"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalModel"
@@ -26241,29 +26369,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MOR Transformation Matrix"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#MagneticConstant",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@language" : "en",
-    "@value" : "ratio between the magnetic H-field and the magnetic B-field in classical vacuum"
-  } ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Magnetic Constant"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
-    "@id" : "http://qudt.org/vocab/constant/MagneticConstant"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q1515261"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#MagneticField",
@@ -31328,6 +31433,32 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#ElectricCurrent"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#Nodes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "de",
+    "@value" : "Knoten in ein einem Graphen"
+  }, {
+    "@language" : "en",
+    "@value" : "set of all nodes in a graph"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Knoten"
+  }, {
+    "@language" : "en",
+    "@value" : "Nodes"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@value" : "https://www.wikidata.org/wiki/Q124247078"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#NoiseStrength",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -32281,7 +32412,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Component of the total force in normal direction, i.e. the sum of dissipative and conservative forces"
+    "@value" : "force component acting normally at the contact interface between two particles"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
@@ -33817,6 +33948,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Optimization in Public Transportation"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#studiedIn" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#OriginDestinationData",
@@ -34418,6 +34552,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://en.wikipedia.org/wiki/Vacuum_permeability"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "magnetic constant"
   } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/MagneticConstant"
@@ -35918,13 +36056,14 @@
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "We assume that it is an undirected graph."
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Public Transportation Network"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Edges"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Nodes"
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -35932,10 +36071,13 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$E$, edges of network"
+    "@value" : "$E$, Edges"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$V$, nodes of network"
+    "@value" : "$V$, Nodes"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#studiedIn" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://wikidata.org/wiki/Q18325841"
@@ -37864,7 +38006,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Rate at which an individual switches the influencer they are following at a given time"
+    "@value" : "rate at which an individual switches the influencer they are following at a given time"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -38312,22 +38454,32 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#RateConstant"
   } ]
 }, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#RecoveryRate",
+  "@id" : "https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+  "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Subscript e refers to recovery rate of the Exposed class. \nSubscript i refers to recovery rate of of the Infectious class"
+    "@value" : "class of artificial neural network where connections between units form a directed graph along a temporal sequence"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalModel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Recovery Rate"
+    "@value" : "Recurrent Neural Network"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#generalizesModel" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q1457734"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Recurrent_Neural_Network_Surrogate_for_Discrete_Element_Method",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "surrogate model employing recurrent neural networks to approximate discrete element method simulations"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalModel"
   } ],
@@ -39394,6 +39546,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Schrödinger Equation (Time Independent)"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsAssumption" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergy"
@@ -42499,7 +42654,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "tangential component of the total force, i.e. the sum of dissipative and conservative force"
+    "@value" : "force component acting tangentially at the contact interface between two particles"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
@@ -42762,6 +42917,38 @@
     "@value" : "true"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#TimeIndependenceOfHamiltonian",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "assuming that the Hamiltonian of a quantum system does not dependend on time explicitly"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Time Independence Of Hamiltonian"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-independent_equation"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#containsQuantity" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianOperator"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Time"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\frac{\\partial}{\\partial t}\\hat{H}=0$"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$H$, Quantum Hamiltonian Operator"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$t$, Time"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#TimePoint",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -42829,6 +43016,10 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Torque_Of_Particle",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "equation expressing the torque on a particle"
+  } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
   } ],
@@ -43147,6 +43338,9 @@
     "@language" : "en",
     "@value" : "Transportation Planning"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#studiedIn" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#Gattermann_2017_Line_pool_generation"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@value" : "https://www.wikidata.org/wiki/Q1034047"
   } ]
@@ -43155,7 +43349,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "Time between two events"
+    "@value" : "time between two events"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
