@@ -18,3 +18,9 @@ sed -i '/<head>/a <script id="MathJax-script" async src="https:\/\/cdn.jsdelivr.
 # Insert config so that also single character delimiter is recognized
 sed -i '/<head>/a <script>window.MathJax = {   tex: { inlineMath: \[\["\$", "\$\"], \["\\\\(", "\\\\)"\]\] } }; <\/script>' index.html
 
+
+# Insert MaRDI Acknowledgement
+sed -i '/Acknowledgments/a The work has been funded by the DFG (German Research Foundation), project number 460135501, NFDI 29\/1 “MaRDI – Mathematische Forschungsdateninitiative”.' index.html
+
+
+sed -i '0,/Björn Schembera/s//Test/2' index.html
