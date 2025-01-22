@@ -422,12 +422,10 @@
       "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"
     }, {
       "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalModel"
-    }, {
-      "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
     } ]
   } ]
 }, {
-  "@id" : "_:genid235",
+  "@id" : "_:genid234",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -437,7 +435,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid238",
+  "@id" : "_:genid237",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -10624,7 +10622,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\frac{1}{v_0} = \\frac{1}{V_{max,f}}*(1+\\frac{K_S}{c_S}) + \\frac{K_S c_I}{V_{max,f}*K_{ic}*c_S}$"
+    "@value" : "$\\frac{1}{v_0} = \\frac{1}{V_{max,f}} (1+\\frac{K_S}{c_S}) + \\frac{K_S c_I}{V_{max,f} K_{ic}*c_S}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -29065,7 +29063,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"
+    "@value" : "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -29215,7 +29213,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"
+    "@value" : "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -49986,7 +49984,7 @@
     "@value" : "True, if continuous in space; false, if discrete in space"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid235"
+    "@id" : "_:genid234"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -50003,7 +50001,7 @@
     "@value" : "True, if continuous in time; false, if discrete in time"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid238"
+    "@id" : "_:genid237"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",

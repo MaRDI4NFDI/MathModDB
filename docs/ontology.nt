@@ -1819,19 +1819,16 @@ _:genid227 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#isLinear
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid230 .
-_:genid230 <http://www.w3.org/2002/07/owl#unionOf> _:genid234 .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid233 .
+_:genid230 <http://www.w3.org/2002/07/owl#unionOf> _:genid233 .
 _:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid232 .
 _:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid231 .
 _:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+_:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
 _:genid231 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+_:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 _:genid232 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
+_:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#ComputationalTask> .
 _:genid233 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#ComputationalTask> .
-_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/2000/01/rdf-schema#comment> "True, if linear; false, if non-linear"@en .
@@ -1839,30 +1836,30 @@ _:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # 
 # https://mardi4nfdi.de/mathmoddb#isSpaceContinuous
 <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid235 .
-_:genid235 <http://www.w3.org/2002/07/owl#unionOf> _:genid237 .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid236 .
-_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+<https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid234 .
+_:genid234 <http://www.w3.org/2002/07/owl#unionOf> _:genid236 .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid235 .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 _:genid236 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid235 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid234 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://purl.org/dc/terms/description> "True, if continuous in space; false, if discrete in space"@en .
 <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://www.w3.org/2000/01/rdf-schema#label> "is space-continuous"@en .
 # 
 # https://mardi4nfdi.de/mathmoddb#isTimeContinuous
 <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://mardi4nfdi.de/mathmoddb#isTimeContinuous> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid238 .
-_:genid238 <http://www.w3.org/2002/07/owl#unionOf> _:genid240 .
-_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid239 .
-_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+<https://mardi4nfdi.de/mathmoddb#isTimeContinuous> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid237 .
+_:genid237 <http://www.w3.org/2002/07/owl#unionOf> _:genid239 .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid238 .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalModel> .
+_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
 _:genid239 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition> .
-_:genid240 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> <http://www.w3.org/2000/01/rdf-schema#comment> "True, if continuous in time; false, if discrete in time"@en .
 <https://mardi4nfdi.de/mathmoddb#isTimeContinuous> <http://www.w3.org/2000/01/rdf-schema#label> "is time-continuous"@en .
@@ -5660,7 +5657,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> .
 <https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SubstrateConcentration> .
 <https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#linearizesFormulation> <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> .
-<https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{1}{v_0} = \\frac{1}{V_{max,f}}*(1+\\frac{K_S}{c_S}) + \\frac{K_S c_I}{V_{max,f}*K_{ic}*c_S}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\frac{1}{v_0} = \\frac{1}{V_{max,f}} (1+\\frac{K_S}{c_S}) + \\frac{K_S c_I}{V_{max,f} K_{ic}*c_S}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_S$, Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{ic}$, Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#DixonEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$V_{max,f}$, Limiting Reaction Rate (Uni Uni Reaction - Forward)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12465,7 +12462,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SubstrateConcentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_S$, Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{ic}$, Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{iu}$, Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -12519,7 +12516,7 @@ _:genid238 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#SubstrateConcentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#similarToFormulation> <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption> .
-<https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_S$,Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{ic}$,Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandNonCompetitivePartialInhibitionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$K_{iu}$,Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .

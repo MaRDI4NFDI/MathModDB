@@ -1605,7 +1605,6 @@ rdf:HTML rdf:type rdfs:Datatype .
                         owl:unionOf ( :ComputationalTask
                                       :MathematicalFormulationDefinition
                                       :MathematicalModel
-                                      :Quantity
                                     )
                       ] ;
           rdfs:range xsd:boolean ;
@@ -5768,7 +5767,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                                                                                   :MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption ,
                                                                                                                   :SubstrateConcentration ;
                                                                                                 :linearizesFormulation :MichaelisMentenEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption ;
-                                                                                                :definingFormulation "$\\frac{1}{v_0} = \\frac{1}{V_{max,f}}*(1+\\frac{K_S}{c_S}) + \\frac{K_S c_I}{V_{max,f}*K_{ic}*c_S}$"^^:LaTeX ;
+                                                                                                :definingFormulation "$\\frac{1}{v_0} = \\frac{1}{V_{max,f}} (1+\\frac{K_S}{c_S}) + \\frac{K_S c_I}{V_{max,f} K_{ic}*c_S}$"^^:LaTeX ;
                                                                                                 :inDefiningFormulation "$K_S$, Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"^^:LaTeX ,
                                                                                                                        "$K_{ic}$, Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,
                                                                                                                        "$V_{max,f}$, Limiting Reaction Rate (Uni Uni Reaction - Forward)"^^:LaTeX ,
@@ -13131,7 +13130,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                                                                      :MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption ,
                                                                                                                      :SubstrateConcentration ,
                                                                                                                      :UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition ;
-                                                                                                   :definingFormulation "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^:LaTeX ;
+                                                                                                   :definingFormulation "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^:LaTeX ;
                                                                                                    :inDefiningFormulation "$K_S$, Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"^^:LaTeX ,
                                                                                                                           "$K_{ic}$, Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,
                                                                                                                           "$K_{iu}$, Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,
@@ -13187,7 +13186,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                                                                               :SubstrateConcentration ,
                                                                                                                               :UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition ;
                                                                                                             :similarToFormulation :MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption ;
-                                                                                                            :definingFormulation "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^:LaTeX ;
+                                                                                                            :definingFormulation "$v_0 = \\frac{(V_{max,f} + \\frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \\frac{c_I}{K_{ic}}) + (1 + \\frac{c_I}{K_{iu}}) c_S}$"^^:LaTeX ;
                                                                                                             :inDefiningFormulation "$K_S$,Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"^^:LaTeX ,
                                                                                                                                    "$K_{ic}$,Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,
                                                                                                                                    "$K_{iu}$,Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"^^:LaTeX ,

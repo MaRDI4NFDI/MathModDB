@@ -2356,7 +2356,6 @@
                     <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
                     <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulationDefinition"/>
                     <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
-                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -7610,7 +7609,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SubstrateConcentration"/>
         <linearizesFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionSteadyStateAssumption"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{1}{v_0} = \frac{1}{V_{max,f}}*(1+\frac{K_S}{c_S}) + \frac{K_S c_I}{V_{max,f}*K_{ic}*c_S}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\frac{1}{v_0} = \frac{1}{V_{max,f}} (1+\frac{K_S}{c_S}) + \frac{K_S c_I}{V_{max,f} K_{ic}*c_S}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_S$, Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{ic}$, Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$V_{max,f}$, Limiting Reaction Rate (Uni Uni Reaction - Forward)</inDefiningFormulation>
@@ -17103,7 +17102,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SubstrateConcentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0 = \frac{(V_{max,f} + \frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \frac{c_I}{K_{ic}}) + (1 + \frac{c_I}{K_{iu}}) c_S}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0 = \frac{(V_{max,f} + \frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \frac{c_I}{K_{ic}}) + (1 + \frac{c_I}{K_{iu}}) c_S}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_S$, Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{ic}$, Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{iu}$, Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
@@ -17167,7 +17166,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#SubstrateConcentration"/>
         <containsQuantity rdf:resource="https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition"/>
         <similarToFormulation rdf:resource="https://mardi4nfdi.de/mathmoddb#MichaelisMentenEquationUniUniReactionwithoutProductandMixedPartialInhibitionSteadyStateAssumption"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0 = \frac{(V_{max,f} + \frac{V_{max,I,f}*c_I}{K_{iu}}) c_S}{K_S (1 + \frac{c_I}{K_{ic}}) + (1 + \frac{c_I}{K_{iu}}) c_S}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0 = \frac{(V_{max,f} + \frac{V_{max,I,f} c_I}{K_{iu}}) c_S}{K_S (1 + \frac{c_I}{K_{ic}}) + (1 + \frac{c_I}{K_{iu}}) c_S}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_S$,Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{ic}$,Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$K_{iu}$,Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)</inDefiningFormulation>
