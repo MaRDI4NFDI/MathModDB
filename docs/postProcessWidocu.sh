@@ -17,6 +17,7 @@
 ####################################################
 
 # Generate an index.html
+touch index.html # Create empty file if none exists
 cp index.html index.html.old
 cp index-en.html index.html
 
