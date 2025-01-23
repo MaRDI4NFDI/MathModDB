@@ -1,7 +1,7 @@
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://mardi4nfdi.de/mathmoddb> <http://www.w3.org/2002/07/owl#versionIRI> <https://mardi4nfdi.de/mathmoddb/0.8.0> .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/abstract> "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph." .
-<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models" .
+<https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)"@en .
 <https://mardi4nfdi.de/mathmoddb> <http://purl.org/dc/terms/creator> "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en .
@@ -1750,6 +1750,21 @@ _:genid212 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> <http://www.w3.org/2000/01/rdf-schema#comment> "symbol or term of formulation and corresponding quantity"@en .
 <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> <http://www.w3.org/2000/01/rdf-schema#label> "in defining formulation"@en .
 # 
+# https://mardi4nfdi.de/mathmoddb#isChemicalConstant
+<https://mardi4nfdi.de/mathmoddb#isChemicalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://mardi4nfdi.de/mathmoddb#isChemicalConstant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://mardi4nfdi.de/mathmoddb#isConstant> .
+<https://mardi4nfdi.de/mathmoddb#isChemicalConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#isChemicalConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "chemical quantity that is generally believed to be both universal in nature and constant in time"@en .
+<https://mardi4nfdi.de/mathmoddb#isChemicalConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is chemical constant"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#isConstant
+<https://mardi4nfdi.de/mathmoddb#isConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://mardi4nfdi.de/mathmoddb#isConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#isConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "value which cannot be changed or does not change during a process"@en .
+<https://mardi4nfdi.de/mathmoddb#isConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is constant" .
+<https://mardi4nfdi.de/mathmoddb#isConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Constant_(mathematics)> .
+<https://mardi4nfdi.de/mathmoddb#isConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q188248> .
+# 
 # https://mardi4nfdi.de/mathmoddb#isConvex
 <https://mardi4nfdi.de/mathmoddb#isConvex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://mardi4nfdi.de/mathmoddb#isConvex> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid216 .
@@ -1833,6 +1848,24 @@ _:genid230 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/2000/01/rdf-schema#comment> "True, if linear; false, if non-linear"@en .
 <https://mardi4nfdi.de/mathmoddb#isLinear> <http://www.w3.org/2000/01/rdf-schema#label> "is linear"@en .
+# 
+# https://mardi4nfdi.de/mathmoddb#isMathematicalConstant
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://mardi4nfdi.de/mathmoddb#isConstant> .
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "special, usually real number, that is interesting or significant in some way"@en .
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is mathematical constant"@en .
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Mathematical_constant> .
+<https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q186509> .
+# 
+# https://mardi4nfdi.de/mathmoddb#isPhysicalConstant
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://mardi4nfdi.de/mathmoddb#isConstant> .
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "physical quantity that is generally believed to be both universal in nature and constant in time"@en .
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <http://www.w3.org/2000/01/rdf-schema#label> "is physical constant"@en .
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Physical_constant> .
+<https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q173227> .
 # 
 # https://mardi4nfdi.de/mathmoddb#isSpaceContinuous
 <https://mardi4nfdi.de/mathmoddb#isSpaceContinuous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -3468,6 +3501,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#BoltzmannConstant
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "physical constant relating the average relative thermal energy with the thermodynamic temperature"@en .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Boltzmann Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#BoltzmannConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Boltzmann_constant> .
@@ -4149,6 +4183,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
+<https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/2000/01/rdf-schema#comment> "constant for the competitive inhibition in an uni uni reaction"@en .
 <https://mardi4nfdi.de/mathmoddb#CompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/2000/01/rdf-schema#label> "Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"@en .
@@ -5643,6 +5678,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#DissociationConstant
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#DissociationConstant> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "measures the propensity of a larger object to separate (dissociate) reversibly into smaller components"@en .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Dissociation Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#DissociationConstant> <https://mardi4nfdi.de/mathmoddb#wikidataID> <https://www.wikidata.org/wiki/Q898254> .
@@ -6005,6 +6041,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EarthMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EarthMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#EarthMass> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Mass> .
+<https://mardi4nfdi.de/mathmoddb#EarthMass> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EarthMass> <http://www.w3.org/2000/01/rdf-schema#comment> "mass of the planet Earth"@en .
 <https://mardi4nfdi.de/mathmoddb#EarthMass> <http://www.w3.org/2000/01/rdf-schema#label> "Earth Mass"@en .
 <https://mardi4nfdi.de/mathmoddb#EarthMass> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Earth_mass> .
@@ -6014,6 +6051,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Length> .
+<https://mardi4nfdi.de/mathmoddb#EarthRadius> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <http://purl.org/dc/terms/description> "mean distance from the Earth's center to its surface: A globally-average value is usually considered to be 6,371 kilometres with a 0.3% variability (±10 km)"@en .
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <http://www.w3.org/2000/01/rdf-schema#comment> "mean distance from the Earth's center to its surface"@en .
 <https://mardi4nfdi.de/mathmoddb#EarthRadius> <http://www.w3.org/2000/01/rdf-schema#label> "Earth Radius"@en .
@@ -6026,7 +6064,6 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Edges> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> .
 <https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/2000/01/rdf-schema#comment> "set of all edges in a graph"@en .
 <https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/2000/01/rdf-schema#label> "Edges"@en .
-<https://mardi4nfdi.de/mathmoddb#Edges> <http://www.w3.org/2000/01/rdf-schema#label> "Kanten"@de .
 <https://mardi4nfdi.de/mathmoddb#Edges> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q124247109" .
 # 
 # https://mardi4nfdi.de/mathmoddb#EffectiveConductivity
@@ -6315,6 +6352,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Mass> .
+<https://mardi4nfdi.de/mathmoddb#ElectronMass> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://purl.org/dc/terms/description> "In particle physics, the mass of a stationary electron is one of the fundamental constants of physics."@en .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2000/01/rdf-schema#comment> "mass of a stationary electron"@en .
 <https://mardi4nfdi.de/mathmoddb#ElectronMass> <http://www.w3.org/2000/01/rdf-schema#label> "Electron Mass"@en .
@@ -6864,6 +6902,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#EquilibriumConstant
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "equilibrium constant of a chemical reaction is the value of its reaction quotient at chemical equilibrium, a state approached after sufficient time"@en .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Equilibrium Constant"@en .
@@ -6874,6 +6913,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSSDefinition> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#EquilibriumConstant> .
+<https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <http://www.w3.org/2000/01/rdf-schema#comment> "equilibrium constant of bi bi rection following ordered mechnism with steady state assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#EquilibriumConstantBiBiReactionOrderedSS> <http://www.w3.org/2000/01/rdf-schema#label> "Equilibrium Constant (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -6997,6 +7037,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#EulerNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#EulerNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#EulerNumber> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#RealDimensionless> .
+<https://mardi4nfdi.de/mathmoddb#EulerNumber> <https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#EulerNumber> <http://purl.org/dc/terms/description> "transcendental number approximately equal 2.718281828...."@en .
 <https://mardi4nfdi.de/mathmoddb#EulerNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "mathematical constant; limit of (1 + 1/n)^n as n approaches infinity"@en .
 <https://mardi4nfdi.de/mathmoddb#EulerNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Euler Number"@en .
@@ -8080,6 +8121,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#GravitationalConstant
 <https://mardi4nfdi.de/mathmoddb#GravitationalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#GravitationalConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#GravitationalConstant> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#GravitationalConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "physical constant relating the gravitational force between objects to their mass and distance"@en .
 <https://mardi4nfdi.de/mathmoddb#GravitationalConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Gravitational Constant"@en .
 <https://mardi4nfdi.de/mathmoddb#GravitationalConstant> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Gravitational_constant> .
@@ -8750,6 +8792,8 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#DissociationConstant> .
+<https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "chemical constant"@en .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Inhibition Constant"@en .
 # 
@@ -8770,6 +8814,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> .
+<https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Inhibition constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "inhibition constant"@en .
@@ -8829,6 +8874,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> .
+<https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Inhibition constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "inhibition constant"@en .
@@ -8890,6 +8936,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> .
+<https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Inhibition constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "inhibition constant"@en .
@@ -8949,6 +8996,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> .
+<https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://purl.org/dc/terms/description> "Inhibition constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "inhibition constant"@en .
@@ -11946,6 +11994,8 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://purl.org/dc/terms/description> "Property to characterize the kinetics of Michaelis–Menten reactions"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "property to characterize the kinetics of Michaelis–Menten reactions"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant"@en .
@@ -11957,6 +12007,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product 1 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -11986,6 +12037,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product 2 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12016,6 +12068,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the product of an Uni Uni Reaction under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantProductUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Product (Uni Uni Reaction - Steady State Assumption)"@en .
@@ -12043,6 +12096,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12072,6 +12126,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12099,6 +12154,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate (Uni Uni Reaction - Irreversibility Assumption)"@en .
@@ -12125,6 +12181,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate (Uni Uni Reaction - Rapid Equilibrium Assumption)"@en .
@@ -12151,6 +12208,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumptionDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate of an Uni Uni Reaction under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisConstantSubstrateUniUniReactionSteadyStateAssumption> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"@en .
@@ -12257,6 +12315,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSSDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"@en .
@@ -12307,6 +12366,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#definedBy> <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Concentration> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#MichaelisConstant> .
+<https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#comment> "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption"@en .
 <https://mardi4nfdi.de/mathmoddb#MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSS> <http://www.w3.org/2000/01/rdf-schema#label> "Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"@en .
@@ -13603,7 +13663,6 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#Nodes> <https://mardi4nfdi.de/mathmoddb#containedInFormulation> <https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork> .
 <https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/2000/01/rdf-schema#comment> "set of all nodes in a graph"@en .
-<https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/2000/01/rdf-schema#label> "Knoten"@de .
 <https://mardi4nfdi.de/mathmoddb#Nodes> <http://www.w3.org/2000/01/rdf-schema#label> "Nodes"@en .
 <https://mardi4nfdi.de/mathmoddb#Nodes> <https://mardi4nfdi.de/mathmoddb#wikidataID> "https://www.wikidata.org/wiki/Q124247078" .
 # 
@@ -14791,6 +14850,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://purl.org/dc/terms/description> "The magnetic permeability in a classical vacuum. It is a physical constant that quantifies the strength of the magnetic field induced by an electric current."@en .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/2000/01/rdf-schema#comment> "strength of the magnetic field induced by an electric current"@en .
 <https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum> <http://www.w3.org/2000/01/rdf-schema#label> "Permeability (Vacuum)"@en .
@@ -14840,6 +14900,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#PermittivityDielectric> .
+<https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://purl.org/dc/terms/description> "Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It is an ideal (baseline) physical constant."@en .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2000/01/rdf-schema#comment> "physical constant that represents the capability of the vacuum to permit electric field lines"@en .
 <https://mardi4nfdi.de/mathmoddb#PermittivityVacuum> <http://www.w3.org/2000/01/rdf-schema#label> "Permittivity (Vacuum)"@en .
@@ -14865,6 +14926,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#PiNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#PiNumber> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#RealDimensionless> .
 <https://mardi4nfdi.de/mathmoddb#PiNumber> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<https://mardi4nfdi.de/mathmoddb#PiNumber> <https://mardi4nfdi.de/mathmoddb#isMathematicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#PiNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "ratio of circumference and the diameter of a circle"@en .
 <https://mardi4nfdi.de/mathmoddb#PiNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Pi Number"@en .
 <https://mardi4nfdi.de/mathmoddb#PiNumber> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Pi> .
@@ -14874,6 +14936,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#PlanckConstant
 <https://mardi4nfdi.de/mathmoddb#PlanckConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#PlanckConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#PlanckConstant> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#PlanckConstant> <http://purl.org/dc/terms/description> "a physical constant that is the quantum of action in quantum mechanics. The Planck constant was first described as the proportionality constant between the energy of a photon and the frequency of its associated electromagnetic wave."@en .
 <https://mardi4nfdi.de/mathmoddb#PlanckConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "quantum of action in quantum mechanics"@en .
 <https://mardi4nfdi.de/mathmoddb#PlanckConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Planck Constant"@en .
@@ -15949,6 +16012,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 # https://mardi4nfdi.de/mathmoddb#RateConstant
 <https://mardi4nfdi.de/mathmoddb#RateConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#RateConstant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
+<https://mardi4nfdi.de/mathmoddb#RateConstant> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#RateConstant> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#RateConstant> <http://www.w3.org/2000/01/rdf-schema#comment> "quantifies the rate of a chemical reaction"@en .
 <https://mardi4nfdi.de/mathmoddb#RateConstant> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction Rate Constant"@en .
@@ -16958,6 +17022,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#Velocity> .
+<https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <https://mardi4nfdi.de/mathmoddb#isPhysicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <http://www.w3.org/2000/01/rdf-schema#comment> "speed of electromagnetic waves in vacuum"@en .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <http://www.w3.org/2000/01/rdf-schema#label> "Speed Of Light"@en .
 <https://mardi4nfdi.de/mathmoddb#SpeedOfLight> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://en.wikipedia.org/wiki/Speed_of_light> .
@@ -17903,8 +17968,8 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#TendonStrain> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#containsQuantity> <https://mardi4nfdi.de/mathmoddb#Time> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#defines> <https://mardi4nfdi.de/mathmoddb#TendonStrain> .
-<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\epsilon_\\text{T}(t) \\equiv \\frac{\\mathcal{l}_\\text{T}(t)-\\mathcal{l}^{\\text{slack}}_\\text{T} }{\\mathcal{l}^{\\text{slack}}_\\text{T}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
-<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\epsilon_{\\text{T}$, Tendon Strain"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#definingFormulation> "$\\epsilon_\\text{T}(t) \\equiv \\frac{\\mathcal{l}_\\text{T}(t)-\\mathcal{l}^{\\text{slack}}_\\text{T} }{\\mathcal{l}^{\\text{slack}}_\\text{T}}$"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
+<https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\epsilon_{\\text{T}}$, Tendon Strain"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$\\mathcal{l}^{\\text{slack}}_\\text{T}$, Stress Free Tendon Length"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$l_{\\text{T}}$, Tendon Length"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
 <https://mardi4nfdi.de/mathmoddb#TendonStrainDefinition> <https://mardi4nfdi.de/mathmoddb#inDefiningFormulation> "$t$, Time"^^<https://mardi4nfdi.de/mathmoddb#LaTeX> .
@@ -18129,6 +18194,7 @@ _:genid237 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
 <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://mardi4nfdi.de/mathmoddb#Quantity> .
 <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <https://mardi4nfdi.de/mathmoddb#generalizedByQuantity> <https://mardi4nfdi.de/mathmoddb#InhibitionConstant> .
+<https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <https://mardi4nfdi.de/mathmoddb#isChemicalConstant> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <https://mardi4nfdi.de/mathmoddb#isDimensionless> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
 <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/2000/01/rdf-schema#comment> "constant for the uncompetitive inhibition in an uni uni reaction"@en .
 <https://mardi4nfdi.de/mathmoddb#UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition> <http://www.w3.org/2000/01/rdf-schema#label> "Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"@en .

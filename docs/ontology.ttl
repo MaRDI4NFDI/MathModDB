@@ -9,7 +9,7 @@
 <https://mardi4nfdi.de/mathmoddb> rdf:type owl:Ontology ;
                                    owl:versionIRI <https://mardi4nfdi.de/mathmoddb/0.8.0> ;
                                    <http://purl.org/dc/terms/abstract> "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph." ;
-                                   <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models" ;
+                                   <http://purl.org/dc/terms/bibliographicCitation> "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models"@en ;
                                    <http://purl.org/dc/terms/creator> "Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en ,
                                                                       "Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)"@en ,
                                                                       "Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en ,
@@ -1549,6 +1549,23 @@ rdf:HTML rdf:type rdfs:Datatype .
                        rdfs:label "in defining formulation"@en .
 
 
+###  https://mardi4nfdi.de/mathmoddb#isChemicalConstant
+:isChemicalConstant rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :isConstant ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "chemical quantity that is generally believed to be both universal in nature and constant in time"@en ;
+                    rdfs:label "is chemical constant"@en .
+
+
+###  https://mardi4nfdi.de/mathmoddb#isConstant
+:isConstant rdf:type owl:DatatypeProperty ;
+            rdfs:range xsd:boolean ;
+            rdfs:comment "value which cannot be changed or does not change during a process"@en ;
+            rdfs:label "is constant" ;
+            rdfs:seeAlso <https://en.wikipedia.org/wiki/Constant_(mathematics)> ;
+            :wikidataID <https://www.wikidata.org/wiki/Q188248> .
+
+
 ###  https://mardi4nfdi.de/mathmoddb#isConvex
 :isConvex rdf:type owl:DatatypeProperty ;
           rdfs:domain [ rdf:type owl:Class ;
@@ -1610,6 +1627,26 @@ rdf:HTML rdf:type rdfs:Datatype .
           rdfs:range xsd:boolean ;
           rdfs:comment "True, if linear; false, if non-linear"@en ;
           rdfs:label "is linear"@en .
+
+
+###  https://mardi4nfdi.de/mathmoddb#isMathematicalConstant
+:isMathematicalConstant rdf:type owl:DatatypeProperty ;
+                        rdfs:subPropertyOf :isConstant ;
+                        rdfs:range xsd:boolean ;
+                        rdfs:comment "special, usually real number, that is interesting or significant in some way"@en ;
+                        rdfs:label "is mathematical constant"@en ;
+                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Mathematical_constant> ;
+                        :wikidataID <https://www.wikidata.org/wiki/Q186509> .
+
+
+###  https://mardi4nfdi.de/mathmoddb#isPhysicalConstant
+:isPhysicalConstant rdf:type owl:DatatypeProperty ;
+                    rdfs:subPropertyOf :isConstant ;
+                    rdfs:range xsd:boolean ;
+                    rdfs:comment "physical quantity that is generally believed to be both universal in nature and constant in time"@en ;
+                    rdfs:label "is physical constant"@en ;
+                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Physical_constant> ;
+                    :wikidataID <https://www.wikidata.org/wiki/Q173227> .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#isSpaceContinuous
@@ -3386,6 +3423,7 @@ o & \\textrm{otherwise} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#BoltzmannConstant
 :BoltzmannConstant rdf:type owl:NamedIndividual ,
                             :Quantity ;
+                   :isPhysicalConstant "true"^^xsd:boolean ;
                    rdfs:comment "physical constant relating the average relative thermal energy with the thermodynamic temperature"@en ;
                    rdfs:label "Boltzmann Constant"@en ;
                    rdfs:seeAlso <https://en.wikipedia.org/wiki/Boltzmann_constant> ;
@@ -4123,6 +4161,7 @@ p(t+\\tau) &=& p(t+\\tau/2)+\\tau F(q(t+\\tau))/2
 :CompetitiveInhibitionConstantUniUniReactionReversibleInhibition rdf:type owl:NamedIndividual ,
                                                                           :Quantity ;
                                                                  :generalizedByQuantity :Concentration ;
+                                                                 :isChemicalConstant "true"^^xsd:boolean ;
                                                                  :isDimensionless "false"^^xsd:boolean ;
                                                                  rdfs:comment "constant for the competitive inhibition in an uni uni reaction"@en ;
                                                                  rdfs:label "Competitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"@en .
@@ -5752,6 +5791,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#DissociationConstant
 :DissociationConstant rdf:type owl:NamedIndividual ,
                                :Quantity ;
+                      :isChemicalConstant "true"^^xsd:boolean ;
                       rdfs:comment "measures the propensity of a larger object to separate (dissociate) reversibly into smaller components"@en ;
                       rdfs:label "Dissociation Constant"@en ;
                       :wikidataID <https://www.wikidata.org/wiki/Q898254> .
@@ -6134,6 +6174,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :EarthMass rdf:type owl:NamedIndividual ,
                     :Quantity ;
            :generalizedByQuantity :Mass ;
+           :isPhysicalConstant "true"^^xsd:boolean ;
            rdfs:comment "mass of the planet Earth"@en ;
            rdfs:label "Earth Mass"@en ;
            rdfs:seeAlso <https://en.wikipedia.org/wiki/Earth_mass> ;
@@ -6144,6 +6185,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :EarthRadius rdf:type owl:NamedIndividual ,
                       :Quantity ;
              :generalizedByQuantity :Length ;
+             :isPhysicalConstant "true"^^xsd:boolean ;
              <http://purl.org/dc/terms/description> "mean distance from the Earth's center to its surface: A globally-average value is usually considered to be 6,371 kilometres with a 0.3% variability (±10 km)"@en ;
              rdfs:comment "mean distance from the Earth's center to its surface"@en ;
              rdfs:label "Earth Radius"@en ;
@@ -6156,8 +6198,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                 :Quantity ;
        :containedInFormulation :PublicTransportationNetwork ;
        rdfs:comment "set of all edges in a graph"@en ;
-       rdfs:label "Edges"@en ,
-                  "Kanten"@de ;
+       rdfs:label "Edges"@en ;
        :wikidataID "https://www.wikidata.org/wiki/Q124247109" .
 
 
@@ -6474,6 +6515,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :ElectronMass rdf:type owl:NamedIndividual ,
                        :Quantity ;
               :generalizedByQuantity :Mass ;
+              :isPhysicalConstant "true"^^xsd:boolean ;
               <http://purl.org/dc/terms/description> "In particle physics, the mass of a stationary electron is one of the fundamental constants of physics."@en ;
               rdfs:comment "mass of a stationary electron"@en ;
               rdfs:label "Electron Mass"@en ;
@@ -7062,6 +7104,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#EquilibriumConstant
 :EquilibriumConstant rdf:type owl:NamedIndividual ,
                               :Quantity ;
+                     :isChemicalConstant "true"^^xsd:boolean ;
                      :isDimensionless "true"^^xsd:boolean ;
                      rdfs:comment "equilibrium constant of a chemical reaction is the value of its reaction quotient at chemical equilibrium, a state approached after sufficient time"@en ;
                      rdfs:label "Equilibrium Constant"@en ;
@@ -7073,6 +7116,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                                    :Quantity ;
                                           :definedBy :EquilibriumConstantBiBiReactionOrderedSSDefinition ;
                                           :generalizedByQuantity :EquilibriumConstant ;
+                                          :isChemicalConstant "true"^^xsd:boolean ;
                                           :isDimensionless "true"^^xsd:boolean ;
                                           rdfs:comment "equilibrium constant of bi bi rection following ordered mechnism with steady state assumption"@en ;
                                           rdfs:label "Equilibrium Constant (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -7204,6 +7248,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
 :EulerNumber rdf:type owl:NamedIndividual ,
                       :Quantity ;
              :generalizedByQuantity :RealDimensionless ;
+             :isMathematicalConstant "true"^^xsd:boolean ;
              <http://purl.org/dc/terms/description> "transcendental number approximately equal 2.718281828...."@en ;
              rdfs:comment "mathematical constant; limit of (1 + 1/n)^n as n approaches infinity"@en ;
              rdfs:label "Euler Number"@en ;
@@ -8405,6 +8450,7 @@ Q_{j}(t_{1},\\ldots,t_{j}) X&=& Q_{j-1}iN e^{A^{*}t_{j}}
 ###  https://mardi4nfdi.de/mathmoddb#GravitationalConstant
 :GravitationalConstant rdf:type owl:NamedIndividual ,
                                 :Quantity ;
+                       :isPhysicalConstant "true"^^xsd:boolean ;
                        rdfs:comment "physical constant relating the gravitational force between objects to their mass and distance"@en ;
                        rdfs:label "Gravitational Constant"@en ;
                        rdfs:seeAlso <https://en.wikipedia.org/wiki/Gravitational_constant> ;
@@ -9126,6 +9172,8 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
 :InhibitionConstant rdf:type owl:NamedIndividual ,
                              :Quantity ;
                     :generalizedByQuantity :DissociationConstant ;
+                    :isChemicalConstant "true"^^xsd:boolean ;
+                    :isDimensionless "false"^^xsd:boolean ;
                     rdfs:comment "chemical constant"@en ;
                     rdfs:label "Inhibition Constant"@en .
 
@@ -9148,6 +9196,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                              :Quantity ;
                                                                     :definedBy :InhibitionConstantProduct1BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                     :generalizedByQuantity :InhibitionConstant ;
+                                                                    :isChemicalConstant "true"^^xsd:boolean ;
                                                                     :isDimensionless "false"^^xsd:boolean ;
                                                                     <http://purl.org/dc/terms/description> "Inhibition constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en ;
                                                                     rdfs:comment "inhibition constant"@en ;
@@ -9212,6 +9261,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                              :Quantity ;
                                                                     :definedBy :InhibitionConstantProduct2BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                     :generalizedByQuantity :InhibitionConstant ;
+                                                                    :isChemicalConstant "true"^^xsd:boolean ;
                                                                     :isDimensionless "false"^^xsd:boolean ;
                                                                     <http://purl.org/dc/terms/description> "Inhibition constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en ;
                                                                     rdfs:comment "inhibition constant"@en ;
@@ -9278,6 +9328,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                                :Quantity ;
                                                                       :definedBy :InhibitionConstantSubstrate1BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                       :generalizedByQuantity :InhibitionConstant ;
+                                                                      :isChemicalConstant "true"^^xsd:boolean ;
                                                                       :isDimensionless "false"^^xsd:boolean ;
                                                                       <http://purl.org/dc/terms/description> "Inhibition constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en ;
                                                                       rdfs:comment "inhibition constant"@en ;
@@ -9342,6 +9393,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                                :Quantity ;
                                                                       :definedBy :InhibitionConstantSubstrate2BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                       :generalizedByQuantity :InhibitionConstant ;
+                                                                      :isChemicalConstant "true"^^xsd:boolean ;
                                                                       :isDimensionless "false"^^xsd:boolean ;
                                                                       <http://purl.org/dc/terms/description> "Inhibition constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Staedy State Assumption"@en ;
                                                                       rdfs:comment "inhibition constant"@en ;
@@ -12579,6 +12631,8 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
 :MichaelisConstant rdf:type owl:NamedIndividual ,
                             :Quantity ;
                    :generalizedByQuantity :Concentration ;
+                   :isChemicalConstant "true"^^xsd:boolean ;
+                   :isDimensionless "false"^^xsd:boolean ;
                    <http://purl.org/dc/terms/description> "Property to characterize the kinetics of Michaelis–Menten reactions"@en ;
                    rdfs:comment "property to characterize the kinetics of Michaelis–Menten reactions"@en ;
                    rdfs:label "Michaelis Constant"@en ;
@@ -12591,6 +12645,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                    :definedBy :MichaelisConstantProduct1BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                    :generalizedByQuantity :Concentration ,
                                                                                           :MichaelisConstant ;
+                                                                   :isChemicalConstant "true"^^xsd:boolean ;
                                                                    :isDimensionless "false"^^xsd:boolean ;
                                                                    rdfs:comment "Michaelis constant for the product 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en ;
                                                                    rdfs:label "Michaelis Constant Product 1 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12622,6 +12677,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                    :definedBy :MichaelisConstantProduct2BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                    :generalizedByQuantity :Concentration ,
                                                                                           :MichaelisConstant ;
+                                                                   :isChemicalConstant "true"^^xsd:boolean ;
                                                                    :isDimensionless "false"^^xsd:boolean ;
                                                                    rdfs:comment "Michaelis constant for the product 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en ;
                                                                    rdfs:label "Michaelis Constant Product 2 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12654,6 +12710,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                              :definedBy :MichaelisConstantProductUniUniReactionSteadyStateAssumptionDefinition ;
                                                              :generalizedByQuantity :Concentration ,
                                                                                     :MichaelisConstant ;
+                                                             :isChemicalConstant "true"^^xsd:boolean ;
                                                              :isDimensionless "false"^^xsd:boolean ;
                                                              rdfs:comment "Michaelis constant for the product of an Uni Uni Reaction under the Steady State Assumption"@en ;
                                                              rdfs:label "Michaelis Constant Product (Uni Uni Reaction - Steady State Assumption)"@en .
@@ -12683,6 +12740,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                      :definedBy :MichaelisConstantSubstrate1BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                      :generalizedByQuantity :Concentration ,
                                                                                             :MichaelisConstant ;
+                                                                     :isChemicalConstant "true"^^xsd:boolean ;
                                                                      :isDimensionless "false"^^xsd:boolean ;
                                                                      rdfs:comment "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en ;
                                                                      rdfs:label "Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12714,6 +12772,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                      :definedBy :MichaelisConstantSubstrate2BiBiReactionOrderedSteadyStateAssumptionDefinition ;
                                                                      :generalizedByQuantity :Concentration ,
                                                                                             :MichaelisConstant ;
+                                                                     :isChemicalConstant "true"^^xsd:boolean ;
                                                                      :isDimensionless "false"^^xsd:boolean ;
                                                                      rdfs:comment "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism under the Steady State Assumption"@en ;
                                                                      rdfs:label "Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered - Steady State Assumption)"@en .
@@ -12743,6 +12802,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                    :definedBy :MichaelisConstantSubstrateUniUniReactionIrreversibilityAssumptionDefinition ;
                                                                    :generalizedByQuantity :Concentration ,
                                                                                           :MichaelisConstant ;
+                                                                   :isChemicalConstant "true"^^xsd:boolean ;
                                                                    :isDimensionless "false"^^xsd:boolean ;
                                                                    rdfs:comment "Michaelis constant for the substrate of an Uni Uni Reaction under the Irreversibility Assumption"@en ;
                                                                    rdfs:label "Michaelis Constant Substrate (Uni Uni Reaction - Irreversibility Assumption)"@en .
@@ -12771,6 +12831,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                     :definedBy :MichaelisConstantSubstrateUniUniReactionRapidEquilibriumAssumptionDefinition ;
                                                                     :generalizedByQuantity :Concentration ,
                                                                                            :MichaelisConstant ;
+                                                                    :isChemicalConstant "true"^^xsd:boolean ;
                                                                     :isDimensionless "false"^^xsd:boolean ;
                                                                     rdfs:comment "Michaelis constant for the substrate of an Uni Uni Reaction under the Rapid Equilibrium Assumption"@en ;
                                                                     rdfs:label "Michaelis Constant Substrate (Uni Uni Reaction - Rapid Equilibrium Assumption)"@en .
@@ -12799,6 +12860,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                :definedBy :MichaelisConstantSubstrateUniUniReactionSteadyStateAssumptionDefinition ;
                                                                :generalizedByQuantity :Concentration ,
                                                                                       :MichaelisConstant ;
+                                                               :isChemicalConstant "true"^^xsd:boolean ;
                                                                :isDimensionless "false"^^xsd:boolean ;
                                                                rdfs:comment "Michaelis constant for the substrate of an Uni Uni Reaction under the Steady State Assumption"@en ;
                                                                rdfs:label "Michaelis Constant Substrate (Uni Uni Reaction - Steady State Assumption)"@en .
@@ -12913,6 +12975,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                 :definedBy :MichaelisMentenConstantSubstrate1BiBiReactionOrderedsingleCCSSDefinition ;
                                                                 :generalizedByQuantity :Concentration ,
                                                                                        :MichaelisConstant ;
+                                                                :isChemicalConstant "true"^^xsd:boolean ;
                                                                 :isDimensionless "false"^^xsd:boolean ;
                                                                 rdfs:comment "Michaelis constant for the substrate 1 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption"@en ;
                                                                 rdfs:label "Michaelis Constant Substrate 1 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"@en .
@@ -12967,6 +13030,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                                                                 :definedBy :MichaelisMentenConstantSubstrate2BiBiReactionOrderedsingleCCSSDefinition ;
                                                                 :generalizedByQuantity :Concentration ,
                                                                                        :MichaelisConstant ;
+                                                                :isChemicalConstant "true"^^xsd:boolean ;
                                                                 :isDimensionless "false"^^xsd:boolean ;
                                                                 rdfs:comment "Michaelis constant for the substrate 2 of a Bi Bi Reaction with Ordered Mechanism and single central Complex under the Steady State Assumption"@en ;
                                                                 rdfs:label "Michaelis Constant Substrate 2 (Bi Bi Reaction Ordered with single central Complex - Steady State Assumption)"@en .
@@ -14338,8 +14402,7 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
                 :Quantity ;
        :containedInFormulation :PublicTransportationNetwork ;
        rdfs:comment "set of all nodes in a graph"@en ;
-       rdfs:label "Knoten"@de ,
-                  "Nodes"@en ;
+       rdfs:label "Nodes"@en ;
        :wikidataID "https://www.wikidata.org/wiki/Q124247078" .
 
 
@@ -15648,6 +15711,7 @@ $\\boldsymbol x_j\\in \\mathbb R^3$, position of center of gravity for particle 
 ###  https://mardi4nfdi.de/mathmoddb#PermeabilityVacuum
 :PermeabilityVacuum rdf:type owl:NamedIndividual ,
                              :Quantity ;
+                    :isPhysicalConstant "true"^^xsd:boolean ;
                     <http://purl.org/dc/terms/description> "The magnetic permeability in a classical vacuum. It is a physical constant that quantifies the strength of the magnetic field induced by an electric current."@en ;
                     rdfs:comment "strength of the magnetic field induced by an electric current"@en ;
                     rdfs:label "Permeability (Vacuum)"@en ;
@@ -15701,6 +15765,7 @@ $\\boldsymbol x_j\\in \\mathbb R^3$, position of center of gravity for particle 
 :PermittivityVacuum rdf:type owl:NamedIndividual ,
                              :Quantity ;
                     :generalizedByQuantity :PermittivityDielectric ;
+                    :isPhysicalConstant "true"^^xsd:boolean ;
                     <http://purl.org/dc/terms/description> "Vacuum permittivity is the value of the absolute dielectric permittivity of classical vacuum. It is an ideal (baseline) physical constant."@en ;
                     rdfs:comment "physical constant that represents the capability of the vacuum to permit electric field lines"@en ;
                     rdfs:label "Permittivity (Vacuum)"@en ;
@@ -15728,6 +15793,7 @@ $\\boldsymbol x_j\\in \\mathbb R^3$, position of center of gravity for particle 
                    :Quantity ;
           :generalizedByQuantity :RealDimensionless ;
           :isDimensionless "true"^^xsd:boolean ;
+          :isMathematicalConstant "true"^^xsd:boolean ;
           rdfs:comment "ratio of circumference and the diameter of a circle"@en ;
           rdfs:label "Pi Number"@en ;
           rdfs:seeAlso <https://en.wikipedia.org/wiki/Pi> ;
@@ -15738,6 +15804,7 @@ $\\boldsymbol x_j\\in \\mathbb R^3$, position of center of gravity for particle 
 ###  https://mardi4nfdi.de/mathmoddb#PlanckConstant
 :PlanckConstant rdf:type owl:NamedIndividual ,
                          :Quantity ;
+                :isPhysicalConstant "true"^^xsd:boolean ;
                 <http://purl.org/dc/terms/description> "a physical constant that is the quantum of action in quantum mechanics. The Planck constant was first described as the proportionality constant between the energy of a photon and the frequency of its associated electromagnetic wave."@en ;
                 rdfs:comment "quantum of action in quantum mechanics"@en ;
                 rdfs:label "Planck Constant"@en ;
@@ -16889,6 +16956,7 @@ deformation"""@en ;
 ###  https://mardi4nfdi.de/mathmoddb#RateConstant
 :RateConstant rdf:type owl:NamedIndividual ,
                        :Quantity ;
+              :isChemicalConstant "true"^^xsd:boolean ;
               :isDimensionless "false"^^xsd:boolean ;
               rdfs:comment "quantifies the rate of a chemical reaction"@en ;
               rdfs:label "Reaction Rate Constant"@en ;
@@ -17981,6 +18049,7 @@ deformation"""@en ;
 :SpeedOfLight rdf:type owl:NamedIndividual ,
                        :Quantity ;
               :generalizedByQuantity :Velocity ;
+              :isPhysicalConstant "true"^^xsd:boolean ;
               rdfs:comment "speed of electromagnetic waves in vacuum"@en ;
               rdfs:label "Speed Of Light"@en ;
               rdfs:seeAlso <https://en.wikipedia.org/wiki/Speed_of_light> ;
@@ -19001,8 +19070,8 @@ I_{\\text{ion}} &= I_{\\text{ion}} \\left(V^{\\text{f}}_{\\text{m}}, \\mathbf{y}
                                           :TendonStrain ,
                                           :Time ;
                         :defines :TendonStrain ;
-                        :definingFormulation "$\\epsilon_\\text{T}(t) \\equiv \\frac{\\mathcal{l}_\\text{T}(t)-\\mathcal{l}^{\\text{slack}}_\\text{T} }{\\mathcal{l}^{\\text{slack}}_\\text{T}$"^^:LaTeX ;
-                        :inDefiningFormulation "$\\epsilon_{\\text{T}$, Tendon Strain"^^:LaTeX ,
+                        :definingFormulation "$\\epsilon_\\text{T}(t) \\equiv \\frac{\\mathcal{l}_\\text{T}(t)-\\mathcal{l}^{\\text{slack}}_\\text{T} }{\\mathcal{l}^{\\text{slack}}_\\text{T}}$"^^:LaTeX ;
+                        :inDefiningFormulation "$\\epsilon_{\\text{T}}$, Tendon Strain"^^:LaTeX ,
                                                "$\\mathcal{l}^{\\text{slack}}_\\text{T}$, Stress Free Tendon Length"^^:LaTeX ,
                                                "$l_{\\text{T}}$, Tendon Length"^^:LaTeX ,
                                                "$t$, Time"^^:LaTeX ;
@@ -19249,6 +19318,7 @@ I_{\\text{ion}} &= I_{\\text{ion}} \\left(V^{\\text{f}}_{\\text{m}}, \\mathbf{y}
 :UncompetitiveInhibitionConstantUniUniReactionReversibleInhibition rdf:type owl:NamedIndividual ,
                                                                             :Quantity ;
                                                                    :generalizedByQuantity :InhibitionConstant ;
+                                                                   :isChemicalConstant "true"^^xsd:boolean ;
                                                                    :isDimensionless "false"^^xsd:boolean ;
                                                                    rdfs:comment "constant for the uncompetitive inhibition in an uni uni reaction"@en ;
                                                                    rdfs:label "Uncompetitive Inhibition Constant (Uni Uni Reaction Reversible Inhibition)"@en .

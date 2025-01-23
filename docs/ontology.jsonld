@@ -774,7 +774,8 @@
     "@value" : "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph."
   } ],
   "http://purl.org/dc/terms/bibliographicCitation" : [ {
-    "@value" : "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbrach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models"
+    "@language" : "en",
+    "@value" : "Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@language" : "en",
@@ -4704,6 +4705,10 @@
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://en.wikipedia.org/wiki/Boltzmann_constant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/BoltzmannConstant"
   } ],
@@ -6531,6 +6536,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -10590,6 +10599,10 @@
     "@language" : "en",
     "@value" : "Dissociation Constant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q898254"
   } ]
@@ -11605,6 +11618,10 @@
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Mass"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q25935139"
   } ]
@@ -11632,6 +11649,10 @@
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Length"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q1155470"
   } ]
@@ -11648,9 +11669,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Edges"
-  }, {
-    "@language" : "de",
-    "@value" : "Kanten"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedInFormulation" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#PublicTransportationNetwork"
@@ -12422,6 +12440,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Mass"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/ElectronMass"
@@ -13895,6 +13917,10 @@
     "@language" : "en",
     "@value" : "Equilibrium Constant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
@@ -13921,6 +13947,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EquilibriumConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -14276,6 +14306,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#RealDimensionless"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isMathematicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q82435"
@@ -17118,6 +17152,10 @@
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://en.wikipedia.org/wiki/Gravitational_constant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "https://www.qudt.org/vocab/constant/GravitationalConstant"
   } ],
@@ -18925,6 +18963,14 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#DissociationConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstantProduct1BiBiReactionOrderedSingleCCSS",
@@ -18982,6 +19028,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -19145,6 +19195,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -19315,6 +19369,10 @@
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -19477,6 +19535,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -27616,6 +27678,14 @@
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q61751178"
   } ]
@@ -27640,6 +27710,10 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -27724,6 +27798,10 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -27812,6 +27890,10 @@
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -27889,6 +27971,10 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -27974,6 +28060,10 @@
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -28048,6 +28138,10 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -28124,6 +28218,10 @@
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -28198,6 +28296,10 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -28496,6 +28598,10 @@
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -28633,6 +28739,10 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#Concentration"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#MichaelisConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -32141,9 +32251,6 @@
     "@value" : "set of all nodes in a graph"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "de",
-    "@value" : "Knoten"
-  }, {
     "@language" : "en",
     "@value" : "Nodes"
   } ],
@@ -35329,6 +35436,10 @@
     "@language" : "en",
     "@value" : "Magnetic Constant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/MagneticConstant"
   } ],
@@ -35468,6 +35579,10 @@
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#PermittivityDielectric"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/ElectricConstant"
   } ],
@@ -35531,6 +35646,10 @@
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isMathematicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q167"
   } ]
@@ -35554,6 +35673,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://en.wikipedia.org/wiki/Planck_constant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/PlanckConstant"
@@ -38506,6 +38629,10 @@
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
     "@id" : "https://en.wikipedia.org/wiki/Reaction_rate_constant"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "false"
@@ -41261,6 +41388,10 @@
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Velocity"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#qudtID" : [ {
     "@id" : "http://qudt.org/vocab/constant/SpeedOfLight_Vacuum"
   } ],
@@ -43843,11 +43974,11 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\epsilon_\\text{T}(t) \\equiv \\frac{\\mathcal{l}_\\text{T}(t)-\\mathcal{l}^{\\text{slack}}_\\text{T} }{\\mathcal{l}^{\\text{slack}}_\\text{T}$"
+    "@value" : "$\\epsilon_\\text{T}(t) \\equiv \\frac{\\mathcal{l}_\\text{T}(t)-\\mathcal{l}^{\\text{slack}}_\\text{T} }{\\mathcal{l}^{\\text{slack}}_\\text{T}}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\epsilon_{\\text{T}$, Tendon Strain"
+    "@value" : "$\\epsilon_{\\text{T}}$, Tendon Strain"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$\\mathcal{l}^{\\text{slack}}_\\text{T}$, Stress Free Tendon Length"
@@ -44439,6 +44570,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedByQuantity" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InhibitionConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#isChemicalConstant" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -49892,6 +50027,42 @@
     "@id" : "_:genid135"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#isChemicalConstant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "chemical quantity that is generally believed to be both universal in nature and constant in time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is chemical constant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#isConstant"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#isConstant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "value which cannot be changed or does not change during a process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is constant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Constant_(mathematics)"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q188248"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#isConvex",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -49975,6 +50146,52 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#isMathematicalConstant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "special, usually real number, that is interesting or significant in some way"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is mathematical constant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Mathematical_constant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#isConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q186509"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#isPhysicalConstant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "physical quantity that is generally believed to be both universal in nature and constant in time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is physical constant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Physical_constant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#isConstant"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
+    "@id" : "https://www.wikidata.org/wiki/Q173227"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#isSpaceContinuous",
