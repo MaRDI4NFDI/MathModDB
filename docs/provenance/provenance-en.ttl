@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<https://mardi4nfdi.de/mathmoddb/0.8.0> a prov:Entity;
+<..\index-en.html> a prov:Entity;
 	 dc:title "MathModDB Ontology and Knowledge Graph for Mathematical Models";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;

@@ -10,7 +10,7 @@
 ####################################################
 
 # Path to the OWL-File of the ontology
-owlOntPath="$HOME/MaRDI/Ontology/model-ontology_main/MaRDIModelOntology.owl"
+owlOntPath="$HOME/MaRDI/Ontology/model-ontology_main/MaRDIModelOntology_full.owl"
 
 # Path to the config file for Widocu
 widocuConfPath="$HOME/MaRDI/Ontology/publicationGithub/MathModDB/docs/config.properties"
@@ -22,11 +22,11 @@ widocuOutputPath=$PWD
 # Path to the Widocu JAR
 widocuJarPath="$HOME/Downloads/widoco-1.4.25-jar-with-dependencies_JDK-17.jar"
 
-echo -n "Preprocessing Ontology... "
+#echo -n "Preprocessing Ontology... "
 # Do some preprocessing for better comments
-./preprocessOntologyScript.sh $owlOntPath
+#./preprocessOntologyScript.sh $owlOntPath
 
-echo "DONE"
+#echo "DONE"
 
 
 echo -n "Creating WIDOCU... " 
