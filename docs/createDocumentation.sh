@@ -40,7 +40,7 @@ echo -n "DONE"
 
 echo -n "Creating WIDOCU... " 
 # Create Widocu 
-java -jar $widocuJarPath -ontFile ontology_full_anonRemoved_swappedTerms.owl -outFolder $widocuOutputPath -confFile $widocuConfPath -getOntologyMetadata -rewriteAll -webVowl -includeAnnotationProperties -uniteSections >logfile.txt 2>&1
+java -jar $widocuJarPath -ontFile ontology_full_anonRemoved_swappedTerms.owl -outFolder $widocuOutputPath -confFile $widocuConfPath -getOntologyMetadata -rewriteAll -htaccess -webVowl -includeAnnotationProperties -uniteSections >logfile.txt 2>&1
 
 echo "DONE"
 
