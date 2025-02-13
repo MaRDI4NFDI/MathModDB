@@ -17,7 +17,7 @@
                                                                       "Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)"@en ,
                                                                       "Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)"@en ;
                                    <http://purl.org/dc/terms/description> "This is the MathModDB Ontology for documenting mathematical models."@en ;
-                                   <http://purl.org/dc/terms/issued> "2025-01-20" ;
+                                   <http://purl.org/dc/terms/issued> "2025-02-13" ;
                                    <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
                                    <http://purl.org/dc/terms/modified> "" ;
                                    <http://purl.org/dc/terms/publisher> "Mathematical Research Data Initiative (MaRDI, <a href=\"https://www.mardi4nfdi.de\">https://www.mardi4nfdi.de</a>)" ;
@@ -26,7 +26,7 @@
                                    rdfs:seeAlso <https://doi.org/10.1007/978-3-031-65990-4_14> ,
                                                 <https://doi.org/10.48550/arXiv.2408.10003> ,
                                                 <https://doi.org/10.52825/cordi.v1i.255> ;
-                                   owl:versionInfo "0.8.0" .
+                                   owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -3563,7 +3563,8 @@ o & \\textrm{otherwise} \\\\
 ###  https://mardi4nfdi.de/mathmoddb#CharacteristicLength
 :CharacteristicLength rdf:type owl:NamedIndividual ,
                                :Quantity ;
-                      :containedIn :ReynoldsNumber ;
+                      :containedIn :ClassicalApproximation ,
+                                   :ReynoldsNumber ;
                       :generalizedBy :Length ;
                       rdfs:comment "dimension that defines the scale of a physical system"@en ;
                       rdfs:label "Characteristic Length"@en ;
@@ -3644,9 +3645,10 @@ o & \\textrm{otherwise} \\\\
                                    :LorentzForceModelNonRelativistic ,
                                    :LorentzForceModelRelativistic ,
                                    :MaxwellEquationsModel ;
-                        :contains :deBroglieWavelength ;
+                        :contains :CharacteristicLength ,
+                                  :deBroglieWavelength ;
                         :definingFormulation "$\\lambda \\ll L$"^^:LaTeX ;
-                        :inDefiningFormulation "$L$, typical dimension of the system"^^:LaTeX ,
+                        :inDefiningFormulation "$L$, Characteristic Length"^^:LaTeX ,
                                                "$\\lambda$, de Broglie Wavelength"^^:LaTeX ;
                         rdfs:comment "classical dynamics as an approximation to quantum mechanics"@en ;
                         rdfs:label "Classical Approximation"@en ;
@@ -17750,7 +17752,8 @@ Exposed, Infectious, and Removed) type in a domain $\\Omega \\subset \\mathbb{R}
 
 
 ###  https://mardi4nfdi.de/mathmoddb#NavierStokesEquation
-:NavierStokesEquation rdf:type owl:NamedIndividual ;
+:NavierStokesEquation rdf:type owl:NamedIndividual ,
+                               :MathematicalFormulation ;
                       :contains :FluidKinematicViscosityFreeFlow ,
                                 :FluidVelocityFreeFlow ;
                       :generalizes :StokesEquation ;

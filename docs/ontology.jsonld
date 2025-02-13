@@ -1277,7 +1277,7 @@
     "@value" : "This is the MathModDB Ontology for documenting mathematical models."
   } ],
   "http://purl.org/dc/terms/issued" : [ {
-    "@value" : "2025-01-20"
+    "@value" : "2025-02-13"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
@@ -1304,7 +1304,7 @@
     "@id" : "https://doi.org/10.52825/cordi.v1i.255"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.8.0"
+    "@value" : "1.0.0"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Acceleration",
@@ -6476,6 +6476,8 @@
     "@id" : "https://en.wikipedia.org/wiki/Characteristic_length"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalApproximation"
+  }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ReynoldsNumber"
   } ],
   "https://mardi4nfdi.de/mathmoddb#generalizedBy" : [ {
@@ -6665,6 +6667,8 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#MaxwellEquationsModel"
   } ],
   "https://mardi4nfdi.de/mathmoddb#contains" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#CharacteristicLength"
+  }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#deBroglieWavelength"
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
@@ -6673,7 +6677,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$L$, typical dimension of the system"
+    "@value" : "$L$, Characteristic Length"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$\\lambda$, de Broglie Wavelength"
@@ -40996,6 +41000,9 @@
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#NavierStokesEquation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "system of nonlinear partial differential equations describing the motion of viscous fluids"

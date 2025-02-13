@@ -20,7 +20,7 @@
         <terms:creator xml:lang="en">Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)</terms:creator>
         <terms:creator xml:lang="en">Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms:creator>
         <terms:description xml:lang="en">This is the MathModDB Ontology for documenting mathematical models.</terms:description>
-        <terms:issued>2025-01-20</terms:issued>
+        <terms:issued>2025-02-13</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified></terms:modified>
         <terms:publisher>Mathematical Research Data Initiative (MaRDI, &lt;a href=&quot;https://www.mardi4nfdi.de&quot;&gt;https://www.mardi4nfdi.de&lt;/a&gt;)</terms:publisher>
@@ -29,7 +29,7 @@
         <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-65990-4_14"/>
         <rdfs:seeAlso rdf:resource="https://doi.org/10.48550/arXiv.2408.10003"/>
         <rdfs:seeAlso rdf:resource="https://doi.org/10.52825/cordi.v1i.255"/>
-        <owl:versionInfo>0.8.0</owl:versionInfo>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -4648,6 +4648,7 @@ o &amp; \textrm{otherwise} \\
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CharacteristicLength">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalApproximation"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#ReynoldsNumber"/>
         <generalizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
         <rdfs:comment xml:lang="en">dimension that defines the scale of a physical system</rdfs:comment>
@@ -4757,9 +4758,10 @@ o &amp; \textrm{otherwise} \\
         <assumedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#LorentzForceModelNonRelativistic"/>
         <assumedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#LorentzForceModelRelativistic"/>
         <assumedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#MaxwellEquationsModel"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#CharacteristicLength"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#deBroglieWavelength"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda \ll L$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$L$, typical dimension of the system</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$L$, Characteristic Length</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\lambda$, de Broglie Wavelength</inDefiningFormulation>
         <rdfs:comment xml:lang="en">classical dynamics as an approximation to quantum mechanics</rdfs:comment>
         <rdfs:label xml:lang="en">Classical Approximation</rdfs:label>
@@ -21634,6 +21636,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
 
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#NavierStokesEquation">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FluidKinematicViscosityFreeFlow"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FluidVelocityFreeFlow"/>
         <generalizes rdf:resource="https://mardi4nfdi.de/mathmoddb#StokesEquation"/>
