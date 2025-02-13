@@ -3,7 +3,6 @@ message:         If you use this database/ontology, please cite it using the met
 title:           MathModDB: An Ontology and Knowledge Graph for mathematical Models
 type:            database
 version:         1.0.0
-doi:             
 date-released:   2025-02-13
 repository-code: https://github.com/MaRDI4NFDI/MathModDB
 license:         CC-BY 4.0 international
