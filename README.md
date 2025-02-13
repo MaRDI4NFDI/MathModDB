@@ -28,7 +28,7 @@ Released on 2025-02-13
 The ontology and the data included is represented in OWL, serialized as RDF/XML in the two files in this repository. 
 
 * `MathModDB.owl` is the version as designed by the MathModDB team members. This "lean" version includes, for example, only one direction of object property relations -- the other direction can be easily inferred automatically by a reasoner, if the inverses are defined.
-* `MathModDB_full.owl` is the "fully" version, where everything which is inferred by the reasoner is also saved to the file and hence made explicit. This is needed to build the full documentation in Widoco. 
+* `MathModDB_full.owl` is the "full" version, where everything which is inferred by the reasoner is also saved to the file and hence made explicit. This is needed to build the full documentation in Widoco. 
 
 These files can opened with Protégé or any other tool for that purpose.
 
