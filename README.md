@@ -10,7 +10,7 @@ This version is also the basis for the integration of the model data into the [M
 
 Version 1.0.0
 
-Released on 2025-02-xx
+Released on 2025-02-13
 
 
 ## Authors
