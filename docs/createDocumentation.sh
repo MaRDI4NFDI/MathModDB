@@ -7,20 +7,21 @@
 #
 # All paths can be set by variables. 
 #
+# call example bash createDocumentation.sh ../MaRDIModelOntology_full.owl widoco-1.4.25-jar-with-dependencies_JDK-17.jar
 ####################################################
 
 # Path to the OWL-File of the ontology
 owlOntPath="$1"
 
 # Path to the config file for Widocu
-widocuConfPath="$HOME/MaRDI/Ontology/publicationGithub/MathModDB/docs/config.properties"
+widocuConfPath="config.properties"
 
 # Path to the file where the documentation should be created
 # Usually the directory we're in 
 widocuOutputPath=$PWD
 
 # Path to the Widocu JAR
-widocuJarPath="$HOME/Downloads/widoco-1.4.25-jar-with-dependencies_JDK-17.jar"
+widocuJarPath="$2"
 
 echo -n "Preprocessing Ontology... "
 
@@ -48,9 +49,8 @@ echo "DONE"
 echo -n "Postprocessing WIDOCU... "
 # Postprocess the WIDOCU output
 
-./scripts/postProcessWidocu.sh
+bash  scripts/postProcessWidocu.sh
 
-echo "DONE"
+echo -n "DONE"
 
-echo "WIDOCU has been created in index.html"
-
+echo -n "WIDOCU has been created in index.html"
