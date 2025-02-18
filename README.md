@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14887915.svg)](https://doi.org/10.5281/zenodo.14887915)
 # MathModDB
 
 MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative ([MaRDI](https://www.mardi4nfdi.de)). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.
