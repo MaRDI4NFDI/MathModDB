@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title:           "MathModDB - An Ontology and Knowledge Graph for mathematical Models"
+type:            dataset
+version:         1.0.0
+date-released:   2025-02-13
+repository-code: https://github.com/MaRDI4NFDI/MathModDB
+license:         CC-BY-4.0
+abstract:        "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph."
+keywords:
+  - Mathematics
+  - Mathematik
+  - Mathematical Model
+  - Mathematisches Modell
+  - Metadata
+  - Metadaten
+  - MathModDB
+  - NFDI
+  - MaRDI
+  - Ontologie
+  - Ontology
+  - Knowledge Graph
+  - Database
+authors:
+  - family-names: Shehu
+    given-names:  Aurela
+    orcid:        https://orcid.org/0000-0002-1994-0612
+  - family-names: Schembera
+    given-names:  Björn
+    orcid:        https://orcid.org/0000-0003-2860-6621
+  - family-names: Schmidt
+    given-names:  Burkhard
+    orcid:        https://orcid.org/0000-0002-9658-499X
+  - family-names: Biedinger
+    given-names:  Christine 
+    orcid:        https://orcid.org/0009-0002-5082-8386
+  - family-names: Fiedler
+    given-names:  Jochen
+    orcid:        https://orcid.org/0000-0002-9176-780X
+  - family-names: Reidelbach
+    given-names:  Marco
+    orcid:        https://orcid.org/0000-0002-1919-1834
+  - family-names: Koprucki
+    given-names:  Thomas
+    orcid:        https://orcid.org/0000-0001-6235-9412
+
+
