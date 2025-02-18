@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 title:           "MathModDB - An Ontology and Knowledge Graph for mathematical Models"
-type:            database
+type:            dataset
 version:         1.0.0
 date-released:   2025-02-13
 repository-code: https://github.com/MaRDI4NFDI/MathModDB
