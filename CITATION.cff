@@ -1,29 +1,9 @@
 cff-version: 1.1.0
 message: "If you use this software, please cite it as below."
 authors:
-  - family-names: Shehu
-    given-names:  Aurela
-    orcid:        https://orcid.org/0000-0002-1994-0612
-  - family-names: Schembera
-    given-names:  Björn
-    orcid:        https://orcid.org/0000-0003-2860-6621
-  - family-names: Schmidt
-    given-names:  Burkhard
-    orcid:        https://orcid.org/0000-0002-9658-499X
-  - family-names: Biedinger
-    given-names:  Christine 
-    orcid:        https://orcid.org/0009-0002-5082-8386
-  - family-names: Fiedler
-    given-names:  Jochen
-    orcid:        https://orcid.org/0000-0002-9176-780X
-  - family-names: Reidelbach
-    given-names:  Marco
-    orcid:        https://orcid.org/0000-0002-1919-1834
-  - family-names: Koprucki
-    given-names:  Thomas
-    orcid:        https://orcid.org/0000-0001-6235-9412
-title:           "MathModDB - An Ontology and Knowledge Graph for mathematical Models"
-version:         1.0.0
-date-released:   2025-02-13
-
-
+- family-names: Joe
+  given-names: Johnson
+orcid: https://orcid.org/0000-0000-0000-0000
+title:
+version: 1.0.0
+date-released: 2025-02-18
