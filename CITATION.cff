@@ -5,7 +5,7 @@ type:            dataset
 version:         1.0.0
 date-released:   2025-02-13
 repository-code: https://github.com/MaRDI4NFDI/MathModDB
-license:         CC-BY 4.0 international
+license:         CC-BY-4.0
 abstract:        "MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], [Computational] Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph."
 keywords:
   - Mathematics
