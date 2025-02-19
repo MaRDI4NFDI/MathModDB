@@ -7,11 +7,11 @@
 
 <p>Proper documentation and storage of research data, adhering to FAIR principles, are crucial for reproducibility and scientific integrity.
 Applied mathematics, producing diverse numerical and symbolic data, heavily relies on models that must be well-documented for replication and future use.
-Here, we present MathModDB, an ontology for mathematical models, along with a knowledge graph containing. The work is conducted within the <a href="https://www.nfdi.de/" target="_blank">NFDI project</a> <i><a href="https://www.mardi4nfdi.de" target=”_blank”>Mathematical Research Data Initiative</a></i> (MaRDI).
+Here, we present MathModDB, an ontology for mathematical models, along with a knowledge graph containing. The work is conducted within the <a href="https://www.nfdi.de/" target="_blank">NFDI project</a> entitled <i><a href="https://www.mardi4nfdi.de" target=”_blank”>Mathematical Research Data Initiative</a></i> (MaRDI).
 </p>
 <h3>Structure</h3>
 <p>
-The ontology consists of the classes <i>Mathematical Model</i>, <i>Mathematical Formulation</i>, <i>[Computational] Task</i>, <i>Quantity [Kind]</i>, <i>Research Field</i> and <i>Research Problem</i>.
+The ontology consists of the classes <i>Mathematical Model</i>, <i>Mathematical Formulation</i>, <i>Computational Task</i>, <i>Quantity [Kind]</i>, <i>Research Field</i> and <i>Research Problem</i>.
 
 The structure of the ontology, in conjunction with the neighboring knowledge graph for mathematical algorithms <a href="https://mathalgodb.mardi4nfdi.de/" target=”_blank”>MathAlgoDB</a> is displayed in the image below:
 </p>
@@ -48,12 +48,13 @@ The classes have the following semantics:
 <td>The kind of quantity, e.g. the abstract, generalized concept of a quantity. Typically, it could be chosen from an established, controlled vocabulary of quantityKinds, such as QUDT, IEC, .... Note that the kind of a quantity cannot be generalized by another (kind of a) quantity.</td>
 </tr>
 <tr>
-<td>Task</td>
-<td>A specific task associated with a mathematical model. The subclasses of this superclass should reflect their differences, e.g. a computational task or a task of doing a mathematical analysis (the latter is not yet implemented).</td>
-</tr>
-<tr>
 <td>Computational Task</td>
 <td>A specific computational task associated with a mathematical model. Typically, various tasks differ from each other by the choice of given quantities (input), unknown quantities (output), parameters or constants as well as boundary conditions, initial conditions and/or final conditions.</td>
 </tr>
+<tr>
+<td>Publication</td>
+<td>A publication that reports original empirical and theoretical work in the sciences. This class is used as a proxy class to encode semantic information how a model, quantity, ... is surveyed, analysed, ... in a publication.</td>
+</tr>
+
 </tbody>
 </table>
