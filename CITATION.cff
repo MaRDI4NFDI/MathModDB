@@ -43,5 +43,7 @@ authors:
   - family-names: Koprucki
     given-names:  Thomas
     orcid:        https://orcid.org/0000-0001-6235-9412
-
-
+identifiers:
+  - description: Initial stable release of MathModDB
+    type: doi
+    value: "10.5281/zenodo.14887915"
