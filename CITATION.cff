@@ -25,24 +25,31 @@ authors:
   - family-names: Shehu
     given-names:  Aurela
     orcid:        https://orcid.org/0000-0002-1994-0612
+    email:
   - family-names: Schembera
     given-names:  Björn
     orcid:        https://orcid.org/0000-0003-2860-6621
+    email:        bjoern.schembera@mathematik.uni-stuttgart.de
   - family-names: Schmidt
     given-names:  Burkhard
     orcid:        https://orcid.org/0000-0002-9658-499X
+    email:
   - family-names: Biedinger
     given-names:  Christine 
     orcid:        https://orcid.org/0009-0002-5082-8386
+    email:
   - family-names: Fiedler
     given-names:  Jochen
     orcid:        https://orcid.org/0000-0002-9176-780X
+    email:
   - family-names: Reidelbach
     given-names:  Marco
     orcid:        https://orcid.org/0000-0002-1919-1834
+    email:
   - family-names: Koprucki
     given-names:  Thomas
     orcid:        https://orcid.org/0000-0001-6235-9412
+    email:
 identifiers:
   - description: Initial stable release of MathModDB
     type: doi
