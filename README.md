@@ -44,9 +44,9 @@ In case you are refering to or using MathModDB, please use the following citatio
 
 ## References
 
-Schembera, B., Wübbeling, F., Kleikamp, H., Schmidt, B., Shehu, A., Reidelbach, M., Biedinger, C., Fiedler, J., Koprucki, T., Iglezakis, D. and Göddeke, D., 2024. Towards a Knowledge Graph for Models and Algorithms in Applied Mathematics. arXiv preprint arXiv:2408.10003. https://doi.org/10.48550/arXiv.2408.10003
+Schembera, B., Wübbeling, F., Kleikamp, H., Schmidt, B., Shehu, A., Reidelbach, M., Biedinger, C., Fiedler, J., Koprucki, T., Iglezakis, D. and Göddeke, D., 2025. Towards a Knowledge Graph for Models and Algorithms in Applied Mathematics. In Research Conference on Metadata and Semantics Research (pp. 95–109). Springer Nature. https://doi.org/10.1007/978-3-031-81974-2_8
 
-Schembera, B., Wübbeling, F., Kleikamp, H., Biedinger, C., Fiedler, J., Reidelbach, M., Shehu, A., Schmidt, B., Koprucki, T., Iglezakis, D. and Göddeke, D., 2023, October. Ontologies for models and algorithms in applied mathematics and related disciplines. In Research Conference on Metadata and Semantics Research (pp. 161-168). Cham: Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-65990-4_14 
+Schembera, B., Wübbeling, F., Kleikamp, H., Biedinger, C., Fiedler, J., Reidelbach, M., Shehu, A., Schmidt, B., Koprucki, T., Iglezakis, D. and Göddeke, D., 2024. Ontologies for models and algorithms in applied mathematics and related disciplines. In Research Conference on Metadata and Semantics Research (pp. 161-168). Cham: Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-65990-4_14 
 
 Schembera, B., Wübbeling, F., Koprucki, T., Biedinger, C., Reidelbach, M., Schmidt, B., Göddeke, D. and Fiedler, J., 2023, September. Building Ontologies and Knowledge Graphs for Mathematics and its Applications. In Proceedings of the Conference on Research Data Infrastructure (Vol. 1). https://doi.org/10.52825/cordi.v1i.255
 
