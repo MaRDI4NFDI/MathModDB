@@ -2022,6 +2022,9 @@
     "@language" : "en",
     "@value" : "Artificial Neural Network"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#contains" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#LossFunctionModel"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#FeedforwardNeuralNetwork"
   }, {
@@ -2031,12 +2034,6 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q192776"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "https://mardi4nfdi.de/mathmoddb#contains" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#LossFunctionModel"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#Astronomy",
@@ -34510,7 +34507,7 @@
     "@value" : "Loss Function Model"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://wikidata.org/wiki/Q1036748"

@@ -2469,21 +2469,13 @@
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#LossFunctionModel"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FeedforwardNeuralNetwork"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetwork"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetworkSurrogateForDiscreteElementMethod"/>
         <rdfs:comment xml:lang="en">computational model used in machine learning, based on connected, hierarchical functions</rdfs:comment>
         <rdfs:label xml:lang="en">Artificial Neural Network</rdfs:label>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q192776"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network -->
-
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network">
-        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#LossFunctionModel"/>
     </owl:NamedIndividual>
     
 
@@ -18592,7 +18584,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#LossFunctionModel">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
-        <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#Artificial_Neural_Network"/>
+        <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"/>
         <rdfs:comment xml:lang="en">in mathematical optimization, a function (to be minimized) representing the cost of each outcome</rdfs:comment>
         <rdfs:label xml:lang="en">Loss Function Model</rdfs:label>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q1036748"/>
