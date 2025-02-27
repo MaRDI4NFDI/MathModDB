@@ -49,7 +49,7 @@ authors:
   - family-names: Koprucki
     given-names:  Thomas
     orcid:        https://orcid.org/0000-0001-6235-9412
-    email:
+    email:        thomas.koprucki@wias-berlin.de
 identifiers:
   - description: Initial stable release of MathModDB
     type: doi
