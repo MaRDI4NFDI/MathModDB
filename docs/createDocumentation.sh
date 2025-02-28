@@ -29,12 +29,12 @@ echo "Preprocessing Ontology... "
 # properties that have "internal:anonymous-constant". This can be done since
 # they are duplicate entries and Protege and/or OWL can't handle custom 
 # datatype, as our self-defined "LaTeX"
-python ./scripts/remove_anonConstants.py $owlOntPath ontology_full_anonRemoved.owl
+$PYTHON3 ./scripts/remove_anonConstants.py $owlOntPath ontology_full_anonRemoved.owl
 
 # Second preprocessing step: Swap rdfs:comment with dcterms:description
 # to have a short description in the heading and the long description in
 # the statement for better readbility
-python ./scripts/swap_rdfsTerms.py ontology_full_anonRemoved.owl ontology_full_anonRemoved_swappedTerms.owl
+$PYTHON3 ./scripts/swap_rdfsTerms.py ontology_full_anonRemoved.owl ontology_full_anonRemoved_swappedTerms.owl
 
 echo "DONE"
 
