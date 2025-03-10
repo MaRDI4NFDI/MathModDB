@@ -107,31 +107,41 @@
 
     <!-- https://mardi4nfdi.de/mathmoddb#arxivID -->
 
-    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#arxivID"/>
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#arxivID">
+        <rdfs:label>arXiv ID</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- https://mardi4nfdi.de/mathmoddb#doiID -->
 
-    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#doiID"/>
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#doiID">
+        <rdfs:label>DOI</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- https://mardi4nfdi.de/mathmoddb#mardiID -->
 
-    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#mardiID"/>
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#mardiID">
+        <rdfs:label>MaRDI ID</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- https://mardi4nfdi.de/mathmoddb#qudtID -->
 
-    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#qudtID"/>
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#qudtID">
+        <rdfs:label>QUDT ID</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
     <!-- https://mardi4nfdi.de/mathmoddb#wikidataID -->
 
-    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#wikidataID"/>
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#wikidataID">
+        <rdfs:label>Wikidata ID</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -11711,7 +11721,6 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianNormalModeAnharmonic"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantumHamiltonianNormalModeIntermolecular"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#VibrationalFrequencyShift2ndOrder"/>
-        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#SpringConstant"/>
         <terms:description xml:lang="en">coefficients of the nth (n&gt;=3) order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration</terms:description>
         <rdfs:comment xml:lang="en">Cubic, quartic, ... anharmonic force constants are the coefficients of the third, fourth, ... order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration.</rdfs:comment>
@@ -11720,28 +11729,6 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673744"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q545228"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic -->
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
-        <owl:sameAs rdf:resource="https://mardi4nfdi.de/mathmoddb#SpringConstant"/>
-        <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#HookLawSpring"/>
-        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#ForceConstantAnharmonic"/>
-        <terms:description xml:lang="en">coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration</terms:description>
-        <rdfs:label xml:lang="en">Force Constant (Harmonic)</rdfs:label>
-        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Hooke%27s_law"/>
-        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673978"/>
-        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q170282"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#SpringConstant -->
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#SpringConstant"/>
     
 
 
@@ -13605,7 +13592,6 @@ Q_{j}(t_{1},\ldots,t_{j}) X&amp;\equiv&amp; Q_{j-1}iN e^{A^{*}t_{j}}
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#ChangeInLength"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Force"/>
-        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#SpringConstant"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#HookeLawLinearElasticity"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#TransportEquation"/>
@@ -30538,8 +30524,9 @@ deformation</terms:description>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#HookLawSpring"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#ForceConstantAnharmonic"/>
         <terms:description xml:lang="en">constant of proportionality in Hooke’s law</terms:description>
-        <rdfs:comment xml:lang="en">The spring constant is the constant of proportionality in Hooke’s law</rdfs:comment>
+        <rdfs:comment xml:lang="en">The spring constant is the constant of proportionality in Hooke’s law, assuming harmonic vibrations</rdfs:comment>
         <rdfs:label xml:lang="en">Spring Constant</rdfs:label>
+        <skos:altLabel xml:lang="en">Force Constant</skos:altLabel>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673979"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q338261"/>
     </owl:NamedIndividual>
@@ -35163,6 +35150,23 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <rdfs:label xml:lang="en">Infectious at Time Step n+1 in the SIS Model</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674595"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#dbpediaID">
+        <rdfs:label>DBpedia ID</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#zbmathID">
+        <rdfs:label>zbMATH ID</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 
