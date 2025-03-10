@@ -19917,44 +19917,10 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6673744"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic"
-  }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#SpringConstant"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q545228"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Force Constant (Harmonic)"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://en.wikipedia.org/wiki/Hooke%27s_law"
-  } ],
-  "http://www.w3.org/2002/07/owl#sameAs" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#SpringConstant"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#HookLawSpring"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
-    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6673978"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ForceConstantAnharmonic"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
-    "@id" : "https://www.wikidata.org/wiki/Q170282"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#ForceDensity",
@@ -23520,8 +23486,6 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#ChangeInLength"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Force"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#SpringConstant"
   } ],
@@ -56479,7 +56443,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
     "@language" : "en",
-    "@value" : "The spring constant is the constant of proportionality in Hooke’s law"
+    "@value" : "The spring constant is the constant of proportionality in Hooke’s law, assuming harmonic vibrations"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Quantity"
@@ -56491,6 +56455,10 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Spring Constant"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
+    "@language" : "en",
+    "@value" : "Force Constant"
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#HookLawSpring"
@@ -65778,7 +65746,10 @@
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#arxivID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "arXiv ID"
+  } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#assumedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -66378,6 +66349,11 @@
     "@id" : "_:genid149"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#dbpediaID",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DBpedia ID"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#deBroglieWavelength",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/description" : [ {
@@ -66802,7 +66778,10 @@
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#doiID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "DOI"
+  } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
@@ -67125,7 +67104,10 @@
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#mardiID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MaRDI ID"
+  } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#modeledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -67238,7 +67220,10 @@
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#qudtID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "QUDT ID"
+  } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#similarTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty", "http://www.w3.org/2002/07/owl#TransitiveProperty" ],
@@ -67345,7 +67330,15 @@
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#wikidataID",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wikidata ID"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#zbmathID",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "zbMATH ID"
+  } ]
 }, {
   "@id" : "internal:anonymous-constants",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]

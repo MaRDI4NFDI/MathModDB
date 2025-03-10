@@ -73,23 +73,28 @@
 
 
 ###  https://mardi4nfdi.de/mathmoddb#arxivID
-:arxivID rdf:type owl:AnnotationProperty .
+:arxivID rdf:type owl:AnnotationProperty ;
+         rdfs:label "arXiv ID" .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#doiID
-:doiID rdf:type owl:AnnotationProperty .
+:doiID rdf:type owl:AnnotationProperty ;
+       rdfs:label "DOI" .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#mardiID
-:mardiID rdf:type owl:AnnotationProperty .
+:mardiID rdf:type owl:AnnotationProperty ;
+         rdfs:label "MaRDI ID" .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#qudtID
-:qudtID rdf:type owl:AnnotationProperty .
+:qudtID rdf:type owl:AnnotationProperty ;
+        rdfs:label "QUDT ID" .
 
 
 ###  https://mardi4nfdi.de/mathmoddb#wikidataID
-:wikidataID rdf:type owl:AnnotationProperty .
+:wikidataID rdf:type owl:AnnotationProperty ;
+            rdfs:label "Wikidata ID" .
 
 
 #################################################################
@@ -8965,8 +8970,7 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                                       :QuantumHamiltonianNormalModeAnharmonic ,
                                       :QuantumHamiltonianNormalModeIntermolecular ,
                                       :VibrationalFrequencyShift2ndOrder ;
-                         :specializedBy :ForceConstantHarmonic ,
-                                        :SpringConstant ;
+                         :specializedBy :SpringConstant ;
                          <http://purl.org/dc/terms/description> "Cubic, quartic, ... anharmonic force constants are the coefficients of the third, fourth, ... order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration."@en ;
                          rdfs:comment "coefficients of the nth (n>=3) order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration"@en ;
                          rdfs:label "Force Constant (Anharmonic)"@en ;
@@ -8974,21 +8978,6 @@ v^{pm} = -K \\mu^{-1} \\nabla p^{vm} \\\\
                          :mardiID <https://portal.mardi4nfdi.de/wiki/Item:Q6673744> ;
                          :wikidataID <https://www.wikidata.org/wiki/Q545228> .
 
-
-###  https://mardi4nfdi.de/mathmoddb#ForceConstantHarmonic
-:ForceConstantHarmonic rdf:type owl:NamedIndividual ,
-                                :Quantity ;
-                       owl:sameAs :SpringConstant ;
-                       :containedIn :HookLawSpring ;
-                       :specializes :ForceConstantAnharmonic ;
-                       rdfs:comment "coefficients of the second order term in a Taylor expansion of the potential energy wrt displacements from a minimum energy configuration"@en ;
-                       rdfs:label "Force Constant (Harmonic)"@en ;
-                       rdfs:seeAlso <https://en.wikipedia.org/wiki/Hooke%27s_law> ;
-                       :mardiID <https://portal.mardi4nfdi.de/wiki/Item:Q6673978> ;
-                       :wikidataID <https://www.wikidata.org/wiki/Q170282> .
-
-
-###  https://mardi4nfdi.de/mathmoddb#SpringConstant
 
 ###  https://mardi4nfdi.de/mathmoddb#ForceDensity
 :ForceDensity rdf:type owl:NamedIndividual ,
@@ -10435,7 +10424,6 @@ Q_{j}(t_{1},\\ldots,t_{j}) X&\\equiv& Q_{j-1}iN e^{A^{*}t_{j}}
                         :MathematicalFormulation ;
                :contains :ChangeInLength ,
                          :Force ,
-                         :ForceConstantHarmonic ,
                          :SpringConstant ;
                :specializes :HookeLawLinearElasticity ,
                             :TransportEquation ;
@@ -23848,9 +23836,10 @@ deformation"""@en ;
                          :Quantity ;
                 :containedIn :HookLawSpring ;
                 :specializes :ForceConstantAnharmonic ;
-                <http://purl.org/dc/terms/description> "The spring constant is the constant of proportionality in Hooke’s law"@en ;
+                <http://purl.org/dc/terms/description> "The spring constant is the constant of proportionality in Hooke’s law, assuming harmonic vibrations"@en ;
                 rdfs:comment "constant of proportionality in Hooke’s law"@en ;
                 rdfs:label "Spring Constant"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Force Constant"@en ;
                 :mardiID <https://portal.mardi4nfdi.de/wiki/Item:Q6673979> ;
                 :wikidataID <https://www.wikidata.org/wiki/Q338261> .
 
@@ -27687,6 +27676,16 @@ d_{ij}^T&=2D_T\\sqrt{k_{ij}^N\\frac{m_im_j}{m_i+m_j}}.
                                    rdfs:comment "equation to define the number of infectious individuals in the SIS Model"@en ;
                                    rdfs:label "Infectious at Time Step n+1 in the SIS Model"@en ;
                                    :mardiID <https://portal.mardi4nfdi.de/wiki/Item:Q6674595> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:dbpediaID rdfs:label "DBpedia ID" .
+
+
+:zbmathID rdfs:label "zbMATH ID" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
