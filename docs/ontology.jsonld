@@ -3110,6 +3110,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684636"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismODEModel"
   } ],
@@ -3141,6 +3144,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684637"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismODEModelsingleCC"
@@ -3174,6 +3180,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684623"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionPingPongMechansimODEModel"
   } ],
@@ -3205,6 +3214,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684642"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODEModel"
@@ -15415,6 +15427,9 @@
   "https://mardi4nfdi.de/mathmoddb#describedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Jahnke_2022_Efficient_Numerical_Simulation_of_Soil-Tool_Interaction"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684654"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetworkSurrogateForDiscreteElementMethod"
   } ]
@@ -16433,7 +16448,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\begin{align}\n \\rho_{\\text{M}1} \\mathbf{\\ddot{x}}_{\\text{M}1} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}1}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}1}, \\gamma_{\\text{M}1}) - p_{\\text{M}1}\\mathbf{F}^{-T}_{\\text{M}1} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}1} = 0$} ~ &\\text{in $\\Omega_{\\text{M}1}\\times [0,T_{\\text{end}})$}\\\\ \n \\rho_{\\text{M}2} \\mathbf{\\ddot{x}}_{\\text{M}2} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}2}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}2}, \\gamma_{\\text{M}2}) - p_{\\text{M}2}\\mathbf{F}^{-T}_{\\text{M}2} \\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{M}2} = 0$} ~ &\\text{in $\\Omega_{\\text{M}2}\\times [0,T_{\\text{end}})$}\\\\\n \\rho_{\\text{T}}\\mathbf{\\ddot{x}}_\\text{T}&= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_\\text{passive}(\\mathbf{F}_{\\text{T}}) - p_\\text{T}\\mathbf{F}^{-T}_{\\text{T}}\\right), &\\text{div $\\mathbf{\\dot{x}}_{\\text{T}}=0$}& ~\\text{in $\\Omega_{\\text{T}}\\times [0,T_{\\text{end}})$} \n\\end{align}$"
+    "@value" : "$\\begin{align}  \\rho_{\\text{M}1} \\mathbf{\\ddot{x}}_{\\text{M}1} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}1}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}1}, \\gamma_{\\text{M}1}) - p_{\\text{M}1}\\mathbf{F}^{-T}_{\\text{M}1} \\right), &\\mathbf{\\nabla} \\cdot \\ \\mathbf{\\dot{x}}_{\\text{M}1} = 0 \\ &\\text{in} \\ \\Omega_{\\text{M}1}\\times [0,T_{\\text{end}})\\\\             \\rho_{\\text{M}2} \\mathbf{\\ddot{x}}_{\\text{M}2} &= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_{\\text{passive}}(\\mathbf{F}_{\\text{M}2}) + \\mathbf{P}_{\\text{active}}(\\mathbf{F}_{\\text{M}2}, \\gamma_{\\text{M}2}) - p_{\\text{M}2}\\mathbf{F}^{-T}_{\\text{M}2} \\right),  &\\nabla \\cdot \\  \\mathbf{\\dot{x}}_{\\text{M}2} = 0 \\ &\\text{in} \\  \\Omega_{\\text{M}2}\\times [0,T_{\\text{end}})\\\\  \\rho_{\\text{T}}\\mathbf{\\ddot{x}}_\\text{T}&= \\mathbf{\\nabla} \\cdot \\left(\\mathbf{P}_\\text{passive}(\\mathbf{F}_{\\text{T}}) - p_\\text{T}\\mathbf{F}^{-T}_{\\text{T}}\\right), &\\mathbf{\\nabla} \\cdot \\  \\mathbf{\\dot{x}}_{\\text{T}}=0 \\ & \\text{in} \\ \\Omega_{\\text{T}}\\times [0,T_{\\text{end}}) \\end{align}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -18523,9 +18538,6 @@
     "@value" : "$y_{n+1}=y_{n}+h f\\left(t_{n+1}, y_{n+1}\\right)$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@language" : "en",
-    "@value" : "$y$, Unknown Function"
-  }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$f$, Right Hand Side Of Differential Equation"
   }, {
@@ -18534,6 +18546,9 @@
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$t$, Time"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$y$, Unknown Function"
   } ],
   "https://mardi4nfdi.de/mathmoddb#isTimeContinuous" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
@@ -18603,7 +18618,7 @@
     "@value" : "$y_{n+1}=y_{n}+h f(t_n, y_n)$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@language" : "en",
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$f$, Right Hand Side Of Differential Equation"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -29273,6 +29288,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684628"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithProduct1SS"
   } ],
@@ -29297,6 +29315,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684629"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithProduct1ansSingleCCSS"
@@ -29323,6 +29344,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684630"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithProduct2SS"
   } ],
@@ -29347,6 +29371,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684631"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithProduct2ansSingleCCSS"
@@ -29373,6 +29400,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684632"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithProducts1and2SS"
   } ],
@@ -29397,6 +29427,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684633"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithProducts1and2ansSingleCCSS"
@@ -29423,6 +29456,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684634"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithoutProductsSS"
   } ],
@@ -29448,6 +29484,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684635"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionOrderedMechanismMichaelisMentenModelwithoutProductsansSingleCCSS"
   } ],
@@ -29472,6 +29511,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684624"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionPingPongMechanismMichaelisMentenModelwithProduct1SS"
@@ -29508,6 +29550,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684625"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionPingPongMechanismMichaelisMentenModelwithProduct2SS"
   } ],
@@ -29543,6 +29588,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684626"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionPingPongMechanismMichaelisMentenModelwithProducts1and2SS"
   } ],
@@ -29575,6 +29623,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684627"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionPingPongMechanismMichaelisMentenModelwithoutProductsSS"
   } ],
@@ -29606,6 +29657,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684638"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithProduct1SS"
   } ]
@@ -29625,6 +29679,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684639"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithProduct2SS"
@@ -29646,6 +29703,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684640"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithProducts1and2SS"
   } ]
@@ -29665,6 +29725,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684641"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithoutProductsSS"
@@ -29699,6 +29762,64 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReaction"
   } ]
 }, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchProblem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "initial rate of uni uni reaction without product and competitive complete inhibition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Complete Inhibition"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684664"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionEadieHofsteeModelwithoutProductSteadyStateAssumption"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionHanesWoolfModelwithoutProductSteadyStateAssumption"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionLineweaverBurkModelwithoutProductSteadyStateAssumption"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"
+  } ]
+}, {
+  "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchProblem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "initial rate of uni uni reaction without product and competitive partial inhibition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Partial Inhibition"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684665"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitivePartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition"
+  }, {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"
+  } ]
+}, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedCompleteInhibition",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -29711,6 +29832,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Mixed Complete Inhibition"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684666"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionMixedCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"
@@ -29742,6 +29866,9 @@
     "@language" : "en",
     "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Mixed Partial Inhibition"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684667"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionMixedPartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
   } ],
@@ -29763,6 +29890,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Non-Competitive Complete Inhibition"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684668"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionNonCompetitiveCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"
@@ -29794,6 +29924,9 @@
     "@language" : "en",
     "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Non-Competitive Partial Inhibition"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684669"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionNonCompetitivePartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
   } ],
@@ -29815,6 +29948,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Uncompetitive Complete Inhibition"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684670"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionUncompetitiveCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"
@@ -29846,6 +29982,9 @@
     "@language" : "en",
     "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Uncompetitive Partial Inhibition"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684671"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionUncompetitivePartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
   } ],
@@ -29853,58 +29992,6 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithUncompetitivePartialInhibition"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchProblem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "initial rate of uni uni reaction without product and competitive complete inhibition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Complete Inhibition"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionEadieHofsteeModelwithoutProductSteadyStateAssumption"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionHanesWoolfModelwithoutProductSteadyStateAssumption"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionLineweaverBurkModelwithoutProductSteadyStateAssumption"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"
-  } ]
-}, {
-  "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
-  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#ResearchProblem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "initial rate of uni uni reaction without product and competitive partial inhibition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Partial Inhibition"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitivePartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"
-  } ],
-  "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateUniUniReactionWithoutProduct",
@@ -42005,6 +42092,9 @@
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#PhysicalChemistry"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684645"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ClassicalBrownianModel"
   }, {
@@ -42893,6 +42983,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Biomechanics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684643"
   } ],
   "https://mardi4nfdi.de/mathmoddb#modeledBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ElectrophysiologicalMuscleModel"
@@ -57002,7 +57095,7 @@
     "@id" : "https://mardi4nfdi.de/mathmoddb#StokesEquationFiniteVolume"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@language" : "en",
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$I$, Identity Function"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -57340,14 +57433,14 @@
     "@value" : "$\\begin{align}\n\\frac{\\partial\\mathbf{y}}{\\partial t} &= G \\left(\\mathbf{y}, V^{\\text{f}}_{\\text{m}} \\right) \\\\ \nI_{\\text{ion}} &= I_{\\text{ion}} \\left(V^{\\text{f}}_{\\text{m}}, \\mathbf{y}\\right) \n\\end{align}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
-    "@language" : "en",
-    "@value" : "$\\mathbf{y}$, State Vector"
-  }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$I_{\\text{ion}}$, Ion current"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$V^{\\text{f}}_{\\text{m}}$, Transmembrane potential"
+  }, {
+    "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
+    "@value" : "$\\mathbf{y}$, State Vector"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$t$, Time"
@@ -61338,7 +61431,7 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675354"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"
@@ -61421,7 +61514,7 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675355"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"
@@ -61504,7 +61597,7 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675356"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"
@@ -61587,7 +61680,7 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675357"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"
@@ -61676,7 +61769,7 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675358"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"
@@ -61756,7 +61849,7 @@
     "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675359"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"
@@ -64569,8 +64662,11 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684685"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"
@@ -64596,8 +64692,11 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684687"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition"
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"
@@ -64622,6 +64721,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684689"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedCompleteInhibition"
@@ -64650,6 +64752,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684690"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedPartialInhibition"
   } ],
@@ -64676,6 +64781,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684691"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndNonCompetitiveCompleteInhibition"
@@ -64704,6 +64812,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684692"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndNonCompetitivePartialInhibition"
   } ],
@@ -64731,14 +64842,17 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684686"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"
+  }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedCompleteInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndNonCompetitiveCompleteInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndUncompetitiveCompleteInhibition"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition"
   }, {
@@ -64769,14 +64883,17 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684688"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
+    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition"
+  }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedPartialInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndNonCompetitivePartialInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndUncompetitivePartialInhibition"
-  }, {
-    "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition"
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition"
   }, {
@@ -64807,6 +64924,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684693"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndUncompetitiveCompleteInhibition"
   } ],
@@ -64833,6 +64953,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684694"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndUncompetitivePartialInhibition"
