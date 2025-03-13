@@ -3001,6 +3001,7 @@
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReaction"/>
         <terms:description xml:lang="en">bi bi reaction with an ordered mechanism</terms:description>
         <rdfs:label xml:lang="en">Bi Bi Reaction following Ordered Mechanism</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684636"/>
     </owl:NamedIndividual>
     
 
@@ -3018,6 +3019,7 @@
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReaction"/>
         <terms:description xml:lang="en">bi bi reaction with an ordered mechanism and Single Central Complex</terms:description>
         <rdfs:label xml:lang="en">Bi Bi Reaction following Ordered Mechanism with Single Central Complex</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684637"/>
     </owl:NamedIndividual>
     
 
@@ -3035,6 +3037,7 @@
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReaction"/>
         <terms:description xml:lang="en">bi bi reaction with a ping pong mechanism</terms:description>
         <rdfs:label xml:lang="en">Bi Bi Reaction following Ping Pong Mechanism</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684623"/>
     </owl:NamedIndividual>
     
 
@@ -3047,6 +3050,7 @@
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechansimODEModel"/>
         <terms:description xml:lang="en">bi bi reaction with a Theorell-Chance mechanism</terms:description>
         <rdfs:label xml:lang="en">Bi Bi Reaction following Theorell-Chance Mechanism</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684642"/>
     </owl:NamedIndividual>
     
 
@@ -9311,6 +9315,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetworkSurrogateForDiscreteElementMethod"/>
         <terms:description xml:lang="en">computational method for efficient simulation of soil-tool interactions</terms:description>
         <rdfs:label xml:lang="en">Efficient Numerical Simulation of Soil-Tool Interaction</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684654"/>
     </owl:NamedIndividual>
     
 
@@ -9808,16 +9813,8 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#StressTensorPiolaKirchhoff"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
         <containsBoundaryCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#Boundary_Conditions_for_Electrophysiological_Muscle_ODE_System"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
- \rho_{\text{M}1} \mathbf{\ddot{x}}_{\text{M}1} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}1}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}1}, \gamma_{\text{M}1}) - p_{\text{M}1}\mathbf{F}^{-T}_{\text{M}1} \right), &amp;\text{div $\mathbf{\dot{x}}_{\text{M}1} = 0$} ~ &amp;\text{in $\Omega_{\text{M}1}\times [0,T_{\text{end}})$}\\ 
- \rho_{\text{M}2} \mathbf{\ddot{x}}_{\text{M}2} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}2}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}2}, \gamma_{\text{M}2}) - p_{\text{M}2}\mathbf{F}^{-T}_{\text{M}2} \right), &amp;\text{div $\mathbf{\dot{x}}_{\text{M}2} = 0$} ~ &amp;\text{in $\Omega_{\text{M}2}\times [0,T_{\text{end}})$}\\
- \rho_{\text{T}}\mathbf{\ddot{x}}_\text{T}&amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_\text{passive}(\mathbf{F}_{\text{T}}) - p_\text{T}\mathbf{F}^{-T}_{\text{T}}\right), &amp;\text{div $\mathbf{\dot{x}}_{\text{T}}=0$}&amp; ~\text{in $\Omega_{\text{T}}\times [0,T_{\text{end}})$} 
-\end{align}$</definingFormulation>
-        <definingFormulation rdf:datatype="internal:anonymous-constants">$\begin{align}
- \rho_{\text{M}1} \mathbf{\ddot{x}}_{\text{M}1} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}1}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}1}, \gamma_{\text{M}1}) - p_{\text{M}1}\mathbf{F}^{-T}_{\text{M}1} \right), &amp;\text{div $\mathbf{\dot{x}}_{\text{M}1} = 0$} ~ &amp;\text{in $\Omega_{\text{M}1}\times [0,T_{\text{end}})$}\\ 
- \rho_{\text{M}2} \mathbf{\ddot{x}}_{\text{M}2} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}2}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}2}, \gamma_{\text{M}2}) - p_{\text{M}2}\mathbf{F}^{-T}_{\text{M}2} \right), &amp;\text{div $\mathbf{\dot{x}}_{\text{M}2} = 0$} ~ &amp;\text{in $\Omega_{\text{M}2}\times [0,T_{\text{end}})$}\\
- \rho_{\text{T}}\mathbf{\ddot{x}}_\text{T}&amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_\text{passive}(\mathbf{F}_{\text{T}}) - p_\text{T}\mathbf{F}^{-T}_{\text{T}}\right), &amp;\text{div $\mathbf{\dot{x}}_{\text{T}}=0$}&amp; ~\text{in $\Omega_{\text{T}}\times [0,T_{\text{end}})$} 
-\end{align}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}  \rho_{\text{M}1} \mathbf{\ddot{x}}_{\text{M}1} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}1}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}1}, \gamma_{\text{M}1}) - p_{\text{M}1}\mathbf{F}^{-T}_{\text{M}1} \right), &amp;\mathbf{\nabla} \cdot \ \mathbf{\dot{x}}_{\text{M}1} = 0 \ &amp;\text{in} \ \Omega_{\text{M}1}\times [0,T_{\text{end}})\\             \rho_{\text{M}2} \mathbf{\ddot{x}}_{\text{M}2} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}2}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}2}, \gamma_{\text{M}2}) - p_{\text{M}2}\mathbf{F}^{-T}_{\text{M}2} \right),  &amp;\nabla \cdot \  \mathbf{\dot{x}}_{\text{M}2} = 0 \ &amp;\text{in} \  \Omega_{\text{M}2}\times [0,T_{\text{end}})\\  \rho_{\text{T}}\mathbf{\ddot{x}}_\text{T}&amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_\text{passive}(\mathbf{F}_{\text{T}}) - p_\text{T}\mathbf{F}^{-T}_{\text{T}}\right), &amp;\mathbf{\nabla} \cdot \  \mathbf{\dot{x}}_{\text{T}}=0 \ &amp; \text{in} \ \Omega_{\text{T}}\times [0,T_{\text{end}}) \end{align}$</definingFormulation>
+        <definingFormulation rdf:datatype="internal:anonymous-constants">$\begin{align}  \rho_{\text{M}1} \mathbf{\ddot{x}}_{\text{M}1} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}1}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}1}, \gamma_{\text{M}1}) - p_{\text{M}1}\mathbf{F}^{-T}_{\text{M}1} \right), &amp;\mathbf{\nabla} \cdot \ \mathbf{\dot{x}}_{\text{M}1} = 0 \ &amp;\text{in} \ \Omega_{\text{M}1}\times [0,T_{\text{end}})\\             \rho_{\text{M}2} \mathbf{\ddot{x}}_{\text{M}2} &amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_{\text{passive}}(\mathbf{F}_{\text{M}2}) + \mathbf{P}_{\text{active}}(\mathbf{F}_{\text{M}2}, \gamma_{\text{M}2}) - p_{\text{M}2}\mathbf{F}^{-T}_{\text{M}2} \right),  &amp;\nabla \cdot \  \mathbf{\dot{x}}_{\text{M}2} = 0 \ &amp;\text{in} \  \Omega_{\text{M}2}\times [0,T_{\text{end}})\\  \rho_{\text{T}}\mathbf{\ddot{x}}_\text{T}&amp;= \mathbf{\nabla} \cdot \left(\mathbf{P}_\text{passive}(\mathbf{F}_{\text{T}}) - p_\text{T}\mathbf{F}^{-T}_{\text{T}}\right), &amp;\mathbf{\nabla} \cdot \  \mathbf{\dot{x}}_{\text{T}}=0 \ &amp; \text{in} \ \Omega_{\text{T}}\times [0,T_{\text{end}}) \end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\ddot{\mathbf{x}}$, Material Point Acceleration</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{\mathbf{x}}$, Material Point Velocity</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\gamma$, Lumped Activation Parameter</inDefiningFormulation>
@@ -11009,13 +11006,14 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_{n+1}=y_{n}+h f\left(t_{n+1}, y_{n+1}\right)$</definingFormulation>
         <definingFormulation rdf:datatype="internal:anonymous-constants">$y_{n+1}=y_{n}+h f\left(t_{n+1}, y_{n+1}\right)$</definingFormulation>
-        <inDefiningFormulation xml:lang="en">$y$, Unknown Function</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$f$, Right Hand Side Of Differential Equation</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$h$, Time Step</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Unknown Function</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$f$, Right Hand Side Of Differential Equation</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$h$, Time Step</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$y$, Unknown Function</inDefiningFormulation>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
         <terms:description xml:lang="en">one of the most basic numerical methods in numerical analysis and scientific computing for the solution of ordinary differential equations</terms:description>
         <rdfs:comment xml:lang="en">similar to the (standard, forward, explicit) Euler method, but differs in that it is an implicit method. The backward Euler method has error of order one in time.</rdfs:comment>
@@ -11044,10 +11042,11 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#RungeKuttaMethod"/>
         <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_{n+1}=y_{n}+h f(t_n, y_n)$</definingFormulation>
         <definingFormulation rdf:datatype="internal:anonymous-constants">$y_{n+1}=y_{n}+h f(t_n, y_n)$</definingFormulation>
-        <inDefiningFormulation xml:lang="en">$f$, Right Hand Side Of Differential Equation</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$f$, Right Hand Side Of Differential Equation</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$h$, Time Step</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Unknown Function</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$f$, Right Hand Side Of Differential Equation</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$h$, Time Step</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$t$, Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$y$, Unknown Function</inDefiningFormulation>
@@ -16604,6 +16603,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanism"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction with product 1</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism with Product 1</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684628"/>
     </owl:NamedIndividual>
     
 
@@ -16618,6 +16618,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanismSingleCC"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction with product 1 and Single Central complex</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism with Product 1 and Single Central Complex</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684629"/>
     </owl:NamedIndividual>
     
 
@@ -16632,6 +16633,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanism"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction with product 2</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism with Product 2</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684630"/>
     </owl:NamedIndividual>
     
 
@@ -16646,6 +16648,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanismSingleCC"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction with product 2 and Single Central complex</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism with Product 2 and Single Central Complex</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684631"/>
     </owl:NamedIndividual>
     
 
@@ -16660,6 +16663,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanism"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction with products 1 and 2</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism with Products 1 and 2</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684632"/>
     </owl:NamedIndividual>
     
 
@@ -16674,6 +16678,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanismSingleCC"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction with products 1 and 2 and Single Central complex</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism with Products 1 and 2 and Single Central Complex</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684633"/>
     </owl:NamedIndividual>
     
 
@@ -16688,6 +16693,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanism"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction without products</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism without Products</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684634"/>
     </owl:NamedIndividual>
     
 
@@ -16702,6 +16708,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingOrderedMechanismSingleCC"/>
         <terms:description xml:lang="en">initial rate of ordered bi bi reaction without products and Single Central complex</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ordered Mechanism without Products and Single Central Complex</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684635"/>
     </owl:NamedIndividual>
     
 
@@ -16720,6 +16727,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfBiBiReactionFollowingPingPongMechanismWithProducts1And2"/>
         <terms:description xml:lang="en">initial rate of ping pong bi bi reaction with product 1</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ping Pong Mechanism with Product 1</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684624"/>
     </owl:NamedIndividual>
     
 
@@ -16738,6 +16746,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfBiBiReactionFollowingPingPongMechanismWithProducts1And2"/>
         <terms:description xml:lang="en">initial rate of ping pong bi bi reaction with product 2</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ping Pong Mechanism with Product 2</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684625"/>
     </owl:NamedIndividual>
     
 
@@ -16755,6 +16764,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionFollowingPingPongMechanism"/>
         <terms:description xml:lang="en">initial rate of ping pong bi bi reaction with products 1 and 2</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ping Pong Mechanism with Products 1 and 2</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684626"/>
     </owl:NamedIndividual>
     
 
@@ -16772,6 +16782,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfBiBiReactionFollowingPingPongMechanismWithProducts1And2"/>
         <terms:description xml:lang="en">initial rate of ping pong bi bi reaction without products</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Ping Pong Mechanism without Products</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684627"/>
     </owl:NamedIndividual>
     
 
@@ -16784,6 +16795,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithProduct1SS"/>
         <terms:description xml:lang="en">initial rate of Theorell-Chance bi bi reaction with product 1</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Theorell-Chance Mechanism with Product 1</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684638"/>
     </owl:NamedIndividual>
     
 
@@ -16796,6 +16808,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithProduct2SS"/>
         <terms:description xml:lang="en">initial rate of Theorell-Chance bi bi reaction with product 2</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Theorell-Chance Mechanism with Product 2</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684639"/>
     </owl:NamedIndividual>
     
 
@@ -16808,6 +16821,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithProducts1and2SS"/>
         <terms:description xml:lang="en">initial rate of Theorell-Chance bi bi reaction with products 1 and 2</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Theorell-Chance Mechanism with Product 1 and 2</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684640"/>
     </owl:NamedIndividual>
     
 
@@ -16820,6 +16834,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#BiBiReactionTheorellChanceMechanismMichaelisMentenModelwithoutProductsSS"/>
         <terms:description xml:lang="en">initial rate of Theorell-Chance bi bi reaction without products</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Bi Bi Reaction following Theorell-Chance Mechanism without Products</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684641"/>
     </owl:NamedIndividual>
     
 
@@ -16839,6 +16854,38 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
     
 
 
+    <!-- https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionEadieHofsteeModelwithoutProductSteadyStateAssumption"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionHanesWoolfModelwithoutProductSteadyStateAssumption"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionLineweaverBurkModelwithoutProductSteadyStateAssumption"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"/>
+        <terms:description xml:lang="en">initial rate of uni uni reaction without product and competitive complete inhibition</terms:description>
+        <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684664"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitivePartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"/>
+        <terms:description xml:lang="en">initial rate of uni uni reaction without product and competitive partial inhibition</terms:description>
+        <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684665"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedCompleteInhibition -->
 
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedCompleteInhibition">
@@ -16852,6 +16899,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"/>
         <terms:description xml:lang="en">initial rate of uni uni reaction without product and mixed complete inhibition</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Mixed Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684666"/>
     </owl:NamedIndividual>
     
 
@@ -16865,6 +16913,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"/>
         <terms:description xml:lang="en">initial rate of uni uni reaction without product and mixed partial inhibition</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Mixed Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684667"/>
     </owl:NamedIndividual>
     
 
@@ -16882,6 +16931,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"/>
         <terms:description xml:lang="en">initial rate of uni uni reaction without product and non-competitive complete inhibition</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Non-Competitive Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684668"/>
     </owl:NamedIndividual>
     
 
@@ -16895,6 +16945,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"/>
         <terms:description xml:lang="en">initial rate of uni uni reaction without product and non-competitive partial inhibition</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Non-Competitive Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684669"/>
     </owl:NamedIndividual>
     
 
@@ -16912,6 +16963,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithUncompetitiveCompleteInhibition"/>
         <terms:description xml:lang="en">initial rate of uni uni reaction without product and uncompetitive complete inhibition</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Uncompetitive Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684670"/>
     </owl:NamedIndividual>
     
 
@@ -16925,36 +16977,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithUncompetitivePartialInhibition"/>
         <terms:description xml:lang="en">initial rate of uni uni reaction without product and uncompetitive partial inhibition</terms:description>
         <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Uncompetitive Partial Inhibition</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition -->
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionDixonModelwithoutProductSteadyStateAssumption"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionEadieHofsteeModelwithoutProductSteadyStateAssumption"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionHanesWoolfModelwithoutProductSteadyStateAssumption"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionLineweaverBurkModelwithoutProductSteadyStateAssumption"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
-        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition"/>
-        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"/>
-        <terms:description xml:lang="en">initial rate of uni uni reaction without product and competitive complete inhibition</terms:description>
-        <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Complete Inhibition</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition -->
-
-    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition">
-        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
-        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitivePartialInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
-        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition"/>
-        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"/>
-        <terms:description xml:lang="en">initial rate of uni uni reaction without product and competitive partial inhibition</terms:description>
-        <rdfs:label xml:lang="en">Initial Reaction Rate of Uni Uni Reaction without Product and Competitive Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684671"/>
     </owl:NamedIndividual>
     
 
@@ -23139,6 +23162,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <terms:description xml:lang="en">physical movements of atoms and molecules in a gas, a liquid, a solid, etc</terms:description>
         <rdfs:label xml:lang="en">Molecular Dynamics</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Molecular_dynamics"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684645"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q901663"/>
     </owl:NamedIndividual>
     
@@ -23589,6 +23613,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#SensoryOrganModel"/>
         <terms:description xml:lang="en">process in which force is generated within muscle tissue, resulting in a change in muscle geometry</terms:description>
         <rdfs:label xml:lang="en">Muscle Movement</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684643"/>
         <wikidataID xml:lang="en">https://www.wikidata.org/wiki/Q127006</wikidataID>
     </owl:NamedIndividual>
     
@@ -30797,12 +30822,13 @@ deformation</terms:description>
      \frac{\partial v}{\partial t} + \nabla \cdot ( - \nu \left(\nabla v^{ff} + \nabla v^{\mathrm{ff,T}} \right)+ \rho^{-1} p^{ff} I ) &amp;= 0 \\
  \nabla \cdot v^{ff} &amp;= 0
 \end{align}$</definingFormulation>
-        <inDefiningFormulation xml:lang="en">$I$, Identity Function</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$I$, Identity Function</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\nu$, Fluid Kinematic Viscosity (Free Flow)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Fluid Density</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$p^{ff}$, Fluid Pressure (Free Flow)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v^{ff}$, Fluid Velocity (Free Flow)</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$I$, Identity Function</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\nu$, Fluid Kinematic Viscosity (Free Flow)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\rho$, Fluid Density</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$p^{ff}$, Fluid Pressure (Free Flow)</inDefiningFormulation>
@@ -30979,12 +31005,13 @@ I_{\text{ion}} &amp;= I_{\text{ion}} \left(V^{\text{f}}_{\text{m}}, \mathbf{y}\r
 \frac{\partial\mathbf{y}}{\partial t} &amp;= G \left(\mathbf{y}, V^{\text{f}}_{\text{m}} \right) \\ 
 I_{\text{ion}} &amp;= I_{\text{ion}} \left(V^{\text{f}}_{\text{m}}, \mathbf{y}\right) 
 \end{align}$</definingFormulation>
-        <inDefiningFormulation xml:lang="en">$\mathbf{y}$, State Vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$I_{\text{ion}}$, Ion current</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$V^{\text{f}}_{\text{m}}$, Transmembrane potential</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf{y}$, State Vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$I_{\text{ion}}$, Ion current</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$V^{\text{f}}_{\text{m}}$, Transmembrane potential</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\mathbf{y}$, State Vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$t$, Time</inDefiningFormulation>
         <terms:description xml:lang="en">differential-algebraic equation systems that describes the muscle stress generation</terms:description>
         <rdfs:comment xml:lang="en">A differential-algebraic equation systems that describes the muscle stress generation an a microscopic scale by means of internal state variables and describes the activation of the ion channels.</rdfs:comment>
@@ -33083,7 +33110,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <describedAsSurveyedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <describedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <linearizes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
-        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"/>
         <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionDixonModelSteadyStateAssumption"/>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -33118,7 +33145,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <describedAsSurveyedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <describedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <linearizes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
-        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"/>
         <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionEadieHofsteeModelSteadyStateAssumption"/>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -33153,7 +33180,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <describedAsSurveyedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <describedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <linearizes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
-        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"/>
         <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionHanesWoolfModelSteadyStateAssumption"/>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -33188,7 +33215,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <describedAsSurveyedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <describedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <linearizes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionMichaelisMentenModelwithoutProductSteadyStateAssumption"/>
-        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"/>
         <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#LinearParameterEstimationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionLineweaverBurkModelSteadyStateAssumption"/>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -33226,7 +33253,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <linearizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionEadieHofsteeModelwithoutProductSteadyStateAssumption"/>
         <linearizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionHanesWoolfModelwithoutProductSteadyStateAssumption"/>
         <linearizedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionCompetitiveCompleteInhibitionLineweaverBurkModelwithoutProductSteadyStateAssumption"/>
-        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"/>
         <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#NonlinearParameterEstimationUniUniReactionwithoutProductandCompetitiveCompleteInhibitionMichaelisMentenModelSteadyStateAssumption"/>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -33260,7 +33287,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <containsInitialCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialSubstrateConcentrationUniUni"/>
         <describedAsSurveyedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
         <describedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#Bisswanger_2017_Enzyme_Kinetics"/>
-        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionODEModel"/>
         <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#NonlinearParameterEstimationUniUniReactionwithoutProductandCompetitivePartialInhibitionMichaelisMentenModelSteadyStateAssumption"/>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
@@ -34490,11 +34517,12 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"/>
-        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition"/>
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Free enzyme may bind an inhibitor (I) to form an enzyme-inhibitor complex (EI) with rates $k_{3}$ and $k_{-3}$.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Competitive Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684685"/>
     </owl:NamedIndividual>
     
 
@@ -34504,11 +34532,12 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"/>
-        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition"/>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition"/>
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Free enzyme and the enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor (EI) and enzyme-inhibitor-substrate complex (EIS) with $k_{3}$ or $k_{-3}$ and $k_{4}$ or $k_{-4} as rates of inhibitor complex formation and depletion. Enzyme-inhibitor complex and enzyme-inhibitor-substrate convert into each other with rates $k_{5}$ and $k_{-5}$. From the enzyme-inhibitor-substrate complex product is formed with rate $k_{2}$. Properly this is a mixed partial inhibition in which the inhibitor does not affect the turnover rate,</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Competitive Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684687"/>
     </owl:NamedIndividual>
     
 
@@ -34523,6 +34552,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Free enzyme and the enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor (EI) and enzyme-inhibitor-substrate complex (EIS) with $k_{3}$ or $k_{-3}$ and $k_{4}$ or $k_{-4} as rates of inhibitor complex formation and depletion. Enzyme-inhibitor complex and enzyme-inhibitor-substrate convert into each other with rates $k_{5}$ and $k_{-5}$. From the enzyme-inhibitor-substrate complex no product formation is possible, the inhibition is thus complete.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Mixed Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684689"/>
     </owl:NamedIndividual>
     
 
@@ -34537,6 +34567,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Free enzyme and the enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor (EI) and enzyme-inhibitor-substrate complex (EIS) with $k_{3}$ or $k_{-3}$ and $k_{4}$ or $k_{-4} as rates of inhibitor complex formation and depletion. Enzyme-inhibitor complex and enzyme-inhibitor-substrate convert into each other with rates $k_{5}$ and $k_{-5}$. From the enzyme-inhibitor-substrate complex product is formed with rate $k_{6}$.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Mixed Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684690"/>
     </owl:NamedIndividual>
     
 
@@ -34551,6 +34582,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Free enzyme and the enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor (EI) and enzyme-inhibitor-substrate complex (EIS) with $k_{3}$ or $k_{-3}$ and $k_{4}$ or $k_{-4} as rates of inhibitor complex formation and depletion. Enzyme-inhibitor complex and enzyme-inhibitor-substrate convert into each other with rates $k_{5}$ and $k_{-5}$. In the non-competitive case: $k_{3} = k_{4}$, $k_{-3} = k_{-4}$, $k_{5} = k_{1}$ and $k_{-5} = k_{-1}$. The enzyme-inhibitor-substrate complex cannot form product, the inhibition is thus complete.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Non-Competitive Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684691"/>
     </owl:NamedIndividual>
     
 
@@ -34565,6 +34597,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Free enzyme and the enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor (EI) and enzyme-inhibitor-substrate complex (EIS) with $k_{3}$ or $k_{-3}$ and $k_{4}$ or $k_{-4} as rates of inhibitor complex formation and depletion. Enzyme-inhibitor complex and enzyme-inhibitor-substrate convert into each other with rates $k_{5}$ and $k_{-5}$. In the non-competitive case: $k_{3} = k_{4}$, $k_{-3} = k_{-4}$, $k_{5} = k_{1}$ and $k_{-5} = k_{-1}$. The enzyme-inhibitor-substrate complex can form product with rate $k_{6}.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Non-Competitive Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684692"/>
     </owl:NamedIndividual>
     
 
@@ -34574,10 +34607,10 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversibleCompleteInhibition">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitiveCompleteInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedCompleteInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndNonCompetitiveCompleteInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndUncompetitiveCompleteInhibition"/>
-        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitiveCompleteInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitiveCompleteInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithMixedCompleteInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithNonCompetitiveCompleteInhibition"/>
@@ -34585,6 +34618,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Uni Uni Reaction with reversible inhibition. The enzyme-inhibitor-substrate complex (EIS) cannot form product, the inhibition is thus complete.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Reversible Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684686"/>
     </owl:NamedIndividual>
     
 
@@ -34594,10 +34628,10 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
     <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithReversiblePartialInhibition">
         <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#EnzymeKinetics"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndCompetitivePartialInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndMixedPartialInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndNonCompetitivePartialInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductAndUncompetitivePartialInhibition"/>
-        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialReactionRateOfUniUniReactionWithoutProductandCompetitivePartialInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithCompetitivePartialInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithMixedPartialInhibition"/>
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#UniUniReactionWithNonCompetitivePartialInhibition"/>
@@ -34605,6 +34639,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Uni Uni Reaction with reversible inhibition. The enzyme-inhibitor-substrate complex (EIS) can form product, the inhibition is thus partial.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Reversible Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684688"/>
     </owl:NamedIndividual>
     
 
@@ -34619,6 +34654,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor-substrate complex (EIS) with rates $k_{4}$ and $k_{-4}$. The enzyme-inhibitor-substrate complex cannot form product, the inhibition is thus complete.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Uncompetitive Complete Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684693"/>
     </owl:NamedIndividual>
     
 
@@ -34633,6 +34669,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">uni uni reaction with inhibition</terms:description>
         <rdfs:comment xml:lang="en">Enzyme (E) and Substrate (S) form an enzyme-substrate complex (ES), which catalyzes the formation of product (P). Rates for complex formation and dissociation are $k_{1}$ and $k_{-1}$, $k_{2}$ is the rate of the rate-determining enzymatic step of product formation. Enzyme-substrate complex may bind an inhibitor (I) to form an enzyme-inhibitor-substrate complex (EIS) with rates $k_{4}$ and $k_{-4}$. The enzyme-inhibitor-substrate complex can form product with rate $k_{6}$.</rdfs:comment>
         <rdfs:label xml:lang="en">Uni Uni Reaction with Uncompetitive Partial Inhibition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684694"/>
     </owl:NamedIndividual>
     
 
