@@ -2070,6 +2070,9 @@
   "https://mardi4nfdi.de/mathmoddb#contains" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#LossFunctionModel"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675321"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#FeedforwardNeuralNetwork"
   }, {
@@ -5937,7 +5940,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$$\\begin{array}{cccc} \n\\mathbf{x}_{\\text{M}1} = \\mathbf{x}_{\\text{T}}, &\\dot{\\mathbf{x}}_{\\text{M}1} = \\dot{\\mathbf{x}}_{\\text{T}}, & \\mathbf{P}(\\mathbf{F}_{\\text{M}1})=\\mathbf{P}(\\mathbf{F}_{\\text{T}}), & \\text{on $\\partial \\Omega_{\\text{M}1-\\text{T}}$} \\\\ \n \\mathbf{x}_{\\text{M}2} = \\mathbf{x}_{\\text{T}}, &\\dot{\\mathbf{x}}_{\\text{M}2} = \\dot{\\mathbf{x}}_{\\text{T}}, & \\mathbf{P}(\\mathbf{F}_{\\text{M}2})=\\mathbf{P}(\\mathbf{F}_{\\text{T}}), & \\text{on $\\partial \\Omega_{\\text{M}2-\\text{T}}$}\n\\end{array}$$"
+    "@value" : "$\\begin{array}{cccc} \n\\mathbf{x}_{\\text{M}1} = \\mathbf{x}_{\\text{T}}, &\\dot{\\mathbf{x}}_{\\text{M}1} = \\dot{\\mathbf{x}}_{\\text{T}}, & \\mathbf{P}(\\mathbf{F}_{\\text{M}1})=\\mathbf{P}(\\mathbf{F}_{\\text{T}}), & \\text{on } \\partial \\Omega_{\\text{M}1-\\text{T}} \\\\ \n \\mathbf{x}_{\\text{M}2} = \\mathbf{x}_{\\text{T}}, &\\dot{\\mathbf{x}}_{\\text{M}2} = \\dot{\\mathbf{x}}_{\\text{T}}, & \\mathbf{P}(\\mathbf{F}_{\\text{M}2})=\\mathbf{P}(\\mathbf{F}_{\\text{T}}), & \\text{on} \\partial \\Omega_{\\text{M}2-\\text{T}}\n\\end{array}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -6754,6 +6757,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#contains" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EfficientNumericalSimulationOfSoilToolInteraction"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6684702"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q77590"
@@ -8736,7 +8742,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -8788,7 +8794,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -8845,7 +8851,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -8901,7 +8907,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -8953,7 +8959,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9005,7 +9011,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9048,7 +9054,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -9104,7 +9110,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "posiive solution consraint"
+    "@value" : "positive solution constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -12331,10 +12337,10 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\boldsymbol F^{T, cons}_{ij}\\in\\mathbb R^3$, 'Tangential Interaction Force of Two Particles'"
+    "@value" : "$\\boldsymbol F^{T, cons}_{ij}\\in\\mathbb R^3$, 'Tangential Interaction Force Of Two Particles'"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$\\boldsymbol F_{ij}^N$, Normal Interaction Force of Two Particles"
+    "@value" : "$\\boldsymbol F_{ij}^N$, Normal Interaction Force Of Two Particles"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$\\boldsymbol n_{ij}\\in\\mathbb R^3$, Unit Normal Vector"
@@ -12347,6 +12353,9 @@
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$x_{C_{ij}}$, Contact Point Of Particles"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674302"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#CouplingCurrent",
@@ -13679,6 +13688,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#describedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Cundall_1979_Discrete_model_granular_assemblies"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675395"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#LinearDiscreteElementMethod"
@@ -19159,6 +19171,9 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Feedforward Neural Network"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675404"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"
@@ -33649,6 +33664,9 @@
   }, {
     "@id" : "https://mardi4nfdi.de/mathmoddb#TorqueOfParticle"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675389"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#DiscreteElementMethod"
   } ]
@@ -36419,6 +36437,9 @@
   "https://mardi4nfdi.de/mathmoddb#containedIn" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675430"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://wikidata.org/wiki/Q1036748"
   } ]
@@ -36490,6 +36511,9 @@
   "https://mardi4nfdi.de/mathmoddb#isDimensionless" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
     "@value" : "true"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674049"
   } ],
   "https://mardi4nfdi.de/mathmoddb#wikidataID" : [ {
     "@id" : "https://www.wikidata.org/wiki/Q1036748"
@@ -44563,7 +44587,7 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#definingFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "\\begin{align}\n\\boldsymbol F^N_{ij}&=\\left(k_{ij}^N\\delta_{ij}+d_{ij}^N\\dot{\\delta}_{ij}\\right)\\boldsymbol n_{ij}\\\\\n\\delta_{ij}&=\\langle \\boldsymbol x_i - \\boldsymbol x_j, \\boldsymbol n_{ij}\\rangle\\\\\n\\dot{\\delta}_{ij}&=\\langle \\boldsymbol v_i - \\boldsymbol v_j, \\boldsymbol n_{ij}\\rangle\\\\\nr_{ij}&=(r_i+r_j)/2\\\\\nk^N_{ij}&=E_N \\pi r_{ij} / 2\\\\\nd_{ij}^N&=D_N 2 \\sqrt{k^N_{ij}m_{ij}}\\\\\nm_{ij}&=\\frac{m_im_j}{m_i + m_j}\\\\\n\\boldsymbol n_{ij} &= \\frac{\\boldsymbol x_i - \\boldsymbol x_j}{\\lVert \\boldsymbol x_i - \\boldsymbol x_j \\rVert}\n\\end{align}"
+    "@value" : "$\\begin{align}\n\\boldsymbol F^N_{ij}&=\\left(k_{ij}^N\\delta_{ij}+d_{ij}^N\\dot{\\delta}_{ij}\\right)\\boldsymbol n_{ij}\\\\\n\\delta_{ij}&=\\langle \\boldsymbol x_i - \\boldsymbol x_j, \\boldsymbol n_{ij}\\rangle\\\\\n\\dot{\\delta}_{ij}&=\\langle \\boldsymbol v_i - \\boldsymbol v_j, \\boldsymbol n_{ij}\\rangle\\\\\nr_{ij}&=(r_i+r_j)/2\\\\\nk^N_{ij}&=E_N \\pi r_{ij} / 2\\\\\nd_{ij}^N&=D_N 2 \\sqrt{k^N_{ij}m_{ij}}\\\\\nm_{ij}&=\\frac{m_im_j}{m_i + m_j}\\\\\n\\boldsymbol n_{ij} &= \\frac{\\boldsymbol x_i - \\boldsymbol x_j}{\\lVert \\boldsymbol x_i - \\boldsymbol x_j \\rVert}\n\\end{align}$"
   } ],
   "https://mardi4nfdi.de/mathmoddb#inDefiningFormulation" : [ {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
@@ -44591,7 +44615,10 @@
     "@value" : "$m_i$, Particle Mass"
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
-    "@value" : "$r_i$, Particle Radius"
+    "@value" : "$r_{ij}$, Particle Radius"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674527"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#NormalModeCoordinate",
@@ -50633,6 +50660,9 @@
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$j$, Quantum Number"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674551"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergyLinearRigidRotor"
   } ]
@@ -50673,6 +50703,9 @@
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$j$, Quantum Number"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674550"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#QuantumEigenEnergyLinearNonRigidRotor"
@@ -53827,6 +53860,9 @@
     "@language" : "en",
     "@value" : "Recurrent Neural Network"
   } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675322"
+  } ],
   "https://mardi4nfdi.de/mathmoddb#specializedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetworkSurrogateForDiscreteElementMethod"
   } ],
@@ -53858,6 +53894,9 @@
   } ],
   "https://mardi4nfdi.de/mathmoddb#describedBy" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Jahnke_2022_Efficient_Numerical_Simulation_of_Soil-Tool_Interaction"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6675401"
   } ],
   "https://mardi4nfdi.de/mathmoddb#models" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#EfficientNumericalSimulationOfSoilToolInteraction"
@@ -59793,6 +59832,9 @@
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$r_i$, Particle Radius"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674591"
   } ]
 }, {
   "@id" : "https://mardi4nfdi.de/mathmoddb#TangentialStiffness",
@@ -60675,6 +60717,9 @@
   }, {
     "@type" : "https://mardi4nfdi.de/mathmoddb#LaTeX",
     "@value" : "$r_i$, Particle Radius"
+  } ],
+  "https://mardi4nfdi.de/mathmoddb#mardiID" : [ {
+    "@id" : "https://portal.mardi4nfdi.de/wiki/Item:Q6674592"
   } ],
   "https://mardi4nfdi.de/mathmoddb#specializes" : [ {
     "@id" : "https://mardi4nfdi.de/mathmoddb#Torque"

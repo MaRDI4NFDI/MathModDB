@@ -2440,6 +2440,7 @@
         <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetworkSurrogateForDiscreteElementMethod"/>
         <terms:description xml:lang="en">computational model used in machine learning, based on connected, hierarchical functions</terms:description>
         <rdfs:label xml:lang="en">Artificial Neural Network</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675321"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q192776"/>
     </owl:NamedIndividual>
     
@@ -4455,14 +4456,14 @@ o &amp; \textrm{otherwise} \\
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#MaterialPointDisplacement"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#MaterialPointVelocity"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#StressTensorPiolaKirchhoff"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$$\begin{array}{cccc} 
-\mathbf{x}_{\text{M}1} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}1} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}1})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on $\partial \Omega_{\text{M}1-\text{T}}$} \\ 
- \mathbf{x}_{\text{M}2} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}2} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}2})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on $\partial \Omega_{\text{M}2-\text{T}}$}
-\end{array}$$</definingFormulation>
-        <definingFormulation rdf:datatype="internal:anonymous-constants">$$\begin{array}{cccc} 
-\mathbf{x}_{\text{M}1} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}1} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}1})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on $\partial \Omega_{\text{M}1-\text{T}}$} \\ 
- \mathbf{x}_{\text{M}2} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}2} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}2})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on $\partial \Omega_{\text{M}2-\text{T}}$}
-\end{array}$$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{array}{cccc} 
+\mathbf{x}_{\text{M}1} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}1} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}1})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on } \partial \Omega_{\text{M}1-\text{T}} \\ 
+ \mathbf{x}_{\text{M}2} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}2} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}2})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on} \partial \Omega_{\text{M}2-\text{T}}
+\end{array}$</definingFormulation>
+        <definingFormulation rdf:datatype="internal:anonymous-constants">$\begin{array}{cccc} 
+\mathbf{x}_{\text{M}1} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}1} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}1})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on } \partial \Omega_{\text{M}1-\text{T}} \\ 
+ \mathbf{x}_{\text{M}2} = \mathbf{x}_{\text{T}}, &amp;\dot{\mathbf{x}}_{\text{M}2} = \dot{\mathbf{x}}_{\text{T}}, &amp; \mathbf{P}(\mathbf{F}_{\text{M}2})=\mathbf{P}(\mathbf{F}_{\text{T}}), &amp; \text{on} \partial \Omega_{\text{M}2-\text{T}}
+\end{array}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\dot{\mathbf{x}}$, Material Point Velocity</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf{P}$, Stress Tensor (Piola-Kirchhoff)</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mathbf{x}$, Material Point Displacement</inDefiningFormulation>
@@ -4886,6 +4887,7 @@ o &amp; \textrm{otherwise} \\
         <terms:description xml:lang="en">engineering discipline specializing in design, construction and maintenance of the built environment</terms:description>
         <rdfs:label xml:lang="en">Civil Engineering</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/CivilEngineering"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684702"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q77590"/>
     </owl:NamedIndividual>
     
@@ -5886,7 +5888,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\alpha_{ik}$, Contact Rate Between Two Groups</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the Multi-Population SI Model</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674271"/>
     </owl:NamedIndividual>
@@ -5915,7 +5917,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\gamma_i$, Relative Removal Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the Multi-Population SIR Model</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674272"/>
     </owl:NamedIndividual>
@@ -5941,7 +5943,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$a_i$, Between Population Contact Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the Multi-Population SIS Model</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674273"/>
     </owl:NamedIndividual>
@@ -5967,7 +5969,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\gamma$, Relative Removal Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:comment xml:lang="en">The time step must be less than the average time required for a successful contact and less than the average infectious period.</rdfs:comment>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the SIR Model</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674274"/>
@@ -5994,7 +5996,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\gamma$, Relative Removal Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the SIR Model with Births and Deaths</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674275"/>
     </owl:NamedIndividual>
@@ -6016,7 +6018,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\Delta t$, Time Step</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\gamma$, Relative Removal Rate</inDefiningFormulation>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the SIS Model</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674276"/>
     </owl:NamedIndividual>
@@ -6042,7 +6044,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\gamma$, Relative Removal Rate</inDefiningFormulation>
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:label xml:lang="en">Condition for Positive Solutions in the SIS Model with Births and Deaths</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674277"/>
     </owl:NamedIndividual>
@@ -6066,7 +6068,7 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
         <isDeterministic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDeterministic>
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDimensionless>
         <isTimeContinuous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isTimeContinuous>
-        <terms:description xml:lang="en">posiive solution consraint</terms:description>
+        <terms:description xml:lang="en">positive solution constraint</terms:description>
         <rdfs:comment xml:lang="en">Necessary and sufficient condition to ensure that S_n, is positive for all initial conditions (and I_n &lt; N). Implies that the time step At must be less than the average time required for a successful contact.</rdfs:comment>
         <rdfs:label xml:lang="en">Condition to Keep Susceptibles Positive</rdfs:label>
         <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674278"/>
@@ -7730,20 +7732,21 @@ p(t+\tau) &amp;=&amp; p(t+\tau/2)+\tau F(q(t+\tau))/2
 \lVert \boldsymbol F^{T, cons}_{ij}\rVert&amp;\leq \mu \lVert \boldsymbol F_{ij}^N\rVert\qquad \text{with}\\
 \boldsymbol F^{T, cons}_{ij} &amp;= -k_{ij}^T\boldsymbol\xi_{ij}=-k_{ij}^T\left(\boldsymbol x_{C_{ji}}- \boldsymbol x_{C_{ij}} - \langle \boldsymbol x_{C_{ji}}- \boldsymbol x_{C_{ij}}, \boldsymbol n_{ij}\rangle \boldsymbol n_{ij}\right)
 \end{align}$</definingFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol F^{T, cons}_{ij}\in\mathbb R^3$, &apos;Tangential Interaction Force of Two Particles&apos;</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol F_{ij}^N$, Normal Interaction Force of Two Particles</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol F^{T, cons}_{ij}\in\mathbb R^3$, &apos;Tangential Interaction Force Of Two Particles&apos;</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol F_{ij}^N$, Normal Interaction Force Of Two Particles</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol n_{ij}\in\mathbb R^3$, Unit Normal Vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\mu$, Friction Coefficient</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{ij}^T$, Tangential Stiffness</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$x_{C_{ij}}$, Contact Point Of Particles</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol F^{T, cons}_{ij}\in\mathbb R^3$, &apos;Tangential Interaction Force of Two Particles&apos;</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol F_{ij}^N$, Normal Interaction Force of Two Particles</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol F^{T, cons}_{ij}\in\mathbb R^3$, &apos;Tangential Interaction Force Of Two Particles&apos;</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol F_{ij}^N$, Normal Interaction Force Of Two Particles</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol n_{ij}\in\mathbb R^3$, Unit Normal Vector</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\mu$, Friction Coefficient</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$k_{ij}^T$, Tangential Stiffness</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$x_{C_{ij}}$, Contact Point Of Particles</inDefiningFormulation>
         <terms:description xml:lang="en">describes the transition between static and dynamic friction in a simple (linear) friction model</terms:description>
         <rdfs:label xml:lang="en">Coulomb Friction Condition Between Two Particles</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674302"/>
     </owl:NamedIndividual>
     
 
@@ -8461,6 +8464,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <rdfs:comment xml:lang="en">Describes any family of numerical functions for computing the motion and the effects of a large number of small particles. DEM is an effective method of addressing engineering problems in granular and discontinuous materials, especially in granular flows, powder mechanics, ice and rock mechanics.</rdfs:comment>
         <rdfs:label xml:lang="en">Discrete Element Method</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/DiscreteElementMethod"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675395"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q902783"/>
     </owl:NamedIndividual>
     
@@ -11324,6 +11328,7 @@ v^{pm} = -K \mu^{-1} \nabla p^{vm} \\
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"/>
         <terms:description xml:lang="en">artificial neural network wherein connections between the nodes do not form a cycle</terms:description>
         <rdfs:label xml:lang="en">Feedforward Neural Network</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675404"/>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q5441227"/>
     </owl:NamedIndividual>
     
@@ -18895,6 +18900,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#DiscreteElementMethod"/>
         <terms:description xml:lang="en">variant of the discrete element method that employs linear contact models for inter-particle forces</terms:description>
         <rdfs:label xml:lang="en">Linear Discrete Element Method</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675389"/>
     </owl:NamedIndividual>
     
 
@@ -20237,6 +20243,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <containedIn rdf:resource="https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"/>
         <terms:description xml:lang="en">in mathematical optimization, a function (to be minimized) representing the cost of each outcome</terms:description>
         <rdfs:label xml:lang="en">Loss Function Model</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675430"/>
         <wikidataID rdf:resource="https://wikidata.org/wiki/Q1036748"/>
     </owl:NamedIndividual>
     
@@ -20277,6 +20284,7 @@ Exposed, Infectious, and Removed) type in a domain $\Omega \subset \mathbb{R}^2$
         <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
         <terms:description xml:lang="en">loss function summing over regions and data points</terms:description>
         <rdfs:label xml:lang="en">Loss Function (Romanization)</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674049"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1036748"/>
     </owl:NamedIndividual>
     
@@ -24408,7 +24416,7 @@ K_{ic} &amp;= K_{iu}\\
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#ParticleVelocity"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#UnitNormalVector"/>
         <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#YoungModulus"/>
-        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">\begin{align}
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
 \boldsymbol F^N_{ij}&amp;=\left(k_{ij}^N\delta_{ij}+d_{ij}^N\dot{\delta}_{ij}\right)\boldsymbol n_{ij}\\
 \delta_{ij}&amp;=\langle \boldsymbol x_i - \boldsymbol x_j, \boldsymbol n_{ij}\rangle\\
 \dot{\delta}_{ij}&amp;=\langle \boldsymbol v_i - \boldsymbol v_j, \boldsymbol n_{ij}\rangle\\
@@ -24417,8 +24425,8 @@ k^N_{ij}&amp;=E_N \pi r_{ij} / 2\\
 d_{ij}^N&amp;=D_N 2 \sqrt{k^N_{ij}m_{ij}}\\
 m_{ij}&amp;=\frac{m_im_j}{m_i + m_j}\\
 \boldsymbol n_{ij} &amp;= \frac{\boldsymbol x_i - \boldsymbol x_j}{\lVert \boldsymbol x_i - \boldsymbol x_j \rVert}
-\end{align}</definingFormulation>
-        <definingFormulation rdf:datatype="internal:anonymous-constants">\begin{align}
+\end{align}$</definingFormulation>
+        <definingFormulation rdf:datatype="internal:anonymous-constants">$\begin{align}
 \boldsymbol F^N_{ij}&amp;=\left(k_{ij}^N\delta_{ij}+d_{ij}^N\dot{\delta}_{ij}\right)\boldsymbol n_{ij}\\
 \delta_{ij}&amp;=\langle \boldsymbol x_i - \boldsymbol x_j, \boldsymbol n_{ij}\rangle\\
 \dot{\delta}_{ij}&amp;=\langle \boldsymbol v_i - \boldsymbol v_j, \boldsymbol n_{ij}\rangle\\
@@ -24427,7 +24435,7 @@ k^N_{ij}&amp;=E_N \pi r_{ij} / 2\\
 d_{ij}^N&amp;=D_N 2 \sqrt{k^N_{ij}m_{ij}}\\
 m_{ij}&amp;=\frac{m_im_j}{m_i + m_j}\\
 \boldsymbol n_{ij} &amp;= \frac{\boldsymbol x_i - \boldsymbol x_j}{\lVert \boldsymbol x_i - \boldsymbol x_j \rVert}
-\end{align}</definingFormulation>
+\end{align}$</definingFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$D_N$, Damping Coefficient</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$E_N$, Young Modulus</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol F^N_{ij}$, Interaction Force</inDefiningFormulation>
@@ -24436,7 +24444,7 @@ m_{ij}&amp;=\frac{m_im_j}{m_i + m_j}\\
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\boldsymbol x_i\in \mathbb R^3$, Particle Position</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$k_{ij}^N$, Normal Stiffness</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$m_i$, Particle Mass</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r_i$, Particle Radius</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r_{ij}$, Particle Radius</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$D_N$, Damping Coefficient</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$E_N$, Young Modulus</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol F^N_{ij}$, Interaction Force</inDefiningFormulation>
@@ -24445,9 +24453,10 @@ m_{ij}&amp;=\frac{m_im_j}{m_i + m_j}\\
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$\boldsymbol x_i\in \mathbb R^3$, Particle Position</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$k_{ij}^N$, Normal Stiffness</inDefiningFormulation>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$m_i$, Particle Mass</inDefiningFormulation>
-        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$r_i$, Particle Radius</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$r_{ij}$, Particle Radius</inDefiningFormulation>
         <terms:description xml:lang="en">force component acting normally at the contact interface between two particles</terms:description>
         <rdfs:label xml:lang="en">Normal Interaction Force of Two Particles</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674527"/>
     </owl:NamedIndividual>
     
 
@@ -27553,6 +27562,7 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$j$, Quantum Number</inDefiningFormulation>
         <terms:description xml:lang="en">quantum-mechanical eigen energies of a non-rigid rotor</terms:description>
         <rdfs:label xml:lang="en">Quantum Eigen Energy (Linear Non-Rigid Rotor)</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674551"/>
     </owl:NamedIndividual>
     
 
@@ -27576,6 +27586,7 @@ deformation</terms:description>
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$j$, Quantum Number</inDefiningFormulation>
         <terms:description xml:lang="en">quantum-mechanical eigen energies of a linear rotor</terms:description>
         <rdfs:label xml:lang="en">Quantum Eigen Energy (Linear Rigid Rotor)</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674550"/>
     </owl:NamedIndividual>
     
 
@@ -29186,6 +29197,7 @@ deformation</terms:description>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#ArtificialNeuralNetwork"/>
         <terms:description xml:lang="en">class of artificial neural network where connections between units form a directed graph along a temporal sequence</terms:description>
         <rdfs:label xml:lang="en">Recurrent Neural Network</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675322"/>
         <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1457734"/>
     </owl:NamedIndividual>
     
@@ -29203,6 +29215,7 @@ deformation</terms:description>
         <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#RecurrentNeuralNetwork"/>
         <terms:description xml:lang="en">surrogate model employing recurrent neural networks to approximate discrete element method simulations</terms:description>
         <rdfs:label xml:lang="en">Recurrent Neural Network Surrogate for Discrete Element Method</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675401"/>
     </owl:NamedIndividual>
     
 
@@ -32278,6 +32291,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <inDefiningFormulation rdf:datatype="internal:anonymous-constants">$r_i$, Particle Radius</inDefiningFormulation>
         <terms:description xml:lang="en">force component acting tangentially at the contact interface between two particles</terms:description>
         <rdfs:label xml:lang="en">Tangential Interaction Force of Two Particles</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674591"/>
     </owl:NamedIndividual>
     
 
@@ -32737,6 +32751,7 @@ d_{ij}^T&amp;=2D_T\sqrt{k_{ij}^N\frac{m_im_j}{m_i+m_j}}.
         <terms:description xml:lang="en">equation expressing the torque on a particle</terms:description>
         <rdfs:comment xml:lang="en">angular velocity needs to be taken into account when transforming the contact point between two particles from local to global coordinates</rdfs:comment>
         <rdfs:label xml:lang="en">Torque of Particle</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674592"/>
     </owl:NamedIndividual>
     
 
