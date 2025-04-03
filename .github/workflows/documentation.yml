@@ -8,6 +8,10 @@ on:
   # TODO: update so it triggers only when the owl file is changed
   push:
     branches: [ "main" ]
+    paths:
+      # Specify the file path to the ontology
+      - 'MathModDB_full.owl'   
+  
   pull_request:
     branches: [ "main" ]
 
