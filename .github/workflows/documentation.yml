@@ -40,10 +40,11 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      - name: Checkout owl file from main
-        run: git fetch origin
-             git checkout main
-             git restore --source=main MathModDB_full.owl
+      # TODO: it does not work yet..
+      #- name: Checkout owl file from main
+      #  run: git fetch origin
+      #       git checkout main
+      #       git restore --source=main MathModDB_full.owl
 
 
 
