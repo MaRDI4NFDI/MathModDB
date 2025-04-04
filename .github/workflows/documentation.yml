@@ -4,17 +4,13 @@ name: Widoco
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  # TODO: update so it triggers only when the owl file is changed
+  # Triggers the workflow on push request events but only when the owl file in "main" branch is changed
   push:
     branches: [ "main" ]
     paths:
       # Specify the file path to the ontology
       - 'MathModDB_full.owl'   
   
-  pull_request:
-    branches: [ "main" ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -29,6 +25,11 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+
+      - name: Set up Python environment
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13.1' # Specify the Python version to use
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
