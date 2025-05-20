@@ -1,0 +1,2676 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://mardi4nfdi.de/mathmoddb#"
+     xml:base="https://mardi4nfdi.de/mathmoddb"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:qudt="http://qudt.org/schema/qudt/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms#"
+     xmlns:terms1="http://purl.org/dc/terms/"
+     xmlns:mathmoddb="https://mardi4nfdi.de/mathmoddb#">
+    <owl:Ontology rdf:about="https://mardi4nfdi.de/mathmoddb">
+        <owl:versionIRI rdf:resource="https://mardi4nfdi.de/mathmoddb/1.0.0"/>
+        <terms1:abstract xml:lang="en">MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.</terms1:abstract>
+        <terms1:bibliographicCitation xml:lang="en">Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki, T. (2025): MathModDB Ontology and Knowledge Graph for Mathematical Models</terms1:bibliographicCitation>
+        <terms1:creator xml:lang="en">Aurela Shehu (https://orcid.org/0000-0002-1994-0612), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms1:creator>
+        <terms1:creator xml:lang="en">Björn Schembera (https://orcid.org/0000-0003-2860-6621), Universität Stuttgart (https://ror.org/04vnq7t77, https://isni.org/isni/0000000419369713)</terms1:creator>
+        <terms1:creator xml:lang="en">Burkhard Schmidt (https://orcid.org/0000-0002-9658-499X), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms1:creator>
+        <terms1:creator xml:lang="en">Christine Biedinger (https://orcid.org/0009-0002-5082-8386), Fraunhofer Institute for Industrial Mathematics ITWM (https://ror.org/019hjw009)</terms1:creator>
+        <terms1:creator xml:lang="en">Jochen Fiedler (https://orcid.org/0000-0002-9176-780X), Fraunhofer Institute for Industrial Mathematics ITWM (https://ror.org/019hjw009)</terms1:creator>
+        <terms1:creator xml:lang="en">Marco Reidelbach (https://orcid.org/0000-0002-1919-1834), Zuse Institute Berlin (https://ror.org/02eva5865, https://isni.org/isni/000000011010926X)</terms1:creator>
+        <terms1:creator xml:lang="en">Thomas Koprucki (https://orcid.org/0000-0001-6235-9412), Weierstrass Institute Berlin for Applied Analysis and Stochastics (https://ror.org/00h1x4t21, https://isni.org/isni/000000010066936X)</terms1:creator>
+        <terms1:issued>2025-02-13</terms1:issued>
+        <terms1:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms1:modified></terms1:modified>
+        <terms1:publisher>Mathematical Research Data Initiative (MaRDI, &lt;a href=&quot;https://www.mardi4nfdi.de&quot;&gt;https://www.mardi4nfdi.de&lt;/a&gt;)</terms1:publisher>
+        <terms1:title xml:lang="en">MathModDB Ontology and Knowledge Graph for Mathematical Models</terms1:title>
+        <rdfs:comment xml:lang="en">This is the MathModDB Ontology for documenting mathematical models.</rdfs:comment>
+        <rdfs:label xml:lang="en">MathModDB Ontology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-65990-4_14"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.1007/978-3-031-81974-2_8"/>
+        <rdfs:seeAlso rdf:resource="https://doi.org/10.52825/cordi.v1i.255"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/isReplacedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isReplacedBy"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/references -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/references"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#closeMatch -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#closeMatch"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#arxivID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#arxivID">
+        <rdfs:label>arXiv ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#dbpediaID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#dbpediaID">
+        <rdfs:label>DBpedia ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#doiID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#doiID">
+        <rdfs:label>DOI</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#mardiID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#mardiID">
+        <rdfs:label>MaRDI ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#qudtID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#qudtID">
+        <rdfs:label>QUDT ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#wikidataID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#wikidataID">
+        <rdfs:label>Wikidata ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#zbmathID -->
+
+    <owl:AnnotationProperty rdf:about="https://mardi4nfdi.de/mathmoddb#zbmathID">
+        <rdfs:label>zbMATH ID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#HTML"/>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#LaTeX -->
+
+    <rdfs:Datatype rdf:about="https://mardi4nfdi.de/mathmoddb#LaTeX"/>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#MathML -->
+
+    <rdfs:Datatype rdf:about="https://mardi4nfdi.de/mathmoddb#MathML"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#approximatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#approximatedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#approximates"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">item approximated by another item of the same class</terms1:description>
+        <rdfs:label xml:lang="en">approximated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#approximates -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#approximates">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">item approximates another item of the same class</terms1:description>
+        <rdfs:label xml:lang="en">approximates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#assumedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#assumedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#assumes"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Assumptions in a mathematical model|task|formulation are the conditions that must be met for the mathematical model|task|formulation  to be valid.</terms1:description>
+        <rdfs:label xml:lang="en">assumed by</rdfs:label>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q29463760"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#assumes -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#assumes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <terms1:description xml:lang="en">Assumptions in a mathematical model|task|formulation are the conditions that must be met for the mathematical model|task|formulation to be valid.</terms1:description>
+        <rdfs:label xml:lang="en">assumes</rdfs:label>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q29463760"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsBoundaryConditionIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsBoundaryConditionIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">In the study of differential equations, a boundary-value problem is a differential equation subjected to constraints called boundary conditions.</terms1:description>
+        <rdfs:label xml:lang="en">contained as boundary condition in</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Boundary_value_problem"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q18382796"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsConstantIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsConstantIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsConstant"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">This property serves to indicate that a certain quantity is considered as a constant in a computational task.</terms1:description>
+        <rdfs:label xml:lang="en">contained as constant in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsConstraintConditionIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsConstraintConditionIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsConstraintCondition"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Solutions to a computational task or a mathematical formulation or a mathematical model are subject to a constraint which is expressed as a mathematical formulation, i.e., an equation or an inequality.</terms1:description>
+        <rdfs:label xml:lang="en">contained as constraint condition in</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Constraint_(mechanics)"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsCouplingConditionIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsCouplingConditionIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsCouplingCondition"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Mathematical formulation, i.e., typically an equation,  serving to model the interaction of two or more (sub-)systems that are interacting with each other.</terms1:description>
+        <rdfs:label>contained as coupling condition in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsFinalConditionIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsFinalConditionIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsFinalCondition"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Similar to initial conditions, but referring to the system state at final time.</terms1:description>
+        <rdfs:comment xml:lang="en">Sometimes used in the context of optimal control.</rdfs:comment>
+        <rdfs:label xml:lang="en">contained as final condition in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsInitialConditionIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsInitialConditionIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsInitialCondition"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">In mathematics and particularly in dynamic systems, an initial condition, in some contexts called a seed value,  is a value of an evolving variable at some point in time designated as the initial time.</terms1:description>
+        <rdfs:label xml:lang="en">contained as initial condition in</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Initial_condition"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q18351510"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsInputIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsInputIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsInput"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <terms1:description xml:lang="en">(base) quantities may be assigned as input or output or parameter in the context of a (specific!) mathematical task but not in the context of a (general!) model or equation.</terms1:description>
+        <rdfs:label xml:lang="en">contained as input in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsObjectiveIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsObjectiveIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsObjective"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <terms1:description xml:lang="en">This property serves to indicate that a certain quantity is to be minimized or maximized in a mathematical optimization task.</terms1:description>
+        <rdfs:label xml:lang="en">contained as objective in</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mathematical_optimization"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q984063"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsOutputIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsOutputIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsOutput"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <terms1:description xml:lang="en">(base) quantities may be assigned as input or output or parameter in the context of a (specific!) mathematical task but not in the context of a (general!) model or equation.</terms1:description>
+        <rdfs:label xml:lang="en">contained as output in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedAsParameterIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedAsParameterIn">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containedIn"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#containsParameter"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:comment xml:lang="en">(base) quantities may be assigned as input or output or parameter in the context of a (specific!) mathematical task but not in the context of a (general!) model or equation.</rdfs:comment>
+        <rdfs:label xml:lang="en">contained as parameter in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containedIn -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containedIn">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">item contained in another item of the same/another class</terms1:description>
+        <rdfs:label xml:lang="en">contained in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#contains -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#contains">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">item contains another item of the same/another class</terms1:description>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsBoundaryCondition">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <terms1:description xml:lang="en">In the study of differential equations, a boundary-value problem is a differential equation subjected to constraints called boundary conditions.</terms1:description>
+        <rdfs:label xml:lang="en">contains boundary condition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Boundary_value_problem"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q18382796"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsConstant -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsConstant">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">This property serves to indicate that a certain quantity is considered as a constant in a computational task.</terms1:description>
+        <rdfs:label xml:lang="en">contains constant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsConstraintCondition -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsConstraintCondition">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <terms1:description xml:lang="en">Solutions to a computational task or a mathematical formulation or a mathematical model are subject to a constraint which is expressed as a mathematical formulation, i.e., an equation or an inequality.</terms1:description>
+        <rdfs:label xml:lang="en">contains constraint condition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Constraint_(mechanics)"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsCouplingCondition -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsCouplingCondition">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <terms1:description xml:lang="en">Mathematical formulation, i.e., typically an equation,  serving to model the interaction of two or more (sub-)systems that are interacting with each other.</terms1:description>
+        <rdfs:label>contains coupling condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsFinalCondition -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsFinalCondition">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <terms1:description xml:lang="en">Similar to initial conditions, but referring to the system state at final time.</terms1:description>
+        <rdfs:comment xml:lang="en">Sometimes used in the context of optimal control.</rdfs:comment>
+        <rdfs:label xml:lang="en">contains final condition</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsInitialCondition -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsInitialCondition">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <terms1:description xml:lang="en">In mathematics and particularly in dynamic systems, an initial condition, in some contexts called a seed value,  is a value of an evolving variable at some point in time designated as the initial time.</terms1:description>
+        <rdfs:label xml:lang="en">contains initial condition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Initial_condition"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q18351510"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsInput -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsInput">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Indicates that a (base) quantity is considered as input in the context of a (specific!) computational task.</terms1:description>
+        <rdfs:label xml:lang="en">contains input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsObjective -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsObjective">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">This property serves to indicate that a certain quantity is to be minimized or maximized in a computational optimization task. An objective function, a target function, a loss function or cost function (minimization), a utility function or fitness function (maximization), or, in certain fields, an energy function or energy functional.</terms1:description>
+        <rdfs:label xml:lang="en">contains objective</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mathematical_optimization"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q984063"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsOutput -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsOutput">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Indicates that a (base) quantity is considered as output in the context of a (specific!) computational task.</terms1:description>
+        <rdfs:label xml:lang="en">contains output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#containsParameter -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#containsParameter">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#contains"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">Auxiliary variable or arbitrary constant that characterizes a system or specifies a mathematical function among a family of functions. This property serves to indicate that a certain quantity is considered as a parameter in a computational task.</terms1:description>
+        <rdfs:label xml:lang="en">contains parameter</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describedAsDocumentedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describedAsDocumentedBy">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describedBy"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describesDocumentationOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <terms1:description xml:lang="en">property to express that an entity  (problem, model, ...) is documented in a specific publication</terms1:description>
+        <rdfs:label xml:lang="en">described as documented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describedAsInventedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describedAsInventedBy">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describedBy"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describesInventionOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <terms1:description xml:lang="en">property that states that some entity  (problem, model, ...) was invented in a specific publication</terms1:description>
+        <rdfs:label xml:lang="en">described as invented by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describedAsStudiedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describedAsStudiedBy">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describedBy"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describesStudyOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <terms1:description xml:lang="en">This property states that an entity (problem, model, ...) is studied in a specific Publication</terms1:description>
+        <rdfs:label xml:lang="en">described as studied by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describedAsSurveyedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describedAsSurveyedBy">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describedBy"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describesSurveyOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <terms1:description xml:lang="en">This property states that an entity  (problem, model, application, ...) is surveyed in a specific Publication. Surveys are e.g. a review article, a handbook, an encyclopedia, monographs, a documentation, technical report ... .</terms1:description>
+        <rdfs:label xml:lang="en">described as surveyed by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describedAsUsedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describedAsUsedBy">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describedBy"/>
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describesUseOf"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <terms1:description xml:lang="en">A property that states that an entity (problem, model, ...) is used in a Publication</terms1:description>
+        <rdfs:label xml:lang="en">described as used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describes"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <terms1:description xml:lang="en">reference work where the subject is described</terms1:description>
+        <rdfs:label xml:lang="en">described by</rdfs:label>
+        <skos:altLabel xml:lang="en">described by reference work</skos:altLabel>
+        <skos:altLabel xml:lang="en">described by source</skos:altLabel>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Property:P1343"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describes -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describes">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">reference work describes this subject</terms1:description>
+        <rdfs:label xml:lang="en">describes</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describesDocumentationOf -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describesDocumentationOf">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describes"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">property that expresses that a publication is documenting some entity  (problem, model, ...)</terms1:description>
+        <rdfs:label xml:lang="en">describes documentation of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describesInventionOf -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describesInventionOf">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describes"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">property that states that a publication invented some entity  (problem, model, ...)</terms1:description>
+        <rdfs:label xml:lang="en">describes invention of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describesStudyOf -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describesStudyOf">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describes"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">This property states that a Publication studies an entity  (problem, model, ...)</terms1:description>
+        <rdfs:label xml:lang="en">describes study of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describesSurveyOf -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describesSurveyOf">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describes"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">This property states that a Publication surveys some entity  (problem, model, application...). Surveys are e.g. a review article, a handbook, an encyclopedia, monographs, a documentation, technical report ... .</terms1:description>
+        <rdfs:label xml:lang="en">describes survey of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#describesUseOf -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#describesUseOf">
+        <rdfs:subPropertyOf rdf:resource="https://mardi4nfdi.de/mathmoddb#describes"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">A property that states that a Publication uses a specific entity (problem, model, ...)</terms1:description>
+        <rdfs:label xml:lang="en">describes use of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#discretizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#discretizedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#discretizes"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">process of obtaining discrete models/formulations that are the analogues of continuous models/formulations</terms1:description>
+        <rdfs:comment xml:lang="en">Discrete models are the discrete analogues of continuous models. In discrete modelling, processes are described by discrete data, i.e., data that could potentially take on only a countable set of values, such as the integers, and which are not infinitely divisible. Thus, discrete modeling yields a computer representable and computable versions of continuous mathematical models.</rdfs:comment>
+        <rdfs:label xml:lang="en">discretized by</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Discrete_modelling"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q17007827"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#discretizes -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#discretizes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">process of obtaining discrete models/formulations that are the analogues of continuous models/formulations</terms1:description>
+        <rdfs:comment xml:lang="en">Discretizing is the process of obtaining discrete models/formulations that are the analogues of continuous models/formulations. Thus, discretization yields a computer representable and computable versions.</rdfs:comment>
+        <rdfs:label xml:lang="en">discretizes</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Discrete_modelling"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q17007827"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#linearizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#linearizedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#linearizes"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">property that states that a formulation is linearized (exact or approximate) by another formulation</terms1:description>
+        <rdfs:label xml:lang="en">linearized by</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linearization"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1520713"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#linearizes -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#linearizes">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">linearization of a formulation, model, quantity or task</terms1:description>
+        <rdfs:label xml:lang="en">linearizes</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Linearization"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1520713"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#modeledBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#modeledBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#models"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <terms1:description xml:lang="en">mathematical modeling of a part of the reality</terms1:description>
+        <rdfs:comment xml:lang="en">Mathematical modeling describes a part of the reality, the aim of which is to make a particular part or feature of the world easier to understand, define, quantify, visualize, or simulate by referencing it to existing and usually commonly accepted knowledge. It requires selecting and identifying relevant aspects of a situation in the real world and then developing a model to replicate a system with those features.</rdfs:comment>
+        <rdfs:label xml:lang="en">modeled by</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Scientific_modelling"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q193946"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q486902"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#models -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#models">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">mathematical modeling of a part of the reality</terms1:description>
+        <rdfs:comment xml:lang="en">Mathematical modeling describes a part of the reality, the aim of which is to make a particular part or feature of the world easier to understand, define, quantify, visualize, or simulate by referencing it to existing and usually commonly accepted knowledge. It requires selecting and identifying relevant aspects of a situation in the real world and then developing a model to replicate a system with those features.</rdfs:comment>
+        <rdfs:label xml:lang="en">models</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Scientific_modelling"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q193946"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q486902"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#nondimensionalizedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#nondimensionalizedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#nondimensionalizes"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">partial or full removal of physical dimensions from a quantity or a formulation</terms1:description>
+        <rdfs:label xml:lang="en">nondimensionalized by</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nondimensionalization"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q464133"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#nondimensionalizes -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#nondimensionalizes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">partial or full removal of physical dimensions from a quantity or a formulation</terms1:description>
+        <rdfs:label xml:lang="en">nondimensionalizes</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Nondimensionalization"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q464133"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#similarTo -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#similarTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en-au">property describing that two entities are similar</terms1:description>
+        <rdfs:comment xml:lang="en">use this property only if the two things are similar but the one is not the generalization of the other one</rdfs:comment>
+        <rdfs:label xml:lang="en">similar to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#specializedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#specializedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#specializes"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">form of abstraction whereby common properties of specific instances are formulated as special cases of other instance</terms1:description>
+        <rdfs:label xml:lang="en">specialized by</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q170084"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#specializes -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#specializes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <terms1:description xml:lang="en">form of abstraction whereby common properties of specific instances are formulated as special cases of other instance</terms1:description>
+        <rdfs:label xml:lang="en">specializes</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q170084"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#usedBy -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#usedBy">
+        <owl:inverseOf rdf:resource="https://mardi4nfdi.de/mathmoddb#uses"/>
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <terms1:description xml:lang="en">A mathematical model is applied (used) by a computational task.</terms1:description>
+        <rdfs:label xml:lang="en">used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#uses -->
+
+    <owl:ObjectProperty rdf:about="https://mardi4nfdi.de/mathmoddb#uses">
+        <rdfs:domain rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <rdfs:range rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <terms1:description xml:lang="en">A computational task applies (uses) a mathematical model.</terms1:description>
+        <rdfs:label xml:lang="en">uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#definingFormulation -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#definingFormulation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#LaTeX"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathML"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <terms1:description xml:lang="en">can be equations, inequalities, expressions, logic quantifiers or other</terms1:description>
+        <rdfs:comment xml:lang="en">Usually in Latex or MathML.</rdfs:comment>
+        <rdfs:label xml:lang="en">defining formulation</rdfs:label>
+        <skos:altLabel xml:lang="en">mathematical equation</skos:altLabel>
+        <skos:altLabel xml:lang="en">mathematical formula</skos:altLabel>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Property:P2534"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#inDefiningFormulation -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#inDefiningFormulation">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#LaTeX"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathML"/>
+                </owl:unionOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <terms1:description xml:lang="en">symbol or term of formulation and corresponding quantity</terms1:description>
+        <rdfs:comment xml:lang="en">Usual format: LaTeX symbol, string name (comma separated).</rdfs:comment>
+        <rdfs:label xml:lang="en">in defining formulation</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Property:P7235"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isChemicalConstant -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isChemicalConstant">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">chemical quantity that is generally believed to be both universal in nature and constant in time</terms1:description>
+        <rdfs:label xml:lang="en">is chemical constant</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isDeterministic -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isDeterministic">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">true, if the model is deterministic; false, if the model is probabilistic (stochastic)</terms1:description>
+        <rdfs:label xml:lang="en">is deterministic</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q622381"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isDimensionless -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isDimensionless">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">true, if physical dimensions are partially or fully removed</terms1:description>
+        <rdfs:label xml:lang="en">is dimensionless</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q126818"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isDynamic -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isDynamic">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">True, if dynamic; false, if static</terms1:description>
+        <rdfs:label xml:lang="en">is dynamic</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q638328"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isLinear -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isLinear">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">True, if linear; false, if non-linear</terms1:description>
+        <rdfs:label xml:lang="en">is linear</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1072174"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isMathematicalConstant -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isMathematicalConstant">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">special, usually real number, that is interesting or significant in some way</terms1:description>
+        <rdfs:label xml:lang="en">is mathematical constant</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mathematical_constant"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q186509"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isPhysicalConstant -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isPhysicalConstant">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">physical quantity that is generally believed to be both universal in nature and constant in time</terms1:description>
+        <rdfs:label xml:lang="en">is physical constant</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Physical_constant"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q173227"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isSpaceContinuous -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isSpaceContinuous">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">True, if continuous in space; false, if discrete in space</terms1:description>
+        <rdfs:label xml:lang="en">is space-continuous</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q12030090"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#isTimeContinuous -->
+
+    <owl:DatatypeProperty rdf:about="https://mardi4nfdi.de/mathmoddb#isTimeContinuous">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+                    <rdf:Description rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms1:description xml:lang="en">True, if continuous in time; false, if discrete in time</terms1:description>
+        <rdfs:label xml:lang="en">is time-continuous</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q12030090"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ComputationalTask -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#ComputationalTask">
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">specific computational task associated with a mathematical model</terms1:description>
+        <rdfs:comment xml:lang="en">Typically, various tasks differ from each other by the choice of given quantities (input), unknown quantities (output), parameters or constants as well as boundary conditions, initial conditions and/or final conditions.</rdfs:comment>
+        <rdfs:label xml:lang="de">Berechnungsaufgabe</rdfs:label>
+        <rdfs:label xml:lang="en">Computational Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#MathematicalFormulation -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation">
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">typically, an equation (general construct indicating equality of quantities) or an inequality (non-equal relations between quantities), or a  logic quantifier</terms1:description>
+        <rdfs:label xml:lang="en">Mathematical Formulation</rdfs:label>
+        <rdfs:label xml:lang="de">Mathematische Formulierung</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Equation"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Formula#In_mathematics"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Inequality_(mathematics)"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Quantifier_(logic)"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11345"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q28113351"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q592911"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q976981"/>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#MathematicalModel -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#MathematicalModel">
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Publication"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">a mathematical model for describing a part of the reality by means of abstraction and simplifying assumptions</terms1:description>
+        <rdfs:comment xml:lang="en">The aim of modeling is to make a particular part or feature of the world easier to simulate, interpret and/or optimize based on existing knowledge.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mathematical Model</rdfs:label>
+        <rdfs:label xml:lang="de">Mathematisches Modell</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Mathematical_model"/>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Scientific_modelling"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q68663"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q486902"/>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Publication -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#Publication">
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">publication that reports original empirical and theoretical work in the sciences</terms1:description>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+        <rdfs:label xml:lang="de">Publikation</rdfs:label>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q591041"/>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Quantity -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#Quantity">
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">property of a system that can be measured or obtained from calculation/simulation</terms1:description>
+        <rdfs:comment xml:lang="en">The overarching, abstract quantity in the QuantityKind class should be referenced if possible/applicable.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantity</rdfs:label>
+        <rdfs:label xml:lang="de">Quantität</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Physical_quantity"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q309314"/>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#QuantityKind -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#QuantityKind">
+        <rdfs:subClassOf rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">abstract, generalized concept of a quantity. Typically, it could be chosen from an established, controlled vocabulary of quantityKinds, such as QUDT, IEC, ....</terms1:description>
+        <rdfs:comment xml:lang="en">Note that the kind of a quantity cannot be generalized by another (kind of a) quantity.</rdfs:comment>
+        <rdfs:label xml:lang="de">Basisquantität</rdfs:label>
+        <rdfs:label xml:lang="en">Quantity Kind</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ResearchField -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchField">
+        <owl:disjointWith rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <terms1:description xml:lang="en">a field of research, e.g. Arts &amp; Humanities, Life Sciences &amp; Biomedicine, Physical &amp; Natural Sciences or Engineering</terms1:description>
+        <rdfs:label xml:lang="de">Forschungsgebiet</rdfs:label>
+        <rdfs:label xml:lang="en">Research Field</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Academic_discipline"/>
+        <skos:altLabel xml:lang="en">Academic Discipline</skos:altLabel>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11862829"/>
+    </owl:Class>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ResearchProblem -->
+
+    <owl:Class rdf:about="https://mardi4nfdi.de/mathmoddb#ResearchProblem">
+        <terms1:description xml:lang="en">problem to be investigated, typically from a scientific or engineering application, i.e. a specific issue or gap in existing knowledge that you aim to address in your research</terms1:description>
+        <rdfs:label xml:lang="de">Forschungsthema</rdfs:label>
+        <rdfs:label xml:lang="en">Research Problem</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Research_question"/>
+        <skos:altLabel xml:lang="en">Research Question</skos:altLabel>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6032837"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q123578571"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Acceleration -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Acceleration">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">rate at which the magnitude and/or direction of velocity changes with time</terms1:description>
+        <rdfs:label xml:lang="en">Acceleration</rdfs:label>
+        <rdfs:label xml:lang="de">Beschleunigung</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Acceleration"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673688"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Acceleration"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11376"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Area -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Area">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">quantity that expresses the extent of a two-dimensional surface or shape, or planar lamina, in the plane</terms1:description>
+        <rdfs:label xml:lang="en">Area</rdfs:label>
+        <rdfs:label xml:lang="de">Fläche</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Area"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673693"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11500"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Biology -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Biology">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <terms1:description xml:lang="en">scientific study of living things, especially their structure, function, growth, evolution, and distribution</terms1:description>
+        <rdfs:label xml:lang="en">Biology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Biology"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q59666"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q420"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ClassicalPosition -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ClassicalPosition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
+        <terms1:description xml:lang="en">position of a point particle in classical mechanics</terms1:description>
+        <rdfs:label xml:lang="en">Classical Position</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673863"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#ClassicalVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#ClassicalVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTerminalVelocity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Velocity"/>
+        <terms1:description xml:lang="en">velocity of a point particle in classical mechanics</terms1:description>
+        <rdfs:label xml:lang="en">Classical Velocity</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673873"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#CrossSection -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#CrossSection">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Area"/>
+        <terms1:description xml:lang="en">the intersection of a body in 3D space with a plane</terms1:description>
+        <rdfs:comment xml:lang="en">In geometry and in natural sciences, a cross section is the intersection of a body in 3D space with a plane.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross Section</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Cross_section_(geometry)"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673909"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q845080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Density -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Density">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">mass per volume of a substance</terms1:description>
+        <rdfs:label xml:lang="en">Density</rdfs:label>
+        <rdfs:label xml:lang="de">Dichte</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Density"/>
+        <skos:altLabel xml:lang="en">Specific Mass</skos:altLabel>
+        <skos:altLabel xml:lang="en">Volumetric Mass Density</skos:altLabel>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673712"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Density"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q29539"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#DensityOfAir -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DensityOfAir">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Density"/>
+        <terms1:description xml:lang="en">mass per unit volume of the atmosphere of the planet Earth</terms1:description>
+        <rdfs:label xml:lang="en">Density of Air</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Density_of_air"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673916"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1511415"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#DragCoefficient -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#DragCoefficient">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <isDimensionless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDimensionless>
+        <terms1:description xml:lang="en">dimensionless parameter to quantify fluid resistance</terms1:description>
+        <rdfs:label xml:lang="en">Drag Coefficient</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Drag_coefficient"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673930"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1778961"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#EarthMass -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#EarthMass">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Mass"/>
+        <isPhysicalConstant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isPhysicalConstant>
+        <terms1:description xml:lang="en">mass of the planet Earth</terms1:description>
+        <rdfs:label xml:lang="en">Earth Mass</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Earth_mass"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673935"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q25935139"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#EarthRadius -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#EarthRadius">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
+        <isPhysicalConstant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isPhysicalConstant>
+        <terms1:description xml:lang="en">mean distance from the Earth&apos;s center to its surface</terms1:description>
+        <rdfs:comment xml:lang="en">mean distance from the Earth&apos;s center to its surface: A globally-average value is usually considered to be 6,371 kilometres with a 0.3% variability (±10 km)</rdfs:comment>
+        <rdfs:label xml:lang="en">Earth Radius</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Earth_radius"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673936"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q1155470"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallDetermineGravitation -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallDetermineGravitation">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallImpactTime"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <containsOutput rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <terms1:description xml:lang="en">given the time that it takes for an object to freely fall from a certain height to the ground, what is the magnitude of the gravitational acceleration</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Determine Gravitation</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684566"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallDetermineTime -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallDetermineTime">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration"/>
+        <containsConstant rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <containsOutput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallImpactTime"/>
+        <uses rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelAirDrag"/>
+        <uses rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelVacuum"/>
+        <terms1:description xml:lang="en">how long does it take for a freely falling object to fall to the ground</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Determine Time</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684567"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallDetermineVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallDetermineVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ComputationalTask"/>
+        <containsConstant rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <containsInput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <containsOutput rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallImpactVelocity"/>
+        <uses rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelAirDrag"/>
+        <uses rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelVacuum"/>
+        <terms1:description xml:lang="en">with which velocity will a freely falling object hit the ground</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Determine Velocity</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684568"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallEquationAirDrag -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallEquationAirDrag">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#CrossSection"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfAir"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#DragCoefficient"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallMass"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTerminalVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align} 
+m\dot{v} &amp;=&amp; mg-\frac{1}{2}\rho C_DAv^2\\
+v(t) &amp;=&amp; v_{\infty}\tanh\left(\frac{gt}{v_{\infty}}\right) \\
+y(t) &amp;=&amp; y_0+v_0t-\frac{v_\infty^2}{g}\ln\cosh\left(\frac{gt}{v_\infty}\right)
+\end{align}$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Cross Section</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_D$, Drag Coefficient</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Density of Air</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$g$, Gravitational Acceleration (Earth Surface)</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$m$, Free Fall Mass</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v$, Free Fall Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0$, Free Fall Initial Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_{\infty}$, Free Fall Terminal Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Free Fall Height</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_0$, Free Fall Initial Height</inDefiningFormulation>
+        <isLinear rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLinear>
+        <terms1:description xml:lang="en">modeling the fall of objects by the laws of classical mechanics, including aerodynamic drag and assuming a uniform gravitational field</terms1:description>
+        <rdfs:comment xml:lang="en">Moreover, assuming the falling object to be a point mass.</rdfs:comment>
+        <rdfs:label xml:lang="en">Free Fall Equation (Air Drag)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674363"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTime"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationAirDrag"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y(t)=y_0Q\left(1-\frac{t}{t_{\mathrm{ff}}};\frac{3}{2},\frac{1}{2}\right)$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$Q$, Quantile Function of The Beta Distribution</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t_\mathrm{ff}$, Free Fall Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Free Fall Height</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_0$, Free Fall Initial Height</inDefiningFormulation>
+        <terms1:description xml:lang="en">modeling the fall of objects by the laws of classical mechanics, neglecting aerodynamic drag but allowing for a non-uniform gravitational field</terms1:description>
+        <rdfs:comment xml:lang="en">Moreover, assuming the falling object to be a point mass.</rdfs:comment>
+        <rdfs:label xml:lang="en">Free Fall Equation (Non-Uniform Gravitation)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674364"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#VanishingAirDensity"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align}
+\dot{v} &amp;=&amp; g \\
+v(t) &amp;=&amp; v_0-gt \\
+y(t) &amp;=&amp; y_0+v_0t-\frac{1}{2}gt^2
+\end{align}$</definingFormulation>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y(t)=y_0+v_0t-\frac{1}{2}gt^2$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$g$, Gravitational Acceleration (Earth Surface)</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v$, Free Fall Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0$, Free Fall Initial Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Free Fall Height</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_0$, Free Fall Initial Height</inDefiningFormulation>
+        <terms1:description xml:lang="en">modeling the fall of objects by the laws of classical mechanics, neglecting aerodynamic drag and assuming a uniform gravitational field</terms1:description>
+        <rdfs:comment xml:lang="en">Moreover, assuming the falling object to be a point mass.</rdfs:comment>
+        <rdfs:label xml:lang="en">Free Fall Equation (Vacuum)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674365"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallHeight -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallHeight">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Length"/>
+        <terms1:description xml:lang="en">height of an object as it falls freely</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Height</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <skos:altLabel xml:lang="en">Free Fall Altitude</skos:altLabel>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673991"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallImpactTime -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallImpactTime">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTime"/>
+        <terms1:description xml:lang="en">time that it takes for an object to freely fall from a certain height to the ground</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Impact Time</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free-fall_time"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673986"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallImpactVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallImpactVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalVelocity"/>
+        <terms1:description xml:lang="en">velocity with which a freely falling object hits the ground</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Impact Velocity</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673990"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallInitialCondition -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallInitialCondition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\begin{align} y(t=0) &amp;= y_0 \\ v(t=0) &amp;= v_0    \end{align}$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v$, Free Fall Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_0$, Free Fall Initial Velocity</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Free Fall Height</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_0$, Free Fall Initial Height</inDefiningFormulation>
+        <terms1:description xml:lang="en">initial height and velocity of an object before it falls through a fluid or a gas</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Initial Condition</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674368"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialClassicalPosition"/>
+        <terms1:description xml:lang="en">initial height of an object as it starts falling through a fluid or a gas</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Initial Height</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <skos:altLabel xml:lang="en">Free Fall Initial Altitude</skos:altLabel>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673987"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallVelocity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#InitialClassicalVelocity"/>
+        <terms1:description xml:lang="en">initial velocity of an object as it starts falling through a fluid or a gas</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Initial Velocity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673988"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallMass -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallMass">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Mass"/>
+        <terms1:description xml:lang="en">mass of a (freely) falling object</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Mass</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673992"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallModelAirDrag -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallModelAirDrag">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationAirDrag"/>
+        <containsInitialCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialCondition"/>
+        <models rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalEffectsOnFruit"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelVacuum"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelNonUniformGravitation"/>
+        <terms1:description xml:lang="en">mathematical model for the fall of objects, including the aerodynamic drag and assuming a uniform gravitational field</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Model (Air Drag)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675406"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallModelNonUniformGravitation -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallModelNonUniformGravitation">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationNonUniformGravitation"/>
+        <containsInitialCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialCondition"/>
+        <terms1:description xml:lang="en">mathematical model for the fall of objects, including the aerodynamic drag and allowing for a non-uniform gravitational field</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Model (Non-Uniform Gravitation)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675407"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallModelVacuum -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallModelVacuum">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalModel"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#VanishingAirDensity"/>
+        <assumes rdf:resource="https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallEquationVacuum"/>
+        <containsInitialCondition rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialCondition"/>
+        <usedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallDetermineGravitation"/>
+        <terms1:description xml:lang="en">mathematical model for the fall of objects, neglecting aerodynamic drag and assuming a uniform gravitational field</terms1:description>
+        <rdfs:comment xml:lang="en">A free fall is any motion of a body where gravity is the only force acting upon it. Hence, we are neglecting the aerodynamic drag (vanishing drag coefficient and/or density of air) and assuming a uniform gravitational field.</rdfs:comment>
+        <rdfs:label xml:lang="en">Free Fall Model (Vacuum)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <doiID rdf:resource="https://doi.org/10.1088/0143-0807/29/5/012"/>
+        <doiID rdf:resource="https://doi.org/10.1119/1.3246467"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6675405"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallTerminalVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallTerminalVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#CrossSection"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfAir"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#DragCoefficient"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTerminalVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Mass"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_\infty \equiv \sqrt{\frac{2mg}{\rho C_D A}}$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$A$, Cross Section</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_D$, Drag Coefficient</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Density of Air</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$g$, Gravitational Acceleration (Earth Surface)</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$m$, Mass</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v_\infty$, Free Fall Terminal Velocity</inDefiningFormulation>
+        <terms1:description xml:lang="en">highest velocity attainable by an object as it falls through a fluid or a gas</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Terminal Velocity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Terminal_velocity"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673993"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q614981"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallTime -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallTime">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#EarthMass"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialHeight"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallMass"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTime"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalConstant"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t(y) \equiv \sqrt{ \frac{ {y_0}^3 }{2G(m+M)} } \left(\sqrt{\frac{y}{y_0}\left(1-\frac{y}{y_0}\right)} + \arccos{\sqrt{\frac{y}{y_0}}}\right)$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$G$, Gravitational Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$M$, Earth Mass</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$m$, Free Fall Mass</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Free Fall Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y$, Free Fall Height</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$y_0$, Free Fall Initial Height</inDefiningFormulation>
+        <terms1:description xml:lang="en">characteristic time that would take a body to collapse under its own gravitational attraction, if no other forces existed to oppose the collapse</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Time</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free-fall_time"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673995"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q5499609"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#FreeFallVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#FreeFallVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallTerminalVelocity"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalVelocity"/>
+        <terms1:description xml:lang="en">velocity attained by an object as it falls freely</terms1:description>
+        <rdfs:label xml:lang="en">Free Fall Velocity</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Free_fall"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673994"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q38083707"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#EarthMass"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#EarthRadius"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalAccelerationEarthSurface"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalConstant"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Acceleration"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\vec{g} \equiv -\frac{GM}{r^2}\vec{r}$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$G$, Gravitational Constant</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$M$, Earth Mass</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$g$, Gravitational Acceleration (Earth Surface)</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r$, Earth Radius</inDefiningFormulation>
+        <terms1:description xml:lang="en">acceleration of an object in free fall within a vacuum, thus without experiencing air drag</terms1:description>
+        <rdfs:comment xml:lang="en">At a fixed point on the surface of Earth, the gravity results from the combined effect of gravitation and the centrifugal force from Earth&apos;s rotation. At different points on Earth&apos;s surface, the free fall acceleration ranges from 9.764 to 9.834 m/s2.</rdfs:comment>
+        <rdfs:label xml:lang="en">Gravitational Acceleration (Earth Surface)</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gravitational_acceleration"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673989"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/AccelerationOfGravity"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q30006"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#GravitationalConstant -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GravitationalConstant">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <isPhysicalConstant rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isPhysicalConstant>
+        <terms1:description xml:lang="en">physical constant relating the gravitational force between objects to their mass and distance</terms1:description>
+        <rdfs:label xml:lang="en">Gravitational Constant</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Gravitational_constant"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673997"/>
+        <qudtID rdf:resource="https://www.qudt.org/vocab/constant/GravitationalConstant"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#GravitationalEffectsOnFruit -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#GravitationalEffectsOnFruit">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchProblem"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelAirDrag"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelNonUniformGravitation"/>
+        <modeledBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallModelVacuum"/>
+        <terms1:description xml:lang="en">studying how fruits are falling from trees, which inspired Newton of gravitation</terms1:description>
+        <rdfs:label xml:lang="en">Gravitational Effects on Fruit</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684656"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#InitialClassicalPosition -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialClassicalPosition">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalPosition"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q(t=0)=q_0$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$q$, Classical Position</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <terms1:description xml:lang="en">initial position of a classical particle modeled as point mass</terms1:description>
+        <rdfs:label xml:lang="en">Initial Classical Position</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674262"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#InitialClassicalVelocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#InitialClassicalVelocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#ClassicalVelocity"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#Time"/>
+        <specializedBy rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallInitialVelocity"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v(t=0)=v_0$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$t$, Time</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$v$, Classical Velocity</inDefiningFormulation>
+        <terms1:description xml:lang="en">initial velocity of a classical particle modeled as point mass</terms1:description>
+        <rdfs:label xml:lang="en">Initial Classical Velocity</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674369"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Length -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Length">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">measured dimension of an object</terms1:description>
+        <rdfs:label xml:lang="en">Length</rdfs:label>
+        <rdfs:label xml:lang="de">Länge</rdfs:label>
+        <rdfs:label xml:lang="el">Μήκος</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673703"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Length"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q36253"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Mass -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Mass">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">property of matter to resist changes of the state of motion and to attract other bodies</terms1:description>
+        <rdfs:label xml:lang="en">Mass</rdfs:label>
+        <rdfs:label xml:lang="de">Masse</rdfs:label>
+        <rdfs:label xml:lang="el">Μάζα</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673705"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Mass"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q11423"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Pomology -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Pomology">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#ResearchField"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#GravitationalEffectsOnFruit"/>
+        <specializes rdf:resource="https://mardi4nfdi.de/mathmoddb#Biology"/>
+        <terms1:description xml:lang="en">branch of botany that studies fruits and their cultivation</terms1:description>
+        <rdfs:label xml:lang="en">Pomology</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Pomology"/>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6684706"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q35911"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#QuantileFunctionOfTheBetaDistribution">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#Quantity"/>
+        <terms1:description xml:lang="en">inverse function of the regularized incomplete beta function</terms1:description>
+        <rdfs:label xml:lang="en">Quantile Function of the Beta Distribution</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673996"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q3489473"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Time -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Time">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">dimension in which events can be ordered from the past through the present into the future</terms1:description>
+        <rdfs:label xml:lang="en">Time</rdfs:label>
+        <rdfs:label xml:lang="de">Zeit</rdfs:label>
+        <rdfs:label xml:lang="el">Χρόνος</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6534304"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Time"/>
+        <wikidataID rdf:resource="https://www.wikidata.org/wiki/Q11471"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#UniformGravitationalAcceleration">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#EarthRadius"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#FreeFallHeight"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$h \approx r$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$h$, Free Fall Height</inDefiningFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$r$, Earth Radius</inDefiningFormulation>
+        <terms1:description xml:lang="en">assuming that the gravitational constant remains unchanged from the beginning to the end of a trajectory, e.g. a free fall</terms1:description>
+        <rdfs:comment xml:lang="en">This is a very good approximation for an apple falling from a tree, but not for celestial mechanics where the inverse-square law of the gravitational field must be taken into account.</rdfs:comment>
+        <rdfs:label xml:lang="en">Uniform Gravitational Acceleration</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674362"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#VanishingAirDensity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#VanishingAirDensity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#DensityOfAir"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho\rightarrow 0$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$\rho$, Density of Air</inDefiningFormulation>
+        <terms1:description xml:lang="en">in the limit of vanishing air density, physical bodies will move like in vacuum, e.g. free fall models</terms1:description>
+        <rdfs:label xml:lang="en">Vanishing Air Density</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674366"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#VanishingDragCoefficient">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#MathematicalFormulation"/>
+        <contains rdf:resource="https://mardi4nfdi.de/mathmoddb#DragCoefficient"/>
+        <definingFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_D\rightarrow 0$</definingFormulation>
+        <inDefiningFormulation rdf:datatype="https://mardi4nfdi.de/mathmoddb#LaTeX">$C_D$, Drag Coefficient</inDefiningFormulation>
+        <terms1:description xml:lang="en">in the limit of vanishing drag coefficient, physical bodies will move like in vacuum, e.g. free fall models</terms1:description>
+        <rdfs:label xml:lang="en">Vanishing Drag Coefficient</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6674367"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mardi4nfdi.de/mathmoddb#Velocity -->
+
+    <owl:NamedIndividual rdf:about="https://mardi4nfdi.de/mathmoddb#Velocity">
+        <rdf:type rdf:resource="https://mardi4nfdi.de/mathmoddb#QuantityKind"/>
+        <terms1:description xml:lang="en">rate of change of the position of an object as a function of time, and the direction of that change</terms1:description>
+        <rdfs:label xml:lang="de">Geschwindigkeit</rdfs:label>
+        <rdfs:label xml:lang="en-au">Velocity</rdfs:label>
+        <rdfs:label xml:lang="el">Ταχύτητα</rdfs:label>
+        <mardiID rdf:resource="https://portal.mardi4nfdi.de/wiki/Item:Q6673707"/>
+        <qudtID rdf:resource="https://qudt.org/vocab/quantitykind/Velocity"/>
+        <wikidataID rdf:resource="https://wikidata.org/wiki/Q11465"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
