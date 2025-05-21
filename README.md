@@ -31,11 +31,14 @@ The ontology and the data included is represented in OWL, serialized as RDF/XML 
 * `MathModDB.owl` is the version as designed by the MathModDB team members. This "lean" version includes, for example, only one direction of object property relations -- the other direction can be easily inferred automatically by a reasoner, if the inverses are defined.
 * `MathModDB_full.owl` is the "full" version, where everything which is inferred by the reasoner is also saved to the file and hence made explicit. This is needed to build the full documentation in Widoco. 
 
-* `MathModDB_onlyOntology.owl` is only a part of MathModDB.owl where only the ontology is included and no individuals of the knowledge graph are presents. 
+* `MathModDB_onlyOntology.owl` includes only the ontology and no individuals.   
 
 These files can opened with Protégé or any other tool for that purpose.
 
 A detailed description of the main concepts, classes and relations of the ontology as well as their individuals can be found on https://mardi4nfdi.github.io/MathModDB/. This documentation is created with Widoco. More high level descriptions can be found in the [References](#References) section.
+
+An educational toy example where MathModDB is used to model falling apples (as described [here](https://link.springer.com/chapter/10.1007/978-3-031-81974-2_8#Sec9)) can be found on the branch [tutorial_material](https://github.com/MaRDI4NFDI/MathModDB/tree/tutorial_material), where the only individuals are those needed for the example.
+
 
 ## Citation
 
