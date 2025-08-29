@@ -65,5 +65,6 @@ The ontology MathModDB is licensed under **[CC-BY 4.0](https://creativecommons.o
 
 ## Funding Acknowledgements
 The work has been funded by the DFG (German Research Foundation), project number 460135501, NFDI 29/1 “MaRDI – Mathematische Forschungsdateninitiative”. 
-<img width="2481" height="2481" alt="MaRDI_Logo_L_3_rgba" src="https://github.com/user-attachments/assets/9852f4fe-0ee9-4085-927e-cc48b6b4625b" />
-
+<p align="center">
+<img width="35%" height="35%" alt="MaRDI_Logo_L_3_rgba" src="https://github.com/user-attachments/assets/9852f4fe-0ee9-4085-927e-cc48b6b4625b" />
+</p>
