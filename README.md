@@ -5,7 +5,7 @@ MathModDB is a database of mathematical models developed by the Mathematical Res
 
 For more detailed information on the ontoloty and the knowledge graph please refer to the [Usage](#usage) subsection or the [Widoco documentation](https://mardi4nfdi.github.io/MathModDB/). For a high level description and evolutionary history of MathModDB please refer to our papers listed in the [References](#References) subsection. 
 
-This version is also the basis for the integration of the model data into the [MaRDI Portal](https://portal.mardi4nfdi.de/)
+This version is also the basis for the integration of the model data into the [MaRDI Portal](https://portal.mardi4nfdi.de/). The portal version now supersedes this version in terms of the data items and can be found on https://portal.mardi4nfdi.de/wiki/MathModDB  
 
 ## Version and Release date
 
