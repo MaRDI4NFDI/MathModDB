@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14887915.svg)](https://doi.org/10.5281/zenodo.14887915)
 
-![MathModDB Logo]([https://myoctocat.com/assets/images/base-octocat.svg](https://images.portal.mardi4nfdi.de/images/8/8b/MathModDBLogo2.png))
+![MathModDB Logo](https://images.portal.mardi4nfdi.de/images/8/8b/MathModDBLogo2.png)
 
 # MathModDB
 
