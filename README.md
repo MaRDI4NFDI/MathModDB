@@ -4,17 +4,17 @@
 
 # MathModDB
 
-MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative ([MaRDI](https://www.mardi4nfdi.de)). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Research Field, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.
+MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative ([MaRDI](https://www.mardi4nfdi.de)). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Acadmic Discipline, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.
 
-For more detailed information on the ontoloty and the knowledge graph please refer to the [Usage](#usage) subsection or the [Widoco documentation](https://mardi4nfdi.github.io/MathModDB/). For a high level description and evolutionary history of MathModDB please refer to our papers listed in the [References](#References) subsection. 
+For more detailed information on the ontology and the knowledge graph please refer to the [MathModDB page on the MaRDI portal](https://portal.mardi4nfdi.de/wiki/MathModDB). For a high level description and evolutionary history of MathModDB please refer to our papers listed in the [References](#References) subsection. 
 
-This version is in OWL and is the conceptual basis for the integration of the model data into the [MaRDI Portal](https://portal.mardi4nfdi.de/). **The portal version now supersedes this version in terms of the data items and can be found on https://portal.mardi4nfdi.de/wiki/MathModDB**. The portal version is powered by the Wikibase technology.   
+This version is in OWL and automatically generated from the [MaRDI Portal](https://portal.mardi4nfdi.de/) version, which is always the most up-to-date version. The portal version is powered by the Wikibase technology.   
 
 ## Version and Release date
 
-Version 1.0.0
+Version 2.0.0
 
-Released on 2025-02-13
+Released on 2026-07-28
 
 
 ## Authors
@@ -32,9 +32,7 @@ Released on 2025-02-13
 The ontology and the data included is represented in OWL, serialized as RDF/XML in the two files in this repository. 
 
 * `MathModDB.owl` is the version as designed by the MathModDB team members. This "lean" version includes, for example, only one direction of object property relations -- the other direction can be easily inferred automatically by a reasoner, if the inverses are defined.
-* `MathModDB_full.owl` is the "full" version, where everything which is inferred by the reasoner is also saved to the file and hence made explicit. This is needed to build the full documentation in Widoco. 
 
-* `MathModDB_onlyOntology.owl` includes only the ontology and no individuals.   
 
 These files can opened with Protégé or any other tool for that purpose.
 
