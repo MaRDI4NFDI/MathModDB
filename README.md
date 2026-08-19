@@ -1,6 +1,6 @@
 ![MathModDB Logo](https://images.portal.mardi4nfdi.de/images/8/8b/MathModDBLogo2.png)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14887915.svg)](https://doi.org/10.5281/zenodo.14887915)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14887874.svg)](https://doi.org/10.5281/zenodo.14887874)
 
 # MathModDB
 
@@ -45,7 +45,7 @@ An educational toy example where MathModDB is used to model falling apples (as d
 
 In case you are refering to or using MathModDB, please use the following citation:
 
-`Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbach, M., Koprucki, T. (2025): MathModDB - An Ontology and Knowledge Graph for Mathematical Models. https://doi.org/10.5281/zenodo.14887915`
+`Shehu, A., Schembera, B., Schmidt, B., Biedinger, C., Fiedler, J., Reidelbach, M., & Koprucki, T. (2026). MathModDB - An Ontology and Knowledge Graph for Mathematical Models (Version v2.0.0). Zenodo. https://doi.org/10.5281/zenodo.22010129`
 
 
 ## References
