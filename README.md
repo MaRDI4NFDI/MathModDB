@@ -8,7 +8,7 @@ MathModDB is a database of mathematical models developed by the Mathematical Res
 
 For more detailed information on the ontology and the knowledge graph please refer to the [MathModDB page on the MaRDI portal](https://portal.mardi4nfdi.de/wiki/MathModDB). For a high level description and evolutionary history of MathModDB please refer to our papers listed in the [References](#References) subsection. 
 
-This version is in OWL and automatically generated from the [MaRDI Portal](https://portal.mardi4nfdi.de/) version, which is always the most up-to-date version. The portal version is powered by the Wikibase technology.   
+This version is in OWL and automatically generated from the [MaRDI Portal](https://portal.mardi4nfdi.de/) version, which is always the most up-to-date version. This OWL version is always a more or less up-to-date snapshot of the portal data. Please always check the date of the release. Changes and additions to the dataset are made exclusively to the portal version, and are then reflected here later as part of a regular update process (frequency to be confirmed). The portal version is powered by the Wikibase technology.   
 
 ## Version and Release date
 
