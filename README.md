@@ -4,11 +4,11 @@
 
 # MathModDB
 
-MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative ([MaRDI](https://www.mardi4nfdi.de)). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Acadmic Discipline, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.
+MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative ([MaRDI](https://www.mardi4nfdi.de)). MathModDB defines a data model with classes (Mathematical Model, Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph.
 
 For more detailed information on the ontology and the knowledge graph please refer to the [MathModDB page on the MaRDI portal](https://portal.mardi4nfdi.de/wiki/MathModDB). For a high level description and evolutionary history of MathModDB please refer to our papers listed in the [References](#References) subsection. 
 
-This version is in OWL and automatically generated from the [MaRDI Portal](https://portal.mardi4nfdi.de/) version, which is always the most up-to-date version. This OWL version is always a more or less up-to-date snapshot of the portal data. Please always check the date of the release. Changes and additions to the dataset are made exclusively to the portal version, and are then reflected here later as part of a regular update process (frequency to be confirmed). The portal version is powered by the Wikibase technology.   
+This version is in OWL and automatically generated from the [MaRDI Portal](https://portal.mardi4nfdi.de/) version, which is always the most up-to-date version ans which is powered by Wikibase. This OWL version is always a more or less up-to-date snapshot of the portal data. Please always check the date of the release. Changes and additions to the dataset are made exclusively to the portal version, and are later reflected in the OWL version here as part of a regular update process (frequency to be confirmed).    
 
 ## Version and Release date
 
