@@ -24,7 +24,7 @@
         <dcterms:description xml:lang="en">MathModDB is a database of mathematical models developed by the Mathematical Research Data Initiative (MaRDI). It defines a data model with classes (Mathematical Model, Mathematical Formulation, Academic Discipline, Research Problem, Quantity [Kind], Computational Task, Publication), object properties/relations, data properties and annotation properties as an ontology. This ontology is populated with individuals/data from various fields of applied mathematics, making it a knowledge graph. </dcterms:description>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-07-23T00:00:00</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-13T12:07:08.664757</dcterms:modified>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-15T12:44:16.960384</dcterms:modified>
         <dcterms:publisher xml:lang="en">Mathematical Research Data Initiative (MaRDI, https://www.mardi4nfdi.de)</dcterms:publisher>
         <dcterms:title xml:lang="en">MathModDB Knowledge Graph of Mathematical Models</dcterms:title>
         <rdfs:label xml:lang="en">MathModDB Knowledge Graph of Mathematical Models</rdfs:label>
